@@ -1,0 +1,124 @@
+/*
+ * senstel_acq_config.h
+ *
+ *  Created on: May 7, 2018
+ *      Author: Jerome Pare-Lepine
+ */
+
+#ifndef SRC_SENSTEL_ACQ_CONFIG_H_
+#define SRC_SENSTEL_ACQ_CONFIG_H_
+
+#include "xil_types.h"
+#include "ChinookCanUtils.h"
+#include "setup.h"
+
+
+//==============================================================================
+// DEFINITIONS
+//==============================================================================
+#define ACQ_TIMER_ID	1
+#define DELAY_10_SECONDS	10000UL
+#define DELAY_2_SECONDS		2000UL
+#define DELAY_1_SECOND		1000UL
+#define DELAY_500_MSECONDS	500UL
+#define DELAY_250_MSECONDS	250UL
+#define DELAY_125_MSECONDS	125UL
+#define DELAY_63_MSECONDS	63UL
+#define DELAY_30_MSECONDS	30UL
+#define TIMER_CHECK_THRESHOLD	9
+#define ACQ_SEM_MAX_COUNT	8
+
+/* Input capture definitions */
+#define IC_SAMPLES_NUM	2
+#define TURB_FREQ2RPM_CONST	((2*360)/60.0)
+#define AXLE_FREQ2RPM_CONST	(14.0/60.0)
+
+/* Predefined sSensorData_t initializers */
+#define CV7_WSPD_PROFILE	{0, Cv7_Wspd, PublicLow, WIND_SPEED_ID, 0}
+#define CV7_WDIR_PROFILE	{0, Cv7_Wdir, PublicLow, WIND_DIRECTION_ID, 0}
+#define PITCH_ABSENC_PROFILE	{0, PitchAbsEnc, PublicLow, ID_PITCH_VALUE, 0}
+#define TURB_INCENC_PROFILE	{0, TurbineIncEnc, PublicLow, TURBINE_RPM_ID, 0}
+#define AXLE_INCENC_PROFILE	{0, AxleIncEnc, PublicLow, WHEEL_RPM_ID, 0}
+#define TURB_TORQUE	{0, TurbineTorque, Private, 0, 0}
+#define THRUST_LOAD	{0, LoadCell, Private, 0, 0}
+
+#undef portCONFIGURE_TIMER_FOR_RUN_TIME_STATS
+#define portCONFIGURE_TIMER_FOR_RUN_TIME_STATS()	SetupRuntimeStatstimer()
+
+
+//==============================================================================
+// TYPE DEFINITIONS
+//==============================================================================
+typedef struct sSensorData sSensorData_t;
+typedef enum eCanCommProfile eCanCommProfile_t;
+typedef enum eSensor eSensor_t;
+typedef struct sAcqFlags sAcqFlags_t;
+
+//==============================================================================
+// VARIABLE TYPE DEFINITIONS
+//==============================================================================
+/*
+ * @brief	Used to determine whether, and at which priority, a data packet
+ * 			has to be output on the CAN bus.
+ */
+enum eCanCommProfile{
+	Private = 0,
+	PublicLow,
+	PublicHigh
+};
+
+enum eSensor{
+	Cv7_Wspd = 0,
+	Cv7_Wdir,
+	PitchAbsEnc,
+	GearAbsEnc,
+	TurbineIncEnc,
+	AxleIncEnc,
+	TurbineTorque,
+	LoadCell
+};
+
+/*
+ * @brief	Defines packets sent from the acquisition tasks to the acquisition manager.
+ *
+ * @param	Data is what's read from a sensor.
+ * @param	Profile defines if and with which priority the packet should be output on the
+ * 			CAN bus.
+ * @param	Sid is the CAN destination to be included in a message's header.
+ * @param	CanData is any additional data to be sent along. Not currently implemented.
+ *
+ */
+struct sSensorData{
+	u32 Data;
+	eSensor_t Sensor;
+	eCanCommProfile_t Profile;
+	CanMsgSid_t Sid;
+	CanMsgData_t CanData;
+};
+
+
+/*
+ * @brief	Defines a few task runtime stats aiming to give developers an idea
+ * 			of the app performance.
+ */
+struct sTaskProfile{
+	u8* TaskId;
+	u32 LoopCount;
+	u32 AvgLooptime;
+};
+
+
+/*
+ * @brief	Regroups task structs we want to keep track of.
+ */
+struct sAppTasksProfile{
+
+};
+
+
+//==============================================================================
+// FUNCTION PROTOTYPES
+//==============================================================================
+void Update
+
+#endif /* SRC_SENSTEL_ACQ_CONFIG_H_ */

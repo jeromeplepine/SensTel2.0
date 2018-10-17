@@ -1,0 +1,7 @@
+//arch = zynq; split = false; format = MCS
+the_ROM_image:
+{
+	[bootloader]C:\Users\Chinook-ELE\ZynqWorkspace\SensTel2_emio_NNip\nn_ip_addition\rtos_emio_port_NN_rev4_but_after_rev5\fsbl\Debug\fsbl.elf
+	C:\Users\Chinook-ELE\ZynqWorkspace\SensTel2_emio_NNip\nn_ip_addition\rtos_emio_port_NN_rev4_but_after_rev5\System_wrapper_hw_platform_0\System_wrapper.bit
+	C:\Users\Chinook-ELE\ZynqWorkspace\SensTel2_emio_NNip\nn_ip_addition\rtos_emio_port_NN_rev4_but_after_rev5\rtos_nn_emio_app_rev4_after_rev6\Debug\rtos_nn_emio_app_rev4_after_rev6.elf
+}

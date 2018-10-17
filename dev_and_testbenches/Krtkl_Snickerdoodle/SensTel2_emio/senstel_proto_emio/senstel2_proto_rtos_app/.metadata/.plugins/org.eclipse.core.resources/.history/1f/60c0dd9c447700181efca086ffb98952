@@ -1,0 +1,145 @@
+/*
+ * interrupts.h
+ *
+ *  Created on: May 25, 2018
+ *      Author: Chinook-ELE
+ */
+
+#ifndef SRC_INTERRUPTS_H_
+#define SRC_INTERRUPTS_H_
+
+#include "xuartps.h"
+#include "xcanps.h"
+#include "xscugic.h"
+#include "setup.h"
+#include "FreeRTOS.h"
+#include "task.h"
+#include "semphr.h"
+
+//==============================================================================
+// DEFINITIONS
+//==============================================================================
+/*
+ * Interrupts-related definitions
+ */
+#define INTC_DEVICE_ID		XPAR_SCUGIC_SINGLE_DEVICE_ID
+#define INTC		XScuGic_Config
+#define DRIVER_INST_HANDLER_NUM	3	//How many drivers to init their exception handling
+
+
+/*
+ * CAN-related definitions
+ */
+#define CAN_DEVICE_ID		XPAR_XCANPS_0_DEVICE_ID
+#define CAN_INT_IRQ_ID		XPAR_XCANPS_0_INTR
+
+#define SD_NOTICE		1
+
+/*
+ * UART-related definitions
+ */
+#define UART_DEVICE_ID		XPAR_XUARTPS_1_DEVICE_ID
+#define UART_INT_IRQ_ID		XPAR_XUARTPS_1_INTR
+#define UART_INT			XUARTPS_IMR_OFFSET
+
+#define CV7_NOTICE		1
+
+
+//==============================================================================
+// TYPE DEFINITIONS
+//==============================================================================
+typedef struct sDeviceInstExcptnHandler sInstExcptnHandler_t;
+typedef struct sDeviceInstExcptnHandlers sInstExcptnHandlers_t;
+
+//==============================================================================
+// VARIABLE TYPE DEFINITIONS
+//==============================================================================
+/*
+ * @brief	Stores driver exception handling related information. One structure per
+ * 			device requiring interrupt handling should be used. Every structures
+ * 			are then passed to and accessed by the SetupInterruptSystem() function
+ * 			through sInstExcptnHandlers_t.
+ *
+ * @param	DeviceId: Peripheral Id as found in xparameters.h
+ * @param	DeviceExceptionHandler: General function servicing a peripheral's interrupt events.
+ * 									Found in the peripheral's interrupt driver sources.
+ * @param	DeviceInstancePtr: Peripheral's config struct. The DevicePtr should be set to, ex:
+ * 								XUart_Ps Somename. Typecasted to void for generalizing the init
+ * 								function.
+ */
+struct sDeviceInstExcptnHandler{
+	u32 DeviceIntId;
+	Xil_ExceptionHandler DeviceExceptionHandler;
+	void *DeviceInstancePtr;
+};
+
+/*
+ * @brief	Stores every sInstExcptnHandler_t needing to be initialized. Pass it
+ * 			to SetupInterruptSystem(), which will go through its content.
+ */
+struct sDeviceInstExcptnHandlers{
+	sInstExcptnHandler_t InstHandlers[DRIVER_INST_HANDLER_NUM];
+	u8 index;
+};
+
+//==============================================================================
+// PUBLIC VARIABLES
+//==============================================================================
+sInstExcptnHandlers_t ExceptionHandlers;
+extern sPeriphInstances_t PInst;
+extern xSemaphoreHandle xIc0_0AcqSem;
+extern xSemaphoreHandle xIc0_1AcqSem;
+extern xSemaphoreHandle xUartBufferSem;
+extern TaskHandle_t xSdManTask;
+
+
+//==============================================================================
+// FUNCTION PROTOTYPES
+//==============================================================================
+/*
+ *  @brief	Timer Counter Interrupt handler
+ */
+void TmrCtrHandler(void *CallBackRef, u8 TmrCtrNumber);
+
+/*
+ *  @brief	UART Interrupt handler
+ */
+void UartHandler(void *CallBackRef, u32 Event, unsigned int EventData);
+
+/*
+ *  @brief	CAN Interrupt handlers
+ */
+void CANSendHandler(void *CallBackRef);
+void CANRecvHandler(void *CallBackRef);
+void CANErrorHandler(void *CallBackRef, u32 ErrorMask);
+void CANEventHandler(void *CallBackRef, u32 Mask);
+
+/*
+ * @brief	Initializes the project's sDeviceInstExcptnHandlers_t. Once this
+ * 			function is called, the developer can then use the AddHandler2Array()
+ * 			function.
+ */
+void InitHandlersArray(sInstExcptnHandlers_t *DevExcHndlrs);
+
+/*
+ * @brief 	Inserts a device's exception handling informations to the
+ * 			sInstExcptnHandlers_t struct.
+ *
+ */
+void AddHandler2InitTable(void *DevInstPtr, int DevIntId,
+		Xil_ExceptionHandler DevHandler,
+		sInstExcptnHandlers_t *DevExcHndlrs);
+
+/*
+ * @brief 	Initializes the global interrupt controller (GIC) and
+ * 			registers the exception handlers
+ */
+int SetupInterruptSystem(XScuGic *IntcInstancePtr,
+		sInstExcptnHandlers_t *DeviceExcptnHandlers);
+
+/*
+ *  @brief	Enables the global interrupt controller's interrupts
+ */
+void StartScuGicInterrupts();
+
+#endif /* SRC_INTERRUPTS_H_ */

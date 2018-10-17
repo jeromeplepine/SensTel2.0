@@ -1,0 +1,90 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Tue Feb 20 03:29:59 2018
+# Process ID: 8768
+# Current directory: C:/Users/Chinook-ELE/ZynqWorkspace/interrupts_hw_timer_test/interrupts_hw_timer_test.runs/System_axi_timer_0_1_synth_1
+# Command line: vivado.exe -log System_axi_timer_0_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source System_axi_timer_0_1.tcl
+# Log file: C:/Users/Chinook-ELE/ZynqWorkspace/interrupts_hw_timer_test/interrupts_hw_timer_test.runs/System_axi_timer_0_1_synth_1/System_axi_timer_0_1.vds
+# Journal file: C:/Users/Chinook-ELE/ZynqWorkspace/interrupts_hw_timer_test/interrupts_hw_timer_test.runs/System_axi_timer_0_1_synth_1\vivado.jou
+#-----------------------------------------------------------
+source System_axi_timer_0_1.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 318.418 ; gain = 85.477
+INFO: [Synth 8-638] synthesizing module 'System_axi_timer_0_1' [c:/Users/Chinook-ELE/ZynqWorkspace/interrupts_hw_timer_test/interrupts_hw_timer_test.srcs/sources_1/bd/System/ip/System_axi_timer_0_1/synth/System_axi_timer_0_1.vhd:90]
+INFO: [Synth 8-638] synthesizing module 'axi_timer' [c:/Users/Chinook-ELE/ZynqWorkspace/interrupts_hw_timer_test/interrupts_hw_timer_test.srcs/sources_1/bd/System/ipshared/a004/hdl/axi_timer_v2_0_vh_rfs.vhd:2141]
+INFO: [Synth 8-638] synthesizing module 'tc_core' [c:/Users/Chinook-ELE/ZynqWorkspace/interrupts_hw_timer_test/interrupts_hw_timer_test.srcs/sources_1/bd/System/ipshared/a004/hdl/axi_timer_v2_0_vh_rfs.vhd:1698]
+INFO: [Synth 8-638] synthesizing module 'mux_onehot_f' [c:/Users/Chinook-ELE/ZynqWorkspace/interrupts_hw_timer_test/interrupts_hw_timer_test.srcs/sources_1/bd/System/ipshared/a004/hdl/axi_timer_v2_0_vh_rfs.vhd:365]
+INFO: [Synth 8-638] synthesizing module 'MUXCY' [C:/Xilinx/Vivado/2017.2/scripts/rt/data/unisim_comp.v:21613]
+INFO: [Synth 8-256] done synthesizing module 'MUXCY' (1#1) [C:/Xilinx/Vivado/2017.2/scripts/rt/data/unisim_comp.v:21613]
+INFO: [Synth 8-256] done synthesizing module 'mux_onehot_f' (2#1) [c:/Users/Chinook-ELE/ZynqWorkspace/interrupts_hw_timer_test/interrupts_hw_timer_test.srcs/sources_1/bd/System/ipshared/a004/hdl/axi_timer_v2_0_vh_rfs.vhd:365]
+INFO: [Synth 8-638] synthesizing module 'count_module' [c:/Users/Chinook-ELE/ZynqWorkspace/interrupts_hw_timer_test/interrupts_hw_timer_test.srcs/sources_1/bd/System/ipshared/a004/hdl/axi_timer_v2_0_vh_rfs.vhd:1434]
+INFO: [Synth 8-638] synthesizing module 'counter_f' [c:/Users/Chinook-ELE/ZynqWorkspace/interrupts_hw_timer_test/interrupts_hw_timer_test.srcs/sources_1/bd/System/ipshared/a004/hdl/axi_timer_v2_0_vh_rfs.vhd:148]
+INFO: [Synth 8-256] done synthesizing module 'counter_f' (3#1) [c:/Users/Chinook-ELE/ZynqWorkspace/interrupts_hw_timer_test/interrupts_hw_timer_test.srcs/sources_1/bd/System/ipshared/a004/hdl/axi_timer_v2_0_vh_rfs.vhd:148]
+INFO: [Synth 8-256] done synthesizing module 'count_module' (4#1) [c:/Users/Chinook-ELE/ZynqWorkspace/interrupts_hw_timer_test/interrupts_hw_timer_test.srcs/sources_1/bd/System/ipshared/a004/hdl/axi_timer_v2_0_vh_rfs.vhd:1434]
+INFO: [Synth 8-638] synthesizing module 'timer_control' [c:/Users/Chinook-ELE/ZynqWorkspace/interrupts_hw_timer_test/interrupts_hw_timer_test.srcs/sources_1/bd/System/ipshared/a004/hdl/axi_timer_v2_0_vh_rfs.vhd:835]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [c:/Users/Chinook-ELE/ZynqWorkspace/interrupts_hw_timer_test/interrupts_hw_timer_test.srcs/sources_1/bd/System/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (5#1) [c:/Users/Chinook-ELE/ZynqWorkspace/interrupts_hw_timer_test/interrupts_hw_timer_test.srcs/sources_1/bd/System/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'timer_control' (6#1) [c:/Users/Chinook-ELE/ZynqWorkspace/interrupts_hw_timer_test/interrupts_hw_timer_test.srcs/sources_1/bd/System/ipshared/a004/hdl/axi_timer_v2_0_vh_rfs.vhd:835]
+INFO: [Synth 8-256] done synthesizing module 'tc_core' (7#1) [c:/Users/Chinook-ELE/ZynqWorkspace/interrupts_hw_timer_test/interrupts_hw_timer_test.srcs/sources_1/bd/System/ipshared/a004/hdl/axi_timer_v2_0_vh_rfs.vhd:1698]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif' [c:/Users/Chinook-ELE/ZynqWorkspace/interrupts_hw_timer_test/interrupts_hw_timer_test.srcs/sources_1/bd/System/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'slave_attachment' [c:/Users/Chinook-ELE/ZynqWorkspace/interrupts_hw_timer_test/interrupts_hw_timer_test.srcs/sources_1/bd/System/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-638] synthesizing module 'address_decoder' [c:/Users/Chinook-ELE/ZynqWorkspace/interrupts_hw_timer_test/interrupts_hw_timer_test.srcs/sources_1/bd/System/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-638] synthesizing module 'pselect_f' [c:/Users/Chinook-ELE/ZynqWorkspace/interrupts_hw_timer_test/interrupts_hw_timer_test.srcs/sources_1/bd/System/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f' (8#1) [c:/Users/Chinook-ELE/ZynqWorkspace/interrupts_hw_timer_test/interrupts_hw_timer_test.srcs/sources_1/bd/System/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized0' [c:/Users/Chinook-ELE/ZynqWorkspace/interrupts_hw_timer_test/interrupts_hw_timer_test.srcs/sources_1/bd/System/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized0' (8#1) [c:/Users/Chinook-ELE/ZynqWorkspace/interrupts_hw_timer_test/interrupts_hw_timer_test.srcs/sources_1/bd/System/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized1' [c:/Users/Chinook-ELE/ZynqWorkspace/interrupts_hw_timer_test/interrupts_hw_timer_test.srcs/sources_1/bd/System/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized1' (8#1) [c:/Users/Chinook-ELE/ZynqWorkspace/interrupts_hw_timer_test/interrupts_hw_timer_test.srcs/sources_1/bd/System/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized2' [c:/Users/Chinook-ELE/ZynqWorkspace/interrupts_hw_timer_test/interrupts_hw_timer_test.srcs/sources_1/bd/System/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized2' (8#1) [c:/Users/Chinook-ELE/ZynqWorkspace/interrupts_hw_timer_test/interrupts_hw_timer_test.srcs/sources_1/bd/System/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized3' [c:/Users/Chinook-ELE/ZynqWorkspace/interrupts_hw_timer_test/interrupts_hw_timer_test.srcs/sources_1/bd/System/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized3' (8#1) [c:/Users/Chinook-ELE/ZynqWorkspace/interrupts_hw_timer_test/interrupts_hw_timer_test.srcs/sources_1/bd/System/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized4' [c:/Users/Chinook-ELE/ZynqWorkspace/interrupts_hw_timer_test/interrupts_hw_timer_test.srcs/sources_1/bd/System/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized4' (8#1) [c:/Users/Chinook-ELE/ZynqWorkspace/interrupts_hw_timer_test/interrupts_hw_timer_test.srcs/sources_1/bd/System/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized5' [c:/Users/Chinook-ELE/ZynqWorkspace/interrupts_hw_timer_test/interrupts_hw_timer_test.srcs/sources_1/bd/System/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized5' (8#1) [c:/Users/Chinook-ELE/ZynqWorkspace/interrupts_hw_timer_test/interrupts_hw_timer_test.srcs/sources_1/bd/System/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized6' [c:/Users/Chinook-ELE/ZynqWorkspace/interrupts_hw_timer_test/interrupts_hw_timer_test.srcs/sources_1/bd/System/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized6' (8#1) [c:/Users/Chinook-ELE/ZynqWorkspace/interrupts_hw_timer_test/interrupts_hw_timer_test.srcs/sources_1/bd/System/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'address_decoder' (9#1) [c:/Users/Chinook-ELE/ZynqWorkspace/interrupts_hw_timer_test/interrupts_hw_timer_test.srcs/sources_1/bd/System/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-256] done synthesizing module 'slave_attachment' (10#1) [c:/Users/Chinook-ELE/ZynqWorkspace/interrupts_hw_timer_test/interrupts_hw_timer_test.srcs/sources_1/bd/System/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif' (11#1) [c:/Users/Chinook-ELE/ZynqWorkspace/interrupts_hw_timer_test/interrupts_hw_timer_test.srcs/sources_1/bd/System/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-256] done synthesizing module 'axi_timer' (12#1) [c:/Users/Chinook-ELE/ZynqWorkspace/interrupts_hw_timer_test/interrupts_hw_timer_test.srcs/sources_1/bd/System/ipshared/a004/hdl/axi_timer_v2_0_vh_rfs.vhd:2141]
+INFO: [Synth 8-256] done synthesizing module 'System_axi_timer_0_1' (13#1) [c:/Users/Chinook-ELE/ZynqWorkspace/interrupts_hw_timer_test/interrupts_hw_timer_test.srcs/sources_1/bd/System/ip/System_axi_timer_0_1/synth/System_axi_timer_0_1.vhd:90]
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 372.063 ; gain = 139.121
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 372.063 ; gain = 139.121
+INFO: [Device 21-403] Loading part xc7z007sclg225-1
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.053 . Memory (MB): peak = 703.508 ; gain = 1.125
+Finished Constraint Validation : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 703.508 ; gain = 470.566
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 703.508 ; gain = 470.566
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 703.508 ; gain = 470.566
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 703.508 ; gain = 470.566
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:38 . Memory (MB): peak = 703.508 ; gain = 470.566
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:55 ; elapsed = 00:01:02 . Memory (MB): peak = 703.508 ; gain = 470.566
+Finished Timing Optimization : Time (s): cpu = 00:00:57 ; elapsed = 00:01:04 . Memory (MB): peak = 725.582 ; gain = 492.641
+Finished Technology Mapping : Time (s): cpu = 00:00:57 ; elapsed = 00:01:04 . Memory (MB): peak = 734.613 ; gain = 501.672
+Finished IO Insertion : Time (s): cpu = 00:00:58 ; elapsed = 00:01:06 . Memory (MB): peak = 734.613 ; gain = 501.672
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:58 ; elapsed = 00:01:06 . Memory (MB): peak = 734.613 ; gain = 501.672
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:58 ; elapsed = 00:01:06 . Memory (MB): peak = 734.613 ; gain = 501.672
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:58 ; elapsed = 00:01:06 . Memory (MB): peak = 734.613 ; gain = 501.672
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:58 ; elapsed = 00:01:06 . Memory (MB): peak = 734.613 ; gain = 501.672
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:58 ; elapsed = 00:01:06 . Memory (MB): peak = 734.613 ; gain = 501.672
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |    16|
+|2     |LUT1   |     6|
+|3     |LUT2   |    82|
+|4     |LUT3   |    93|
+|5     |LUT4   |    82|
+|6     |LUT5   |    25|
+|7     |LUT6   |    62|
+|8     |MUXCY  |    64|
+|9     |MUXF7  |     2|
+|10    |FDR    |    12|
+|11    |FDRE   |   228|
++------+-------+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:58 ; elapsed = 00:01:06 . Memory (MB): peak = 734.613 ; gain = 501.672
+synth_design: Time (s): cpu = 00:01:02 ; elapsed = 00:01:10 . Memory (MB): peak = 734.613 ; gain = 508.875

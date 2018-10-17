@@ -1,0 +1,276 @@
+/*
+ * senstel_acq_config.h
+ *
+ *  Created on: May 7, 2018
+ *      Author: Jerome Pare-Lepine
+ */
+
+#ifndef SRC_SENSTEL_ACQ_CONFIG_H_
+#define SRC_SENSTEL_ACQ_CONFIG_H_
+
+
+//==============================================================================
+// INCLUDES
+//==============================================================================
+#include "xil_types.h"
+#include "ChinookCanUtils.h"
+#include "setup.h"
+#include "FreeRTOS.h"
+#include "task.h"
+
+
+//==============================================================================
+// DEFINITIONS
+//==============================================================================
+/* Software timers IDs */
+#define ACQ_TIMER_ID	1
+#define	DATXMIT_TIMER_ID	2
+
+/* Debug switch defines */
+//#define DEBUG_TASK_PRINTS
+#define DEBUG_ENABLE_ACQ_MAN
+#define	DEBUG_ENABLE_CAN
+//#define	DEBUG_ENABLE_SERIALOUT
+//#define DEBUG_CV7_DECODE_PRINTS
+//#define DEBUG_CAN_XMIT_PRINTS
+//#define DEBUG_DATA_PATH_PRINTS
+//#define DEBUG_GEAR_ENC_PRINTS
+#define DEBUG_NN_VAL_PRINTS
+#define SETZERO_MODS
+#define FIXED_PITCH_ZERO
+//#define DEBUG_ENABLE_DUMMY_SENSOR_READINGS
+//#define IC1_DUMMY_VALUE 1024
+
+
+/* These two can be overidden independantly */
+//#define	WSPD_DUMMY_VALUE	16.6
+/* Turbine RPM dummy IC value. 1024 gives PitchDown while
+	around 4096 gives PitchUp */
+//#define IC0_DUMMY_VALUE 1024
+#define ADC_DUMMY_VALUES 1028
+//#define SSI_DUMMY_VALUE	4090000
+
+/* Sd card, LoRa, NN and CAN transmissions are issued
+ * at a count factor of this period */
+#define	DATXMIT_CNT_PERIOD	DELAY_63_MSECONDS
+#define CAN_XMIT_CNTS	2	/* Every (CAN_XMIT_CNTS x DATXMIT_CNT_PERIOD) */
+#define SD_WRITE_CNTS	8	/* Every (SD_WRITE_CNTS x DATXMIT_CNT_PERIOD) */
+#define	NN_UPDATE_CNTS	4	/* Every (NN_UPDATE_CNTS x DATXMIT_CNT_PERIOD) */
+#define	LORA_XMIT_CNTS	8	/* Every (LORA_XMIT_CNTS x DATXMIT_CNT_PERIOD) */
+#define	SERIAL_XMIT_CNTS	8
+#define RST_UPON	LORA_XMIT_CNTS	/* Rollover after the max count value */
+#define COMM_DEST_TOTAL	5	/* Should match the amount of entries in eDestinationType */
+
+/* These periods specify the time interval between the
+ * software timer events. */
+#define ACQ_PERIOD	DELAY_250_MSECONDS	/* Sensor acq period */
+#define DELAY_10_SECONDS	10000UL
+#define DELAY_2_SECONDS		2000UL
+#define DELAY_1_SECOND		1000UL
+#define DELAY_500_MSECONDS	500UL
+#define DELAY_250_MSECONDS	250UL
+#define DELAY_125_MSECONDS	125UL
+#define DELAY_63_MSECONDS	63UL
+#define DELAY_30_MSECONDS	30UL
+#define ACQ_SEM_MAX_COUNT	8
+
+/* Input capture definitions */
+#define IC_SAMPLES_NUM	2
+#define TURB_FREQ2RPM_CONST	((1*360)/60.0)	/* From Futek's TRD305 spec sheet */
+//TODO: Make one big macro with all the equaitons constants
+#define AXLE_FREQ2RPM_CONST	(48.0/60.0)	/* From the SKF bearing encoder spec sheet */
+
+/* Torque anbd Thrust related definitions */
+#define VOLTS_TO_TORQUE	1
+#define	VOLTS_TO_THRUST	1
+
+/* Cv7 Weather Station definitions */
+#define WDIR_MAX_VAL	360.0
+
+/* Absolute Encoder definitions */
+#define PITCH_ABSENC_MAX_VAL	4194304
+#define FIXD_PITCH_ZERO_VAL		3577992//204.7
+#define GEAR_ABSENC_MAX_VAL		4096
+
+/* sSensorData_t presets */
+#define CV7_WSPD_PROFILE	{0, 0, Cv7_Wspd, NO_AVG, PublicLow, WIND_SPEED_ID, 0}
+#define CV7_WDIR_PROFILE	{0, 0, Cv7_Wdir, NO_AVG, PublicLow, WIND_DIRECTION_ID, 0}
+#define PITCH_ABSENC_PROFILE	{0, 0, PitchAbsEnc, NO_AVG, PublicLow, ID_PITCH_VALUE, 0}
+#define GEAR_ABSENC_PROFILE	{0, 0, GearAbsEnc, NO_AVG, Private, ID_GEAR_VALUE, 0}
+#define TURB_INCENC_PROFILE	{0, 0, TurbineIncEnc, COMPUTE_AVG, PublicLow, TURBINE_RPM_ID, 0}
+#define AXLE_INCENC_PROFILE	{0, 0, AxleIncEnc, COMPUTE_AVG, PublicLow, WHEEL_RPM_ID, 0}
+#define TURB_TORQUE_PROFILE	{0, 0, TurbineTorque, COMPUTE_AVG, Private, 0, 0}
+#define THRUST_LOAD_PROFILE	{0, 0, LoadCell, COMPUTE_AVG, Private, 0, 0}
+#define SENSOR_TOTAL	8	/* Should match the amount of entries in eSensor */
+
+#define COMPUTE_AVG		1
+#define NO_AVG			0
+#define ACQMAN_CLRALL	0xFFFFFFFF
+#define ACQMAN_HALTSDW	1
+
+/* Masks used to monitor a sensor's xmit buffer */
+#define SENSDAT_BUF_CLR			1
+#define SENSDAT_BUF_OVRFLW		2
+#define	SENSDAT_BUF_UNDRFLW		4
+#define SENSDAT_BUF_OVRFLW_THRESH	0xFF	/* Max type value */
+
+#define PITSYS_MODE_AUTO		0
+#define PITSYS_MODE_MANUAL		1
+
+
+//==============================================================================
+// TYPE DEFINITIONS
+//==============================================================================
+typedef enum eSensor eSensor_t;
+typedef enum eDestinationType eDestinationType_t;
+typedef	enum eXmitCmd eXmitCmd_t;
+typedef struct sSensorData sSensorData_t;
+typedef struct sAcqFlags sAcqFlags_t;
+typedef struct sTaskProfile sTaskProfile_t;
+typedef struct sAppTaskProfiles sAppTaskProfiles_t;
+typedef struct sSensorDataBuffer sSensorDataBuffer_t;
+typedef struct sXmitData2Dest sXmitData2Dest_t;
+
+
+//==============================================================================
+// EXTERNAL VARIABLES
+//==============================================================================
+extern u32 oTHWM;
+
+//==============================================================================
+// VARIABLE DEFINITIONS
+//==============================================================================
+///*
+// * @brief	Used to determine whether, and at which priority, a data packet
+// * 			has to be output on the CAN bus.
+// */
+//enum eCanCommProfile{
+//	Private = 0,
+//	PublicLow,
+//	PublicHigh
+//};
+
+/* Note: If you add a new Sensor enum value, make sure to update the
+ * SENSOR_TOTAL definition value */
+enum eSensor{
+	Cv7_Wspd = 0,
+	Cv7_Wdir,
+	PitchAbsEnc,
+	GearAbsEnc,
+	TurbineIncEnc,
+	AxleIncEnc,
+	TurbineTorque,
+	LoadCell
+};
+
+/* Note: If you add a new destination enum value, make sure to update the
+ * COMM_DEST_TOTAL definition value */
+enum eDestinationType{
+	CanType = 0,
+	SdType,
+	NNType,
+	LoRaType,
+	SerialType
+};
+
+/* Masks used to process a task notification */
+enum eXmitCmd{
+	NoCmd = 0,
+	CanXmit = 1,
+	SdWrite = 2,
+	NNUpdate = 4,
+	LoRaXmit = 8,
+	SerialXmit = 16
+};
+
+/*
+ * @brief	Defines packets sent from the acquisition tasks to the acquisition manager.
+ *
+ * @param	Data is what's read from a sensor.
+ * @param	CalBias is the value acquired upon reception of a calibration command from the
+ * 			steering wheel
+ * @param	Sensor: the sensor's corresponding tag
+ * #param	ComputeAvg: instructs if its data should be avg'd or if the last value should
+ * 			be kept instead.
+ * @param	Profile defines if and with which priority the packet should be output on the
+ * 			CAN bus.
+ * @param	Sid is the CAN destination to be included in a message's header.
+ * @param	CanData is any additional data to be sent along. Not currently implemented.
+ *
+ */
+struct sSensorData{
+	u32 Data;
+	u32 CalBias;
+	eSensor_t Sensor;
+	u8 ComputeAvg;
+	eCanCommProfile_t Profile;
+	CanMsgSid_t Sid;
+	CanMsgData_t CanData;
+};
+
+/* Single sensor data container object */
+struct sSensorDataBuffer{
+	u32 ulBuffer;	/* Single slot buffer since avg is continually computed by the acq manager or just the last value is kept */
+	u8	usBufferFlags;	/* For monitoring the buffer. Use the masks defined above. */
+	u8	usDataCntr;
+};
+
+struct sXmitData2Dest{
+	sSensorData_t *sSensProfile;
+	eDestinationType_t eDataType;
+};
+
+
+//TODO: Finish and test the software profiling features after swapping out the
+//	private core timer for a TTC or something else.
+/*
+ * @brief	Defines a few task runtime stats aiming to give developers an idea
+ * 			of the app performance.
+ */
+struct sTaskProfile{
+	char TaskId[16];
+	u32 LoopCount;
+	u32 AvgLooptime;
+	u32	LastDelta, MaxDelta, MinDelta;
+};
+
+/*
+ * @brief	Regroups task structs we want to profile at runtime.
+ */
+struct sAppTaskProfiles{
+	sTaskProfile_t TaskArray[16];
+	u8 idx;
+};
+
+
+//==============================================================================
+// FUNCTION PROTOTYPES
+//==============================================================================
+void InitSensorProfilesArray( void );
+void UpdateSensorBiasInArray( eSensor_t Sen, u32 Val );
+void InitSensorBuffersTable( void );
+void UpdateSensorBuffers(sSensorData_t *NewData);
+void ZeroGearsTable( u32 firstgearlowlimit );
+u8 GetSensorTransmitData(eXmitCmd_t Cmd, eSensor_t Sensor, sXmitData2Dest_t *Data);
+float ConvertSensorData(eSensor_t Sen, void *Input, void *Bias);
+u32 ConvertSensorDataForNN(eSensor_t Sen, void *Input, void *Bias);
+u32 GetSensorProfile(eSensor_t Sens, sSensorData_t *sDat);
+
+
+//==================================================================================
+/*
+ * 	@brief	Xilinx FreeRTOS autogenerated BSP blocks the user from using the
+ * 			RuntimeStats profiling API (or I simply couldnt figure out how). This
+ * 			is a makeshift implementation of it.
+ *
+ * 	@note	These functions can't currently be of use since the core's Private Timer isn't
+ * 			useable in debug. Needs to be changed to the TTC or another Timer Counter IP.
+ */
+u8 AddTaskProfile(sAppTaskProfiles_t *AppProfiles, char *TaskId, u8 charcount);
+void UpdateTaskProfile(sAppTaskProfiles_t *, u8 TaskIdx, u32 NewTimeDelta);
+void UpdateTaskHighWaterMark( u32 *oHWM, TaskHandle_t taskHandle );
+void InitAppProfile(sAppTaskProfiles_t *AppProfiles);
+//==================================================================================
+
+#endif	/* SRC_SENSTEL_ACQ_CONFIG_H_ */
+

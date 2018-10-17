@@ -1,0 +1,8 @@
+18:47:52 **** Incremental Build of configuration Debug for project i2c_senstel_proto_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: *** No rule to make target `../src/ads1015.c', needed by `src/ads1015.o'.  Stop.
+
+18:47:53 Build Finished (took 208ms)
+

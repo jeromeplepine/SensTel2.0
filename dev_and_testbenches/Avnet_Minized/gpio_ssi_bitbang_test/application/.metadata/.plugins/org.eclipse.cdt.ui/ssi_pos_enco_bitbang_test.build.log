@@ -1,0 +1,33 @@
+16:31:56 **** Auto Build of configuration Debug for project ssi_pos_enco_bitbang_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ssi_pos_enco_bitbang_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:28:15: warning: variable 'bankOpStatus' set but not used [-Wunused-but-set-variable]
+  u32 bankDir, bankOpStatus;
+               ^~~~~~~~~~~~
+../src/main.c:28:6: warning: variable 'bankDir' set but not used [-Wunused-but-set-variable]
+  u32 bankDir, bankOpStatus;
+      ^~~~~~~
+../src/main.c:24:7: warning: unused variable 'str' [-Wunused-variable]
+  char str[40];
+       ^~~
+'Finished building: ../src/main.c'
+' '
+'Building target: ssi_pos_enco_bitbang_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ssi_pos_enco_bitbang_test_bsp/ps7_cortexa9_0/lib -o "ssi_pos_enco_bitbang_test.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ssi_pos_enco_bitbang_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ssi_pos_enco_bitbang_test.elf  |tee "ssi_pos_enco_bitbang_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  29268	   1156	  22584	  53008	   cf10	ssi_pos_enco_bitbang_test.elf
+'Finished building: ssi_pos_enco_bitbang_test.elf.size'
+' '
+
+16:31:57 Build Finished (took 1s.613ms)
+

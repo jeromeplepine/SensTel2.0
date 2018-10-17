@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sat Jul  7 21:21:53 2018
+# Process ID: 13788
+# Current directory: C:/Users/Chinook-ELE/ZynqWorkspace/SensTel2_emio_NNip/nn_ip_addition/nn_ip_addition.runs/System_xbar_0_synth_1
+# Command line: vivado.exe -log System_xbar_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source System_xbar_0.tcl
+# Log file: C:/Users/Chinook-ELE/ZynqWorkspace/SensTel2_emio_NNip/nn_ip_addition/nn_ip_addition.runs/System_xbar_0_synth_1/System_xbar_0.vds
+# Journal file: C:/Users/Chinook-ELE/ZynqWorkspace/SensTel2_emio_NNip/nn_ip_addition/nn_ip_addition.runs/System_xbar_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source System_xbar_0.tcl -notrace

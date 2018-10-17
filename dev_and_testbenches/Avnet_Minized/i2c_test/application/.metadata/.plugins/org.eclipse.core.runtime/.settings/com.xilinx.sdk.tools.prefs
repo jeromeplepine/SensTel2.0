@@ -1,0 +1,16 @@
+com.xilinx.sdk.linkgen.prefs.i2c_test_app\:.bss=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.i2c_test_app\:.data=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.i2c_test_app\:.data1=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.i2c_test_app\:.fixup=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.i2c_test_app\:.rodata=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.i2c_test_app\:.rodata1=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.i2c_test_app\:.sbss=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.i2c_test_app\:.sbss2=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.i2c_test_app\:.sdata=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.i2c_test_app\:.sdata2=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.i2c_test_app\:.text=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.i2c_test_app\:heap=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.i2c_test_app\:heap-size=1024
+com.xilinx.sdk.linkgen.prefs.i2c_test_app\:stack=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.i2c_test_app\:stack-size=1024
+eclipse.preferences.version=1

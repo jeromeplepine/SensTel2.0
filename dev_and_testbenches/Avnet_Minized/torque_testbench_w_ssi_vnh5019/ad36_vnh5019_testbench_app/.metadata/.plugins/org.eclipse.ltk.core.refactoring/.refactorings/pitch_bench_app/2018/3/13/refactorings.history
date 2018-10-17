@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;pitch_bench_app/src/test_torque_bench&apos; to &apos;test_torque_bench.c&apos;" description="Rename resource &apos;test_torque_bench&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/test_torque_bench" name="test_torque_bench.c" stamp="1522439606775" updateReferences="true"/>
+</session>

@@ -1,0 +1,55 @@
+/*
+ * cv7.h
+ *
+ *  Created on: Jun 5, 2018
+ *      Author: Jerome Pare-Lepine
+ */
+
+#ifndef SRC_CV7_H_
+#define SRC_CV7_H_
+
+#include "xparameters.h"
+#include "xil_types.h"
+#include "ringbuffer.h"
+
+
+//==============================================================================
+// DEFINITIONS
+//==============================================================================
+#define RXFIFO_TRIG_LVL		28		// Only valuable part of CV7-OEM payload, at beginning of every data flux
+#define NMEA_BUF_SZ			32
+#define UART_FIFO_MAX			64
+#define UART_INT			XUARTPS_IMR_OFFSET
+
+
+//==============================================================================
+// TYPE DEFINITIONS
+//==============================================================================
+typedef enum eNmeaSeq eNmeaSeq_t;
+
+//==============================================================================
+// VARIABLES DEFINITIONS
+//==============================================================================
+enum eNmeaSeq{
+	NmeaNone= 0,
+	NmeaDollr,
+	NmeaI1,
+	NmeaI2,
+	NmeaM,
+	NmeaW,
+	NmeaV,
+	NmeaComma,
+	NmeaStar,
+	NmeaSeqLocked
+};
+
+
+//==============================================================================
+// FUNCTION PROTOTYPES
+//==============================================================================
+void vInitNmeaCharBuffer(void);
+u32 ulProcessCv7CharBuf(u32 baseaddr, float *wdir, float *wspd, buffer_t *pbuffer);
+
+
+
+#endif /* SRC_CV7_H_ */

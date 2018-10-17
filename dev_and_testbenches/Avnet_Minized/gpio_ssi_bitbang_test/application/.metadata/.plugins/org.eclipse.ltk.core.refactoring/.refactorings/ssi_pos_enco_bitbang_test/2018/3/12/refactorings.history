@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;ssi_pos_enco_bitbang_test/src/main.c_putback&apos; to &apos;main.c&apos;" description="Rename resource &apos;main.c_putback&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main.c_putback" name="main.c" stamp="1521389625044" updateReferences="true"/>
+</session>

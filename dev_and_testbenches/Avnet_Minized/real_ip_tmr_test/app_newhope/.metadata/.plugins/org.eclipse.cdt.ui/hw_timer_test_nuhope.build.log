@@ -1,0 +1,33 @@
+20:44:15 **** Auto Build of configuration Debug for project hw_timer_test_nuhope ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../hw_timer_test_nuhope_bsp/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:21:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main(){
+      ^~~~
+../main.c: In function 'main':
+../main.c:24:6: warning: variable 'tmrCntrRegValue' set but not used [-Wunused-but-set-variable]
+  u32 tmrCntrRegValue = 0;
+      ^~~~~~~~~~~~~~~
+../main.c:23:6: warning: variable 'ldRegValue' set but not used [-Wunused-but-set-variable]
+  u32 ldRegValue = 0;
+      ^~~~~~~~~~
+'Finished building: ../main.c'
+' '
+'Building target: hw_timer_test_nuhope.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../hw_timer_test_nuhope_bsp/ps7_cortexa9_0/lib -o "hw_timer_test_nuhope.elf"  ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: hw_timer_test_nuhope.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size hw_timer_test_nuhope.elf  |tee "hw_timer_test_nuhope.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19564	   1148	  22568	  43280	   a910	hw_timer_test_nuhope.elf
+'Finished building: hw_timer_test_nuhope.elf.size'
+' '
+
+20:44:17 Build Finished (took 1s.712ms)
+

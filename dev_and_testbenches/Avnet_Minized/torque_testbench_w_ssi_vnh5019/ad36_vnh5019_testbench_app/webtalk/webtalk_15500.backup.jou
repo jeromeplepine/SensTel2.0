@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# 
+# Start of session at: Sun Mar 25 12:15:39 2018
+# Process ID: 15500
+# Current directory: C:/Users/Chinook-ELE/ZynqWorkspace/torque_testbench_w_ssi_vnh5019/ad36_vnh5019_testbench_app/webtalk
+# Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
+# Log file: C:/Users/Chinook-ELE/ZynqWorkspace/torque_testbench_w_ssi_vnh5019/ad36_vnh5019_testbench_app/webtalk/webtalk.log
+# Journal file: C:/Users/Chinook-ELE/ZynqWorkspace/torque_testbench_w_ssi_vnh5019/ad36_vnh5019_testbench_app/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl

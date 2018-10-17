@@ -1,0 +1,261 @@
+10:20:35 **** Auto Build of configuration Debug for project rtos_nn_emio_app_rev4_after_rev6 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/can.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/can.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../freertos901_xilinx_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/can.d" -MT"src/can.o" -o "src/can.o" "../src/can.c"
+'Finished building: ../src/can.c'
+' '
+'Building file: ../src/inputcapture.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/inputcapture.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../freertos901_xilinx_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/inputcapture.d" -MT"src/inputcapture.o" -o "src/inputcapture.o" "../src/inputcapture.c"
+In file included from ../src/setup.h:12:0,
+                 from ../src/interrupts.h:14,
+                 from ../src/inputcapture.c:15:
+../src/can.h:78:12: warning: 'TxFrame' defined but not used [-Wunused-variable]
+ static u32 TxFrame[XCANPS_MAX_FRAME_SIZE_IN_WORDS];
+            ^~~~~~~
+'Finished building: ../src/inputcapture.c'
+' '
+'Building file: ../src/interrupts.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interrupts.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../freertos901_xilinx_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/interrupts.d" -MT"src/interrupts.o" -o "src/interrupts.o" "../src/interrupts.c"
+../src/interrupts.c: In function 'PrivateTimerHandler':
+../src/interrupts.c:96:5: warning: unused variable 'tmp' [-Wunused-variable]
+  u8 tmp = 0;
+     ^~~
+../src/interrupts.c: In function 'CANRecvHandler':
+../src/interrupts.c:233:13: warning: unused variable 'count' [-Wunused-variable]
+  static u32 count;
+             ^~~~~
+../src/interrupts.c:231:6: warning: unused variable 'FramePtr' [-Wunused-variable]
+  u8 *FramePtr;
+      ^~~~~~~~
+../src/interrupts.c:230:13: warning: variable 'Temp' set but not used [-Wunused-but-set-variable]
+  int Index, Temp;
+             ^~~~
+../src/interrupts.c:230:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index, Temp;
+      ^~~~~
+At top level:
+../src/interrupts.c:233:13: warning: 'count' defined but not used [-Wunused-variable]
+  static u32 count;
+             ^~~~~
+'Finished building: ../src/interrupts.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../freertos901_xilinx_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'prvSsiTask':
+../src/main.c:477:55: warning: unused variable 'SensDat2' [-Wunused-variable]
+ static sSensorData_t SensDat1 = PITCH_ABSENC_PROFILE, SensDat2 = GEAR_ABSENC_PROFILE;
+                                                       ^~~~~~~~
+../src/main.c:476:31: warning: unused variable 'ulGear12bVal' [-Wunused-variable]
+ static u32 ulPitch22bVal = 0, ulGear12bVal = 0;
+                               ^~~~~~~~~~~~
+../src/main.c:474:12: warning: variable 'xRes' set but not used [-Wunused-but-set-variable]
+ BaseType_t xRes = pdFALSE;
+            ^~~~
+../src/main.c: In function 'prvAdcTask':
+../src/main.c:533:12: warning: unused variable 'value' [-Wunused-variable]
+ static s16 value[4] = {0};
+            ^~~~~
+../src/main.c:532:12: warning: variable 'xRes' set but not used [-Wunused-but-set-variable]
+ BaseType_t xRes = pdFALSE;
+            ^~~~
+../src/main.c: In function 'prvStartAcqTask':
+../src/main.c:735:12: warning: unused variable 'taskQty' [-Wunused-variable]
+  static u8 taskQty = 0;
+            ^~~~~~~
+../src/main.c:734:13: warning: unused variable 'startval' [-Wunused-variable]
+  static u32 startval = 0;
+             ^~~~~~~~
+../src/main.c:733:12: warning: unused variable 'taskIdx' [-Wunused-variable]
+  static u8 taskIdx = 0;
+            ^~~~~~~
+../src/main.c: In function 'prvAcqManTask':
+../src/main.c:795:13: warning: unused variable 'notif' [-Wunused-variable]
+  static u32 notif = 0;
+             ^~~~~
+../src/main.c: In function 'prvSerialOutTask':
+../src/main.c:985:15: warning: variable 'tmpArray' set but not used [-Wunused-but-set-variable]
+  static float tmpArray[SENSOR_TOTAL] = {0};
+               ^~~~~~~~
+../src/main.c: In function 'prvPitchControlTask':
+../src/main.c:1030:15: warning: unused variable 'PMaintainPkt' [-Wunused-variable]
+  sCanPacket_t PMaintainPkt = {VOLANT_SW_MSG, EMPTY_CAN_MSG, PublicHigh};
+               ^~~~~~~~~~~~
+At top level:
+../src/main.c:795:13: warning: 'notif' defined but not used [-Wunused-variable]
+  static u32 notif = 0;
+             ^~~~~
+../src/main.c:733:12: warning: 'taskIdx' defined but not used [-Wunused-variable]
+  static u8 taskIdx = 0;
+            ^~~~~~~
+../src/main.c:734:13: warning: 'startval' defined but not used [-Wunused-variable]
+  static u32 startval = 0;
+             ^~~~~~~~
+../src/main.c:735:12: warning: 'taskQty' defined but not used [-Wunused-variable]
+  static u8 taskQty = 0;
+            ^~~~~~~
+../src/main.c:533:12: warning: 'value' defined but not used [-Wunused-variable]
+ static s16 value[4] = {0};
+            ^~~~~
+../src/main.c:476:31: warning: 'ulGear12bVal' defined but not used [-Wunused-variable]
+ static u32 ulPitch22bVal = 0, ulGear12bVal = 0;
+                               ^~~~~~~~~~~~
+../src/main.c:477:55: warning: 'SensDat2' defined but not used [-Wunused-variable]
+ static sSensorData_t SensDat1 = PITCH_ABSENC_PROFILE, SensDat2 = GEAR_ABSENC_PROFILE;
+                                                       ^~~~~~~~
+In file included from ../src/setup.h:12:0,
+                 from ../src/main.c:80:
+../src/can.h:78:12: warning: 'TxFrame' defined but not used [-Wunused-variable]
+ static u32 TxFrame[XCANPS_MAX_FRAME_SIZE_IN_WORDS];
+            ^~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/senstel_acq.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/senstel_acq.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../freertos901_xilinx_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/senstel_acq.d" -MT"src/senstel_acq.o" -o "src/senstel_acq.o" "../src/senstel_acq.c"
+../src/senstel_acq.c: In function 'UpdateSensorBuffers':
+../src/senstel_acq.c:268:7: warning: variable 'tmp' set but not used [-Wunused-but-set-variable]
+   u32 tmp = (*sensorxmitbufs)[type].usBufferFlags & SENSDAT_BUF_CLR; /* For debug purposes */
+       ^~~
+../src/senstel_acq.c: In function 'ConvertSensorData':
+../src/senstel_acq.c:343:13: warning: variable 'ultmp' set but not used [-Wunused-but-set-variable]
+  static u32 ultmp, tmp1 = 0;
+             ^~~~~
+../src/senstel_acq.c: In function 'ConvertSensorDataForNN':
+../src/senstel_acq.c:445:38: warning: unused variable 'tmp2' [-Wunused-variable]
+  static float ftmp = 0, wspddum = 0, tmp2 = 0;
+                                      ^~~~
+../src/senstel_acq.c:445:25: warning: unused variable 'wspddum' [-Wunused-variable]
+  static float ftmp = 0, wspddum = 0, tmp2 = 0;
+                         ^~~~~~~
+At top level:
+../src/senstel_acq.c:445:25: warning: 'wspddum' defined but not used [-Wunused-variable]
+../src/senstel_acq.c:445:38: warning: 'tmp2' defined but not used [-Wunused-variable]
+  static float ftmp = 0, wspddum = 0, tmp2 = 0;
+                                      ^~~~
+../src/senstel_acq.c:109:12: warning: 'next13' defined but not used [-Wunused-variable]
+    next12, next13;
+            ^~~~~~
+../src/senstel_acq.c:109:4: warning: 'next12' defined but not used [-Wunused-variable]
+    next12, next13;
+    ^~~~~~
+../src/senstel_acq.c:108:83: warning: 'next11' defined but not used [-Wunused-variable]
+ static u32 next1, next2, next3, next4, next5, next6, next7, next8, next9, next10, next11,
+                                                                                   ^~~~~~
+../src/senstel_acq.c:108:75: warning: 'next10' defined but not used [-Wunused-variable]
+ static u32 next1, next2, next3, next4, next5, next6, next7, next8, next9, next10, next11,
+                                                                           ^~~~~~
+../src/senstel_acq.c:108:68: warning: 'next9' defined but not used [-Wunused-variable]
+ static u32 next1, next2, next3, next4, next5, next6, next7, next8, next9, next10, next11,
+                                                                    ^~~~~
+../src/senstel_acq.c:108:61: warning: 'next8' defined but not used [-Wunused-variable]
+ static u32 next1, next2, next3, next4, next5, next6, next7, next8, next9, next10, next11,
+                                                             ^~~~~
+../src/senstel_acq.c:108:54: warning: 'next7' defined but not used [-Wunused-variable]
+ static u32 next1, next2, next3, next4, next5, next6, next7, next8, next9, next10, next11,
+                                                      ^~~~~
+../src/senstel_acq.c:108:47: warning: 'next6' defined but not used [-Wunused-variable]
+ static u32 next1, next2, next3, next4, next5, next6, next7, next8, next9, next10, next11,
+                                               ^~~~~
+../src/senstel_acq.c:108:40: warning: 'next5' defined but not used [-Wunused-variable]
+ static u32 next1, next2, next3, next4, next5, next6, next7, next8, next9, next10, next11,
+                                        ^~~~~
+../src/senstel_acq.c:108:33: warning: 'next4' defined but not used [-Wunused-variable]
+ static u32 next1, next2, next3, next4, next5, next6, next7, next8, next9, next10, next11,
+                                 ^~~~~
+../src/senstel_acq.c:108:26: warning: 'next3' defined but not used [-Wunused-variable]
+ static u32 next1, next2, next3, next4, next5, next6, next7, next8, next9, next10, next11,
+                          ^~~~~
+../src/senstel_acq.c:108:19: warning: 'next2' defined but not used [-Wunused-variable]
+ static u32 next1, next2, next3, next4, next5, next6, next7, next8, next9, next10, next11,
+                   ^~~~~
+../src/senstel_acq.c:108:12: warning: 'next1' defined but not used [-Wunused-variable]
+ static u32 next1, next2, next3, next4, next5, next6, next7, next8, next9, next10, next11,
+            ^~~~~
+In file included from ../src/setup.h:12:0,
+                 from ../src/senstel_acq_config.h:17,
+                 from ../src/senstel_acq.c:34:
+../src/can.h:78:12: warning: 'TxFrame' defined but not used [-Wunused-variable]
+ static u32 TxFrame[XCANPS_MAX_FRAME_SIZE_IN_WORDS];
+            ^~~~~~~
+'Finished building: ../src/senstel_acq.c'
+' '
+'Building file: ../src/setup.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/setup.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../freertos901_xilinx_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/setup.d" -MT"src/setup.o" -o "src/setup.o" "../src/setup.c"
+../src/setup.c: In function 'InitPeripherals':
+../src/setup.c:74:2: warning: implicit declaration of function 'InitLoRaRadio' [-Wimplicit-function-declaration]
+  InitLoRaRadio(pinst->EmioBankPins, pinst->SpiInst);
+  ^~~~~~~~~~~~~
+In file included from ../src/setup.h:12:0,
+                 from ../src/setup.c:11:
+At top level:
+../src/can.h:78:12: warning: 'TxFrame' defined but not used [-Wunused-variable]
+ static u32 TxFrame[XCANPS_MAX_FRAME_SIZE_IN_WORDS];
+            ^~~~~~~
+'Finished building: ../src/setup.c'
+' '
+'Building file: ../src/timer.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timer.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../freertos901_xilinx_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/timer.d" -MT"src/timer.o" -o "src/timer.o" "../src/timer.c"
+../src/timer.c: In function 'InitScuTimer':
+../src/timer.c:40:6: warning: unused variable 'regval' [-Wunused-variable]
+  u32 regval = XScuTimer_ReadReg(tmrinst->Config.BaseAddr, XSCUTIMER_CONTROL_OFFSET);
+      ^~~~~~
+In file included from ../src/setup.h:12:0,
+                 from ../src/interrupts.h:14,
+                 from ../src/timer.c:15:
+At top level:
+../src/can.h:78:12: warning: 'TxFrame' defined but not used [-Wunused-variable]
+ static u32 TxFrame[XCANPS_MAX_FRAME_SIZE_IN_WORDS];
+            ^~~~~~~
+'Finished building: ../src/timer.c'
+' '
+'Building file: ../src/uart.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../freertos901_xilinx_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/uart.d" -MT"src/uart.o" -o "src/uart.o" "../src/uart.c"
+../src/uart.c: In function 'InitUartPeripherals':
+../src/uart.c:48:6: warning: variable 'res' set but not used [-Wunused-but-set-variable]
+  s32 res = 0;
+      ^~~
+../src/uart.c:47:11: warning: variable 'regval' set but not used [-Wunused-but-set-variable]
+  u32 tmp, regval;
+           ^~~~~~
+../src/uart.c:46:16: warning: unused variable 'format0' [-Wunused-variable]
+  XUartPsFormat format0, format1;
+                ^~~~~~~
+In file included from ../src/setup.h:12:0,
+                 from ../src/interrupts.h:14,
+                 from ../src/uart.c:23:
+At top level:
+../src/can.h:78:12: warning: 'TxFrame' defined but not used [-Wunused-variable]
+ static u32 TxFrame[XCANPS_MAX_FRAME_SIZE_IN_WORDS];
+            ^~~~~~~
+'Finished building: ../src/uart.c'
+' '
+'Building target: rtos_nn_emio_app_rev4_after_rev6.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../freertos901_xilinx_bsp_0/ps7_cortexa9_0/lib -o "rtos_nn_emio_app_rev4_after_rev6.elf"  ./src/ads1015.o ./src/ann.o ./src/can.o ./src/cv7.o ./src/encoder_ad36.o ./src/fifo.o ./src/i2c.o ./src/inputcapture.o ./src/interrupts.o ./src/main.o ./src/rfm95w_lora.o ./src/ringbuffer.o ./src/senstel_acq.o ./src/senstel_sd.o ./src/setup.o ./src/spi.o ./src/timer.o ./src/uart.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group
+./src/main.o: In function `prvSdWriteTask':
+C:\Users\Chinook-ELE\ZynqWorkspace\SensTel2_emio_NNip\nn_ip_addition\rtos_emio_port_NN_rev4_but_after_rev5\rtos_nn_emio_app_rev4_after_rev6\Debug/../src/main.c:938: undefined reference to `f_puts'
+./src/senstel_sd.o: In function `ulMountFs':
+C:\Users\Chinook-ELE\ZynqWorkspace\SensTel2_emio_NNip\nn_ip_addition\rtos_emio_port_NN_rev4_but_after_rev5\rtos_nn_emio_app_rev4_after_rev6\Debug/../src/senstel_sd.c:41: undefined reference to `disk_initialize'
+C:\Users\Chinook-ELE\ZynqWorkspace\SensTel2_emio_NNip\nn_ip_addition\rtos_emio_port_NN_rev4_but_after_rev5\rtos_nn_emio_app_rev4_after_rev6\Debug/../src/senstel_sd.c:52: undefined reference to `f_mount'
+C:\Users\Chinook-ELE\ZynqWorkspace\SensTel2_emio_NNip\nn_ip_addition\rtos_emio_port_NN_rev4_but_after_rev5\rtos_nn_emio_app_rev4_after_rev6\Debug/../src/senstel_sd.c:62: undefined reference to `f_mkfs'
+./src/senstel_sd.o: In function `ulOpenFile':
+C:\Users\Chinook-ELE\ZynqWorkspace\SensTel2_emio_NNip\nn_ip_addition\rtos_emio_port_NN_rev4_but_after_rev5\rtos_nn_emio_app_rev4_after_rev6\Debug/../src/senstel_sd.c:86: undefined reference to `f_open'
+C:\Users\Chinook-ELE\ZynqWorkspace\SensTel2_emio_NNip\nn_ip_addition\rtos_emio_port_NN_rev4_but_after_rev5\rtos_nn_emio_app_rev4_after_rev6\Debug/../src/senstel_sd.c:99: undefined reference to `f_lseek'
+./src/senstel_sd.o: In function `ulCloseFiles':
+C:\Users\Chinook-ELE\ZynqWorkspace\SensTel2_emio_NNip\nn_ip_addition\rtos_emio_port_NN_rev4_but_after_rev5\rtos_nn_emio_app_rev4_after_rev6\Debug/../src/senstel_sd.c:120: undefined reference to `f_close'
+./src/senstel_sd.o: In function `ulUnmountFs':
+C:\Users\Chinook-ELE\ZynqWorkspace\SensTel2_emio_NNip\nn_ip_addition\rtos_emio_port_NN_rev4_but_after_rev5\rtos_nn_emio_app_rev4_after_rev6\Debug/../src/senstel_sd.c:139: undefined reference to `f_mount'
+collect2.exe: error: ld returned 1 exit status
+make: *** [rtos_nn_emio_app_rev4_after_rev6.elf] Error 1
+
+10:20:38 Build Finished (took 3s.904ms)
+

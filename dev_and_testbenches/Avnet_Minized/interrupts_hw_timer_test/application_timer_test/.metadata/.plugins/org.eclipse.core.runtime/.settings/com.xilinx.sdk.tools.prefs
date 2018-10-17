@@ -1,0 +1,16 @@
+com.xilinx.sdk.linkgen.prefs.timer_hw_timer\:.bss=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.timer_hw_timer\:.data=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.timer_hw_timer\:.data1=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.timer_hw_timer\:.fixup=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.timer_hw_timer\:.rodata=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.timer_hw_timer\:.rodata1=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.timer_hw_timer\:.sbss=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.timer_hw_timer\:.sbss2=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.timer_hw_timer\:.sdata=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.timer_hw_timer\:.sdata2=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.timer_hw_timer\:.text=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.timer_hw_timer\:heap=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.timer_hw_timer\:heap-size=1024
+com.xilinx.sdk.linkgen.prefs.timer_hw_timer\:stack=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.timer_hw_timer\:stack-size=1024
+eclipse.preferences.version=1

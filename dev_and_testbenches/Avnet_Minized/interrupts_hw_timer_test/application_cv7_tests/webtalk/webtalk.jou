@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# 
+# Start of session at: Fri Mar 23 08:55:47 2018
+# Process ID: 18660
+# Current directory: C:/Users/Chinook-ELE/ZynqWorkspace/interrupts_hw_timer_test/application_cv7_tests/webtalk
+# Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
+# Log file: C:/Users/Chinook-ELE/ZynqWorkspace/interrupts_hw_timer_test/application_cv7_tests/webtalk/webtalk.log
+# Journal file: C:/Users/Chinook-ELE/ZynqWorkspace/interrupts_hw_timer_test/application_cv7_tests/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl

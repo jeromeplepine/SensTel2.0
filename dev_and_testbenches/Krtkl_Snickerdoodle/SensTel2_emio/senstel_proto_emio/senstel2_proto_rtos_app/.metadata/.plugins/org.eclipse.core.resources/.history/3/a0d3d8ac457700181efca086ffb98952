@@ -1,0 +1,112 @@
+/*
+ * can.c
+ *
+ *  Created on: May 25, 2018
+ *      Author: Jerome Pare-Lepine
+ */
+
+#include "can.h"
+#include "xcanps.h"
+#include "xcanps_hw.h"
+#include "interrupts.h"
+#include "xstatus.h"
+#include "ChinookCanUtils.h"
+
+
+//==============================================================================
+// FUNCTION DEFINITIONS
+//==============================================================================
+
+/*****************************************************************************/
+/**
+*
+* Send a CAN frame.
+*
+* @param	InstancePtr is a pointer to the driver instance.
+*
+* @return	None.
+*
+* @note		None.
+*
+******************************************************************************/
+void SendFrame(XCanPs *InstancePtr, CanMsgSid_t DestSid, CanMsgData_t *Payload)
+{
+	u8 *FramePtr;
+	int Index;
+	int Status;
+	u32 *Temp;
+
+	/*
+	 * Create correct values for Identifier and Data Length Code Register.
+	 */
+	TxFrame[0] = (u32)XCanPs_CreateIdValue(DestSid, 0, 0, 0, 0);
+	TxFrame[1] = (u32)XCanPs_CreateDlcValue(FRAME_DATA_LENGTH);
+
+	/*
+	 * Now fill in the data field with known values so we can verify them
+	 * on receive.
+	 */
+	FramePtr = (u8 *)(&TxFrame[2]);
+	memcpy((void *)FramePtr, (void *)Payload, 4);
+
+	/*
+	 * Now wait until the TX FIFO is not full and send the frame.
+	 */
+	while (XCanPs_IsTxFifoFull(InstancePtr) == TRUE);
+
+
+	XCanPs_Send(InstancePtr, TxFrame);
+}
+
+
+s32 InitCan(XCanPs *InstancePtr, u32 DevId)
+{
+	s32 Status;
+	XCanPs_Config *ConfigPtr;
+
+	ConfigPtr = XCanPs_LookupConfig(DevId);
+	if (ConfigPtr == NULL) {
+		return XST_FAILURE;
+	}
+	Status = XCanPs_CfgInitialize(InstancePtr,
+				ConfigPtr,
+				ConfigPtr->BaseAddr);
+
+	XCanPs_EnterMode(InstancePtr, XCANPS_MODE_CONFIG);
+	while(XCanPs_GetMode(InstancePtr) != XCANPS_MODE_CONFIG);
+
+	XCanPs_SetBaudRatePrescaler(InstancePtr, TEST_BRPR_BAUD_PRESCALAR);
+	XCanPs_SetBitTiming(InstancePtr, TEST_BTR_SYNCJUMPWIDTH,
+					TEST_BTR_SECOND_TIMESEGMENT,
+					TEST_BTR_FIRST_TIMESEGMENT);
+
+	return Status;
+}
+
+void InitCanInterrupts(XCanPs *InstancePtr, u16 DevIntId)
+{
+
+	XCanPs_SetHandler(InstancePtr, XCANPS_HANDLER_SEND,
+			(void *)CANSendHandler, (void *)InstancePtr);
+	XCanPs_SetHandler(InstancePtr, XCANPS_HANDLER_RECV,
+			(void *)CANRecvHandler, (void *)InstancePtr);
+	XCanPs_SetHandler(InstancePtr, XCANPS_HANDLER_ERROR,
+			(void *)CANErrorHandler, (void *)InstancePtr);
+	XCanPs_SetHandler(InstancePtr, XCANPS_HANDLER_EVENT,
+			(void *)CANEventHandler, (void *)InstancePtr);
+
+	AddHandler2InitTable(InstancePtr, DevIntId, (Xil_InterruptHandler) XCanPs_IntrHandler, (void *)&ExceptionHandlers);
+
+//	XCanPs_IntrEnable(InstancePtr, XCANPS_IXR_ALL);
+
+//	XCanPs_EnterMode(InstancePtr, XCANPS_MODE_NORMAL);
+//	while(XCanPs_GetMode(InstancePtr) != XCANPS_MODE_NORMAL);
+
+}
+
+void StartCanInterrupts(XCanPs *InstancePtr)
+{
+	XCanPs_IntrEnable(InstancePtr, XCANPS_IXR_ALL);
+	XCanPs_EnterMode(InstancePtr, XCANPS_MODE_NORMAL);
+	while(XCanPs_GetMode(InstancePtr) != XCANPS_MODE_NORMAL);
+}

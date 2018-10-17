@@ -1,0 +1,73 @@
+/*
+ * setup.c
+ *
+ *  Created on: May 27, 2018
+ *      Author: Jerome Pare-Lepine
+ */
+
+#include "setup.h"
+#include "interrupts.h"
+#include "inputcapture.h"
+#include "i2c.h"
+
+
+
+//==============================================================================
+// PUBLIC VARIABLES
+//==============================================================================
+static XCanPs Can0Inst;
+static XUartPs Uart0Inst, Uart1Inst;
+static XTmrCtr TmrCtr0Inst, TmrCtr1Inst;
+static XIicPs Iic0Inst, Iic1Inst;
+static XGpioPs EmioBankInst;
+static XScuTimer PrvCoreTimer;
+
+extern XScuGic xInterruptController;
+
+
+//==============================================================================
+// FUNCTION DEFINITIONS
+//==============================================================================
+void CreatePeriphInstances(sPeriphInstances_t *pinst)
+{
+	pinst->CanInst = &Can0Inst;
+	pinst->Cv7UartInst = &Uart0Inst;
+	pinst->SerialUartInst = &Uart1Inst;
+	pinst->TmrCtr0Inst = &TmrCtr0Inst;
+	pinst->TmrCtr1Inst = &TmrCtr1Inst;
+	pinst->Iic0Inst = &Iic0Inst;
+	pinst->Iic1Inst = &Iic1Inst;
+	pinst->EmioBankPins = &EmioBankInst;
+	pinst->CoreTimer = &PrvCoreTimer;
+}
+
+//TODO: Implement setups for the second TmrCtr IP instance
+void InitPeripherals(sPeriphInstances_t *pinst)
+{
+	CreatePeriphInstances(pinst);
+	InitHandlersArray(&ExceptionHandlers);
+
+	InitCan(pinst->CanInst, CAN0_ID);
+	InitTmrCtrs(pinst->TmrCtr0Inst);
+	InitUartPeripherals(pinst->SerialUartInst, pinst->Cv7UartInst);
+	InitI2CPeripherals(pinst->Iic1Inst, I2C_ADDRESS);
+	initSSIpins(pinst->EmioBankPins);
+	InitScuTimer(pinst->CoreTimer, XPAR_XSCUTIMER_0_DEVICE_ID);
+
+	InitCanInterrupts(pinst->CanInst, CAN0_INTR_ID);
+	InitTmrCtrInterrupts(pinst->TmrCtr0Inst);
+	InitUartInterrupts(pinst->Cv7UartInst, UART1_INTR_ID);
+}
+
+void StartPeripheralInterrupts(sPeriphInstances_t *pinst)
+{
+	SetupInterruptSystem(&xInterruptController, &ExceptionHandlers);	//IntC instance is from Freertos port
+	StartCanInterrupts(pinst->CanInst);
+//	StartTmrCtrInterrupts(pinst->TmrCtr0Inst);	/* The IC tasks control the tmr ctr interrupts, no need to start hered */
+	StartUartInterrupts(pinst->Cv7UartInst);
+	StartScuTimerInterrupts(pinst->CoreTimer);
+	StartScuGicInterrupts();
+
+}
+
+

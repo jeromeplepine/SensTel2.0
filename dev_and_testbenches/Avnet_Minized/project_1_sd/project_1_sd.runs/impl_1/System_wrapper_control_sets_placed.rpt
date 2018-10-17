@@ -1,0 +1,112 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
+| Date         : Sun Apr 15 18:30:03 2018
+| Host         : LAPTOP-GDRKMBCO running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file System_wrapper_control_sets_placed.rpt
+| Design       : System_wrapper
+| Device       : xc7z007s
+-------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    42 |
+| Unused register locations in slices containing registers |   101 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             105 |           35 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              88 |           32 |
+| Yes          | No                    | No                     |             300 |           76 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             214 |           80 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++-----------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+------------------+----------------+
+|                  Clock Signal                 |                                                                         Enable Signal                                                                         |                                                             Set/Reset Signal                                                             | Slice Load Count | Bel Load Count |
++-----------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+------------------+----------------+
+|  System_i/processing_system7_0/inst/FCLK_CLK0 |                                                                                                                                                               | System_i/axi_timer_0/U0/AXI4_LITE_I/I_SLAVE_ATTACHMENT/I_DECODER/TCSR0_GENERATE[23].TCSR0_FF_I_0                                         |                1 |              1 |
+|  System_i/processing_system7_0/inst/FCLK_CLK0 |                                                                                                                                                               | System_i/axi_timer_0/U0/AXI4_LITE_I/I_SLAVE_ATTACHMENT/I_DECODER/TCSR1_GENERATE[23].TCSR1_FF_I                                           |                1 |              1 |
+|  System_i/processing_system7_0/inst/FCLK_CLK0 | System_i/axi_interconnect_0/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bid_fifo_0/bresp_push                               |                                                                                                                                          |                1 |              2 |
+|  System_i/processing_system7_0/inst/FCLK_CLK0 |                                                                                                                                                               | System_i/axi_interconnect_0/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar_pipe/m_valid_i_reg_0                |                3 |              4 |
+|  System_i/processing_system7_0/inst/FCLK_CLK0 |                                                                                                                                                               | System_i/axi_interconnect_0/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/s_ready_i_reg_0                |                3 |              4 |
+|  System_i/processing_system7_0/inst/FCLK_CLK0 | System_i/axi_timer_0/U0/AXI4_LITE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i[4]_i_1_n_0                                                                               | System_i/axi_timer_0/U0/AXI4_LITE_I/I_SLAVE_ATTACHMENT/rst                                                                               |                2 |              4 |
+|  System_i/processing_system7_0/inst/FCLK_CLK0 |                                                                                                                                                               | System_i/rst_ps7_0_5M/U0/EXT_LPF/lpf_int                                                                                                 |                3 |              4 |
+|  System_i/processing_system7_0/inst/FCLK_CLK0 | System_i/axi_interconnect_0/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/axaddr_wrap_reg[0]                    | System_i/axi_interconnect_0/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/axlen_cnt_reg[7] |                2 |              4 |
+|  System_i/processing_system7_0/inst/FCLK_CLK0 | System_i/axi_timer_0/U0/AXI4_LITE_I/I_SLAVE_ATTACHMENT/I_DECODER/pair0_Select                                                                                 | System_i/axi_timer_0/U0/TC_CORE_I/GEN_SECOND_TIMER.COUNTER_1_I/COUNTER_I/SR[0]                                                           |                1 |              4 |
+|  System_i/processing_system7_0/inst/FCLK_CLK0 | System_i/axi_interconnect_0/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.ar_channel_0/ar_cmd_fsm_0/axlen_cnt_reg[4][0]                   | System_i/axi_interconnect_0/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.ar_channel_0/ar_cmd_fsm_0/axlen_cnt_reg[7] |                1 |              4 |
+|  System_i/processing_system7_0/inst/FCLK_CLK0 |                                                                                                                                                               | System_i/axi_timer_0/U0/TC_CORE_I/GEN_SECOND_TIMER.COUNTER_1_I/COUNTER_I/SR[0]                                                           |                2 |              5 |
+|  System_i/processing_system7_0/inst/FCLK_CLK0 |                                                                                                                                                               | System_i/axi_timer_0/U0/AXI4_LITE_I/I_SLAVE_ATTACHMENT/clear                                                                             |                2 |              6 |
+|  System_i/processing_system7_0/inst/FCLK_CLK0 | System_i/rst_ps7_0_5M/U0/SEQ/seq_cnt_en                                                                                                                       | System_i/rst_ps7_0_5M/U0/SEQ/SEQ_COUNTER/clear                                                                                           |                1 |              6 |
+|  System_i/processing_system7_0/inst/FCLK_CLK0 | System_i/axi_timer_0/U0/AXI4_LITE_I/I_SLAVE_ATTACHMENT/start2                                                                                                 | System_i/axi_timer_0/U0/AXI4_LITE_I/I_SLAVE_ATTACHMENT/I_DECODER/cs_ce_clr                                                               |                3 |              7 |
+|  System_i/processing_system7_0/inst/FCLK_CLK0 |                                                                                                                                                               | System_i/axi_timer_0/U0/AXI4_LITE_I/I_SLAVE_ATTACHMENT/rst                                                                               |                2 |              7 |
+|  System_i/processing_system7_0/inst/FCLK_CLK0 | System_i/axi_interconnect_0/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/mhandshake_r                                        | System_i/axi_interconnect_0/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bid_fifo_0/SR[0]               |                2 |              8 |
+|  System_i/processing_system7_0/inst/FCLK_CLK0 | System_i/axi_timer_0/U0/AXI4_LITE_I/I_SLAVE_ATTACHMENT/I_DECODER/bus2ip_wrce[0]                                                                               | System_i/axi_timer_0/U0/TC_CORE_I/GEN_SECOND_TIMER.COUNTER_1_I/COUNTER_I/SR[0]                                                           |                3 |              8 |
+|  System_i/processing_system7_0/inst/FCLK_CLK0 | System_i/axi_interconnect_0/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.ar_channel_0/ar_cmd_fsm_0/E[0]                                  |                                                                                                                                          |                3 |              8 |
+|  System_i/processing_system7_0/inst/FCLK_CLK0 | System_i/axi_interconnect_0/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.ar_channel_0/ar_cmd_fsm_0/axaddr_incr_reg[11]                   |                                                                                                                                          |                2 |              8 |
+|  System_i/processing_system7_0/inst/FCLK_CLK0 | System_i/axi_interconnect_0/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/axaddr_incr[0]_i_1_n_0 |                                                                                                                                          |                2 |              8 |
+|  System_i/processing_system7_0/inst/FCLK_CLK0 | System_i/axi_interconnect_0/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/E[0]                                  |                                                                                                                                          |                3 |              8 |
+|  System_i/processing_system7_0/inst/FCLK_CLK0 | System_i/axi_timer_0/U0/AXI4_LITE_I/I_SLAVE_ATTACHMENT/I_DECODER/bus2ip_wrce[1]                                                                               | System_i/axi_timer_0/U0/TC_CORE_I/GEN_SECOND_TIMER.COUNTER_1_I/COUNTER_I/SR[0]                                                           |                3 |              9 |
+|  System_i/processing_system7_0/inst/FCLK_CLK0 | System_i/axi_interconnect_0/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/r_push_r                                            |                                                                                                                                          |                4 |             13 |
+|  System_i/processing_system7_0/inst/FCLK_CLK0 | System_i/axi_interconnect_0/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/b_pipe/skid_buffer_reg[0]_0                                 |                                                                                                                                          |                2 |             14 |
+|  System_i/processing_system7_0/inst/FCLK_CLK0 | System_i/axi_interconnect_0/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/b_pipe/p_1_in                                               |                                                                                                                                          |                2 |             14 |
+|  System_i/processing_system7_0/inst/FCLK_CLK0 | System_i/axi_interconnect_0/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/b_push                                |                                                                                                                                          |                3 |             16 |
+|  System_i/processing_system7_0/inst/FCLK_CLK0 | System_i/axi_interconnect_0/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/axaddr_wrap_reg[0]                    |                                                                                                                                          |                7 |             17 |
+|  System_i/processing_system7_0/inst/FCLK_CLK0 | System_i/axi_interconnect_0/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.ar_channel_0/ar_cmd_fsm_0/axlen_cnt_reg[4][0]                   |                                                                                                                                          |                7 |             17 |
+|  System_i/processing_system7_0/inst/FCLK_CLK0 | System_i/axi_interconnect_0/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar_pipe/s_axi_arready                                       |                                                                                                                                          |                5 |             28 |
+|  System_i/processing_system7_0/inst/FCLK_CLK0 | System_i/axi_interconnect_0/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/s_axi_awready                                       |                                                                                                                                          |                8 |             28 |
+|  System_i/processing_system7_0/inst/FCLK_CLK0 | System_i/axi_interconnect_0/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/m_payload_i_reg[0][0]                 |                                                                                                                                          |                6 |             28 |
+|  System_i/processing_system7_0/inst/FCLK_CLK0 | System_i/axi_interconnect_0/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.ar_channel_0/ar_cmd_fsm_0/m_payload_i_reg[0]_1[0]               |                                                                                                                                          |                5 |             28 |
+|  System_i/processing_system7_0/inst/FCLK_CLK0 | System_i/axi_timer_0/U0/AXI4_LITE_I/I_SLAVE_ATTACHMENT/I_DECODER/bus2ip_wrce__0[0]                                                                            | System_i/axi_timer_0/U0/TC_CORE_I/GEN_SECOND_TIMER.COUNTER_1_I/COUNTER_I/SR[0]                                                           |               11 |             32 |
+|  System_i/processing_system7_0/inst/FCLK_CLK0 | System_i/axi_timer_0/U0/AXI4_LITE_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i[31]_i_1_n_0                                                                              | System_i/axi_timer_0/U0/AXI4_LITE_I/I_SLAVE_ATTACHMENT/rst                                                                               |               32 |             32 |
+|  System_i/processing_system7_0/inst/FCLK_CLK0 | System_i/axi_timer_0/U0/TC_CORE_I/TIMER_CONTROL_I/INPUT_DOUBLE_REGS3/E[0]                                                                                     | System_i/axi_timer_0/U0/TC_CORE_I/GEN_SECOND_TIMER.COUNTER_1_I/COUNTER_I/SR[0]                                                           |                4 |             32 |
+|  System_i/processing_system7_0/inst/FCLK_CLK0 | System_i/axi_timer_0/U0/TC_CORE_I/TIMER_CONTROL_I/INPUT_DOUBLE_REGS3/INFERRED_GEN.icount_out_reg[0][0]                                                        | System_i/axi_timer_0/U0/TC_CORE_I/GEN_SECOND_TIMER.COUNTER_1_I/COUNTER_I/SR[0]                                                           |                5 |             32 |
+|  System_i/processing_system7_0/inst/FCLK_CLK0 | System_i/axi_timer_0/U0/TC_CORE_I/TIMER_CONTROL_I/LOAD_REG_GEN[24].LOAD_REG_I                                                                                 | System_i/axi_timer_0/U0/TC_CORE_I/GEN_SECOND_TIMER.COUNTER_1_I/COUNTER_I/SR[0]                                                           |               10 |             32 |
+|  System_i/processing_system7_0/inst/FCLK_CLK0 | System_i/axi_interconnect_0/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/wr_en0                               |                                                                                                                                          |               10 |             34 |
+|  System_i/processing_system7_0/inst/FCLK_CLK0 | System_i/axi_interconnect_0/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/r_pipe/skid_buffer_reg[0]_0                                 |                                                                                                                                          |               14 |             47 |
+|  System_i/processing_system7_0/inst/FCLK_CLK0 | System_i/axi_interconnect_0/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/r_pipe/p_1_in                                               |                                                                                                                                          |               10 |             47 |
+|  System_i/processing_system7_0/inst/FCLK_CLK0 |                                                                                                                                                               | System_i/axi_interconnect_0/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/areset_d1                                     |               15 |             56 |
+|  System_i/processing_system7_0/inst/FCLK_CLK0 |                                                                                                                                                               |                                                                                                                                          |               36 |            106 |
++-----------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 1      |                     2 |
+| 2      |                     1 |
+| 4      |                     7 |
+| 5      |                     1 |
+| 6      |                     2 |
+| 7      |                     2 |
+| 8      |                     6 |
+| 9      |                     1 |
+| 13     |                     1 |
+| 14     |                     2 |
+| 16+    |                    17 |
++--------+-----------------------+
+
+

@@ -1,0 +1,255 @@
+/******************************************************************************
+*
+* Copyright (C) 2010 - 2014 Xilinx, Inc.  All rights reserved.
+*
+* Permission is hereby granted, free of charge, to any person obtaining a copy
+* of this software and associated documentation files (the "Software"), to deal
+* in the Software without restriction, including without limitation the rights
+* to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+* copies of the Software, and to permit persons to whom the Software is
+* furnished to do so, subject to the following conditions:
+*
+* The above copyright notice and this permission notice shall be included in
+* all copies or substantial portions of the Software.
+*
+* Use of the Software is limited solely to applications:
+* (a) running on a Xilinx device, or
+* (b) that interact with a Xilinx device through a bus or interconnect.
+*
+* THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+* IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+* FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+* XILINX  BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+* WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF
+* OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+* SOFTWARE.
+*
+* Except as contained in this notice, the name of the Xilinx shall not be used
+* in advertising or otherwise to promote the sale, use or other dealings in
+* this Software without prior written authorization from Xilinx.
+*
+******************************************************************************/
+/****************************************************************************/
+/**
+* @file     xuartps_low_echo_example.c
+*
+* Basic CV7 test on the SensTel2 pre-outdoor tests prototype.
+* UART 0 is used as the user serial console and UART1 is the CV7
+* Rx interface. 4800, 8 data, no parity, 1 stop
+*
+* @note
+* The test hangs if communication channel from the user terminal to the device
+* is broken.
+*
+* MODIFICATION HISTORY:
+* <pre>
+* Ver   Who    Date     Changes
+* ----- ------ -------- -----------------------------------------------------
+* 1.00a drg/jz 01/13/10 First release
+* 3.4   ms     01/23/17 Added xil_printf statement in main function to
+*                       ensure that "Successfully ran" and "Failed" strings
+*                       are available in all examples. This is a fix for
+*                       CR-965028.
+* </pre>
+****************************************************************************/
+
+/***************************** Include Files *******************************/
+
+#include "xparameters.h"
+#include "xstatus.h"
+#include "xil_types.h"
+#include "xil_assert.h"
+#include "xuartps_hw.h"
+#include "xil_printf.h"
+
+/************************** Constant Definitions ***************************/
+
+/*
+ * CV7 input uart interface
+ */
+#define UART_BASEADDR		XPAR_XUARTPS_1_BASEADDR
+#define UART_CLOCK_HZ		XPAR_XUARTPS_1_CLOCK_HZ
+/*
+ * The following constant controls the length of the buffers to be sent
+ * and received with the device. This constant must be 32 bytes or less so the
+ * entire buffer will fit into the TX and RX FIFOs of the device.
+ */
+#define TEST_BUFFER_SIZE	16
+
+#define RXFIFO_TRIG_LVL		28		// Only valuable part of CV7-OEM payload, at beginning
+
+#define CHAR_ESC		0x1b	/* 'ESC' character is used as terminator */
+
+/**************************** Type Definitions *****************************/
+
+/***************** Macros (Inline Functions) Definitions *******************/
+
+/************************** Function Prototypes ****************************/
+
+int UartPsEchoExample(u32 Uart0BaseAddress, u32 Uart1BaseAddress);
+void InitUartModules(u32 Uart0BaseAddress,u32 Uart1BaseAddress);
+
+
+/************************** Variable Definitions ***************************/
+
+/*
+ * The following buffers are used in this example to send and receive data
+ * with the UART.
+ */
+u8 SendBuffer[TEST_BUFFER_SIZE];	/* Buffer for Transmitting Data */
+
+
+/***************************************************************************/
+/**
+*
+* Main function to call the Uart Echo example.
+*
+* @param	None
+*
+* @return	XST_SUCCESS if successful, XST_FAILURE if unsuccessful
+*
+* @note		None
+*
+****************************************************************************/
+int main(void)
+{
+	int Status;
+
+	InitUartModules(XPAR_PS7_UART_1_BASEADDR, XPAR_PS7_UART_0_BASEADDR);
+	/*
+	 * Run the Uart Echo example , specify the Base Address that is
+	 * generated in xparameters.h
+	 */
+	Status = UartPsEchoExample(XPAR_PS7_UART_1_BASEADDR, XPAR_PS7_UART_0_BASEADDR);
+	if (Status != XST_SUCCESS) {
+		xil_printf("Uartps low echo Example Failed\r\n");
+		return XST_FAILURE;
+	}
+
+	xil_printf("Successfully ran Uartps low echo Example\r\n");
+	return XST_SUCCESS;
+}
+
+
+/**************************************************************************/
+/**
+*
+* This function does a minimal test on the UART device using the hardware
+* interface.
+*
+* @param	UartBaseAddress is the base address of the device
+*
+* @return	XST_SUCCESS if successful, XST_FAILURE if unsuccessful
+*
+* @note		None.
+*
+**************************************************************************/
+int UartPsEchoExample(u32 Uart0BaseAddress,u32 Uart1BaseAddress)
+{
+	int Index;
+	u32 Running;
+	u8 RecvChar;
+
+	/*
+	 * Initialize the send buffer bytes with a pattern to send and the
+	 * the receive buffer bytes to zero
+	 */
+//	for (Index = 0; Index < TEST_BUFFER_SIZE; Index++) {
+//		SendBuffer[Index] = Index + '0';
+//	}
+//
+//	/* Send the entire transmit buffer. */
+//	for (Index = 0; Index < TEST_BUFFER_SIZE; Index++) {
+//		/* Wait until there is space in TX FIFO */
+//		 while (XUartPs_IsTransmitFull(Uart1BaseAddress));
+//
+//		/* Write the byte into the TX FIFO */
+//		XUartPs_WriteReg(Uart1BaseAddress, XUARTPS_FIFO_OFFSET,
+//				  SendBuffer[Index]);
+//	}
+
+	Running = TRUE;
+	while (Running) {
+		 /* Wait until there is data */
+		while (!XUartPs_IsReceiveData(Uart0BaseAddress)); // Works for 1 as Rx/Tx test
+
+		RecvChar = XUartPs_ReadReg(Uart0BaseAddress,
+					    XUARTPS_FIFO_OFFSET);
+
+		/* Change the capitalization */
+//		if (('a' <= RecvChar) && ('z' >= RecvChar)) {
+//			/* Convert the Capital letter to a small. */
+//			RecvChar = RecvChar - 'a' + 'A';
+//		}
+//		else if (('A' <= RecvChar) && ('Z' >= RecvChar)) {
+//			/* Convert the small letter to a Capital. */
+//			RecvChar = RecvChar - 'A' + 'a';
+//		}
+//		else if (CHAR_ESC == RecvChar) {
+//			Running = FALSE;
+//		}
+
+		/* Echo the character back */
+		XUartPs_WriteReg(Uart1BaseAddress,  XUARTPS_FIFO_OFFSET,
+				  RecvChar);
+//		XUartPs_WriteReg(Uart0BaseAddress,  XUARTPS_FIFO_OFFSET,
+//						  RecvChar);
+	}
+
+	return XST_SUCCESS;
+}
+
+void InitUartModules(u32 Uart0BaseAddress,u32 Uart1BaseAddress)
+{
+	u32 CntrlRegister0, CntrlRegister1, BaudModeRegister, BaudGeneratorRegister, BaudRDividerRegister,	\
+		RxTrigLvl0;
+
+	// UART 0 init: 8bits, no parity, 1 stop bit, div/8 uart ref clk sel (but the latter might not be right).
+	// Set BR in Vivado at 4800. This is for the CV7 Rx
+	CntrlRegister0 = XUartPs_ReadReg(Uart0BaseAddress, XUARTPS_CR_OFFSET);
+	BaudModeRegister = XUartPs_ReadReg(Uart0BaseAddress, XUARTPS_MR_OFFSET);
+	XUartPs_WriteReg(Uart0BaseAddress, XUARTPS_MR_OFFSET,
+//			(BaudModeRegister & ~XUARTPS_MR_PARITY_MASK) | XUARTPS_MR_PARITY_NONE | XUARTPS_MR_CLKSEL);
+	(BaudModeRegister & ~XUARTPS_MR_PARITY_MASK) | XUARTPS_MR_PARITY_NONE);
+	// Correct settings validation for UART 0
+	BaudModeRegister = XUartPs_ReadReg(Uart0BaseAddress, XUARTPS_MR_OFFSET);
+	BaudGeneratorRegister = XUartPs_ReadReg(Uart0BaseAddress, XUARTPS_BAUDGEN_OFFSET);
+	BaudRDividerRegister = XUartPs_ReadReg(Uart0BaseAddress, XUARTPS_BAUDDIV_OFFSET);
+	RxTrigLvl0 = XUartPs_ReadReg(Uart0BaseAddress, XUARTPS_RXWM_OFFSET);	// Reset value of 0x20
+
+	// UART 1 init: 8bits, no parity, 1 stop bit, div/8 uart ref clk sel (but the latter might not be right).
+	// Set BR in Vivado at 9600. This is for the terminal data dump.
+	CntrlRegister1 = XUartPs_ReadReg(Uart1BaseAddress, XUARTPS_CR_OFFSET);
+	BaudModeRegister = XUartPs_ReadReg(Uart1BaseAddress, XUARTPS_MR_OFFSET);
+	XUartPs_WriteReg(Uart1BaseAddress, XUARTPS_MR_OFFSET,
+//				(BaudModeRegister & ~XUARTPS_MR_PARITY_MASK) | XUARTPS_MR_PARITY_NONE | XUARTPS_MR_CLKSEL);
+	(BaudModeRegister & ~XUARTPS_MR_PARITY_MASK) | XUARTPS_MR_PARITY_NONE);
+	BaudModeRegister = XUartPs_ReadReg(Uart1BaseAddress, XUARTPS_MR_OFFSET);
+	// The following clock settings are taken care of in Vivado, PS properties, PS-PL configuraiton, general.
+//	BaudGeneratorRegister = XUartPs_ReadReg(UartBaseAddress, XUARTPS_BAUDGEN_OFFSET);
+//	XUartPs_WriteReg(UartBaseAddress, XUARTPS_BAUDGEN_OFFSET,
+//			( (BaudGeneratorRegister & ~XUARTPS_BAUDGEN_MASK) | 0x00000082U));
+//	BaudGeneratorRegister = XUartPs_ReadReg(UartBaseAddress, XUARTPS_BAUDGEN_OFFSET);
+//	BaudRDividerRegister = XUartPs_ReadReg(UartBaseAddress, XUARTPS_BAUDDIV_OFFSET);
+//	XUartPs_WriteReg(UartBaseAddress, XUARTPS_BAUDDIV_OFFSET,
+//			( (BaudRDividerRegister & ~XUARTPS_BAUDDIV_MASK) | 0x00000009U));
+//	BaudRDividerRegister = XUartPs_ReadReg(UartBaseAddress, XUARTPS_BAUDDIV_OFFSET);
+
+	/* Enable TX and RX for the device */
+	XUartPs_WriteReg(Uart0BaseAddress, XUARTPS_CR_OFFSET,
+			  ((CntrlRegister0 & ~XUARTPS_CR_EN_DIS_MASK) |
+//			   XUARTPS_CR_TX_EN | XUARTPS_CR_RX_EN));
+	   	   	   XUARTPS_CR_RX_EN));
+
+	/*
+	 * Cv7, a part of its output thats only really valuable, is 28 bits long:
+	 * $IIMWV,225.0,R,000.0,N,A *38
+	 */
+	XUartPs_WriteReg(Uart0BaseAddress, XUARTPS_RXWM_OFFSET, RXFIFO_TRIG_LVL);
+
+	XUartPs_WriteReg(Uart1BaseAddress, XUARTPS_CR_OFFSET,
+				  ((CntrlRegister1 & ~XUARTPS_CR_EN_DIS_MASK) |
+//				   XUARTPS_CR_TX_EN | XUARTPS_CR_RX_EN));
+	   	   	   	   XUARTPS_CR_TX_EN));
+
+}

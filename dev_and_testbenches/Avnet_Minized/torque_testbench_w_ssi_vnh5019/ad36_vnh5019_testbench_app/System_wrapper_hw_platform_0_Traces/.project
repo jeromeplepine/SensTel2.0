@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>System_wrapper_hw_platform_0_Traces</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.linuxtools.tmf.project.nature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>Traces/Run_Mar-26_23-41/PS_Trace_Mar-26_23-41/PS_Trace_Mar-26_23-41_</name>
+			<type>1</type>
+			<location>C:/Users/Chinook-ELE/ZynqWorkspace/torque_testbench_w_ssi_vnh5019/ad36_vnh5019_testbench_app/System_wrapper_hw_platform_0_Traces/Traces/.bookmarks</location>
+		</link>
+	</linkedResources>
+</projectDescription>

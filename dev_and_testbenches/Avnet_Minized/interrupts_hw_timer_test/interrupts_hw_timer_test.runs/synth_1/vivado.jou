@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Wed Feb 28 23:31:24 2018
+# Process ID: 7504
+# Current directory: C:/Users/Chinook-ELE/ZynqWorkspace/interrupts_hw_timer_test/interrupts_hw_timer_test.runs/synth_1
+# Command line: vivado.exe -log System_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source System_wrapper.tcl
+# Log file: C:/Users/Chinook-ELE/ZynqWorkspace/interrupts_hw_timer_test/interrupts_hw_timer_test.runs/synth_1/System_wrapper.vds
+# Journal file: C:/Users/Chinook-ELE/ZynqWorkspace/interrupts_hw_timer_test/interrupts_hw_timer_test.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source System_wrapper.tcl -notrace

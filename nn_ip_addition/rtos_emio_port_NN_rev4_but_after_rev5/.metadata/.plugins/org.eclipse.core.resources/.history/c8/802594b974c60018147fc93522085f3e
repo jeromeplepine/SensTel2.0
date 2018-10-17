@@ -1,0 +1,107 @@
+/*
+ * setup.c
+ *
+ *  Created on: May 27, 2018
+ *      Author: Jerome Pare-Lepine
+ */
+
+//==============================================================================
+// INCLUDES
+//==============================================================================
+#include "setup.h"
+#include "interrupts.h"
+#include "inputcapture.h"
+#include "i2c.h"
+
+
+//==============================================================================
+// PUBLIC VARIABLES
+//==============================================================================
+static XCanPs Can0Inst;
+static XUartPs Uart0Inst, Uart1Inst;
+static XTmrCtr TmrCtr0Inst, TmrCtr1Inst;
+static XIicPs Iic0Inst, Iic1Inst;
+static XGpioPs EmioBankInst;
+static XScuTimer PrvCoreTimer;
+static XSpiPs Spi0Inst;
+
+extern XScuGic xInterruptController;
+
+
+//==============================================================================
+// FUNCTION DEFINITIONS
+//==============================================================================
+void CreatePeriphInstances(sPeriphInstances_t *pinst)
+/*
+* \brief       Register a new bias, or zero value, into a sensor profile.
+*              This value is taken into account upon sensor data conversion.
+*
+* \param[in]   Sen         - Enum value of the sensor for which the zero is to
+*                            be registered.
+*
+* \returns     0 if no errors happened, 1 if something went wrong.
+*/
+{
+	pinst->CanInst = &Can0Inst;
+	pinst->Cv7UartInst = &Uart0Inst;
+	pinst->SerialUartInst = &Uart1Inst;
+	pinst->TmrCtr0Inst = &TmrCtr0Inst;
+	pinst->TmrCtr1Inst = &TmrCtr1Inst;
+	pinst->Iic0Inst = &Iic0Inst;
+	pinst->Iic1Inst = &Iic1Inst;
+	pinst->EmioBankPins = &EmioBankInst;
+	pinst->CoreTimer = &PrvCoreTimer;
+	pinst->SpiInst = &Spi0Inst;
+}
+
+//TODO: Implement setups for the second TmrCtr IP instance
+void InitPeripherals(sPeriphInstances_t *pinst)
+/*
+* \brief       Register a new bias, or zero value, into a sensor profile.
+*              This value is taken into account upon sensor data conversion.
+*
+* \param[in]   Sen         - Enum value of the sensor for which the zero is to
+*                            be registered.
+*
+* \returns     0 if no errors happened, 1 if something went wrong.
+*/
+{
+	CreatePeriphInstances(pinst);
+	InitHandlersArray(&ExceptionHandlers);
+
+	InitCan(pinst->CanInst, CAN0_ID);
+	InitTmrCtrs(pinst->TmrCtr0Inst);
+	InitUartPeripherals(pinst->SerialUartInst, pinst->Cv7UartInst);
+	InitI2CPeripherals(pinst->Iic1Inst, I2C_ADDRESS);
+	initSSIpins(pinst->EmioBankPins);
+	InitScuTimer(pinst->CoreTimer, XPAR_XSCUTIMER_0_DEVICE_ID);
+	InitLoRaRadio(pinst->EmioBankPins, pinst->SpiInst);
+
+	InitCanInterrupts(pinst->CanInst, CAN0_INTR_ID);
+	InitTmrCtrInterrupts(pinst->TmrCtr0Inst);
+	InitUartInterrupts(pinst->Cv7UartInst, UART1_INTR_ID);
+//	InitScuTimerInterrupts(pinst->CoreTimer, (Xil_ExceptionHandler)PrivateTimerHandler, XPAR_SCUTIMER_INTR);
+}
+
+void StartPeripheralInterrupts(sPeriphInstances_t *pinst)
+/*
+* \brief       Register a new bias, or zero value, into a sensor profile.
+*              This value is taken into account upon sensor data conversion.
+*
+* \param[in]   Sen         - Enum value of the sensor for which the zero is to
+*                            be registered.
+*
+* \returns     0 if no errors happened, 1 if something went wrong.
+*/
+{
+	SetupInterruptSystem(&xInterruptController, &ExceptionHandlers);	//IntC instance is from Freertos port
+	StartCanInterrupts(pinst->CanInst);
+	StartUartInterrupts(pinst->Cv7UartInst);
+	StartScuTimerInterrupts(pinst->CoreTimer);
+	StartScuGicInterrupts();
+	/* The IC tasks control the tmr ctr interrupts,
+	 * no need to start them here */
+
+}
+
+

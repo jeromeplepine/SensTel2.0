@@ -1,0 +1,16 @@
+---
+:source:
+  :path: test
+  :file: test_ad36_vnh5019_testbench_app.c
+:successes: []
+:failures:
+- :test: test_test
+  :line: 13
+  :message: Test function validation
+:ignores: []
+:counts:
+  :total: 1
+  :passed: 0
+  :failed: 1
+  :ignored: 0
+:stdout: []

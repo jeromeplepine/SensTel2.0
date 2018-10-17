@@ -1,0 +1,36 @@
+/*
+ * uart.h
+ *
+ *  Created on: May 25, 2018
+ *      Author: Jerome Pare-Lepine
+ */
+
+#ifndef SRC_UART_H_
+#define SRC_UART_H_
+
+#include "xuartps.h"
+#include "xuartps_hw.h"
+
+#define UART1_INTR_ID	XPAR_XUARTPS_1_INTR
+#define UART_FIFO_THRESHOLD		32
+#define UART_DECODE_THRESH		(3*UART_FIFO_THRESHOLD)
+#define UART_TIMEOUT_THRESHOLD	6
+#define UART_CHAR_BUFFER_SIZE	256
+
+/*
+ * @brief	Initializes both PS UART peripherals. One of the peripherals is going through the MIO
+ * 			and don't need any setup but we need its XUartPs instance to send it data to output. The
+ * 			other is used as the Cv7 wind sensor's input interface.
+ * @param	None
+ * @return	None
+ * @note	Zynqs typically have only two UART hardware peripherals but more can be instantiated
+ * 			in the PL fabric.
+ * 			This is for PS peripherals and not for UART ip cores instantiated in the PL, if any.
+ */
+void InitUartPeripherals(XUartPs *Uart0Inst, XUartPs *Uart1Inst);
+void InitUartInterrupts(XUartPs *InstancePtr, u32 DevIntId);
+void StartUartInterrupts(XUartPs *InstancePtr);
+
+
+
+#endif /* SRC_UART_H_ */

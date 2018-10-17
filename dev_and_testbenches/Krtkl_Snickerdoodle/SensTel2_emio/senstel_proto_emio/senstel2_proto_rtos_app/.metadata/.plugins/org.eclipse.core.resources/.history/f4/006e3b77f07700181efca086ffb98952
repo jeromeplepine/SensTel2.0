@@ -1,0 +1,48 @@
+/*
+ * timer.h
+ *
+ *  Created on: Jun 24, 2018
+ *      Author: Jerome Pare-Lepine
+ */
+
+#ifndef SRC_TIMER_H_
+#define SRC_TIMER_H_
+
+
+//==============================================================================
+// INCLUDES
+//==============================================================================
+#include "xil_types.h"
+#include "xil_exception.h"
+#include "xscutimer.h"
+#include "xparameters.h"
+
+
+//==============================================================================
+// DEFINITIONS
+//==============================================================================
+#define SCU_TMR_RELOAD_VAL	0xFFFFFFFF
+
+/*
+ * As per the Cortex-A9 core specs, it private timer is clocked
+ * at half the CPU frequency.
+ */
+#define	SCU_TIMER_FREQ	XPAR_CPU_CORTEXA9_0_CPU_CLK_FREQ_HZ >> 1
+
+
+//==============================================================================
+// FUNCTION PROTOTYPES
+//==============================================================================
+u32 ulCoreTimerTicks;
+
+
+//==============================================================================
+// FUNCTION PROTOTYPES
+//==============================================================================
+u32 GetScuCounterValue(XScuTimer *tmrinst, u32 prevtmrperiod);
+void InitScuTimer(XScuTimer *tmrinst, u32 devid);
+void InitScuTimerInterrupts(XScuTimer *tmrinst, Xil_ExceptionHandler handler, u16 DevIntId);
+void StartScuTimerInterrupts(XScuTimer *tmrinst);
+
+
+#endif /* SRC_TIMER_H_ */

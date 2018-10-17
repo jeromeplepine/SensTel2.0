@@ -1,0 +1,14 @@
+13:04:21 INFO  : Registering command handlers for SDK TCF services
+13:04:22 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\Chinook-ELE\ZynqWorkspace\freertos_test\freertos_app\temp_xsdb_launch_script.tcl
+13:04:25 INFO  : XSCT server has started successfully.
+13:04:31 INFO  : Successfully done setting XSCT server connection channel  
+13:04:31 INFO  : Processing command line option -hwspec C:/Users/Chinook-ELE/ZynqWorkspace/freertos_test/System_wrapper.hdf.
+13:04:31 INFO  : Successfully done setting SDK workspace  
+11:30:07 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\Chinook-ELE\ZynqWorkspace\freertos_test\freertos_app\temp_xsdb_launch_script.tcl
+11:30:09 INFO  : XSCT server has started successfully.
+11:30:12 INFO  : Successfully done setting XSCT server connection channel  
+11:30:12 INFO  : Successfully done setting SDK workspace  
+11:30:16 INFO  : Registering command handlers for SDK TCF services
+11:30:22 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:30:22 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS3 210299A57A7D" && level==0} -index 1' command is executed.
+11:30:22 ERROR : bitstream is not compatible with the target

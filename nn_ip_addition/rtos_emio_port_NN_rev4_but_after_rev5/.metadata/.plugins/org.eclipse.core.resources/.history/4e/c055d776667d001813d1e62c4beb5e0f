@@ -1,0 +1,381 @@
+/*
+ * senstel_acq.c
+ *
+ *  Created on: May 30, 2018
+ *      Author: Jerome Pare-Lepine
+ */
+
+//==============================================================================
+// INCLUDES
+//==============================================================================
+#include "senstel_acq_config.h"
+#include <stdio.h>
+
+
+//==============================================================================
+// PRIVATE TYPE DEFINITIONS
+//==============================================================================
+typedef sSensorDataBuffer_t aSensorDataBuffers_t[COMM_DEST_TOTAL];
+
+sSensorData_t WindSpeedProf = CV7_WSPD_PROFILE,
+					WindDirProf = CV7_WDIR_PROFILE,
+					PitchAngleProf = PITCH_ABSENC_PROFILE,
+					GearAngleProf = GEAR_ABSENC_PROFILE,
+					TurbineRPMProf = TURB_INCENC_PROFILE,
+					WheelSpeedProf = AXLE_INCENC_PROFILE,
+					TurbinePowerProf = TURB_TORQUE_PROFILE,
+					TurbineThrustProf = THRUST_LOAD_PROFILE;
+
+static sSensorData_t SensProfTable[SENSOR_TOTAL];
+
+
+//==============================================================================
+// PRIVATE FUNCTION PROTOTYPES
+//==============================================================================
+float fKnotsToMperSec(float f);
+float ICIntervalToTurbineSpeed(u32 ul);
+float ICIntervalToWheelSpeed(u32 ul);
+float AbsEnc12ToPitchFloatAngle(u32 ul);
+float VToTorque( u32 ul );
+float VToThrust( u32 ul );
+u32	fToul(float f, u32 decimals);
+
+
+//==============================================================================
+// PRIVATE VARIABLES
+//==============================================================================
+static aSensorDataBuffers_t WindSpeedBuffers,
+							WindDirBuffers,
+							PitchAngleBuffers,
+							GearAngleBuffers,
+							TurbineRPMBuffers,
+							WheelSpeedBuffers,
+							TurbinePowerBuffers,
+							TurbineThrustBuffers;
+
+static aSensorDataBuffers_t *BufferArray[SENSOR_TOTAL] = {
+							&WindSpeedBuffers,
+							&WindDirBuffers,
+							&PitchAngleBuffers,
+							&GearAngleBuffers,
+							&TurbineRPMBuffers,
+							&WheelSpeedBuffers,
+							&TurbinePowerBuffers,
+							&TurbineThrustBuffers
+};
+
+
+//==============================================================================
+// FUNCTION DEFINITIONS
+//==============================================================================
+void InitSensorProfilesArray( void ){
+	SensProfTable[Cv7_Wspd] = WindSpeedProf;
+	SensProfTable[Cv7_Wdir] = WindDirProf;
+	SensProfTable[PitchAbsEnc] = PitchAngleProf;
+	SensProfTable[GearAbsEnc] = GearAngleProf;
+	SensProfTable[TurbineIncEnc] = TurbineRPMProf;
+	SensProfTable[AxleIncEnc] = WheelSpeedProf;
+	SensProfTable[TurbineTorque] = TurbinePowerProf;
+	SensProfTable[LoadCell] = TurbineThrustProf;
+}
+
+void InitSensorBuffersTable( void ){
+	eSensor_t Sens;
+	eDestinationType_t Dest;
+	aSensorDataBuffers_t *pBufs;
+	for(Sens = Cv7_Wspd; Sens < SENSOR_TOTAL; Sens++){
+		pBufs = BufferArray[Sens];
+		for(Dest = CanType; Dest < COMM_DEST_TOTAL; Dest++){
+			static sSensorDataBuffer_t destBuf = {0};
+			(*pBufs)[Dest] = destBuf;
+		}
+	}
+}
+
+u8 GetSensorTransmitData(eXmitCmd_t Cmd, eSensor_t Sensor, sXmitData2Dest_t *Data)
+{
+	static u8 NumReq = 0;
+	aSensorDataBuffers_t *sensorxmitbufs = BufferArray[Sensor];
+	static sSensorData_t sSens;
+
+	NumReq = 0;	/* Reset the request counter */
+	sSens.CanData = 0;
+	sSens.ComputeAvg = 0;
+	sSens.Data = 0;
+	sSens.Profile = 0;
+	sSens.Sensor = 0;
+	sSens.Sid = 0;
+
+	UpdateTaskHighWaterMark(&oTHWM, NULL);
+	/* Before attempting to extract data from a sensor's buffer, validate that the
+	 * requested sensor actually exists in the table  */
+	if (GetSensorProfile(Sensor, &sSens)){
+		if(Cmd & CanXmit){
+			(Data[NumReq]).eDataType = CanType;
+			Data[NumReq].sSensProfile = &sSens;
+			//TODO: Check if the buffer needs to be cleared; might be wiser to skip that bufr
+			//TODO:Move part of the swwitch case at the end
+			ConvertSensorData(sSens.Sensor, &(*sensorxmitbufs)[CanType].ulBuffer);
+			(Data[NumReq]).sSensProfile->Data = (*sensorxmitbufs)[CanType].ulBuffer;
+			(*sensorxmitbufs)[CanType].usBufferFlags |= SENSDAT_BUF_CLR;
+			NumReq++;
+		}
+		if(Cmd & SdWrite){
+			(Data[NumReq]).eDataType = SdType;
+			Data[NumReq].sSensProfile = &sSens;
+			(Data[NumReq]).sSensProfile->Data = (*sensorxmitbufs)[SdType].ulBuffer;
+			(*sensorxmitbufs)[SdType].usBufferFlags |= SENSDAT_BUF_CLR;
+			NumReq++;
+		}
+		if(Cmd & NNUpdate){
+			(Data[NumReq]).eDataType = NNType;
+			Data[NumReq].sSensProfile = &sSens;
+			ConvertSensorDataForNN(sSens.Sensor, &(*sensorxmitbufs)[CanType].ulBuffer);
+			(Data[NumReq]).sSensProfile->Data = (*sensorxmitbufs)[NNType].ulBuffer;
+			(*sensorxmitbufs)[NNType].usBufferFlags |= SENSDAT_BUF_CLR;
+			NumReq++;
+		}
+		if(Cmd & LoRaXmit){
+			(Data[NumReq]).eDataType = LoRaType;
+			Data[NumReq].sSensProfile = &sSens;
+			(Data[NumReq]).sSensProfile->Data = (*sensorxmitbufs)[LoRaType].ulBuffer;
+			(*sensorxmitbufs)[LoRaType].usBufferFlags |= SENSDAT_BUF_CLR;
+			NumReq++;
+		}
+		if(Cmd & SerialXmit){
+			(Data[NumReq]).eDataType = SerialType;
+			Data[NumReq].sSensProfile = &sSens;
+			(Data[NumReq]).sSensProfile->Data = (*sensorxmitbufs)[SerialType].ulBuffer;
+			(*sensorxmitbufs)[SerialType].usBufferFlags |= SENSDAT_BUF_CLR;
+			NumReq++;
+		}
+		UpdateTaskHighWaterMark(&oTHWM, NULL);
+
+		return NumReq;
+	}
+
+	else return 0;
+}
+
+void UpdateSensorBuffers(sSensorData_t *NewData)
+{
+	static eDestinationType_t type;
+	aSensorDataBuffers_t *sensorxmitbufs = BufferArray[NewData->Sensor];
+
+#ifdef DEBUG_DATA_PATH_PRINTS
+			xil_printf("USB: Sensor->%d, data->%d\n", NewData->Sensor, NewData->Data);
+#endif
+
+	for(type = CanType; type < COMM_DEST_TOTAL; type++){
+		u32 tmp = (*sensorxmitbufs)[type].usBufferFlags & SENSDAT_BUF_CLR;
+		tmp = !(NewData->ComputeAvg);
+		tmp = (*sensorxmitbufs)[type].usDataCntr == 0;
+		if( ( (*sensorxmitbufs)[type].usBufferFlags & SENSDAT_BUF_CLR) |
+				!(NewData->ComputeAvg) | ( (*sensorxmitbufs)[type].usDataCntr == 0) ){
+			(*sensorxmitbufs)[type].ulBuffer = NewData->Data;
+			(*sensorxmitbufs)[type].usBufferFlags &= ~(SENSDAT_BUF_CLR);
+			(*sensorxmitbufs)[type].usDataCntr = 1;
+		}
+		else{
+			u32 tmp = ( (*sensorxmitbufs)[type].ulBuffer + NewData->Data ) >> 1;
+			(*sensorxmitbufs)[type].ulBuffer = tmp;
+			if((*sensorxmitbufs)[type].usDataCntr == SENSDAT_BUF_OVRFLW_THRESH){
+				(*sensorxmitbufs)[type].usBufferFlags &= SENSDAT_BUF_OVRFLW;
+			}
+			(*sensorxmitbufs)[type].usDataCntr++;
+#ifdef DEBUG_DATA_PATH_PRINTS
+			xil_printf("data cnt: %d\n", (*sensorxmitbufs)[type].usDataCntr);
+#endif
+		}
+	}
+}
+
+u32 GetSensorProfile(eSensor_t Sens, sSensorData_t *sDat)
+{
+	if(SensProfTable[Sens].Sensor == Sens){
+		sDat->CanData = SensProfTable[Sens].CanData;
+		sDat->ComputeAvg = SensProfTable[Sens].ComputeAvg;
+		sDat->Data = SensProfTable[Sens].Data;
+		sDat->Profile = SensProfTable[Sens].Profile;
+		sDat->Sensor = SensProfTable[Sens].Sensor;
+		sDat->Sid = SensProfTable[Sens].Sid;
+		return 1;
+	}
+	else{
+		return 0;
+	}
+}
+
+float ConvertSensorData(eSensor_t Sen, void *Input)
+{
+	static u32 ultmp = 0;
+	static float ftmp = 0;
+	if( *(u32 *)Input == 0) return *(float *)Input;
+
+	ultmp = 0, ftmp = 0;
+
+	switch(Sen){
+		case Cv7_Wspd:
+			ftmp = fKnotsToMperSec( *(float *)Input );
+			break;
+		case Cv7_Wdir:
+			ftmp = *(float *)Input;
+			break;
+		case PitchAbsEnc:
+			ftmp = AbsEnc12ToPitchFloatAngle( *(u32 *)Input );
+			break;
+		case GearAbsEnc:
+			ftmp = AbsEnc12ToPitchFloatAngle( *(u32 *)Input );
+			break;
+		case TurbineIncEnc:
+			ftmp = ICIntervalToTurbineSpeed( *(u32 *)Input );
+			break;
+		case AxleIncEnc:
+			ftmp = ICIntervalToWheelSpeed( *(u32 *)Input );
+			break;
+		case TurbineTorque:
+			ftmp = VToTorque( *(u32 *)Input );
+			break;
+		case LoadCell:
+			ftmp = VToThrust( *(u32 *)Input );
+			break;
+	}
+
+	return ftmp;
+}
+
+u32 ConvertSensorDataForNN(eSensor_t Sen, void *Input)
+{
+	static u32 ultmp = 0;
+	static float ftmp = 0, wspddum = 0;
+//	if(Input == 0) return Input;
+
+	ultmp = 0, ftmp = 0;
+
+	/* The NN IP core only accepts unsigned long integers */
+	switch(Sen){
+		case Cv7_Wspd:
+#ifdef	WSPD_DUMMY_VALUE
+			wspddum = WSPD_DUMMY_VALUE;
+			ftmp = fKnotsToMperSec( *( (float *)&wspddum ) );
+#else
+			ftmp = fKnotsToMperSec( *( (float *)Input ) );
+#endif
+			ultmp = fToul( (ftmp + 0.5) , 0);
+			break;
+		case PitchAbsEnc:
+			ftmp = AbsEnc12ToPitchFloatAngle( *( (float *)Input ) );
+			ultmp = fToul( ( (8 * ftmp) + 0.5), 2);
+			break;
+		case TurbineIncEnc:
+			ftmp = ICIntervalToTurbineSpeed( *( (u32 *)Input ) );
+			ultmp = fToul( (ftmp + 0.5) , 0);
+			break;
+		default:
+			break;
+
+	}
+	return ultmp;
+
+}
+
+void InitAppProfile(sAppTaskProfiles_t *AppProfiles)
+{
+	AppProfiles->idx = 0;
+}
+
+u8 AddTaskProfile(sAppTaskProfiles_t *AppProfiles, char *TaskId, u8 charcount)
+{
+	sTaskProfile_t *tprof = &AppProfiles->TaskArray[AppProfiles->idx];
+	u8 prevTaskIdx = AppProfiles->idx;
+
+	tprof->AvgLooptime = 0;
+	tprof->LastDelta = 0;
+	tprof->LoopCount = 0;
+	tprof->MaxDelta = 0;
+	tprof->MinDelta = 0;
+
+	strncpy(tprof->TaskId, TaskId, charcount);
+
+	AppProfiles->idx++;
+
+	return prevTaskIdx;
+}
+
+
+void UpdateTaskProfile(sAppTaskProfiles_t *AppProfiles, u8 TaskIdx, u32 NewTimeDelta)
+{
+	u32 tmp = 0;
+	sTaskProfile_t *tprof = &AppProfiles->TaskArray[TaskIdx];
+
+	if(tprof->LoopCount == 0){
+		tprof->AvgLooptime = NewTimeDelta;
+		tprof->MinDelta = NewTimeDelta;
+		tprof->MaxDelta = NewTimeDelta;
+	}
+	else{
+		tmp = (tprof->AvgLooptime + NewTimeDelta) >> 1;
+		tprof->AvgLooptime = tmp;
+	}
+
+	if(tprof->LoopCount < 0xFFFFFFFF) tprof->LoopCount++;
+	else tprof->LoopCount = 0;
+
+	tprof->LastDelta = NewTimeDelta;
+
+	if(NewTimeDelta > tprof->MaxDelta) tprof->MaxDelta = NewTimeDelta;
+	else if( (NewTimeDelta > 0) || (NewTimeDelta < tprof->MinDelta) ) tprof->MinDelta = NewTimeDelta;
+
+}
+
+void UpdateTaskHighWaterMark( u32 *oHWM, TaskHandle_t taskHandle )
+{
+//	*oHWM = uxTaskGetStackHighWaterMark( NULL );
+}
+
+inline float fKnotsToMperSec(float f)
+{
+	float tmpf = (f*33)/64;
+	return tmpf;
+}
+
+inline u32	fToul(float f, u32 decimals)
+{
+	float ftmp = f;
+
+	for(u8 i = 0; i < decimals; i++){
+		ftmp *= 10;
+	}
+
+	return (u32)ftmp;
+}
+
+inline float AbsEnc12ToPitchFloatAngle(u32 ul)
+{
+	return (float)(ul * ENC_DEGS_PER_BIT_12) / ROTOR_GBOX2BLADES_RATIO;
+}
+
+inline float AbsEnc22ToPitchFloatAngle(u32 ul)
+{
+	return (float)(ul * ENC_DEGS_PER_BIT_22);
+}
+
+inline float ICIntervalToWheelSpeed(u32 ul)
+{
+	return (float) XPAR_AXI_TIMER_0_CLOCK_FREQ_HZ / (ul * AXLE_FREQ2RPM_CONST);
+}
+
+inline float ICIntervalToTurbineSpeed(u32 ul)
+{
+	return (float) XPAR_AXI_TIMER_0_CLOCK_FREQ_HZ / (ul * TURB_FREQ2RPM_CONST);
+}
+
+inline float VToTorque( u32 ul )
+{
+	return  (float ) ul * VOLTS_TO_TORQUE;
+}
+
+inline float VToThrust( u32 ul )
+{
+	return  (float ) ul * VOLTS_TO_THRUST;
+}

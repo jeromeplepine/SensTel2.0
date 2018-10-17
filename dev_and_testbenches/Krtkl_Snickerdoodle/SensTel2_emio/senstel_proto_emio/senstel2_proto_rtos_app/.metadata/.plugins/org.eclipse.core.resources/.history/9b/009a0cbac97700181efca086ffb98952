@@ -1,0 +1,17 @@
+/*
+ * timer.h
+ *
+ *  Created on: Jun 24, 2018
+ *      Author: Jerome Pare-Lepine
+ */
+
+#ifndef SRC_TIMER_H_
+#define SRC_TIMER_H_
+
+
+//==============================================================================
+// FUNCTION PROTOTYPES
+//==============================================================================
+
+
+#endif /* SRC_TIMER_H_ */

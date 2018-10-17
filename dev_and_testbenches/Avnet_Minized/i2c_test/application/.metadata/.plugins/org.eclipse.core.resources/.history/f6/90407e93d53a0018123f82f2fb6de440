@@ -1,0 +1,23 @@
+/*
+ * i2c.h
+ *
+ *  Created on: Apr 7, 2018
+ *      Author: Jerome Pare-Lepine
+ */
+
+#include "xparameters.h"
+#include "xiicps.h"
+#include "xstatus.h"
+
+#ifndef SRC_I2C_H_
+#define SRC_I2C_H_
+
+#define I2C_ADDRESS	XPAR_PS7_I2C_0_DEVICE_ID
+
+
+int I2C_write_8b(u32 ZynqIicAddress, u8 slave_address, u8 register_offset, u8 write_value);
+int I2C_read_8b(u32 ZynqIicAddress, u8 slave_address, u8 register_offset, u8 *read_value);
+
+
+
+#endif /* SRC_I2C_H_ */

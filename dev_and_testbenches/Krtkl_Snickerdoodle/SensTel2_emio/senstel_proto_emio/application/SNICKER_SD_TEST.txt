@@ -1,0 +1,2 @@
+this folder contains the individual SD card write/read test.
+It was validated using a 4gb HC card as well as a 32gb HC card.

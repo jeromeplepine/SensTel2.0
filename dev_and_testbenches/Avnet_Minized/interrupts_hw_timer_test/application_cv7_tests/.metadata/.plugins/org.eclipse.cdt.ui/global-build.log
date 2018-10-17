@@ -1,0 +1,2670 @@
+15:57:54 **** Clean-only build of configuration Debug for project test_FSBL ****
+make clean 
+rm -rf  ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o  ./src/fsbl_handoff.d  ./src/fsbl_hooks.d ./src/image_mover.d ./src/main.d ./src/md5.d ./src/nand.d ./src/nor.d ./src/pcap.d ./src/ps7_init.d ./src/qspi.d ./src/rsa.d ./src/sd.d  test_FSBL.elf.size  test_FSBL.elf
+' '
+15:57:54 **** Incremental Build of configuration Debug for project test_FSBL ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/fsbl_handoff.S'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Chinook-ELE\ZynqWorkspace\interrupts_hw_timer_test\application_cv7_tests\System_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/fsbl_handoff.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../test_FSBL_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_handoff.d" -MT"src/fsbl_handoff.o" -o "src/fsbl_handoff.o" "../src/fsbl_handoff.S"
+'Finished building: ../src/fsbl_handoff.S'
+' '
+'Building file: ../src/fsbl_hooks.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Chinook-ELE\ZynqWorkspace\interrupts_hw_timer_test\application_cv7_tests\System_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/fsbl_hooks.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../test_FSBL_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_hooks.d" -MT"src/fsbl_hooks.o" -o "src/fsbl_hooks.o" "../src/fsbl_hooks.c"
+'Finished building: ../src/fsbl_hooks.c'
+' '
+'Building file: ../src/image_mover.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Chinook-ELE\ZynqWorkspace\interrupts_hw_timer_test\application_cv7_tests\System_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/image_mover.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../test_FSBL_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/image_mover.d" -MT"src/image_mover.o" -o "src/image_mover.o" "../src/image_mover.c"
+'Finished building: ../src/image_mover.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Chinook-ELE\ZynqWorkspace\interrupts_hw_timer_test\application_cv7_tests\System_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../test_FSBL_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/md5.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Chinook-ELE\ZynqWorkspace\interrupts_hw_timer_test\application_cv7_tests\System_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/md5.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../test_FSBL_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/md5.d" -MT"src/md5.o" -o "src/md5.o" "../src/md5.c"
+'Finished building: ../src/md5.c'
+' '
+'Building file: ../src/nand.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Chinook-ELE\ZynqWorkspace\interrupts_hw_timer_test\application_cv7_tests\System_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/nand.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../test_FSBL_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nand.d" -MT"src/nand.o" -o "src/nand.o" "../src/nand.c"
+'Finished building: ../src/nand.c'
+' '
+'Building file: ../src/nor.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Chinook-ELE\ZynqWorkspace\interrupts_hw_timer_test\application_cv7_tests\System_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/nor.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../test_FSBL_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nor.d" -MT"src/nor.o" -o "src/nor.o" "../src/nor.c"
+'Finished building: ../src/nor.c'
+' '
+'Building file: ../src/pcap.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Chinook-ELE\ZynqWorkspace\interrupts_hw_timer_test\application_cv7_tests\System_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/pcap.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../test_FSBL_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/pcap.d" -MT"src/pcap.o" -o "src/pcap.o" "../src/pcap.c"
+'Finished building: ../src/pcap.c'
+' '
+'Building file: C:/Users/Chinook-ELE/ZynqWorkspace/interrupts_hw_timer_test/application_cv7_tests/System_wrapper_hw_platform_0/ps7_init.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Chinook-ELE\ZynqWorkspace\interrupts_hw_timer_test\application_cv7_tests\System_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/ps7_init.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../test_FSBL_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ps7_init.d" -MT"src/ps7_init.o" -o "src/ps7_init.o" "C:/Users/Chinook-ELE/ZynqWorkspace/interrupts_hw_timer_test/application_cv7_tests/System_wrapper_hw_platform_0/ps7_init.c"
+'Finished building: C:/Users/Chinook-ELE/ZynqWorkspace/interrupts_hw_timer_test/application_cv7_tests/System_wrapper_hw_platform_0/ps7_init.c'
+' '
+'Building file: ../src/qspi.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Chinook-ELE\ZynqWorkspace\interrupts_hw_timer_test\application_cv7_tests\System_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/qspi.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../test_FSBL_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/qspi.d" -MT"src/qspi.o" -o "src/qspi.o" "../src/qspi.c"
+'Finished building: ../src/qspi.c'
+' '
+'Building file: ../src/rsa.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Chinook-ELE\ZynqWorkspace\interrupts_hw_timer_test\application_cv7_tests\System_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/rsa.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../test_FSBL_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rsa.d" -MT"src/rsa.o" -o "src/rsa.o" "../src/rsa.c"
+'Finished building: ../src/rsa.c'
+' '
+'Building file: ../src/sd.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Chinook-ELE\ZynqWorkspace\interrupts_hw_timer_test\application_cv7_tests\System_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/sd.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../test_FSBL_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sd.d" -MT"src/sd.o" -o "src/sd.o" "../src/sd.c"
+'Finished building: ../src/sd.c'
+' '
+'Building target: test_FSBL.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../test_FSBL_bsp/ps7_cortexa9_0/lib -o "test_FSBL.elf"  ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test_FSBL.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size test_FSBL.elf  |tee "test_FSBL.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  55404	  10676	  71816	 137896	  21aa8	test_FSBL.elf
+'Finished building: test_FSBL.elf.size'
+' '
+16:02:34 **** Incremental Build of configuration Debug for project cv7_dualuart_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+16:43:00 **** Incremental Build of configuration Debug for project cv7_dualuart_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+16:43:01 **** Incremental Build of configuration Debug for project test_FSBL ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+23:47:38 **** Incremental Build of configuration Debug for project cv7_dualuart_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+23:47:40 **** Incremental Build of configuration Debug for project test_FSBL ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/fsbl_hooks.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Chinook-ELE\ZynqWorkspace\interrupts_hw_timer_test\application_cv7_tests\System_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/fsbl_hooks.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../test_FSBL_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_hooks.d" -MT"src/fsbl_hooks.o" -o "src/fsbl_hooks.o" "../src/fsbl_hooks.c"
+'Finished building: ../src/fsbl_hooks.c'
+' '
+'Building file: ../src/image_mover.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Chinook-ELE\ZynqWorkspace\interrupts_hw_timer_test\application_cv7_tests\System_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/image_mover.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../test_FSBL_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/image_mover.d" -MT"src/image_mover.o" -o "src/image_mover.o" "../src/image_mover.c"
+'Finished building: ../src/image_mover.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Chinook-ELE\ZynqWorkspace\interrupts_hw_timer_test\application_cv7_tests\System_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../test_FSBL_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/nand.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Chinook-ELE\ZynqWorkspace\interrupts_hw_timer_test\application_cv7_tests\System_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/nand.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../test_FSBL_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nand.d" -MT"src/nand.o" -o "src/nand.o" "../src/nand.c"
+'Finished building: ../src/nand.c'
+' '
+'Building file: ../src/nor.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Chinook-ELE\ZynqWorkspace\interrupts_hw_timer_test\application_cv7_tests\System_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/nor.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../test_FSBL_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nor.d" -MT"src/nor.o" -o "src/nor.o" "../src/nor.c"
+'Finished building: ../src/nor.c'
+' '
+'Building file: ../src/pcap.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Chinook-ELE\ZynqWorkspace\interrupts_hw_timer_test\application_cv7_tests\System_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/pcap.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../test_FSBL_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/pcap.d" -MT"src/pcap.o" -o "src/pcap.o" "../src/pcap.c"
+'Finished building: ../src/pcap.c'
+' '
+'Building file: C:/Users/Chinook-ELE/ZynqWorkspace/interrupts_hw_timer_test/application_cv7_tests/System_wrapper_hw_platform_0/ps7_init.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Chinook-ELE\ZynqWorkspace\interrupts_hw_timer_test\application_cv7_tests\System_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/ps7_init.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../test_FSBL_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ps7_init.d" -MT"src/ps7_init.o" -o "src/ps7_init.o" "C:/Users/Chinook-ELE/ZynqWorkspace/interrupts_hw_timer_test/application_cv7_tests/System_wrapper_hw_platform_0/ps7_init.c"
+'Finished building: C:/Users/Chinook-ELE/ZynqWorkspace/interrupts_hw_timer_test/application_cv7_tests/System_wrapper_hw_platform_0/ps7_init.c'
+' '
+'Building file: ../src/qspi.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Chinook-ELE\ZynqWorkspace\interrupts_hw_timer_test\application_cv7_tests\System_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/qspi.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../test_FSBL_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/qspi.d" -MT"src/qspi.o" -o "src/qspi.o" "../src/qspi.c"
+'Finished building: ../src/qspi.c'
+' '
+'Building file: ../src/sd.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Chinook-ELE\ZynqWorkspace\interrupts_hw_timer_test\application_cv7_tests\System_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/sd.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../test_FSBL_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sd.d" -MT"src/sd.o" -o "src/sd.o" "../src/sd.c"
+'Finished building: ../src/sd.c'
+' '
+'Building target: test_FSBL.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../test_FSBL_bsp/ps7_cortexa9_0/lib -o "test_FSBL.elf"  ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test_FSBL.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size test_FSBL.elf  |tee "test_FSBL.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  55404	  10676	  71816	 137896	  21aa8	test_FSBL.elf
+'Finished building: test_FSBL.elf.size'
+' '
+01:51:38 **** Auto Build of configuration Debug for project cv7_dualuart_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cv7_dualuart_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'UartPsEchoExample':
+../src/helloworld.c:161:5: warning: unused variable 'RecvChar' [-Wunused-variable]
+  u8 RecvChar;
+     ^~~~~~~~
+../src/helloworld.c:159:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+../src/helloworld.c: In function 'InitUartModules':
+../src/helloworld.c:200:79: warning: variable 'BaudRDividerRegister' set but not used [-Wunused-but-set-variable]
+  u32 CntrlRegister0, CntrlRegister1, BaudModeRegister, BaudGeneratorRegister, BaudRDividerRegister;
+                                                                               ^~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:200:56: warning: variable 'BaudGeneratorRegister' set but not used [-Wunused-but-set-variable]
+  u32 CntrlRegister0, CntrlRegister1, BaudModeRegister, BaudGeneratorRegister, BaudRDividerRegister;
+                                                        ^~~~~~~~~~~~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: cv7_dualuart_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cv7_dualuart_test_bsp/ps7_cortexa9_0/lib -o "cv7_dualuart_test.elf"  ./src/helloworld.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cv7_dualuart_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cv7_dualuart_test.elf  |tee "cv7_dualuart_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22832	   1148	   8248	  32228	   7de4	cv7_dualuart_test.elf
+'Finished building: cv7_dualuart_test.elf.size'
+' '
+01:53:36 **** Incremental Build of configuration Debug for project cv7_dualuart_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+01:53:37 **** Incremental Build of configuration Debug for project test_FSBL ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/fsbl_hooks.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Chinook-ELE\ZynqWorkspace\interrupts_hw_timer_test\application_cv7_tests\System_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/fsbl_hooks.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../test_FSBL_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_hooks.d" -MT"src/fsbl_hooks.o" -o "src/fsbl_hooks.o" "../src/fsbl_hooks.c"
+'Finished building: ../src/fsbl_hooks.c'
+' '
+'Building file: ../src/image_mover.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Chinook-ELE\ZynqWorkspace\interrupts_hw_timer_test\application_cv7_tests\System_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/image_mover.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../test_FSBL_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/image_mover.d" -MT"src/image_mover.o" -o "src/image_mover.o" "../src/image_mover.c"
+'Finished building: ../src/image_mover.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Chinook-ELE\ZynqWorkspace\interrupts_hw_timer_test\application_cv7_tests\System_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../test_FSBL_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/nand.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Chinook-ELE\ZynqWorkspace\interrupts_hw_timer_test\application_cv7_tests\System_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/nand.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../test_FSBL_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nand.d" -MT"src/nand.o" -o "src/nand.o" "../src/nand.c"
+'Finished building: ../src/nand.c'
+' '
+'Building file: ../src/nor.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Chinook-ELE\ZynqWorkspace\interrupts_hw_timer_test\application_cv7_tests\System_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/nor.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../test_FSBL_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nor.d" -MT"src/nor.o" -o "src/nor.o" "../src/nor.c"
+'Finished building: ../src/nor.c'
+' '
+'Building file: ../src/pcap.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Chinook-ELE\ZynqWorkspace\interrupts_hw_timer_test\application_cv7_tests\System_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/pcap.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../test_FSBL_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/pcap.d" -MT"src/pcap.o" -o "src/pcap.o" "../src/pcap.c"
+'Finished building: ../src/pcap.c'
+' '
+'Building file: C:/Users/Chinook-ELE/ZynqWorkspace/interrupts_hw_timer_test/application_cv7_tests/System_wrapper_hw_platform_0/ps7_init.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Chinook-ELE\ZynqWorkspace\interrupts_hw_timer_test\application_cv7_tests\System_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/ps7_init.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../test_FSBL_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ps7_init.d" -MT"src/ps7_init.o" -o "src/ps7_init.o" "C:/Users/Chinook-ELE/ZynqWorkspace/interrupts_hw_timer_test/application_cv7_tests/System_wrapper_hw_platform_0/ps7_init.c"
+'Finished building: C:/Users/Chinook-ELE/ZynqWorkspace/interrupts_hw_timer_test/application_cv7_tests/System_wrapper_hw_platform_0/ps7_init.c'
+' '
+'Building file: ../src/qspi.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Chinook-ELE\ZynqWorkspace\interrupts_hw_timer_test\application_cv7_tests\System_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/qspi.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../test_FSBL_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/qspi.d" -MT"src/qspi.o" -o "src/qspi.o" "../src/qspi.c"
+'Finished building: ../src/qspi.c'
+' '
+'Building file: ../src/sd.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Chinook-ELE\ZynqWorkspace\interrupts_hw_timer_test\application_cv7_tests\System_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/sd.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../test_FSBL_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sd.d" -MT"src/sd.o" -o "src/sd.o" "../src/sd.c"
+'Finished building: ../src/sd.c'
+' '
+'Building target: test_FSBL.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../test_FSBL_bsp/ps7_cortexa9_0/lib -o "test_FSBL.elf"  ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test_FSBL.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size test_FSBL.elf  |tee "test_FSBL.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  55404	  10676	  71816	 137896	  21aa8	test_FSBL.elf
+'Finished building: test_FSBL.elf.size'
+' '
+01:54:20 **** Incremental Build of configuration Debug for project cv7_dualuart_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+01:54:21 **** Incremental Build of configuration Debug for project test_FSBL ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/fsbl_hooks.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Chinook-ELE\ZynqWorkspace\interrupts_hw_timer_test\application_cv7_tests\System_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/fsbl_hooks.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../test_FSBL_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_hooks.d" -MT"src/fsbl_hooks.o" -o "src/fsbl_hooks.o" "../src/fsbl_hooks.c"
+'Finished building: ../src/fsbl_hooks.c'
+' '
+'Building file: ../src/image_mover.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Chinook-ELE\ZynqWorkspace\interrupts_hw_timer_test\application_cv7_tests\System_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/image_mover.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../test_FSBL_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/image_mover.d" -MT"src/image_mover.o" -o "src/image_mover.o" "../src/image_mover.c"
+'Finished building: ../src/image_mover.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Chinook-ELE\ZynqWorkspace\interrupts_hw_timer_test\application_cv7_tests\System_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../test_FSBL_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/nand.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Chinook-ELE\ZynqWorkspace\interrupts_hw_timer_test\application_cv7_tests\System_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/nand.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../test_FSBL_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nand.d" -MT"src/nand.o" -o "src/nand.o" "../src/nand.c"
+'Finished building: ../src/nand.c'
+' '
+'Building file: ../src/nor.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Chinook-ELE\ZynqWorkspace\interrupts_hw_timer_test\application_cv7_tests\System_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/nor.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../test_FSBL_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nor.d" -MT"src/nor.o" -o "src/nor.o" "../src/nor.c"
+'Finished building: ../src/nor.c'
+' '
+'Building file: ../src/pcap.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Chinook-ELE\ZynqWorkspace\interrupts_hw_timer_test\application_cv7_tests\System_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/pcap.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../test_FSBL_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/pcap.d" -MT"src/pcap.o" -o "src/pcap.o" "../src/pcap.c"
+'Finished building: ../src/pcap.c'
+' '
+'Building file: C:/Users/Chinook-ELE/ZynqWorkspace/interrupts_hw_timer_test/application_cv7_tests/System_wrapper_hw_platform_0/ps7_init.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Chinook-ELE\ZynqWorkspace\interrupts_hw_timer_test\application_cv7_tests\System_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/ps7_init.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../test_FSBL_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ps7_init.d" -MT"src/ps7_init.o" -o "src/ps7_init.o" "C:/Users/Chinook-ELE/ZynqWorkspace/interrupts_hw_timer_test/application_cv7_tests/System_wrapper_hw_platform_0/ps7_init.c"
+'Finished building: C:/Users/Chinook-ELE/ZynqWorkspace/interrupts_hw_timer_test/application_cv7_tests/System_wrapper_hw_platform_0/ps7_init.c'
+' '
+'Building file: ../src/qspi.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Chinook-ELE\ZynqWorkspace\interrupts_hw_timer_test\application_cv7_tests\System_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/qspi.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../test_FSBL_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/qspi.d" -MT"src/qspi.o" -o "src/qspi.o" "../src/qspi.c"
+'Finished building: ../src/qspi.c'
+' '
+'Building file: ../src/sd.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Chinook-ELE\ZynqWorkspace\interrupts_hw_timer_test\application_cv7_tests\System_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/sd.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../test_FSBL_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sd.d" -MT"src/sd.o" -o "src/sd.o" "../src/sd.c"
+'Finished building: ../src/sd.c'
+' '
+'Building target: test_FSBL.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../test_FSBL_bsp/ps7_cortexa9_0/lib -o "test_FSBL.elf"  ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test_FSBL.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size test_FSBL.elf  |tee "test_FSBL.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  55404	  10676	  71816	 137896	  21aa8	test_FSBL.elf
+'Finished building: test_FSBL.elf.size'
+' '
+01:55:09 **** Incremental Build of configuration Debug for project cv7_dualuart_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+01:55:59 **** Incremental Build of configuration Debug for project cv7_dualuart_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+01:55:59 **** Incremental Build of configuration Debug for project test_FSBL ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+01:57:20 **** Incremental Build of configuration Debug for project cv7_dualuart_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+01:57:20 **** Incremental Build of configuration Debug for project test_FSBL ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+12:07:09 **** Incremental Build of configuration Debug for project cv7_dualuart_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+12:07:10 **** Incremental Build of configuration Debug for project test_FSBL ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+12:08:04 **** Incremental Build of configuration Debug for project cv7_dualuart_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+12:10:06 **** Auto Build of configuration Debug for project cv7_dualuart_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cv7_dualuart_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'UartPsEchoExample':
+../src/helloworld.c:161:5: warning: unused variable 'RecvChar' [-Wunused-variable]
+  u8 RecvChar;
+     ^~~~~~~~
+../src/helloworld.c:159:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+../src/helloworld.c: In function 'InitUartModules':
+../src/helloworld.c:200:79: warning: variable 'BaudRDividerRegister' set but not used [-Wunused-but-set-variable]
+  u32 CntrlRegister0, CntrlRegister1, BaudModeRegister, BaudGeneratorRegister, BaudRDividerRegister;
+                                                                               ^~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:200:56: warning: variable 'BaudGeneratorRegister' set but not used [-Wunused-but-set-variable]
+  u32 CntrlRegister0, CntrlRegister1, BaudModeRegister, BaudGeneratorRegister, BaudRDividerRegister;
+                                                        ^~~~~~~~~~~~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: cv7_dualuart_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cv7_dualuart_test_bsp/ps7_cortexa9_0/lib -o "cv7_dualuart_test.elf"  ./src/helloworld.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cv7_dualuart_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cv7_dualuart_test.elf  |tee "cv7_dualuart_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22812	   1148	   8248	  32208	   7dd0	cv7_dualuart_test.elf
+'Finished building: cv7_dualuart_test.elf.size'
+' '
+12:10:33 **** Incremental Build of configuration Debug for project cv7_dualuart_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+12:10:33 **** Incremental Build of configuration Debug for project test_FSBL ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/fsbl_hooks.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Chinook-ELE\ZynqWorkspace\interrupts_hw_timer_test\application_cv7_tests\System_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/fsbl_hooks.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../test_FSBL_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_hooks.d" -MT"src/fsbl_hooks.o" -o "src/fsbl_hooks.o" "../src/fsbl_hooks.c"
+'Finished building: ../src/fsbl_hooks.c'
+' '
+'Building file: ../src/image_mover.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Chinook-ELE\ZynqWorkspace\interrupts_hw_timer_test\application_cv7_tests\System_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/image_mover.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../test_FSBL_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/image_mover.d" -MT"src/image_mover.o" -o "src/image_mover.o" "../src/image_mover.c"
+'Finished building: ../src/image_mover.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Chinook-ELE\ZynqWorkspace\interrupts_hw_timer_test\application_cv7_tests\System_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../test_FSBL_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/nand.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Chinook-ELE\ZynqWorkspace\interrupts_hw_timer_test\application_cv7_tests\System_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/nand.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../test_FSBL_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nand.d" -MT"src/nand.o" -o "src/nand.o" "../src/nand.c"
+'Finished building: ../src/nand.c'
+' '
+'Building file: ../src/nor.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Chinook-ELE\ZynqWorkspace\interrupts_hw_timer_test\application_cv7_tests\System_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/nor.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../test_FSBL_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nor.d" -MT"src/nor.o" -o "src/nor.o" "../src/nor.c"
+'Finished building: ../src/nor.c'
+' '
+'Building file: ../src/pcap.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Chinook-ELE\ZynqWorkspace\interrupts_hw_timer_test\application_cv7_tests\System_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/pcap.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../test_FSBL_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/pcap.d" -MT"src/pcap.o" -o "src/pcap.o" "../src/pcap.c"
+'Finished building: ../src/pcap.c'
+' '
+'Building file: C:/Users/Chinook-ELE/ZynqWorkspace/interrupts_hw_timer_test/application_cv7_tests/System_wrapper_hw_platform_0/ps7_init.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Chinook-ELE\ZynqWorkspace\interrupts_hw_timer_test\application_cv7_tests\System_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/ps7_init.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../test_FSBL_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ps7_init.d" -MT"src/ps7_init.o" -o "src/ps7_init.o" "C:/Users/Chinook-ELE/ZynqWorkspace/interrupts_hw_timer_test/application_cv7_tests/System_wrapper_hw_platform_0/ps7_init.c"
+'Finished building: C:/Users/Chinook-ELE/ZynqWorkspace/interrupts_hw_timer_test/application_cv7_tests/System_wrapper_hw_platform_0/ps7_init.c'
+' '
+'Building file: ../src/qspi.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Chinook-ELE\ZynqWorkspace\interrupts_hw_timer_test\application_cv7_tests\System_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/qspi.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../test_FSBL_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/qspi.d" -MT"src/qspi.o" -o "src/qspi.o" "../src/qspi.c"
+'Finished building: ../src/qspi.c'
+' '
+'Building file: ../src/sd.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Chinook-ELE\ZynqWorkspace\interrupts_hw_timer_test\application_cv7_tests\System_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/sd.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../test_FSBL_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sd.d" -MT"src/sd.o" -o "src/sd.o" "../src/sd.c"
+'Finished building: ../src/sd.c'
+' '
+'Building target: test_FSBL.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../test_FSBL_bsp/ps7_cortexa9_0/lib -o "test_FSBL.elf"  ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test_FSBL.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size test_FSBL.elf  |tee "test_FSBL.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  55404	  10676	  71816	 137896	  21aa8	test_FSBL.elf
+'Finished building: test_FSBL.elf.size'
+' '
+12:10:59 **** Incremental Build of configuration Debug for project cv7_dualuart_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+12:11:43 **** Incremental Build of configuration Debug for project cv7_dualuart_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+12:11:43 **** Incremental Build of configuration Debug for project test_FSBL ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+22:39:55 **** Incremental Build of configuration Debug for project cv7_dualuart_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+22:39:56 **** Incremental Build of configuration Debug for project test_FSBL ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+22:40:16 **** Incremental Build of configuration Debug for project cv7_dualuart_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+09:27:03 **** Incremental Build of configuration Debug for project cv7_dualuart_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+00:30:07 **** Incremental Build of configuration Debug for project cv7_dualuart_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+10:21:06 **** Incremental Build of configuration Debug for project cv7_dualuart_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+12:07:51 **** Incremental Build of configuration Debug for project cv7_dualuart_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+15:27:35 **** Incremental Build of configuration Debug for project cv7_dualuart_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+22:13:51 **** Incremental Build of configuration Debug for project cv7_dualuart_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+14:30:31 **** Build of project cv7_dualuart_test_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_3/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/tmrctr_v4_3/src"
+make -C ps7_cortexa9_0/libsrc/tmrctr_v4_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling coresightps_dcc"
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling gpiops"
+"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling qspips"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling scugic"
+xscugic_g.c:53:2: warning: missing initializer for field 'HandlerTable' of 'XScuGic_Config {aka struct <anonymous>}' [-Wmissing-field-initializers]
+  }
+  ^
+In file included from xscugic_g.c:41:0:
+xscugic.h:218:27: note: 'HandlerTable' declared here
+  XScuGic_VectorTableEntry HandlerTable[XSCUGIC_MAX_NUM_INTR_INPUTS];/**<
+                           ^~~~~~~~~~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_3/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling standalone"
+"Running Make libs in ps7_cortexa9_0/libsrc/tmrctr_v4_3/src"
+make -C ps7_cortexa9_0/libsrc/tmrctr_v4_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling tmrctr"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling usbps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling xadcps"
+'Finished building libraries'
+14:30:57 **** Build of configuration Debug for project cv7_dualuart_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cv7_dualuart_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'UartPsEchoExample':
+../src/helloworld.c:161:5: warning: unused variable 'RecvChar' [-Wunused-variable]
+  u8 RecvChar;
+     ^~~~~~~~
+../src/helloworld.c:159:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+../src/helloworld.c: In function 'InitUartModules':
+../src/helloworld.c:200:79: warning: variable 'BaudRDividerRegister' set but not used [-Wunused-but-set-variable]
+  u32 CntrlRegister0, CntrlRegister1, BaudModeRegister, BaudGeneratorRegister, BaudRDividerRegister;
+                                                                               ^~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:200:56: warning: variable 'BaudGeneratorRegister' set but not used [-Wunused-but-set-variable]
+  u32 CntrlRegister0, CntrlRegister1, BaudModeRegister, BaudGeneratorRegister, BaudRDividerRegister;
+                                                        ^~~~~~~~~~~~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: cv7_dualuart_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cv7_dualuart_test_bsp/ps7_cortexa9_0/lib -o "cv7_dualuart_test.elf"  ./src/helloworld.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cv7_dualuart_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cv7_dualuart_test.elf  |tee "cv7_dualuart_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22812	   1148	   8248	  32208	   7dd0	cv7_dualuart_test.elf
+'Finished building: cv7_dualuart_test.elf.size'
+' '
+14:30:59 **** Build of project test_FSBL_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_3/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/tmrctr_v4_3/src"
+make -C ps7_cortexa9_0/libsrc/tmrctr_v4_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/xilffs_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/xilffs_v3_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/xilrsa_v1_3/src"
+make -C ps7_cortexa9_0/libsrc/xilrsa_v1_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling coresightps_dcc"
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling gpiops"
+"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling qspips"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling scugic"
+xscugic_g.c:53:2: warning: missing initializer for field 'HandlerTable' of 'XScuGic_Config {aka struct <anonymous>}' [-Wmissing-field-initializers]
+  }
+  ^
+In file included from xscugic_g.c:41:0:
+xscugic.h:218:27: note: 'HandlerTable' declared here
+  XScuGic_VectorTableEntry HandlerTable[XSCUGIC_MAX_NUM_INTR_INPUTS];/**<
+                           ^~~~~~~~~~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_3/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling standalone"
+"Running Make libs in ps7_cortexa9_0/libsrc/tmrctr_v4_3/src"
+make -C ps7_cortexa9_0/libsrc/tmrctr_v4_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling tmrctr"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling usbps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling xadcps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xilffs_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/xilffs_v3_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling XilFFs Library"
+"Running Make libs in ps7_cortexa9_0/libsrc/xilrsa_v1_3/src"
+make -C ps7_cortexa9_0/libsrc/xilrsa_v1_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+'Finished building libraries'
+14:31:19 **** Build of configuration Debug for project test_FSBL ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/fsbl_hooks.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Chinook-ELE\ZynqWorkspace\interrupts_hw_timer_test\application_cv7_tests\System_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/fsbl_hooks.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../test_FSBL_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_hooks.d" -MT"src/fsbl_hooks.o" -o "src/fsbl_hooks.o" "../src/fsbl_hooks.c"
+'Finished building: ../src/fsbl_hooks.c'
+' '
+'Building file: ../src/image_mover.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Chinook-ELE\ZynqWorkspace\interrupts_hw_timer_test\application_cv7_tests\System_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/image_mover.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../test_FSBL_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/image_mover.d" -MT"src/image_mover.o" -o "src/image_mover.o" "../src/image_mover.c"
+'Finished building: ../src/image_mover.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Chinook-ELE\ZynqWorkspace\interrupts_hw_timer_test\application_cv7_tests\System_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../test_FSBL_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/md5.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Chinook-ELE\ZynqWorkspace\interrupts_hw_timer_test\application_cv7_tests\System_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/md5.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../test_FSBL_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/md5.d" -MT"src/md5.o" -o "src/md5.o" "../src/md5.c"
+'Finished building: ../src/md5.c'
+' '
+'Building file: ../src/nand.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Chinook-ELE\ZynqWorkspace\interrupts_hw_timer_test\application_cv7_tests\System_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/nand.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../test_FSBL_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nand.d" -MT"src/nand.o" -o "src/nand.o" "../src/nand.c"
+'Finished building: ../src/nand.c'
+' '
+'Building file: ../src/nor.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Chinook-ELE\ZynqWorkspace\interrupts_hw_timer_test\application_cv7_tests\System_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/nor.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../test_FSBL_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nor.d" -MT"src/nor.o" -o "src/nor.o" "../src/nor.c"
+'Finished building: ../src/nor.c'
+' '
+'Building file: ../src/pcap.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Chinook-ELE\ZynqWorkspace\interrupts_hw_timer_test\application_cv7_tests\System_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/pcap.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../test_FSBL_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/pcap.d" -MT"src/pcap.o" -o "src/pcap.o" "../src/pcap.c"
+'Finished building: ../src/pcap.c'
+' '
+'Building file: C:/Users/Chinook-ELE/ZynqWorkspace/interrupts_hw_timer_test/application_cv7_tests/System_wrapper_hw_platform_0/ps7_init.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Chinook-ELE\ZynqWorkspace\interrupts_hw_timer_test\application_cv7_tests\System_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/ps7_init.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../test_FSBL_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ps7_init.d" -MT"src/ps7_init.o" -o "src/ps7_init.o" "C:/Users/Chinook-ELE/ZynqWorkspace/interrupts_hw_timer_test/application_cv7_tests/System_wrapper_hw_platform_0/ps7_init.c"
+'Finished building: C:/Users/Chinook-ELE/ZynqWorkspace/interrupts_hw_timer_test/application_cv7_tests/System_wrapper_hw_platform_0/ps7_init.c'
+' '
+'Building file: ../src/qspi.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Chinook-ELE\ZynqWorkspace\interrupts_hw_timer_test\application_cv7_tests\System_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/qspi.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../test_FSBL_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/qspi.d" -MT"src/qspi.o" -o "src/qspi.o" "../src/qspi.c"
+'Finished building: ../src/qspi.c'
+' '
+'Building file: ../src/sd.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Chinook-ELE\ZynqWorkspace\interrupts_hw_timer_test\application_cv7_tests\System_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/sd.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../test_FSBL_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sd.d" -MT"src/sd.o" -o "src/sd.o" "../src/sd.c"
+'Finished building: ../src/sd.c'
+' '
+'Building target: test_FSBL.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../test_FSBL_bsp/ps7_cortexa9_0/lib -o "test_FSBL.elf"  ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test_FSBL.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size test_FSBL.elf  |tee "test_FSBL.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  55404	  10676	  71816	 137896	  21aa8	test_FSBL.elf
+'Finished building: test_FSBL.elf.size'
+' '
+15:00:42 **** Auto Build of project cv7_dualuart_test_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_3/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/tmrctr_v4_3/src"
+make -C ps7_cortexa9_0/libsrc/tmrctr_v4_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling coresightps_dcc"
+arm-none-eabi-ar: creating ../../../lib/libxil.a
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling gpiops"
+"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling qspips"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling scugic"
+xscugic_g.c:53:2: warning: missing initializer for field 'HandlerTable' of 'XScuGic_Config {aka struct <anonymous>}' [-Wmissing-field-initializers]
+  }
+  ^
+In file included from xscugic_g.c:41:0:
+xscugic.h:218:27: note: 'HandlerTable' declared here
+  XScuGic_VectorTableEntry HandlerTable[XSCUGIC_MAX_NUM_INTR_INPUTS];/**<
+                           ^~~~~~~~~~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_3/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling standalone"
+"Running Make libs in ps7_cortexa9_0/libsrc/tmrctr_v4_3/src"
+make -C ps7_cortexa9_0/libsrc/tmrctr_v4_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling tmrctr"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling usbps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling xadcps"
+'Finished building libraries'
+15:01:01 **** Auto Build of configuration Debug for project cv7_dualuart_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cv7_dualuart_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'UartPsEchoExample':
+../src/helloworld.c:161:5: warning: unused variable 'RecvChar' [-Wunused-variable]
+  u8 RecvChar;
+     ^~~~~~~~
+../src/helloworld.c:159:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+../src/helloworld.c: In function 'InitUartModules':
+../src/helloworld.c:200:79: warning: variable 'BaudRDividerRegister' set but not used [-Wunused-but-set-variable]
+  u32 CntrlRegister0, CntrlRegister1, BaudModeRegister, BaudGeneratorRegister, BaudRDividerRegister;
+                                                                               ^~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:200:56: warning: variable 'BaudGeneratorRegister' set but not used [-Wunused-but-set-variable]
+  u32 CntrlRegister0, CntrlRegister1, BaudModeRegister, BaudGeneratorRegister, BaudRDividerRegister;
+                                                        ^~~~~~~~~~~~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: cv7_dualuart_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cv7_dualuart_test_bsp/ps7_cortexa9_0/lib -o "cv7_dualuart_test.elf"  ./src/helloworld.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cv7_dualuart_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cv7_dualuart_test.elf  |tee "cv7_dualuart_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22812	   1148	   8248	  32208	   7dd0	cv7_dualuart_test.elf
+'Finished building: cv7_dualuart_test.elf.size'
+' '
+15:01:26 **** Auto Build of configuration Debug for project cv7_dualuart_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+15:08:29 **** Incremental Build of configuration Debug for project cv7_dualuart_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+15:08:43 **** Incremental Build of configuration Debug for project cv7_dualuart_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+15:27:22 **** Auto Build of configuration Debug for project cv7_dualuart_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cv7_dualuart_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'UartPsEchoExample':
+../src/helloworld.c:161:5: warning: unused variable 'RecvChar' [-Wunused-variable]
+  u8 RecvChar;
+     ^~~~~~~~
+../src/helloworld.c:159:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+../src/helloworld.c: In function 'InitUartModules':
+../src/helloworld.c:200:79: warning: variable 'BaudRDividerRegister' set but not used [-Wunused-but-set-variable]
+  u32 CntrlRegister0, CntrlRegister1, BaudModeRegister, BaudGeneratorRegister, BaudRDividerRegister;
+                                                                               ^~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:200:56: warning: variable 'BaudGeneratorRegister' set but not used [-Wunused-but-set-variable]
+  u32 CntrlRegister0, CntrlRegister1, BaudModeRegister, BaudGeneratorRegister, BaudRDividerRegister;
+                                                        ^~~~~~~~~~~~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: cv7_dualuart_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cv7_dualuart_test_bsp/ps7_cortexa9_0/lib -o "cv7_dualuart_test.elf"  ./src/helloworld.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cv7_dualuart_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cv7_dualuart_test.elf  |tee "cv7_dualuart_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22812	   1148	   8248	  32208	   7dd0	cv7_dualuart_test.elf
+'Finished building: cv7_dualuart_test.elf.size'
+' '
+15:27:42 **** Incremental Build of configuration Debug for project cv7_dualuart_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+15:29:36 **** Incremental Build of configuration Debug for project cv7_dualuart_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+15:33:55 **** Incremental Build of configuration Debug for project cv7_dualuart_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+15:36:41 **** Incremental Build of configuration Debug for project cv7_dualuart_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+15:39:39 **** Incremental Build of configuration Debug for project cv7_dualuart_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cv7_dualuart_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'UartPsEchoExample':
+../src/helloworld.c:161:5: warning: unused variable 'RecvChar' [-Wunused-variable]
+  u8 RecvChar;
+     ^~~~~~~~
+../src/helloworld.c:159:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+../src/helloworld.c: In function 'InitUartModules':
+../src/helloworld.c:200:79: warning: variable 'BaudRDividerRegister' set but not used [-Wunused-but-set-variable]
+  u32 CntrlRegister0, CntrlRegister1, BaudModeRegister, BaudGeneratorRegister, BaudRDividerRegister;
+                                                                               ^~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:200:56: warning: variable 'BaudGeneratorRegister' set but not used [-Wunused-but-set-variable]
+  u32 CntrlRegister0, CntrlRegister1, BaudModeRegister, BaudGeneratorRegister, BaudRDividerRegister;
+                                                        ^~~~~~~~~~~~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: cv7_dualuart_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cv7_dualuart_test_bsp/ps7_cortexa9_0/lib -o "cv7_dualuart_test.elf"  ./src/helloworld.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cv7_dualuart_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cv7_dualuart_test.elf  |tee "cv7_dualuart_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22816	   1148	   8248	  32212	   7dd4	cv7_dualuart_test.elf
+'Finished building: cv7_dualuart_test.elf.size'
+' '
+15:43:00 **** Auto Build of configuration Debug for project cv7_dualuart_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cv7_dualuart_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:127:2: error: unknown type name 'XUartPs_Config'
+  XUartPs_Config CUart0, CUart1;
+  ^~~~~~~~~~~~~~
+../src/helloworld.c:128:2: error: unknown type name 'XUartPs'
+  XUartPs Uart0, Uart1;
+  ^~~~~~~
+../src/helloworld.c:130:2: warning: implicit declaration of function 'XUartPs_CfgInitialize' [-Wimplicit-function-declaration]
+  XUartPs_CfgInitialize(&Uart0, )
+  ^~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:130:32: error: expected expression before ')' token
+  XUartPs_CfgInitialize(&Uart0, )
+                                ^
+../src/helloworld.c:128:17: warning: unused variable 'Uart1' [-Wunused-variable]
+  XUartPs Uart0, Uart1;
+                 ^~~~~
+../src/helloworld.c:127:25: warning: unused variable 'CUart1' [-Wunused-variable]
+  XUartPs_Config CUart0, CUart1;
+                         ^~~~~~
+../src/helloworld.c:127:17: warning: unused variable 'CUart0' [-Wunused-variable]
+  XUartPs_Config CUart0, CUart1;
+                 ^~~~~~
+../src/helloworld.c: In function 'UartPsEchoExample':
+../src/helloworld.c:165:5: warning: unused variable 'RecvChar' [-Wunused-variable]
+  u8 RecvChar;
+     ^~~~~~~~
+../src/helloworld.c:163:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+../src/helloworld.c: In function 'InitUartModules':
+../src/helloworld.c:204:79: warning: variable 'BaudRDividerRegister' set but not used [-Wunused-but-set-variable]
+  u32 CntrlRegister0, CntrlRegister1, BaudModeRegister, BaudGeneratorRegister, BaudRDividerRegister;
+                                                                               ^~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:204:56: warning: variable 'BaudGeneratorRegister' set but not used [-Wunused-but-set-variable]
+  u32 CntrlRegister0, CntrlRegister1, BaudModeRegister, BaudGeneratorRegister, BaudRDividerRegister;
+                                                        ^~~~~~~~~~~~~~~~~~~~~
+make: *** [src/helloworld.o] Error 1
+15:43:18 **** Auto Build of configuration Debug for project cv7_dualuart_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cv7_dualuart_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:131:32: error: expected expression before ')' token
+  XUartPs_CfgInitialize(&Uart0, )
+                                ^
+../src/helloworld.c:131:2: error: too few arguments to function 'XUartPs_CfgInitialize'
+  XUartPs_CfgInitialize(&Uart0, )
+  ^~~~~~~~~~~~~~~~~~~~~
+In file included from ../src/helloworld.c:73:0:
+../../cv7_dualuart_test_bsp/ps7_cortexa9_0/include/xuartps.h:460:5: note: declared here
+ s32 XUartPs_CfgInitialize(XUartPs *InstancePtr,
+     ^~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:129:17: warning: unused variable 'Uart1' [-Wunused-variable]
+  XUartPs Uart0, Uart1;
+                 ^~~~~
+../src/helloworld.c:128:25: warning: unused variable 'CUart1' [-Wunused-variable]
+  XUartPs_Config CUart0, CUart1;
+                         ^~~~~~
+../src/helloworld.c:128:17: warning: unused variable 'CUart0' [-Wunused-variable]
+  XUartPs_Config CUart0, CUart1;
+                 ^~~~~~
+../src/helloworld.c: In function 'UartPsEchoExample':
+../src/helloworld.c:166:5: warning: unused variable 'RecvChar' [-Wunused-variable]
+  u8 RecvChar;
+     ^~~~~~~~
+../src/helloworld.c:164:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+../src/helloworld.c: In function 'InitUartModules':
+../src/helloworld.c:205:79: warning: variable 'BaudRDividerRegister' set but not used [-Wunused-but-set-variable]
+  u32 CntrlRegister0, CntrlRegister1, BaudModeRegister, BaudGeneratorRegister, BaudRDividerRegister;
+                                                                               ^~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:205:56: warning: variable 'BaudGeneratorRegister' set but not used [-Wunused-but-set-variable]
+  u32 CntrlRegister0, CntrlRegister1, BaudModeRegister, BaudGeneratorRegister, BaudRDividerRegister;
+                                                        ^~~~~~~~~~~~~~~~~~~~~
+make: *** [src/helloworld.o] Error 1
+15:43:23 **** Auto Build of configuration Debug for project cv7_dualuart_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cv7_dualuart_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:131:32: error: expected expression before ')' token
+  XUartPs_CfgInitialize(&Uart0, );
+                                ^
+../src/helloworld.c:131:2: error: too few arguments to function 'XUartPs_CfgInitialize'
+  XUartPs_CfgInitialize(&Uart0, );
+  ^~~~~~~~~~~~~~~~~~~~~
+In file included from ../src/helloworld.c:73:0:
+../../cv7_dualuart_test_bsp/ps7_cortexa9_0/include/xuartps.h:460:5: note: declared here
+ s32 XUartPs_CfgInitialize(XUartPs *InstancePtr,
+     ^~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:129:17: warning: unused variable 'Uart1' [-Wunused-variable]
+  XUartPs Uart0, Uart1;
+                 ^~~~~
+../src/helloworld.c:128:25: warning: unused variable 'CUart1' [-Wunused-variable]
+  XUartPs_Config CUart0, CUart1;
+                         ^~~~~~
+../src/helloworld.c:128:17: warning: unused variable 'CUart0' [-Wunused-variable]
+  XUartPs_Config CUart0, CUart1;
+                 ^~~~~~
+../src/helloworld.c: In function 'UartPsEchoExample':
+../src/helloworld.c:166:5: warning: unused variable 'RecvChar' [-Wunused-variable]
+  u8 RecvChar;
+     ^~~~~~~~
+../src/helloworld.c:164:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+../src/helloworld.c: In function 'InitUartModules':
+../src/helloworld.c:205:79: warning: variable 'BaudRDividerRegister' set but not used [-Wunused-but-set-variable]
+  u32 CntrlRegister0, CntrlRegister1, BaudModeRegister, BaudGeneratorRegister, BaudRDividerRegister;
+                                                                               ^~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:205:56: warning: variable 'BaudGeneratorRegister' set but not used [-Wunused-but-set-variable]
+  u32 CntrlRegister0, CntrlRegister1, BaudModeRegister, BaudGeneratorRegister, BaudRDividerRegister;
+                                                        ^~~~~~~~~~~~~~~~~~~~~
+make: *** [src/helloworld.o] Error 1
+15:43:53 **** Auto Build of configuration Debug for project cv7_dualuart_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cv7_dualuart_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:129:17: warning: unused variable 'Uart1' [-Wunused-variable]
+  XUartPs Uart0, Uart1;
+                 ^~~~~
+../src/helloworld.c:128:25: warning: unused variable 'CUart1' [-Wunused-variable]
+  XUartPs_Config CUart0, CUart1;
+                         ^~~~~~
+../src/helloworld.c: In function 'UartPsEchoExample':
+../src/helloworld.c:166:5: warning: unused variable 'RecvChar' [-Wunused-variable]
+  u8 RecvChar;
+     ^~~~~~~~
+../src/helloworld.c:164:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+../src/helloworld.c: In function 'InitUartModules':
+../src/helloworld.c:205:79: warning: variable 'BaudRDividerRegister' set but not used [-Wunused-but-set-variable]
+  u32 CntrlRegister0, CntrlRegister1, BaudModeRegister, BaudGeneratorRegister, BaudRDividerRegister;
+                                                                               ^~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:205:56: warning: variable 'BaudGeneratorRegister' set but not used [-Wunused-but-set-variable]
+  u32 CntrlRegister0, CntrlRegister1, BaudModeRegister, BaudGeneratorRegister, BaudRDividerRegister;
+                                                        ^~~~~~~~~~~~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: cv7_dualuart_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cv7_dualuart_test_bsp/ps7_cortexa9_0/lib -o "cv7_dualuart_test.elf"  ./src/helloworld.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cv7_dualuart_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cv7_dualuart_test.elf  |tee "cv7_dualuart_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24428	   1156	   8264	  33848	   8438	cv7_dualuart_test.elf
+'Finished building: cv7_dualuart_test.elf.size'
+' '
+15:44:17 **** Auto Build of configuration Debug for project cv7_dualuart_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cv7_dualuart_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:131:23: warning: passing argument 1 of 'XUartPs_LookupConfig' makes integer from pointer without a cast [-Wint-conversion]
+  XUartPs_LookupConfig(&Uart0, &CUart0, XPAR_PS7_UART_0_BASEADDR);
+                       ^
+In file included from ../src/helloworld.c:73:0:
+../../cv7_dualuart_test_bsp/ps7_cortexa9_0/include/xuartps.h:457:17: note: expected 'u16 {aka short unsigned int}' but argument is of type 'XUartPs * {aka struct <anonymous> *}'
+ XUartPs_Config *XUartPs_LookupConfig(u16 DeviceId);
+                 ^~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:131:2: error: too many arguments to function 'XUartPs_LookupConfig'
+  XUartPs_LookupConfig(&Uart0, &CUart0, XPAR_PS7_UART_0_BASEADDR);
+  ^~~~~~~~~~~~~~~~~~~~
+In file included from ../src/helloworld.c:73:0:
+../../cv7_dualuart_test_bsp/ps7_cortexa9_0/include/xuartps.h:457:17: note: declared here
+ XUartPs_Config *XUartPs_LookupConfig(u16 DeviceId);
+                 ^~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:129:17: warning: unused variable 'Uart1' [-Wunused-variable]
+  XUartPs Uart0, Uart1;
+                 ^~~~~
+../src/helloworld.c:128:25: warning: unused variable 'CUart1' [-Wunused-variable]
+  XUartPs_Config CUart0, CUart1;
+                         ^~~~~~
+../src/helloworld.c: In function 'UartPsEchoExample':
+../src/helloworld.c:166:5: warning: unused variable 'RecvChar' [-Wunused-variable]
+  u8 RecvChar;
+     ^~~~~~~~
+../src/helloworld.c:164:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+../src/helloworld.c: In function 'InitUartModules':
+../src/helloworld.c:205:79: warning: variable 'BaudRDividerRegister' set but not used [-Wunused-but-set-variable]
+  u32 CntrlRegister0, CntrlRegister1, BaudModeRegister, BaudGeneratorRegister, BaudRDividerRegister;
+                                                                               ^~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:205:56: warning: variable 'BaudGeneratorRegister' set but not used [-Wunused-but-set-variable]
+  u32 CntrlRegister0, CntrlRegister1, BaudModeRegister, BaudGeneratorRegister, BaudRDividerRegister;
+                                                        ^~~~~~~~~~~~~~~~~~~~~
+make: *** [src/helloworld.o] Error 1
+15:44:41 **** Auto Build of configuration Debug for project cv7_dualuart_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cv7_dualuart_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:129:17: warning: unused variable 'Uart1' [-Wunused-variable]
+  XUartPs Uart0, Uart1;
+                 ^~~~~
+../src/helloworld.c:129:10: warning: unused variable 'Uart0' [-Wunused-variable]
+  XUartPs Uart0, Uart1;
+          ^~~~~
+../src/helloworld.c:128:25: warning: unused variable 'CUart1' [-Wunused-variable]
+  XUartPs_Config CUart0, CUart1;
+                         ^~~~~~
+../src/helloworld.c:128:17: warning: unused variable 'CUart0' [-Wunused-variable]
+  XUartPs_Config CUart0, CUart1;
+                 ^~~~~~
+../src/helloworld.c: In function 'UartPsEchoExample':
+../src/helloworld.c:166:5: warning: unused variable 'RecvChar' [-Wunused-variable]
+  u8 RecvChar;
+     ^~~~~~~~
+../src/helloworld.c:164:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+../src/helloworld.c: In function 'InitUartModules':
+../src/helloworld.c:205:79: warning: variable 'BaudRDividerRegister' set but not used [-Wunused-but-set-variable]
+  u32 CntrlRegister0, CntrlRegister1, BaudModeRegister, BaudGeneratorRegister, BaudRDividerRegister;
+                                                                               ^~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:205:56: warning: variable 'BaudGeneratorRegister' set but not used [-Wunused-but-set-variable]
+  u32 CntrlRegister0, CntrlRegister1, BaudModeRegister, BaudGeneratorRegister, BaudRDividerRegister;
+                                                        ^~~~~~~~~~~~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: cv7_dualuart_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cv7_dualuart_test_bsp/ps7_cortexa9_0/lib -o "cv7_dualuart_test.elf"  ./src/helloworld.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cv7_dualuart_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cv7_dualuart_test.elf  |tee "cv7_dualuart_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22880	   1180	   8248	  32308	   7e34	cv7_dualuart_test.elf
+'Finished building: cv7_dualuart_test.elf.size'
+' '
+15:44:54 **** Auto Build of configuration Debug for project cv7_dualuart_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cv7_dualuart_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:131:10: error: lvalue required as left operand of assignment
+  &CUart0 = XUartPs_LookupConfig(XPAR_PS7_UART_0_DEVICE_ID);
+          ^
+../src/helloworld.c:129:17: warning: unused variable 'Uart1' [-Wunused-variable]
+  XUartPs Uart0, Uart1;
+                 ^~~~~
+../src/helloworld.c:129:10: warning: unused variable 'Uart0' [-Wunused-variable]
+  XUartPs Uart0, Uart1;
+          ^~~~~
+../src/helloworld.c:128:25: warning: unused variable 'CUart1' [-Wunused-variable]
+  XUartPs_Config CUart0, CUart1;
+                         ^~~~~~
+../src/helloworld.c: In function 'UartPsEchoExample':
+../src/helloworld.c:166:5: warning: unused variable 'RecvChar' [-Wunused-variable]
+  u8 RecvChar;
+     ^~~~~~~~
+../src/helloworld.c:164:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+../src/helloworld.c: In function 'InitUartModules':
+../src/helloworld.c:205:79: warning: variable 'BaudRDividerRegister' set but not used [-Wunused-but-set-variable]
+  u32 CntrlRegister0, CntrlRegister1, BaudModeRegister, BaudGeneratorRegister, BaudRDividerRegister;
+                                                                               ^~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:205:56: warning: variable 'BaudGeneratorRegister' set but not used [-Wunused-but-set-variable]
+  u32 CntrlRegister0, CntrlRegister1, BaudModeRegister, BaudGeneratorRegister, BaudRDividerRegister;
+                                                        ^~~~~~~~~~~~~~~~~~~~~
+make: *** [src/helloworld.o] Error 1
+15:45:38 **** Auto Build of configuration Debug for project cv7_dualuart_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cv7_dualuart_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:129:17: warning: unused variable 'Uart1' [-Wunused-variable]
+  XUartPs Uart0, Uart1;
+                 ^~~~~
+../src/helloworld.c:129:10: warning: unused variable 'Uart0' [-Wunused-variable]
+  XUartPs Uart0, Uart1;
+          ^~~~~
+../src/helloworld.c:128:27: warning: unused variable 'CUart1' [-Wunused-variable]
+  XUartPs_Config *CUart0, *CUart1;
+                           ^~~~~~
+../src/helloworld.c:128:18: warning: variable 'CUart0' set but not used [-Wunused-but-set-variable]
+  XUartPs_Config *CUart0, *CUart1;
+                  ^~~~~~
+../src/helloworld.c: In function 'UartPsEchoExample':
+../src/helloworld.c:166:5: warning: unused variable 'RecvChar' [-Wunused-variable]
+  u8 RecvChar;
+     ^~~~~~~~
+../src/helloworld.c:164:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+../src/helloworld.c: In function 'InitUartModules':
+../src/helloworld.c:205:79: warning: variable 'BaudRDividerRegister' set but not used [-Wunused-but-set-variable]
+  u32 CntrlRegister0, CntrlRegister1, BaudModeRegister, BaudGeneratorRegister, BaudRDividerRegister;
+                                                                               ^~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:205:56: warning: variable 'BaudGeneratorRegister' set but not used [-Wunused-but-set-variable]
+  u32 CntrlRegister0, CntrlRegister1, BaudModeRegister, BaudGeneratorRegister, BaudRDividerRegister;
+                                                        ^~~~~~~~~~~~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: cv7_dualuart_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cv7_dualuart_test_bsp/ps7_cortexa9_0/lib -o "cv7_dualuart_test.elf"  ./src/helloworld.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cv7_dualuart_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cv7_dualuart_test.elf  |tee "cv7_dualuart_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22880	   1180	   8248	  32308	   7e34	cv7_dualuart_test.elf
+'Finished building: cv7_dualuart_test.elf.size'
+' '
+15:45:48 **** Auto Build of configuration Debug for project cv7_dualuart_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cv7_dualuart_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:129:17: warning: unused variable 'Uart1' [-Wunused-variable]
+  XUartPs Uart0, Uart1;
+                 ^~~~~
+../src/helloworld.c:129:10: warning: unused variable 'Uart0' [-Wunused-variable]
+  XUartPs Uart0, Uart1;
+          ^~~~~
+../src/helloworld.c:128:27: warning: variable 'CUart1' set but not used [-Wunused-but-set-variable]
+  XUartPs_Config *CUart0, *CUart1;
+                           ^~~~~~
+../src/helloworld.c:128:18: warning: variable 'CUart0' set but not used [-Wunused-but-set-variable]
+  XUartPs_Config *CUart0, *CUart1;
+                  ^~~~~~
+../src/helloworld.c: In function 'UartPsEchoExample':
+../src/helloworld.c:167:5: warning: unused variable 'RecvChar' [-Wunused-variable]
+  u8 RecvChar;
+     ^~~~~~~~
+../src/helloworld.c:165:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+../src/helloworld.c: In function 'InitUartModules':
+../src/helloworld.c:206:79: warning: variable 'BaudRDividerRegister' set but not used [-Wunused-but-set-variable]
+  u32 CntrlRegister0, CntrlRegister1, BaudModeRegister, BaudGeneratorRegister, BaudRDividerRegister;
+                                                                               ^~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:206:56: warning: variable 'BaudGeneratorRegister' set but not used [-Wunused-but-set-variable]
+  u32 CntrlRegister0, CntrlRegister1, BaudModeRegister, BaudGeneratorRegister, BaudRDividerRegister;
+                                                        ^~~~~~~~~~~~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: cv7_dualuart_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cv7_dualuart_test_bsp/ps7_cortexa9_0/lib -o "cv7_dualuart_test.elf"  ./src/helloworld.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cv7_dualuart_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cv7_dualuart_test.elf  |tee "cv7_dualuart_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22880	   1180	   8248	  32308	   7e34	cv7_dualuart_test.elf
+'Finished building: cv7_dualuart_test.elf.size'
+' '
+15:46:06 **** Incremental Build of configuration Debug for project cv7_dualuart_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+15:47:15 **** Auto Build of configuration Debug for project cv7_dualuart_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cv7_dualuart_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:130:17: warning: unused variable 'Uart1' [-Wunused-variable]
+  XUartPs Uart0, Uart1;
+                 ^~~~~
+../src/helloworld.c:130:10: warning: unused variable 'Uart0' [-Wunused-variable]
+  XUartPs Uart0, Uart1;
+          ^~~~~
+../src/helloworld.c:129:26: warning: unused variable 'FUart1' [-Wunused-variable]
+  XUartPsFormat *FUart0, *FUart1;
+                          ^~~~~~
+../src/helloworld.c:129:17: warning: unused variable 'FUart0' [-Wunused-variable]
+  XUartPsFormat *FUart0, *FUart1;
+                 ^~~~~~
+../src/helloworld.c:128:27: warning: variable 'CUart1' set but not used [-Wunused-but-set-variable]
+  XUartPs_Config *CUart0, *CUart1;
+                           ^~~~~~
+../src/helloworld.c:128:18: warning: variable 'CUart0' set but not used [-Wunused-but-set-variable]
+  XUartPs_Config *CUart0, *CUart1;
+                  ^~~~~~
+../src/helloworld.c: In function 'UartPsEchoExample':
+../src/helloworld.c:168:5: warning: unused variable 'RecvChar' [-Wunused-variable]
+  u8 RecvChar;
+     ^~~~~~~~
+../src/helloworld.c:166:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+../src/helloworld.c: In function 'InitUartModules':
+../src/helloworld.c:207:79: warning: variable 'BaudRDividerRegister' set but not used [-Wunused-but-set-variable]
+  u32 CntrlRegister0, CntrlRegister1, BaudModeRegister, BaudGeneratorRegister, BaudRDividerRegister;
+                                                                               ^~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:207:56: warning: variable 'BaudGeneratorRegister' set but not used [-Wunused-but-set-variable]
+  u32 CntrlRegister0, CntrlRegister1, BaudModeRegister, BaudGeneratorRegister, BaudRDividerRegister;
+                                                        ^~~~~~~~~~~~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: cv7_dualuart_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cv7_dualuart_test_bsp/ps7_cortexa9_0/lib -o "cv7_dualuart_test.elf"  ./src/helloworld.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cv7_dualuart_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cv7_dualuart_test.elf  |tee "cv7_dualuart_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22880	   1180	   8248	  32308	   7e34	cv7_dualuart_test.elf
+'Finished building: cv7_dualuart_test.elf.size'
+' '
+15:47:56 **** Auto Build of configuration Debug for project cv7_dualuart_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cv7_dualuart_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:134:32: warning: passing argument 2 of 'XUartPs_CfgInitialize' from incompatible pointer type [-Wincompatible-pointer-types]
+  XUartPs_CfgInitialize(&Uart0, &CUart0, XPAR_PS7_UART_0_BASEADDR);
+                                ^
+In file included from ../src/helloworld.c:73:0:
+../../cv7_dualuart_test_bsp/ps7_cortexa9_0/include/xuartps.h:460:5: note: expected 'XUartPs_Config * {aka struct <anonymous> *}' but argument is of type 'XUartPs_Config ** {aka struct <anonymous> **}'
+ s32 XUartPs_CfgInitialize(XUartPs *InstancePtr,
+     ^~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:130:17: warning: unused variable 'Uart1' [-Wunused-variable]
+  XUartPs Uart0, Uart1;
+                 ^~~~~
+../src/helloworld.c:129:26: warning: unused variable 'FUart1' [-Wunused-variable]
+  XUartPsFormat *FUart0, *FUart1;
+                          ^~~~~~
+../src/helloworld.c:129:17: warning: unused variable 'FUart0' [-Wunused-variable]
+  XUartPsFormat *FUart0, *FUart1;
+                 ^~~~~~
+../src/helloworld.c:128:27: warning: variable 'CUart1' set but not used [-Wunused-but-set-variable]
+  XUartPs_Config *CUart0, *CUart1;
+                           ^~~~~~
+../src/helloworld.c: In function 'UartPsEchoExample':
+../src/helloworld.c:169:5: warning: unused variable 'RecvChar' [-Wunused-variable]
+  u8 RecvChar;
+     ^~~~~~~~
+../src/helloworld.c:167:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+../src/helloworld.c: In function 'InitUartModules':
+../src/helloworld.c:208:79: warning: variable 'BaudRDividerRegister' set but not used [-Wunused-but-set-variable]
+  u32 CntrlRegister0, CntrlRegister1, BaudModeRegister, BaudGeneratorRegister, BaudRDividerRegister;
+                                                                               ^~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:208:56: warning: variable 'BaudGeneratorRegister' set but not used [-Wunused-but-set-variable]
+  u32 CntrlRegister0, CntrlRegister1, BaudModeRegister, BaudGeneratorRegister, BaudRDividerRegister;
+                                                        ^~~~~~~~~~~~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: cv7_dualuart_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cv7_dualuart_test_bsp/ps7_cortexa9_0/lib -o "cv7_dualuart_test.elf"  ./src/helloworld.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cv7_dualuart_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cv7_dualuart_test.elf  |tee "cv7_dualuart_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24492	   1188	   8264	  33944	   8498	cv7_dualuart_test.elf
+'Finished building: cv7_dualuart_test.elf.size'
+' '
+15:48:24 **** Auto Build of configuration Debug for project cv7_dualuart_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cv7_dualuart_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:134:32: warning: passing argument 2 of 'XUartPs_CfgInitialize' from incompatible pointer type [-Wincompatible-pointer-types]
+  XUartPs_CfgInitialize(&Uart0, &CUart0, XPAR_PS7_UART_0_BASEADDR);
+                                ^
+In file included from ../src/helloworld.c:73:0:
+../../cv7_dualuart_test_bsp/ps7_cortexa9_0/include/xuartps.h:460:5: note: expected 'XUartPs_Config * {aka struct <anonymous> *}' but argument is of type 'XUartPs_Config ** {aka struct <anonymous> **}'
+ s32 XUartPs_CfgInitialize(XUartPs *InstancePtr,
+     ^~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:135:32: warning: passing argument 2 of 'XUartPs_GetDataFormat' from incompatible pointer type [-Wincompatible-pointer-types]
+  XUartPs_GetDataFormat(&Uart0, &FUart0);
+                                ^
+In file included from ../src/helloworld.c:73:0:
+../../cv7_dualuart_test_bsp/ps7_cortexa9_0/include/xuartps.h:498:6: note: expected 'XUartPsFormat * {aka struct <anonymous> *}' but argument is of type 'XUartPsFormat ** {aka struct <anonymous> **}'
+ void XUartPs_GetDataFormat(XUartPs *InstancePtr, XUartPsFormat * FormatPtr);
+      ^~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:130:17: warning: unused variable 'Uart1' [-Wunused-variable]
+  XUartPs Uart0, Uart1;
+                 ^~~~~
+../src/helloworld.c:129:26: warning: unused variable 'FUart1' [-Wunused-variable]
+  XUartPsFormat *FUart0, *FUart1;
+                          ^~~~~~
+../src/helloworld.c:128:27: warning: variable 'CUart1' set but not used [-Wunused-but-set-variable]
+  XUartPs_Config *CUart0, *CUart1;
+                           ^~~~~~
+../src/helloworld.c: In function 'UartPsEchoExample':
+../src/helloworld.c:170:5: warning: unused variable 'RecvChar' [-Wunused-variable]
+  u8 RecvChar;
+     ^~~~~~~~
+../src/helloworld.c:168:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+../src/helloworld.c: In function 'InitUartModules':
+../src/helloworld.c:209:79: warning: variable 'BaudRDividerRegister' set but not used [-Wunused-but-set-variable]
+  u32 CntrlRegister0, CntrlRegister1, BaudModeRegister, BaudGeneratorRegister, BaudRDividerRegister;
+                                                                               ^~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:209:56: warning: variable 'BaudGeneratorRegister' set but not used [-Wunused-but-set-variable]
+  u32 CntrlRegister0, CntrlRegister1, BaudModeRegister, BaudGeneratorRegister, BaudRDividerRegister;
+                                                        ^~~~~~~~~~~~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: cv7_dualuart_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cv7_dualuart_test_bsp/ps7_cortexa9_0/lib -o "cv7_dualuart_test.elf"  ./src/helloworld.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cv7_dualuart_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cv7_dualuart_test.elf  |tee "cv7_dualuart_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  27008	   1188	   8264	  36460	   8e6c	cv7_dualuart_test.elf
+'Finished building: cv7_dualuart_test.elf.size'
+' '
+15:48:38 **** Incremental Build of configuration Debug for project cv7_dualuart_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+15:52:47 **** Auto Build of configuration Debug for project cv7_dualuart_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cv7_dualuart_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:134:32: warning: passing argument 2 of 'XUartPs_CfgInitialize' from incompatible pointer type [-Wincompatible-pointer-types]
+  XUartPs_CfgInitialize(&Uart0, &CUart0, XPAR_PS7_UART_0_BASEADDR);
+                                ^
+In file included from ../src/helloworld.c:73:0:
+../../cv7_dualuart_test_bsp/ps7_cortexa9_0/include/xuartps.h:460:5: note: expected 'XUartPs_Config * {aka struct <anonymous> *}' but argument is of type 'XUartPs_Config ** {aka struct <anonymous> **}'
+ s32 XUartPs_CfgInitialize(XUartPs *InstancePtr,
+     ^~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:130:17: warning: unused variable 'Uart1' [-Wunused-variable]
+  XUartPs Uart0, Uart1;
+                 ^~~~~
+../src/helloworld.c:129:26: warning: unused variable 'FUart1' [-Wunused-variable]
+  XUartPsFormat *FUart0, *FUart1;
+                          ^~~~~~
+../src/helloworld.c:128:27: warning: variable 'CUart1' set but not used [-Wunused-but-set-variable]
+  XUartPs_Config *CUart0, *CUart1;
+                           ^~~~~~
+../src/helloworld.c: In function 'UartPsEchoExample':
+../src/helloworld.c:170:5: warning: unused variable 'RecvChar' [-Wunused-variable]
+  u8 RecvChar;
+     ^~~~~~~~
+../src/helloworld.c:168:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+../src/helloworld.c: In function 'InitUartModules':
+../src/helloworld.c:209:79: warning: variable 'BaudRDividerRegister' set but not used [-Wunused-but-set-variable]
+  u32 CntrlRegister0, CntrlRegister1, BaudModeRegister, BaudGeneratorRegister, BaudRDividerRegister;
+                                                                               ^~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:209:56: warning: variable 'BaudGeneratorRegister' set but not used [-Wunused-but-set-variable]
+  u32 CntrlRegister0, CntrlRegister1, BaudModeRegister, BaudGeneratorRegister, BaudRDividerRegister;
+                                                        ^~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:135:2: warning: 'FUart0' is used uninitialized in this function [-Wuninitialized]
+  XUartPs_GetDataFormat(&Uart0, FUart0);
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: cv7_dualuart_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cv7_dualuart_test_bsp/ps7_cortexa9_0/lib -o "cv7_dualuart_test.elf"  ./src/helloworld.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cv7_dualuart_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cv7_dualuart_test.elf  |tee "cv7_dualuart_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  27008	   1188	   8264	  36460	   8e6c	cv7_dualuart_test.elf
+'Finished building: cv7_dualuart_test.elf.size'
+' '
+15:52:54 **** Auto Build of configuration Debug for project cv7_dualuart_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cv7_dualuart_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:130:17: warning: unused variable 'Uart1' [-Wunused-variable]
+  XUartPs Uart0, Uart1;
+                 ^~~~~
+../src/helloworld.c:129:26: warning: unused variable 'FUart1' [-Wunused-variable]
+  XUartPsFormat *FUart0, *FUart1;
+                          ^~~~~~
+../src/helloworld.c:128:27: warning: variable 'CUart1' set but not used [-Wunused-but-set-variable]
+  XUartPs_Config *CUart0, *CUart1;
+                           ^~~~~~
+../src/helloworld.c: In function 'UartPsEchoExample':
+../src/helloworld.c:170:5: warning: unused variable 'RecvChar' [-Wunused-variable]
+  u8 RecvChar;
+     ^~~~~~~~
+../src/helloworld.c:168:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+../src/helloworld.c: In function 'InitUartModules':
+../src/helloworld.c:209:79: warning: variable 'BaudRDividerRegister' set but not used [-Wunused-but-set-variable]
+  u32 CntrlRegister0, CntrlRegister1, BaudModeRegister, BaudGeneratorRegister, BaudRDividerRegister;
+                                                                               ^~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:209:56: warning: variable 'BaudGeneratorRegister' set but not used [-Wunused-but-set-variable]
+  u32 CntrlRegister0, CntrlRegister1, BaudModeRegister, BaudGeneratorRegister, BaudRDividerRegister;
+                                                        ^~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:135:2: warning: 'FUart0' is used uninitialized in this function [-Wuninitialized]
+  XUartPs_GetDataFormat(&Uart0, FUart0);
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: cv7_dualuart_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cv7_dualuart_test_bsp/ps7_cortexa9_0/lib -o "cv7_dualuart_test.elf"  ./src/helloworld.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cv7_dualuart_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cv7_dualuart_test.elf  |tee "cv7_dualuart_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  27008	   1188	   8264	  36460	   8e6c	cv7_dualuart_test.elf
+'Finished building: cv7_dualuart_test.elf.size'
+' '
+15:53:27 **** Auto Build of configuration Debug for project cv7_dualuart_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cv7_dualuart_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:135:32: error: invalid type argument of unary '*' (have 'XUartPsFormat {aka struct <anonymous>}')
+  XUartPs_GetDataFormat(&Uart0, *FUart0);
+                                ^~~~~~~
+../src/helloworld.c:130:17: warning: unused variable 'Uart1' [-Wunused-variable]
+  XUartPs Uart0, Uart1;
+                 ^~~~~
+../src/helloworld.c:129:24: warning: unused variable 'FUart1' [-Wunused-variable]
+  XUartPsFormat FUart0, FUart1;
+                        ^~~~~~
+../src/helloworld.c:128:27: warning: variable 'CUart1' set but not used [-Wunused-but-set-variable]
+  XUartPs_Config *CUart0, *CUart1;
+                           ^~~~~~
+../src/helloworld.c: In function 'UartPsEchoExample':
+../src/helloworld.c:170:5: warning: unused variable 'RecvChar' [-Wunused-variable]
+  u8 RecvChar;
+     ^~~~~~~~
+../src/helloworld.c:168:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+../src/helloworld.c: In function 'InitUartModules':
+../src/helloworld.c:209:79: warning: variable 'BaudRDividerRegister' set but not used [-Wunused-but-set-variable]
+  u32 CntrlRegister0, CntrlRegister1, BaudModeRegister, BaudGeneratorRegister, BaudRDividerRegister;
+                                                                               ^~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:209:56: warning: variable 'BaudGeneratorRegister' set but not used [-Wunused-but-set-variable]
+  u32 CntrlRegister0, CntrlRegister1, BaudModeRegister, BaudGeneratorRegister, BaudRDividerRegister;
+                                                        ^~~~~~~~~~~~~~~~~~~~~
+make: *** [src/helloworld.o] Error 1
+15:53:34 **** Auto Build of configuration Debug for project cv7_dualuart_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cv7_dualuart_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:130:17: warning: unused variable 'Uart1' [-Wunused-variable]
+  XUartPs Uart0, Uart1;
+                 ^~~~~
+../src/helloworld.c:129:24: warning: unused variable 'FUart1' [-Wunused-variable]
+  XUartPsFormat FUart0, FUart1;
+                        ^~~~~~
+../src/helloworld.c:128:27: warning: variable 'CUart1' set but not used [-Wunused-but-set-variable]
+  XUartPs_Config *CUart0, *CUart1;
+                           ^~~~~~
+../src/helloworld.c: In function 'UartPsEchoExample':
+../src/helloworld.c:170:5: warning: unused variable 'RecvChar' [-Wunused-variable]
+  u8 RecvChar;
+     ^~~~~~~~
+../src/helloworld.c:168:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+../src/helloworld.c: In function 'InitUartModules':
+../src/helloworld.c:209:79: warning: variable 'BaudRDividerRegister' set but not used [-Wunused-but-set-variable]
+  u32 CntrlRegister0, CntrlRegister1, BaudModeRegister, BaudGeneratorRegister, BaudRDividerRegister;
+                                                                               ^~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:209:56: warning: variable 'BaudGeneratorRegister' set but not used [-Wunused-but-set-variable]
+  u32 CntrlRegister0, CntrlRegister1, BaudModeRegister, BaudGeneratorRegister, BaudRDividerRegister;
+                                                        ^~~~~~~~~~~~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: cv7_dualuart_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cv7_dualuart_test_bsp/ps7_cortexa9_0/lib -o "cv7_dualuart_test.elf"  ./src/helloworld.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cv7_dualuart_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cv7_dualuart_test.elf  |tee "cv7_dualuart_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  27008	   1188	   8264	  36460	   8e6c	cv7_dualuart_test.elf
+'Finished building: cv7_dualuart_test.elf.size'
+' '
+15:53:38 **** Incremental Build of configuration Debug for project cv7_dualuart_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+15:54:51 **** Incremental Build of configuration Debug for project cv7_dualuart_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+15:56:17 **** Auto Build of configuration Debug for project cv7_dualuart_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cv7_dualuart_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:129:24: warning: unused variable 'FUart1' [-Wunused-variable]
+  XUartPsFormat FUart0, FUart1;
+                        ^~~~~~
+../src/helloworld.c: In function 'UartPsEchoExample':
+../src/helloworld.c:171:5: warning: unused variable 'RecvChar' [-Wunused-variable]
+  u8 RecvChar;
+     ^~~~~~~~
+../src/helloworld.c:169:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+../src/helloworld.c: In function 'InitUartModules':
+../src/helloworld.c:210:79: warning: variable 'BaudRDividerRegister' set but not used [-Wunused-but-set-variable]
+  u32 CntrlRegister0, CntrlRegister1, BaudModeRegister, BaudGeneratorRegister, BaudRDividerRegister;
+                                                                               ^~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:210:56: warning: variable 'BaudGeneratorRegister' set but not used [-Wunused-but-set-variable]
+  u32 CntrlRegister0, CntrlRegister1, BaudModeRegister, BaudGeneratorRegister, BaudRDividerRegister;
+                                                        ^~~~~~~~~~~~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: cv7_dualuart_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cv7_dualuart_test_bsp/ps7_cortexa9_0/lib -o "cv7_dualuart_test.elf"  ./src/helloworld.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cv7_dualuart_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cv7_dualuart_test.elf  |tee "cv7_dualuart_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  27072	   1188	   8264	  36524	   8eac	cv7_dualuart_test.elf
+'Finished building: cv7_dualuart_test.elf.size'
+' '
+15:56:40 **** Auto Build of configuration Debug for project cv7_dualuart_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cv7_dualuart_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:132:10: error: lvalue required as left operand of assignment
+  &CUart0 = XUartPs_LookupConfig(XPAR_PS7_UART_0_DEVICE_ID);
+          ^
+../src/helloworld.c:129:24: warning: unused variable 'FUart1' [-Wunused-variable]
+  XUartPsFormat FUart0, FUart1;
+                        ^~~~~~
+../src/helloworld.c: In function 'UartPsEchoExample':
+../src/helloworld.c:171:5: warning: unused variable 'RecvChar' [-Wunused-variable]
+  u8 RecvChar;
+     ^~~~~~~~
+../src/helloworld.c:169:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+../src/helloworld.c: In function 'InitUartModules':
+../src/helloworld.c:210:79: warning: variable 'BaudRDividerRegister' set but not used [-Wunused-but-set-variable]
+  u32 CntrlRegister0, CntrlRegister1, BaudModeRegister, BaudGeneratorRegister, BaudRDividerRegister;
+                                                                               ^~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:210:56: warning: variable 'BaudGeneratorRegister' set but not used [-Wunused-but-set-variable]
+  u32 CntrlRegister0, CntrlRegister1, BaudModeRegister, BaudGeneratorRegister, BaudRDividerRegister;
+                                                        ^~~~~~~~~~~~~~~~~~~~~
+make: *** [src/helloworld.o] Error 1
+15:56:44 **** Auto Build of configuration Debug for project cv7_dualuart_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cv7_dualuart_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:129:24: warning: unused variable 'FUart1' [-Wunused-variable]
+  XUartPsFormat FUart0, FUart1;
+                        ^~~~~~
+../src/helloworld.c: In function 'UartPsEchoExample':
+../src/helloworld.c:171:5: warning: unused variable 'RecvChar' [-Wunused-variable]
+  u8 RecvChar;
+     ^~~~~~~~
+../src/helloworld.c:169:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+../src/helloworld.c: In function 'InitUartModules':
+../src/helloworld.c:210:79: warning: variable 'BaudRDividerRegister' set but not used [-Wunused-but-set-variable]
+  u32 CntrlRegister0, CntrlRegister1, BaudModeRegister, BaudGeneratorRegister, BaudRDividerRegister;
+                                                                               ^~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:210:56: warning: variable 'BaudGeneratorRegister' set but not used [-Wunused-but-set-variable]
+  u32 CntrlRegister0, CntrlRegister1, BaudModeRegister, BaudGeneratorRegister, BaudRDividerRegister;
+                                                        ^~~~~~~~~~~~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: cv7_dualuart_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cv7_dualuart_test_bsp/ps7_cortexa9_0/lib -o "cv7_dualuart_test.elf"  ./src/helloworld.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cv7_dualuart_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cv7_dualuart_test.elf  |tee "cv7_dualuart_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  27072	   1188	   8264	  36524	   8eac	cv7_dualuart_test.elf
+'Finished building: cv7_dualuart_test.elf.size'
+' '
+15:56:58 **** Auto Build of configuration Debug for project cv7_dualuart_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cv7_dualuart_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'UartPsEchoExample':
+../src/helloworld.c:172:5: warning: unused variable 'RecvChar' [-Wunused-variable]
+  u8 RecvChar;
+     ^~~~~~~~
+../src/helloworld.c:170:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+../src/helloworld.c: In function 'InitUartModules':
+../src/helloworld.c:211:79: warning: variable 'BaudRDividerRegister' set but not used [-Wunused-but-set-variable]
+  u32 CntrlRegister0, CntrlRegister1, BaudModeRegister, BaudGeneratorRegister, BaudRDividerRegister;
+                                                                               ^~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:211:56: warning: variable 'BaudGeneratorRegister' set but not used [-Wunused-but-set-variable]
+  u32 CntrlRegister0, CntrlRegister1, BaudModeRegister, BaudGeneratorRegister, BaudRDividerRegister;
+                                                        ^~~~~~~~~~~~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: cv7_dualuart_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cv7_dualuart_test_bsp/ps7_cortexa9_0/lib -o "cv7_dualuart_test.elf"  ./src/helloworld.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cv7_dualuart_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cv7_dualuart_test.elf  |tee "cv7_dualuart_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  27072	   1188	   8264	  36524	   8eac	cv7_dualuart_test.elf
+'Finished building: cv7_dualuart_test.elf.size'
+' '
+15:57:02 **** Incremental Build of configuration Debug for project cv7_dualuart_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+16:01:37 **** Auto Build of configuration Debug for project cv7_dualuart_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cv7_dualuart_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'UartPsEchoExample':
+../src/helloworld.c:173:5: warning: unused variable 'RecvChar' [-Wunused-variable]
+  u8 RecvChar;
+     ^~~~~~~~
+../src/helloworld.c:171:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+../src/helloworld.c: In function 'InitUartModules':
+../src/helloworld.c:212:79: warning: variable 'BaudRDividerRegister' set but not used [-Wunused-but-set-variable]
+  u32 CntrlRegister0, CntrlRegister1, BaudModeRegister, BaudGeneratorRegister, BaudRDividerRegister;
+                                                                               ^~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:212:56: warning: variable 'BaudGeneratorRegister' set but not used [-Wunused-but-set-variable]
+  u32 CntrlRegister0, CntrlRegister1, BaudModeRegister, BaudGeneratorRegister, BaudRDividerRegister;
+                                                        ^~~~~~~~~~~~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: cv7_dualuart_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cv7_dualuart_test_bsp/ps7_cortexa9_0/lib -o "cv7_dualuart_test.elf"  ./src/helloworld.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cv7_dualuart_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cv7_dualuart_test.elf  |tee "cv7_dualuart_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  27072	   1188	   8264	  36524	   8eac	cv7_dualuart_test.elf
+'Finished building: cv7_dualuart_test.elf.size'
+' '
+16:01:42 **** Auto Build of configuration Debug for project cv7_dualuart_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cv7_dualuart_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'UartPsEchoExample':
+../src/helloworld.c:173:5: warning: unused variable 'RecvChar' [-Wunused-variable]
+  u8 RecvChar;
+     ^~~~~~~~
+../src/helloworld.c:171:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+../src/helloworld.c: In function 'InitUartModules':
+../src/helloworld.c:212:79: warning: variable 'BaudRDividerRegister' set but not used [-Wunused-but-set-variable]
+  u32 CntrlRegister0, CntrlRegister1, BaudModeRegister, BaudGeneratorRegister, BaudRDividerRegister;
+                                                                               ^~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:212:56: warning: variable 'BaudGeneratorRegister' set but not used [-Wunused-but-set-variable]
+  u32 CntrlRegister0, CntrlRegister1, BaudModeRegister, BaudGeneratorRegister, BaudRDividerRegister;
+                                                        ^~~~~~~~~~~~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: cv7_dualuart_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cv7_dualuart_test_bsp/ps7_cortexa9_0/lib -o "cv7_dualuart_test.elf"  ./src/helloworld.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cv7_dualuart_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cv7_dualuart_test.elf  |tee "cv7_dualuart_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  27072	   1188	   8264	  36524	   8eac	cv7_dualuart_test.elf
+'Finished building: cv7_dualuart_test.elf.size'
+' '
+16:01:46 **** Incremental Build of configuration Debug for project cv7_dualuart_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+16:03:55 **** Auto Build of configuration Debug for project cv7_dualuart_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cv7_dualuart_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:130:17: warning: unused variable 'Uart1' [-Wunused-variable]
+  XUartPs Uart0, Uart1;
+                 ^~~~~
+../src/helloworld.c:130:10: warning: unused variable 'Uart0' [-Wunused-variable]
+  XUartPs Uart0, Uart1;
+          ^~~~~
+../src/helloworld.c:129:24: warning: unused variable 'FUart1' [-Wunused-variable]
+  XUartPsFormat FUart0, FUart1;
+                        ^~~~~~
+../src/helloworld.c:129:16: warning: unused variable 'FUart0' [-Wunused-variable]
+  XUartPsFormat FUart0, FUart1;
+                ^~~~~~
+../src/helloworld.c:128:27: warning: unused variable 'CUart1' [-Wunused-variable]
+  XUartPs_Config *CUart0, *CUart1;
+                           ^~~~~~
+../src/helloworld.c:128:18: warning: unused variable 'CUart0' [-Wunused-variable]
+  XUartPs_Config *CUart0, *CUart1;
+                  ^~~~~~
+../src/helloworld.c: In function 'UartPsEchoExample':
+../src/helloworld.c:173:5: warning: unused variable 'RecvChar' [-Wunused-variable]
+  u8 RecvChar;
+     ^~~~~~~~
+../src/helloworld.c:171:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+../src/helloworld.c: In function 'InitUartModules':
+../src/helloworld.c:212:79: warning: variable 'BaudRDividerRegister' set but not used [-Wunused-but-set-variable]
+  u32 CntrlRegister0, CntrlRegister1, BaudModeRegister, BaudGeneratorRegister, BaudRDividerRegister;
+                                                                               ^~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:212:56: warning: variable 'BaudGeneratorRegister' set but not used [-Wunused-but-set-variable]
+  u32 CntrlRegister0, CntrlRegister1, BaudModeRegister, BaudGeneratorRegister, BaudRDividerRegister;
+                                                        ^~~~~~~~~~~~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: cv7_dualuart_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cv7_dualuart_test_bsp/ps7_cortexa9_0/lib -o "cv7_dualuart_test.elf"  ./src/helloworld.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cv7_dualuart_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cv7_dualuart_test.elf  |tee "cv7_dualuart_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22816	   1148	   8248	  32212	   7dd4	cv7_dualuart_test.elf
+'Finished building: cv7_dualuart_test.elf.size'
+' '
+16:04:03 **** Incremental Build of configuration Debug for project cv7_dualuart_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+16:14:36 **** Auto Build of configuration Debug for project cv7_dualuart_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cv7_dualuart_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:130:17: warning: unused variable 'Uart1' [-Wunused-variable]
+  XUartPs Uart0, Uart1;
+                 ^~~~~
+../src/helloworld.c:130:10: warning: unused variable 'Uart0' [-Wunused-variable]
+  XUartPs Uart0, Uart1;
+          ^~~~~
+../src/helloworld.c:129:24: warning: unused variable 'FUart1' [-Wunused-variable]
+  XUartPsFormat FUart0, FUart1;
+                        ^~~~~~
+../src/helloworld.c:129:16: warning: unused variable 'FUart0' [-Wunused-variable]
+  XUartPsFormat FUart0, FUart1;
+                ^~~~~~
+../src/helloworld.c:128:27: warning: unused variable 'CUart1' [-Wunused-variable]
+  XUartPs_Config *CUart0, *CUart1;
+                           ^~~~~~
+../src/helloworld.c:128:18: warning: unused variable 'CUart0' [-Wunused-variable]
+  XUartPs_Config *CUart0, *CUart1;
+                  ^~~~~~
+../src/helloworld.c: In function 'UartPsEchoExample':
+../src/helloworld.c:180:5: warning: unused variable 'RecvChar' [-Wunused-variable]
+  u8 RecvChar;
+     ^~~~~~~~
+../src/helloworld.c:178:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+../src/helloworld.c: In function 'InitUartModules':
+../src/helloworld.c:219:79: warning: variable 'BaudRDividerRegister' set but not used [-Wunused-but-set-variable]
+  u32 CntrlRegister0, CntrlRegister1, BaudModeRegister, BaudGeneratorRegister, BaudRDividerRegister;
+                                                                               ^~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:219:56: warning: variable 'BaudGeneratorRegister' set but not used [-Wunused-but-set-variable]
+  u32 CntrlRegister0, CntrlRegister1, BaudModeRegister, BaudGeneratorRegister, BaudRDividerRegister;
+                                                        ^~~~~~~~~~~~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: cv7_dualuart_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cv7_dualuart_test_bsp/ps7_cortexa9_0/lib -o "cv7_dualuart_test.elf"  ./src/helloworld.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cv7_dualuart_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cv7_dualuart_test.elf  |tee "cv7_dualuart_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22816	   1148	   8248	  32212	   7dd4	cv7_dualuart_test.elf
+'Finished building: cv7_dualuart_test.elf.size'
+' '
+16:14:52 **** Auto Build of configuration Debug for project cv7_dualuart_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cv7_dualuart_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:131:17: warning: unused variable 'Uart1' [-Wunused-variable]
+  XUartPs Uart0, Uart1;
+                 ^~~~~
+../src/helloworld.c:131:10: warning: unused variable 'Uart0' [-Wunused-variable]
+  XUartPs Uart0, Uart1;
+          ^~~~~
+../src/helloworld.c:130:24: warning: unused variable 'FUart1' [-Wunused-variable]
+  XUartPsFormat FUart0, FUart1;
+                        ^~~~~~
+../src/helloworld.c:130:16: warning: unused variable 'FUart0' [-Wunused-variable]
+  XUartPsFormat FUart0, FUart1;
+                ^~~~~~
+../src/helloworld.c:129:27: warning: unused variable 'CUart1' [-Wunused-variable]
+  XUartPs_Config *CUart0, *CUart1;
+                           ^~~~~~
+../src/helloworld.c:129:18: warning: unused variable 'CUart0' [-Wunused-variable]
+  XUartPs_Config *CUart0, *CUart1;
+                  ^~~~~~
+../src/helloworld.c:128:6: warning: unused variable 'regval' [-Wunused-variable]
+  u32 regval = 0;
+      ^~~~~~
+../src/helloworld.c: In function 'UartPsEchoExample':
+../src/helloworld.c:181:5: warning: unused variable 'RecvChar' [-Wunused-variable]
+  u8 RecvChar;
+     ^~~~~~~~
+../src/helloworld.c:179:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+../src/helloworld.c: In function 'InitUartModules':
+../src/helloworld.c:220:79: warning: variable 'BaudRDividerRegister' set but not used [-Wunused-but-set-variable]
+  u32 CntrlRegister0, CntrlRegister1, BaudModeRegister, BaudGeneratorRegister, BaudRDividerRegister;
+                                                                               ^~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:220:56: warning: variable 'BaudGeneratorRegister' set but not used [-Wunused-but-set-variable]
+  u32 CntrlRegister0, CntrlRegister1, BaudModeRegister, BaudGeneratorRegister, BaudRDividerRegister;
+                                                        ^~~~~~~~~~~~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: cv7_dualuart_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cv7_dualuart_test_bsp/ps7_cortexa9_0/lib -o "cv7_dualuart_test.elf"  ./src/helloworld.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cv7_dualuart_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cv7_dualuart_test.elf  |tee "cv7_dualuart_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22880	   1148	   8248	  32276	   7e14	cv7_dualuart_test.elf
+'Finished building: cv7_dualuart_test.elf.size'
+' '
+16:15:03 **** Auto Build of configuration Debug for project cv7_dualuart_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cv7_dualuart_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:131:17: warning: unused variable 'Uart1' [-Wunused-variable]
+  XUartPs Uart0, Uart1;
+                 ^~~~~
+../src/helloworld.c:131:10: warning: unused variable 'Uart0' [-Wunused-variable]
+  XUartPs Uart0, Uart1;
+          ^~~~~
+../src/helloworld.c:130:24: warning: unused variable 'FUart1' [-Wunused-variable]
+  XUartPsFormat FUart0, FUart1;
+                        ^~~~~~
+../src/helloworld.c:130:16: warning: unused variable 'FUart0' [-Wunused-variable]
+  XUartPsFormat FUart0, FUart1;
+                ^~~~~~
+../src/helloworld.c:129:27: warning: unused variable 'CUart1' [-Wunused-variable]
+  XUartPs_Config *CUart0, *CUart1;
+                           ^~~~~~
+../src/helloworld.c:129:18: warning: unused variable 'CUart0' [-Wunused-variable]
+  XUartPs_Config *CUart0, *CUart1;
+                  ^~~~~~
+../src/helloworld.c:128:6: warning: variable 'regval' set but not used [-Wunused-but-set-variable]
+  u32 regval = 0;
+      ^~~~~~
+../src/helloworld.c: In function 'UartPsEchoExample':
+../src/helloworld.c:182:5: warning: unused variable 'RecvChar' [-Wunused-variable]
+  u8 RecvChar;
+     ^~~~~~~~
+../src/helloworld.c:180:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+../src/helloworld.c: In function 'InitUartModules':
+../src/helloworld.c:221:79: warning: variable 'BaudRDividerRegister' set but not used [-Wunused-but-set-variable]
+  u32 CntrlRegister0, CntrlRegister1, BaudModeRegister, BaudGeneratorRegister, BaudRDividerRegister;
+                                                                               ^~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:221:56: warning: variable 'BaudGeneratorRegister' set but not used [-Wunused-but-set-variable]
+  u32 CntrlRegister0, CntrlRegister1, BaudModeRegister, BaudGeneratorRegister, BaudRDividerRegister;
+                                                        ^~~~~~~~~~~~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: cv7_dualuart_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cv7_dualuart_test_bsp/ps7_cortexa9_0/lib -o "cv7_dualuart_test.elf"  ./src/helloworld.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cv7_dualuart_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cv7_dualuart_test.elf  |tee "cv7_dualuart_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22880	   1148	   8248	  32276	   7e14	cv7_dualuart_test.elf
+'Finished building: cv7_dualuart_test.elf.size'
+' '
+16:15:10 **** Incremental Build of configuration Debug for project cv7_dualuart_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+16:17:37 **** Auto Build of configuration Debug for project cv7_dualuart_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cv7_dualuart_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:131:17: warning: unused variable 'Uart1' [-Wunused-variable]
+  XUartPs Uart0, Uart1;
+                 ^~~~~
+../src/helloworld.c:131:10: warning: unused variable 'Uart0' [-Wunused-variable]
+  XUartPs Uart0, Uart1;
+          ^~~~~
+../src/helloworld.c:130:24: warning: unused variable 'FUart1' [-Wunused-variable]
+  XUartPsFormat FUart0, FUart1;
+                        ^~~~~~
+../src/helloworld.c:130:16: warning: unused variable 'FUart0' [-Wunused-variable]
+  XUartPsFormat FUart0, FUart1;
+                ^~~~~~
+../src/helloworld.c:129:27: warning: unused variable 'CUart1' [-Wunused-variable]
+  XUartPs_Config *CUart0, *CUart1;
+                           ^~~~~~
+../src/helloworld.c:129:18: warning: unused variable 'CUart0' [-Wunused-variable]
+  XUartPs_Config *CUart0, *CUart1;
+                  ^~~~~~
+../src/helloworld.c:128:6: warning: variable 'regval' set but not used [-Wunused-but-set-variable]
+  u32 regval = 0;
+      ^~~~~~
+../src/helloworld.c: In function 'UartPsEchoExample':
+../src/helloworld.c:183:5: warning: unused variable 'RecvChar' [-Wunused-variable]
+  u8 RecvChar;
+     ^~~~~~~~
+../src/helloworld.c:181:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+../src/helloworld.c: In function 'InitUartModules':
+../src/helloworld.c:222:79: warning: variable 'BaudRDividerRegister' set but not used [-Wunused-but-set-variable]
+  u32 CntrlRegister0, CntrlRegister1, BaudModeRegister, BaudGeneratorRegister, BaudRDividerRegister;
+                                                                               ^~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:222:56: warning: variable 'BaudGeneratorRegister' set but not used [-Wunused-but-set-variable]
+  u32 CntrlRegister0, CntrlRegister1, BaudModeRegister, BaudGeneratorRegister, BaudRDividerRegister;
+                                                        ^~~~~~~~~~~~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: cv7_dualuart_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cv7_dualuart_test_bsp/ps7_cortexa9_0/lib -o "cv7_dualuart_test.elf"  ./src/helloworld.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cv7_dualuart_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cv7_dualuart_test.elf  |tee "cv7_dualuart_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22880	   1148	   8248	  32276	   7e14	cv7_dualuart_test.elf
+'Finished building: cv7_dualuart_test.elf.size'
+' '
+16:17:48 **** Incremental Build of configuration Debug for project cv7_dualuart_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+16:25:42 **** Auto Build of configuration Debug for project cv7_dualuart_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cv7_dualuart_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:131:17: warning: unused variable 'Uart1' [-Wunused-variable]
+  XUartPs Uart0, Uart1;
+                 ^~~~~
+../src/helloworld.c:131:10: warning: unused variable 'Uart0' [-Wunused-variable]
+  XUartPs Uart0, Uart1;
+          ^~~~~
+../src/helloworld.c:130:24: warning: unused variable 'FUart1' [-Wunused-variable]
+  XUartPsFormat FUart0, FUart1;
+                        ^~~~~~
+../src/helloworld.c:130:16: warning: unused variable 'FUart0' [-Wunused-variable]
+  XUartPsFormat FUart0, FUart1;
+                ^~~~~~
+../src/helloworld.c:129:27: warning: unused variable 'CUart1' [-Wunused-variable]
+  XUartPs_Config *CUart0, *CUart1;
+                           ^~~~~~
+../src/helloworld.c:129:18: warning: unused variable 'CUart0' [-Wunused-variable]
+  XUartPs_Config *CUart0, *CUart1;
+                  ^~~~~~
+../src/helloworld.c:128:6: warning: variable 'regval' set but not used [-Wunused-but-set-variable]
+  u32 regval = 0;
+      ^~~~~~
+../src/helloworld.c: In function 'UartPsEchoExample':
+../src/helloworld.c:184:5: warning: unused variable 'RecvChar' [-Wunused-variable]
+  u8 RecvChar;
+     ^~~~~~~~
+../src/helloworld.c:182:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+../src/helloworld.c: In function 'InitUartModules':
+../src/helloworld.c:223:79: warning: variable 'BaudRDividerRegister' set but not used [-Wunused-but-set-variable]
+  u32 CntrlRegister0, CntrlRegister1, BaudModeRegister, BaudGeneratorRegister, BaudRDividerRegister;
+                                                                               ^~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:223:56: warning: variable 'BaudGeneratorRegister' set but not used [-Wunused-but-set-variable]
+  u32 CntrlRegister0, CntrlRegister1, BaudModeRegister, BaudGeneratorRegister, BaudRDividerRegister;
+                                                        ^~~~~~~~~~~~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: cv7_dualuart_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cv7_dualuart_test_bsp/ps7_cortexa9_0/lib -o "cv7_dualuart_test.elf"  ./src/helloworld.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cv7_dualuart_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cv7_dualuart_test.elf  |tee "cv7_dualuart_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22880	   1148	   8248	  32276	   7e14	cv7_dualuart_test.elf
+'Finished building: cv7_dualuart_test.elf.size'
+' '
+16:25:45 **** Incremental Build of configuration Debug for project cv7_dualuart_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+16:32:18 **** Auto Build of configuration Debug for project cv7_dualuart_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cv7_dualuart_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:131:17: warning: unused variable 'Uart1' [-Wunused-variable]
+  XUartPs Uart0, Uart1;
+                 ^~~~~
+../src/helloworld.c:131:10: warning: unused variable 'Uart0' [-Wunused-variable]
+  XUartPs Uart0, Uart1;
+          ^~~~~
+../src/helloworld.c:130:24: warning: unused variable 'FUart1' [-Wunused-variable]
+  XUartPsFormat FUart0, FUart1;
+                        ^~~~~~
+../src/helloworld.c:130:16: warning: unused variable 'FUart0' [-Wunused-variable]
+  XUartPsFormat FUart0, FUart1;
+                ^~~~~~
+../src/helloworld.c:129:27: warning: unused variable 'CUart1' [-Wunused-variable]
+  XUartPs_Config *CUart0, *CUart1;
+                           ^~~~~~
+../src/helloworld.c:129:18: warning: unused variable 'CUart0' [-Wunused-variable]
+  XUartPs_Config *CUart0, *CUart1;
+                  ^~~~~~
+../src/helloworld.c:128:6: warning: variable 'regval' set but not used [-Wunused-but-set-variable]
+  u32 regval = 0;
+      ^~~~~~
+../src/helloworld.c: In function 'UartPsEchoExample':
+../src/helloworld.c:187:5: warning: unused variable 'RecvChar' [-Wunused-variable]
+  u8 RecvChar;
+     ^~~~~~~~
+../src/helloworld.c:185:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+../src/helloworld.c: In function 'InitUartModules':
+../src/helloworld.c:226:79: warning: variable 'BaudRDividerRegister' set but not used [-Wunused-but-set-variable]
+  u32 CntrlRegister0, CntrlRegister1, BaudModeRegister, BaudGeneratorRegister, BaudRDividerRegister;
+                                                                               ^~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:226:56: warning: variable 'BaudGeneratorRegister' set but not used [-Wunused-but-set-variable]
+  u32 CntrlRegister0, CntrlRegister1, BaudModeRegister, BaudGeneratorRegister, BaudRDividerRegister;
+                                                        ^~~~~~~~~~~~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: cv7_dualuart_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cv7_dualuart_test_bsp/ps7_cortexa9_0/lib -o "cv7_dualuart_test.elf"  ./src/helloworld.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cv7_dualuart_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cv7_dualuart_test.elf  |tee "cv7_dualuart_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22880	   1148	   8248	  32276	   7e14	cv7_dualuart_test.elf
+'Finished building: cv7_dualuart_test.elf.size'
+' '
+16:32:55 **** Auto Build of configuration Debug for project cv7_dualuart_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cv7_dualuart_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:131:17: warning: unused variable 'Uart1' [-Wunused-variable]
+  XUartPs Uart0, Uart1;
+                 ^~~~~
+../src/helloworld.c:131:10: warning: unused variable 'Uart0' [-Wunused-variable]
+  XUartPs Uart0, Uart1;
+          ^~~~~
+../src/helloworld.c:130:24: warning: unused variable 'FUart1' [-Wunused-variable]
+  XUartPsFormat FUart0, FUart1;
+                        ^~~~~~
+../src/helloworld.c:130:16: warning: unused variable 'FUart0' [-Wunused-variable]
+  XUartPsFormat FUart0, FUart1;
+                ^~~~~~
+../src/helloworld.c:129:27: warning: unused variable 'CUart1' [-Wunused-variable]
+  XUartPs_Config *CUart0, *CUart1;
+                           ^~~~~~
+../src/helloworld.c:129:18: warning: unused variable 'CUart0' [-Wunused-variable]
+  XUartPs_Config *CUart0, *CUart1;
+                  ^~~~~~
+../src/helloworld.c:128:6: warning: variable 'regval' set but not used [-Wunused-but-set-variable]
+  u32 regval = 0;
+      ^~~~~~
+../src/helloworld.c: In function 'UartPsEchoExample':
+../src/helloworld.c:188:5: warning: unused variable 'RecvChar' [-Wunused-variable]
+  u8 RecvChar;
+     ^~~~~~~~
+../src/helloworld.c:186:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+../src/helloworld.c: In function 'InitUartModules':
+../src/helloworld.c:227:79: warning: variable 'BaudRDividerRegister' set but not used [-Wunused-but-set-variable]
+  u32 CntrlRegister0, CntrlRegister1, BaudModeRegister, BaudGeneratorRegister, BaudRDividerRegister;
+                                                                               ^~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:227:56: warning: variable 'BaudGeneratorRegister' set but not used [-Wunused-but-set-variable]
+  u32 CntrlRegister0, CntrlRegister1, BaudModeRegister, BaudGeneratorRegister, BaudRDividerRegister;
+                                                        ^~~~~~~~~~~~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: cv7_dualuart_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cv7_dualuart_test_bsp/ps7_cortexa9_0/lib -o "cv7_dualuart_test.elf"  ./src/helloworld.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cv7_dualuart_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cv7_dualuart_test.elf  |tee "cv7_dualuart_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22880	   1148	   8248	  32276	   7e14	cv7_dualuart_test.elf
+'Finished building: cv7_dualuart_test.elf.size'
+' '
+16:33:34 **** Auto Build of configuration Debug for project cv7_dualuart_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cv7_dualuart_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:131:17: warning: unused variable 'Uart1' [-Wunused-variable]
+  XUartPs Uart0, Uart1;
+                 ^~~~~
+../src/helloworld.c:131:10: warning: unused variable 'Uart0' [-Wunused-variable]
+  XUartPs Uart0, Uart1;
+          ^~~~~
+../src/helloworld.c:130:24: warning: unused variable 'FUart1' [-Wunused-variable]
+  XUartPsFormat FUart0, FUart1;
+                        ^~~~~~
+../src/helloworld.c:130:16: warning: unused variable 'FUart0' [-Wunused-variable]
+  XUartPsFormat FUart0, FUart1;
+                ^~~~~~
+../src/helloworld.c:129:27: warning: unused variable 'CUart1' [-Wunused-variable]
+  XUartPs_Config *CUart0, *CUart1;
+                           ^~~~~~
+../src/helloworld.c:129:18: warning: unused variable 'CUart0' [-Wunused-variable]
+  XUartPs_Config *CUart0, *CUart1;
+                  ^~~~~~
+../src/helloworld.c:128:6: warning: variable 'regval' set but not used [-Wunused-but-set-variable]
+  u32 regval = 0;
+      ^~~~~~
+../src/helloworld.c: In function 'UartPsEchoExample':
+../src/helloworld.c:188:5: warning: unused variable 'RecvChar' [-Wunused-variable]
+  u8 RecvChar;
+     ^~~~~~~~
+../src/helloworld.c:186:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+../src/helloworld.c: In function 'InitUartModules':
+../src/helloworld.c:227:79: warning: variable 'BaudRDividerRegister' set but not used [-Wunused-but-set-variable]
+  u32 CntrlRegister0, CntrlRegister1, BaudModeRegister, BaudGeneratorRegister, BaudRDividerRegister;
+                                                                               ^~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:227:56: warning: variable 'BaudGeneratorRegister' set but not used [-Wunused-but-set-variable]
+  u32 CntrlRegister0, CntrlRegister1, BaudModeRegister, BaudGeneratorRegister, BaudRDividerRegister;
+                                                        ^~~~~~~~~~~~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: cv7_dualuart_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cv7_dualuart_test_bsp/ps7_cortexa9_0/lib -o "cv7_dualuart_test.elf"  ./src/helloworld.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cv7_dualuart_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cv7_dualuart_test.elf  |tee "cv7_dualuart_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22880	   1148	   8248	  32276	   7e14	cv7_dualuart_test.elf
+'Finished building: cv7_dualuart_test.elf.size'
+' '
+16:34:36 **** Auto Build of project cv7_dualuart_test_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_3/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/tmrctr_v4_3/src"
+make -C ps7_cortexa9_0/libsrc/tmrctr_v4_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling coresightps_dcc"
+arm-none-eabi-ar: creating ../../../lib/libxil.a
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling gpiops"
+"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling qspips"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling scugic"
+xscugic_g.c:53:2: warning: missing initializer for field 'HandlerTable' of 'XScuGic_Config {aka struct <anonymous>}' [-Wmissing-field-initializers]
+  }
+  ^
+In file included from xscugic_g.c:41:0:
+xscugic.h:218:27: note: 'HandlerTable' declared here
+  XScuGic_VectorTableEntry HandlerTable[XSCUGIC_MAX_NUM_INTR_INPUTS];/**<
+                           ^~~~~~~~~~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_3/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling standalone"
+"Running Make libs in ps7_cortexa9_0/libsrc/tmrctr_v4_3/src"
+make -C ps7_cortexa9_0/libsrc/tmrctr_v4_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling tmrctr"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling usbps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling xadcps"
+'Finished building libraries'
+16:34:53 **** Auto Build of configuration Debug for project cv7_dualuart_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cv7_dualuart_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:131:17: warning: unused variable 'Uart1' [-Wunused-variable]
+  XUartPs Uart0, Uart1;
+                 ^~~~~
+../src/helloworld.c:131:10: warning: unused variable 'Uart0' [-Wunused-variable]
+  XUartPs Uart0, Uart1;
+          ^~~~~
+../src/helloworld.c:130:24: warning: unused variable 'FUart1' [-Wunused-variable]
+  XUartPsFormat FUart0, FUart1;
+                        ^~~~~~
+../src/helloworld.c:130:16: warning: unused variable 'FUart0' [-Wunused-variable]
+  XUartPsFormat FUart0, FUart1;
+                ^~~~~~
+../src/helloworld.c:129:27: warning: unused variable 'CUart1' [-Wunused-variable]
+  XUartPs_Config *CUart0, *CUart1;
+                           ^~~~~~
+../src/helloworld.c:129:18: warning: unused variable 'CUart0' [-Wunused-variable]
+  XUartPs_Config *CUart0, *CUart1;
+                  ^~~~~~
+../src/helloworld.c:128:6: warning: variable 'regval' set but not used [-Wunused-but-set-variable]
+  u32 regval = 0;
+      ^~~~~~
+../src/helloworld.c: In function 'UartPsEchoExample':
+../src/helloworld.c:188:5: warning: unused variable 'RecvChar' [-Wunused-variable]
+  u8 RecvChar;
+     ^~~~~~~~
+../src/helloworld.c:186:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+../src/helloworld.c: In function 'InitUartModules':
+../src/helloworld.c:227:79: warning: variable 'BaudRDividerRegister' set but not used [-Wunused-but-set-variable]
+  u32 CntrlRegister0, CntrlRegister1, BaudModeRegister, BaudGeneratorRegister, BaudRDividerRegister;
+                                                                               ^~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:227:56: warning: variable 'BaudGeneratorRegister' set but not used [-Wunused-but-set-variable]
+  u32 CntrlRegister0, CntrlRegister1, BaudModeRegister, BaudGeneratorRegister, BaudRDividerRegister;
+                                                        ^~~~~~~~~~~~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: cv7_dualuart_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cv7_dualuart_test_bsp/ps7_cortexa9_0/lib -o "cv7_dualuart_test.elf"  ./src/helloworld.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cv7_dualuart_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cv7_dualuart_test.elf  |tee "cv7_dualuart_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22880	   1148	   8248	  32276	   7e14	cv7_dualuart_test.elf
+'Finished building: cv7_dualuart_test.elf.size'
+' '
+16:35:10 **** Incremental Build of configuration Debug for project cv7_dualuart_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+16:36:22 **** Incremental Build of configuration Debug for project cv7_dualuart_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+16:39:08 **** Auto Build of configuration Debug for project cv7_dualuart_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.

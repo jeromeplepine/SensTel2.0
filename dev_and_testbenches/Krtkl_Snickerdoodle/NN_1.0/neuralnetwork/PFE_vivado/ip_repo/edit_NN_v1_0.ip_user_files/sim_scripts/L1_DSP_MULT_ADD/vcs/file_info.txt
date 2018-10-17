@@ -1,0 +1,5 @@
+xbip_dsp48_wrapper_v3_0_vh_rfs.vhd,vhdl,xbip_dsp48_wrapper_v3_0_4,../../../ipstatic/hdl/xbip_dsp48_wrapper_v3_0_vh_rfs.vhd,
+xbip_utils_v3_0_vh_rfs.vhd,vhdl,xbip_utils_v3_0_8,../../../ipstatic/hdl/xbip_utils_v3_0_vh_rfs.vhd,
+xbip_pipe_v3_0_vh_rfs.vhd,vhdl,xbip_pipe_v3_0_4,../../../ipstatic/hdl/xbip_pipe_v3_0_vh_rfs.vhd,
+xbip_dsp48_macro_v3_0_vh_rfs.vhd,vhdl,xbip_dsp48_macro_v3_0_15,../../../ipstatic/hdl/xbip_dsp48_macro_v3_0_vh_rfs.vhd,
+L1_DSP_MULT_ADD.vhd,vhdl,xil_defaultlib,../../../../NN_1.0/src/L1_DSP_MULT_ADD/sim/L1_DSP_MULT_ADD.vhd,

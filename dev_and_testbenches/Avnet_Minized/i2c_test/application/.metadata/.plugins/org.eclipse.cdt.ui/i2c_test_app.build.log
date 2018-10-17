@@ -1,0 +1,23 @@
+18:09:04 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ads1015.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ads1015.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ads1015.d" -MT"src/ads1015.o" -o "src/ads1015.o" "../src/ads1015.c"
+'Finished building: ../src/ads1015.c'
+' '
+'Building target: i2c_test_app.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "i2c_test_app.elf"  ./src/ads1015.o ./src/i2c.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: i2c_test_app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size i2c_test_app.elf  |tee "i2c_test_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  31752	   1196	   8312	  41260	   a12c	i2c_test_app.elf
+'Finished building: i2c_test_app.elf.size'
+' '
+
+18:09:06 Build Finished (took 2s.154ms)
+

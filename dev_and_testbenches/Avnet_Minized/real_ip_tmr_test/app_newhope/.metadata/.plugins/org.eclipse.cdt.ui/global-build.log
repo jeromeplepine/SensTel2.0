@@ -1,0 +1,408 @@
+19:52:03 **** Build of project hw_timer_test_nuhope_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_3/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/tmrctr_v4_3/src"
+make -C ps7_cortexa9_0/libsrc/tmrctr_v4_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling coresightps_dcc"
+arm-none-eabi-ar: creating ../../../lib/libxil.a
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling gpiops"
+"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling qspips"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling scugic"
+xscugic_g.c:53:2: warning: missing initializer for field 'HandlerTable' of 'XScuGic_Config {aka struct <anonymous>}' [-Wmissing-field-initializers]
+  }
+  ^
+In file included from xscugic_g.c:41:0:
+xscugic.h:218:27: note: 'HandlerTable' declared here
+  XScuGic_VectorTableEntry HandlerTable[XSCUGIC_MAX_NUM_INTR_INPUTS];/**<
+                           ^~~~~~~~~~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_3/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling standalone"
+"Running Make libs in ps7_cortexa9_0/libsrc/tmrctr_v4_3/src"
+make -C ps7_cortexa9_0/libsrc/tmrctr_v4_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling tmrctr"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling usbps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling xadcps"
+'Finished building libraries'
+19:53:30 **** Build of configuration Debug for project hw_timer_test_nuhope ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../hw_timer_test_nuhope_bsp/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:21:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main(){
+      ^~~~
+../main.c: In function 'main':
+../main.c:25:6: warning: unused variable 'someBit' [-Wunused-variable]
+  int someBit = 0;
+      ^~~~~~~
+../main.c:24:6: warning: variable 'tmrCntrRegValue' set but not used [-Wunused-but-set-variable]
+  u32 tmrCntrRegValue = 0;
+      ^~~~~~~~~~~~~~~
+../main.c:23:6: warning: variable 'ldRegValue' set but not used [-Wunused-but-set-variable]
+  u32 ldRegValue = 0;
+      ^~~~~~~~~~
+'Finished building: ../main.c'
+' '
+'Building target: hw_timer_test_nuhope.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../hw_timer_test_nuhope_bsp/ps7_cortexa9_0/lib -o "hw_timer_test_nuhope.elf"  ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: hw_timer_test_nuhope.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size hw_timer_test_nuhope.elf  |tee "hw_timer_test_nuhope.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19528	   1148	  22568	  43244	   a8ec	hw_timer_test_nuhope.elf
+'Finished building: hw_timer_test_nuhope.elf.size'
+' '
+19:55:14 **** Incremental Build of configuration Debug for project hw_timer_test_nuhope ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+19:57:03 **** Auto Build of configuration Debug for project hw_timer_test_nuhope ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../hw_timer_test_nuhope_bsp/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:21:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main(){
+      ^~~~
+../main.c: In function 'main':
+../main.c:25:6: warning: unused variable 'someBit' [-Wunused-variable]
+  int someBit = 0;
+      ^~~~~~~
+../main.c:24:6: warning: variable 'tmrCntrRegValue' set but not used [-Wunused-but-set-variable]
+  u32 tmrCntrRegValue = 0;
+      ^~~~~~~~~~~~~~~
+../main.c:23:6: warning: variable 'ldRegValue' set but not used [-Wunused-but-set-variable]
+  u32 ldRegValue = 0;
+      ^~~~~~~~~~
+'Finished building: ../main.c'
+' '
+'Building target: hw_timer_test_nuhope.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../hw_timer_test_nuhope_bsp/ps7_cortexa9_0/lib -o "hw_timer_test_nuhope.elf"  ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: hw_timer_test_nuhope.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size hw_timer_test_nuhope.elf  |tee "hw_timer_test_nuhope.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19560	   1148	  22568	  43276	   a90c	hw_timer_test_nuhope.elf
+'Finished building: hw_timer_test_nuhope.elf.size'
+' '
+19:59:03 **** Auto Build of configuration Debug for project hw_timer_test_nuhope ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../hw_timer_test_nuhope_bsp/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:21:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main(){
+      ^~~~
+../main.c: In function 'main':
+../main.c:25:6: warning: unused variable 'someBit' [-Wunused-variable]
+  int someBit = 0;
+      ^~~~~~~
+../main.c:24:6: warning: variable 'tmrCntrRegValue' set but not used [-Wunused-but-set-variable]
+  u32 tmrCntrRegValue = 0;
+      ^~~~~~~~~~~~~~~
+../main.c:23:6: warning: variable 'ldRegValue' set but not used [-Wunused-but-set-variable]
+  u32 ldRegValue = 0;
+      ^~~~~~~~~~
+'Finished building: ../main.c'
+' '
+'Building target: hw_timer_test_nuhope.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../hw_timer_test_nuhope_bsp/ps7_cortexa9_0/lib -o "hw_timer_test_nuhope.elf"  ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: hw_timer_test_nuhope.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size hw_timer_test_nuhope.elf  |tee "hw_timer_test_nuhope.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19572	   1148	  22568	  43288	   a918	hw_timer_test_nuhope.elf
+'Finished building: hw_timer_test_nuhope.elf.size'
+' '
+19:59:33 **** Incremental Build of configuration Debug for project hw_timer_test_nuhope ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+20:36:25 **** Auto Build of configuration Debug for project hw_timer_test_nuhope ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../hw_timer_test_nuhope_bsp/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:21:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main(){
+      ^~~~
+../main.c: In function 'main':
+../main.c:25:6: warning: unused variable 'someBit' [-Wunused-variable]
+  int someBit = 0;
+      ^~~~~~~
+../main.c:24:6: warning: variable 'tmrCntrRegValue' set but not used [-Wunused-but-set-variable]
+  u32 tmrCntrRegValue = 0;
+      ^~~~~~~~~~~~~~~
+../main.c:23:6: warning: variable 'ldRegValue' set but not used [-Wunused-but-set-variable]
+  u32 ldRegValue = 0;
+      ^~~~~~~~~~
+'Finished building: ../main.c'
+' '
+'Building target: hw_timer_test_nuhope.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../hw_timer_test_nuhope_bsp/ps7_cortexa9_0/lib -o "hw_timer_test_nuhope.elf"  ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: hw_timer_test_nuhope.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size hw_timer_test_nuhope.elf  |tee "hw_timer_test_nuhope.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19572	   1148	  22568	  43288	   a918	hw_timer_test_nuhope.elf
+'Finished building: hw_timer_test_nuhope.elf.size'
+' '
+20:39:38 **** Auto Build of configuration Debug for project hw_timer_test_nuhope ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../hw_timer_test_nuhope_bsp/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:21:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main(){
+      ^~~~
+../main.c: In function 'main':
+../main.c:24:6: warning: variable 'tmrCntrRegValue' set but not used [-Wunused-but-set-variable]
+  u32 tmrCntrRegValue = 0;
+      ^~~~~~~~~~~~~~~
+../main.c:23:6: warning: variable 'ldRegValue' set but not used [-Wunused-but-set-variable]
+  u32 ldRegValue = 0;
+      ^~~~~~~~~~
+'Finished building: ../main.c'
+' '
+'Building target: hw_timer_test_nuhope.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../hw_timer_test_nuhope_bsp/ps7_cortexa9_0/lib -o "hw_timer_test_nuhope.elf"  ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: hw_timer_test_nuhope.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size hw_timer_test_nuhope.elf  |tee "hw_timer_test_nuhope.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19564	   1148	  22568	  43280	   a910	hw_timer_test_nuhope.elf
+'Finished building: hw_timer_test_nuhope.elf.size'
+' '
+20:41:35 **** Auto Build of configuration Debug for project hw_timer_test_nuhope ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../hw_timer_test_nuhope_bsp/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:21:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main(){
+      ^~~~
+../main.c: In function 'main':
+../main.c:24:6: warning: variable 'tmrCntrRegValue' set but not used [-Wunused-but-set-variable]
+  u32 tmrCntrRegValue = 0;
+      ^~~~~~~~~~~~~~~
+../main.c:23:6: warning: variable 'ldRegValue' set but not used [-Wunused-but-set-variable]
+  u32 ldRegValue = 0;
+      ^~~~~~~~~~
+'Finished building: ../main.c'
+' '
+'Building target: hw_timer_test_nuhope.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../hw_timer_test_nuhope_bsp/ps7_cortexa9_0/lib -o "hw_timer_test_nuhope.elf"  ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: hw_timer_test_nuhope.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size hw_timer_test_nuhope.elf  |tee "hw_timer_test_nuhope.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19564	   1148	  22568	  43280	   a910	hw_timer_test_nuhope.elf
+'Finished building: hw_timer_test_nuhope.elf.size'
+' '
+20:41:53 **** Auto Build of configuration Debug for project hw_timer_test_nuhope ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../hw_timer_test_nuhope_bsp/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:21:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main(){
+      ^~~~
+../main.c: In function 'main':
+../main.c:24:6: warning: variable 'tmrCntrRegValue' set but not used [-Wunused-but-set-variable]
+  u32 tmrCntrRegValue = 0;
+      ^~~~~~~~~~~~~~~
+../main.c:23:6: warning: variable 'ldRegValue' set but not used [-Wunused-but-set-variable]
+  u32 ldRegValue = 0;
+      ^~~~~~~~~~
+'Finished building: ../main.c'
+' '
+'Building target: hw_timer_test_nuhope.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../hw_timer_test_nuhope_bsp/ps7_cortexa9_0/lib -o "hw_timer_test_nuhope.elf"  ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: hw_timer_test_nuhope.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size hw_timer_test_nuhope.elf  |tee "hw_timer_test_nuhope.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19564	   1148	  22568	  43280	   a910	hw_timer_test_nuhope.elf
+'Finished building: hw_timer_test_nuhope.elf.size'
+' '
+20:43:10 **** Auto Build of configuration Debug for project hw_timer_test_nuhope ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../hw_timer_test_nuhope_bsp/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:22:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main(){
+      ^~~~
+../main.c: In function 'main':
+../main.c:25:6: warning: variable 'tmrCntrRegValue' set but not used [-Wunused-but-set-variable]
+  u32 tmrCntrRegValue = 0;
+      ^~~~~~~~~~~~~~~
+../main.c:24:6: warning: variable 'ldRegValue' set but not used [-Wunused-but-set-variable]
+  u32 ldRegValue = 0;
+      ^~~~~~~~~~
+'Finished building: ../main.c'
+' '
+'Building target: hw_timer_test_nuhope.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../hw_timer_test_nuhope_bsp/ps7_cortexa9_0/lib -o "hw_timer_test_nuhope.elf"  ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: hw_timer_test_nuhope.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size hw_timer_test_nuhope.elf  |tee "hw_timer_test_nuhope.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19564	   1148	  22568	  43280	   a910	hw_timer_test_nuhope.elf
+'Finished building: hw_timer_test_nuhope.elf.size'
+' '
+20:43:59 **** Auto Build of configuration Debug for project hw_timer_test_nuhope ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../hw_timer_test_nuhope_bsp/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:21:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main(){
+      ^~~~
+../main.c: In function 'main':
+../main.c:24:6: warning: variable 'tmrCntrRegValue' set but not used [-Wunused-but-set-variable]
+  u32 tmrCntrRegValue = 0;
+      ^~~~~~~~~~~~~~~
+../main.c:23:6: warning: variable 'ldRegValue' set but not used [-Wunused-but-set-variable]
+  u32 ldRegValue = 0;
+      ^~~~~~~~~~
+'Finished building: ../main.c'
+' '
+'Building target: hw_timer_test_nuhope.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../hw_timer_test_nuhope_bsp/ps7_cortexa9_0/lib -o "hw_timer_test_nuhope.elf"  ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: hw_timer_test_nuhope.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size hw_timer_test_nuhope.elf  |tee "hw_timer_test_nuhope.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19564	   1148	  22568	  43280	   a910	hw_timer_test_nuhope.elf
+'Finished building: hw_timer_test_nuhope.elf.size'
+' '
+20:44:15 **** Auto Build of configuration Debug for project hw_timer_test_nuhope ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../hw_timer_test_nuhope_bsp/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:21:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main(){
+      ^~~~
+../main.c: In function 'main':
+../main.c:24:6: warning: variable 'tmrCntrRegValue' set but not used [-Wunused-but-set-variable]
+  u32 tmrCntrRegValue = 0;
+      ^~~~~~~~~~~~~~~
+../main.c:23:6: warning: variable 'ldRegValue' set but not used [-Wunused-but-set-variable]
+  u32 ldRegValue = 0;
+      ^~~~~~~~~~
+'Finished building: ../main.c'
+' '
+'Building target: hw_timer_test_nuhope.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../hw_timer_test_nuhope_bsp/ps7_cortexa9_0/lib -o "hw_timer_test_nuhope.elf"  ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: hw_timer_test_nuhope.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size hw_timer_test_nuhope.elf  |tee "hw_timer_test_nuhope.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19564	   1148	  22568	  43280	   a910	hw_timer_test_nuhope.elf
+'Finished building: hw_timer_test_nuhope.elf.size'
+' '

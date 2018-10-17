@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;pitch_bench_app/src/encoder_ad36&apos; to &apos;encoder_ad36.c&apos;" description="Rename resource &apos;encoder_ad36&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/encoder_ad36" name="encoder_ad36.c" stamp="1521919018248" updateReferences="true"/>
+</session>

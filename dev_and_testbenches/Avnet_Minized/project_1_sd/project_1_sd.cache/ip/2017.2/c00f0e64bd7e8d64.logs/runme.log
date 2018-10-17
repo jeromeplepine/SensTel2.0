@@ -1,0 +1,43 @@
+
+*** Running vivado
+    with args -log System_util_ds_buf_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source System_util_ds_buf_0_0.tcl
+
+
+****** Vivado v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source System_util_ds_buf_0_0.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 309.191 ; gain = 83.793
+INFO: [Synth 8-638] synthesizing module 'System_util_ds_buf_0_0' [c:/Users/Chinook-ELE/ZynqWorkspace/project_1_sd/project_1_sd.srcs/sources_1/bd/System/ip/System_util_ds_buf_0_0/synth/System_util_ds_buf_0_0.vhd:66]
+INFO: [Synth 8-638] synthesizing module 'util_ds_buf' [c:/Users/Chinook-ELE/ZynqWorkspace/project_1_sd/project_1_sd.srcs/sources_1/bd/System/ipshared/1e84/hdl/vhdl/util_ds_buf.vhd:125]
+INFO: [Synth 8-256] done synthesizing module 'util_ds_buf' (1#1) [c:/Users/Chinook-ELE/ZynqWorkspace/project_1_sd/project_1_sd.srcs/sources_1/bd/System/ipshared/1e84/hdl/vhdl/util_ds_buf.vhd:125]
+INFO: [Synth 8-256] done synthesizing module 'System_util_ds_buf_0_0' (2#1) [c:/Users/Chinook-ELE/ZynqWorkspace/project_1_sd/project_1_sd.srcs/sources_1/bd/System/ip/System_util_ds_buf_0_0/synth/System_util_ds_buf_0_0.vhd:66]
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 359.004 ; gain = 133.605
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 359.004 ; gain = 133.605
+INFO: [Device 21-403] Loading part xc7z007sclg225-1
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.244 . Memory (MB): peak = 587.883 ; gain = 0.379
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:28 . Memory (MB): peak = 587.883 ; gain = 362.484
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:28 . Memory (MB): peak = 587.883 ; gain = 362.484
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:28 . Memory (MB): peak = 587.883 ; gain = 362.484
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:28 . Memory (MB): peak = 587.883 ; gain = 362.484
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:29 . Memory (MB): peak = 587.883 ; gain = 362.484
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:40 ; elapsed = 00:00:49 . Memory (MB): peak = 650.539 ; gain = 425.141
+Finished Timing Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:00:49 . Memory (MB): peak = 650.539 ; gain = 425.141
+Finished Technology Mapping : Time (s): cpu = 00:00:40 ; elapsed = 00:00:49 . Memory (MB): peak = 660.098 ; gain = 434.699
+Finished IO Insertion : Time (s): cpu = 00:00:41 ; elapsed = 00:00:50 . Memory (MB): peak = 660.098 ; gain = 434.699
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:41 ; elapsed = 00:00:50 . Memory (MB): peak = 660.098 ; gain = 434.699
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:41 ; elapsed = 00:00:50 . Memory (MB): peak = 660.098 ; gain = 434.699
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:41 ; elapsed = 00:00:50 . Memory (MB): peak = 660.098 ; gain = 434.699
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:41 ; elapsed = 00:00:50 . Memory (MB): peak = 660.098 ; gain = 434.699
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:41 ; elapsed = 00:00:50 . Memory (MB): peak = 660.098 ; gain = 434.699
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |BUFH |     1|
++------+-----+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:41 ; elapsed = 00:00:50 . Memory (MB): peak = 660.098 ; gain = 434.699
+synth_design: Time (s): cpu = 00:00:44 ; elapsed = 00:00:54 . Memory (MB): peak = 669.293 ; gain = 446.145

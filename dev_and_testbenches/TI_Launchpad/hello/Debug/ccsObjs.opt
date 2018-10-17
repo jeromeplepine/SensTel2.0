@@ -1,0 +1,1 @@
+"./hello.obj" "./startup_ccs.obj" "./utils/uartstdio.obj" "../hello_ccs.cmd" -llibc.a -l"C:/Users/Chinook-ELE/CodeComposerWorkspace/drivers/driverlib/ccs/Debug/driverlib.lib" 

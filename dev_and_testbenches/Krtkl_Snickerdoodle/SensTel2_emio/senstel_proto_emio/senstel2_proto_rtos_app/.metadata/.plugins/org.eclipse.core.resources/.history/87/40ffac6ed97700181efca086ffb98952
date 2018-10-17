@@ -1,0 +1,39 @@
+/*
+ * senstel_acq.c
+ *
+ *  Created on: May 30, 2018
+ *      Author: Jerome Pare-Lepine
+ */
+
+#include "senstel_acq_config.h"
+
+
+//==============================================================================
+// FUNCTION DEFINITIONS
+//==============================================================================
+void InitAppProfile(sAppTaskProfiles_t *AppProfiles)
+{
+	AppProfiles->idx = 0;
+}
+
+u8 AddTaskProfile(sAppTaskProfiles_t *AppProfiles, u8 *TaskId)
+{
+	sTaskProfile_t *tprof = &AppProfiles->TaskArray[AppProfiles->idx];
+
+	tprof->AvgLooptime = 0;
+	tprof->LastDelta = 0;
+	tprof->LoopCount = 0;
+	tprof->
+	tprof->
+
+	AppProfiles->idx++;
+
+	return AppProfiles->idx;
+}
+
+
+void UpdateTaskProfile(sAppTaskProfiles_t *AppProfiles, u8 TaskIdx, u32 NewTimeDelta)
+{
+	AppProfiles->TaskArray[TaskIdx]
+
+}

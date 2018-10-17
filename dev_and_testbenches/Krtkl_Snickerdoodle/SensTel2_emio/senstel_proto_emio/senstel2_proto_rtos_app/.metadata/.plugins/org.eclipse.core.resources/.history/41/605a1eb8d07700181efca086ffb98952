@@ -1,0 +1,34 @@
+/*
+ * timer.h
+ *
+ *  Created on: Jun 24, 2018
+ *      Author: Jerome Pare-Lepine
+ */
+
+#ifndef SRC_TIMER_H_
+#define SRC_TIMER_H_
+
+
+//==============================================================================
+// INCLUDES
+//==============================================================================
+#include "xil_types.h"
+#include "xil_exception.h"
+#include "xscutimer.h"
+
+
+//==============================================================================
+// DEFINITIONS
+//==============================================================================
+#define SCU_TMR_RELOAD_VAL	0xFFFFFFFF
+
+
+//==============================================================================
+// FUNCTION PROTOTYPES
+//==============================================================================
+void InitScuTimer(XScuTimer *tmrinst, u32 devid);
+void InitScuTimerInterrupts(XScuTimer *tmrinst, Xil_ExceptionHandler handler, u16 DevIntId);
+void StartScuTimerInterrupts(XScuTimer *tmrinst);
+
+
+#endif /* SRC_TIMER_H_ */

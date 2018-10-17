@@ -1,0 +1,7 @@
+//arch = zynq; split = false; format = MCS
+the_ROM_image:
+{
+	[bootloader]C:\Users\Chinook-ELE\ZynqWorkspace\interrupts_hw_timer_test\application_cv7_tests\test_FSBL\Debug\test_FSBL.elf
+	C:\Users\Chinook-ELE\ZynqWorkspace\interrupts_hw_timer_test\application_cv7_tests\System_wrapper_hw_platform_0\System_wrapper.bit
+	C:\Users\Chinook-ELE\ZynqWorkspace\interrupts_hw_timer_test\application_cv7_tests\cv7_dualuart_test\Debug\cv7_dualuart_test.elf
+}

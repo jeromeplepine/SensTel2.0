@@ -1,0 +1,1521 @@
+14:37:24 **** Incremental Build of configuration Debug for project pwm_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+14:38:01 **** Incremental Build of configuration Debug for project pwm_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+14:38:59 **** Auto Build of configuration Debug for project pwm_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: pwm_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "pwm_test.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: pwm_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size pwm_test.elf  |tee "pwm_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22796	   1348	  22568	  46712	   b678	pwm_test.elf
+'Finished building: pwm_test.elf.size'
+' '
+14:39:06 **** Incremental Build of configuration Debug for project pwm_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+14:39:39 **** Incremental Build of configuration Debug for project pwm_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+14:43:32 **** Incremental Build of configuration Debug for project pwm_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+14:47:55 **** Incremental Build of configuration Debug for project pwm_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+14:48:42 **** Auto Build of configuration Debug for project pwm_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: pwm_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "pwm_test.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: pwm_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size pwm_test.elf  |tee "pwm_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22796	   1348	  22568	  46712	   b678	pwm_test.elf
+'Finished building: pwm_test.elf.size'
+' '
+14:48:48 **** Incremental Build of configuration Debug for project pwm_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+14:49:40 **** Incremental Build of configuration Debug for project pwm_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+14:50:12 **** Incremental Build of configuration Debug for project pwm_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+14:57:40 **** Incremental Build of configuration Debug for project pwm_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+14:58:44 **** Incremental Build of configuration Debug for project pwm_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: pwm_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "pwm_test.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: pwm_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size pwm_test.elf  |tee "pwm_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22796	   1348	  22568	  46712	   b678	pwm_test.elf
+'Finished building: pwm_test.elf.size'
+' '
+14:59:29 **** Auto Build of configuration Debug for project pwm_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: pwm_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "pwm_test.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: pwm_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size pwm_test.elf  |tee "pwm_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22796	   1348	  22568	  46712	   b678	pwm_test.elf
+'Finished building: pwm_test.elf.size'
+' '
+14:59:34 **** Incremental Build of configuration Debug for project pwm_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+15:40:49 **** Auto Build of configuration Debug for project pwm_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: pwm_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "pwm_test.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: pwm_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size pwm_test.elf  |tee "pwm_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22796	   1348	  22568	  46712	   b678	pwm_test.elf
+'Finished building: pwm_test.elf.size'
+' '
+15:40:56 **** Incremental Build of configuration Debug for project pwm_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+15:42:03 **** Incremental Build of configuration Debug for project pwm_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+15:42:36 **** Incremental Build of configuration Debug for project pwm_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+15:48:16 **** Auto Build of configuration Debug for project pwm_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:99:13: warning: 'updatePwm' declared 'static' but never defined [-Wunused-function]
+ static void updatePwm(void);
+             ^~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: pwm_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "pwm_test.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: pwm_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size pwm_test.elf  |tee "pwm_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22796	   1348	  22568	  46712	   b678	pwm_test.elf
+'Finished building: pwm_test.elf.size'
+' '
+15:50:59 **** Auto Build of configuration Debug for project pwm_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:187:13: error: conflicting types for 'updatePwm'
+ static void updatePwm(int* state){
+             ^~~~~~~~~
+../src/main.c:99:13: note: previous declaration of 'updatePwm' was here
+ static void updatePwm(void);
+             ^~~~~~~~~
+../src/main.c: In function 'updatePwm':
+../src/main.c:190:4: error: 'dutyCycle' undeclared (first use in this function)
+    dutyCycle = 0;
+    ^~~~~~~~~
+../src/main.c:190:4: note: each undeclared identifier is reported only once for each function it appears in
+At top level:
+../src/main.c:187:13: warning: 'updatePwm' defined but not used [-Wunused-function]
+ static void updatePwm(int* state){
+             ^~~~~~~~~
+make: *** [src/main.o] Error 1
+15:51:27 **** Auto Build of configuration Debug for project pwm_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:187:13: error: conflicting types for 'updatePwm'
+ static void updatePwm(int* state){
+             ^~~~~~~~~
+../src/main.c:99:13: note: previous declaration of 'updatePwm' was here
+ static void updatePwm(void);
+             ^~~~~~~~~
+../src/main.c: In function 'updatePwm':
+../src/main.c:190:4: error: 'dutyCycle' undeclared (first use in this function)
+    dutyCycle = 0;
+    ^~~~~~~~~
+../src/main.c:190:4: note: each undeclared identifier is reported only once for each function it appears in
+At top level:
+../src/main.c:187:13: warning: 'updatePwm' defined but not used [-Wunused-function]
+ static void updatePwm(int* state){
+             ^~~~~~~~~
+make: *** [src/main.o] Error 1
+15:51:38 **** Auto Build of configuration Debug for project pwm_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:187:13: error: conflicting types for 'updatePwm'
+ static void updatePwm(int* state){
+             ^~~~~~~~~
+../src/main.c:99:13: note: previous declaration of 'updatePwm' was here
+ static void updatePwm(void);
+             ^~~~~~~~~
+../src/main.c: In function 'updatePwm':
+../src/main.c:188:6: warning: variable 'dutyCycle' set but not used [-Wunused-but-set-variable]
+  int dutyCycle = 0;
+      ^~~~~~~~~
+At top level:
+../src/main.c:187:13: warning: 'updatePwm' defined but not used [-Wunused-function]
+ static void updatePwm(int* state){
+             ^~~~~~~~~
+make: *** [src/main.o] Error 1
+15:51:55 **** Auto Build of configuration Debug for project pwm_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:187:13: error: conflicting types for 'updatePwm'
+ static void updatePwm(int* state){
+             ^~~~~~~~~
+../src/main.c:99:13: note: previous declaration of 'updatePwm' was here
+ static void updatePwm(void);
+             ^~~~~~~~~
+../src/main.c: In function 'updatePwm':
+../src/main.c:188:6: warning: variable 'dutyCycle' set but not used [-Wunused-but-set-variable]
+  int dutyCycle = 0;
+      ^~~~~~~~~
+At top level:
+../src/main.c:187:13: warning: 'updatePwm' defined but not used [-Wunused-function]
+ static void updatePwm(int* state){
+             ^~~~~~~~~
+make: *** [src/main.o] Error 1
+15:52:11 **** Auto Build of configuration Debug for project pwm_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'updatePwm':
+../src/main.c:188:6: warning: variable 'dutyCycle' set but not used [-Wunused-but-set-variable]
+  int dutyCycle = 0;
+      ^~~~~~~~~
+At top level:
+../src/main.c:187:13: warning: 'updatePwm' defined but not used [-Wunused-function]
+ static void updatePwm(int* state){
+             ^~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: pwm_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "pwm_test.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: pwm_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size pwm_test.elf  |tee "pwm_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22924	   1348	  22568	  46840	   b6f8	pwm_test.elf
+'Finished building: pwm_test.elf.size'
+' '
+15:52:15 **** Auto Build of configuration Debug for project pwm_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'updatePwm':
+../src/main.c:188:6: warning: variable 'dutyCycle' set but not used [-Wunused-but-set-variable]
+  int dutyCycle = 0;
+      ^~~~~~~~~
+At top level:
+../src/main.c:187:13: warning: 'updatePwm' defined but not used [-Wunused-function]
+ static void updatePwm(int* state){
+             ^~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: pwm_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "pwm_test.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: pwm_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size pwm_test.elf  |tee "pwm_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22924	   1348	  22568	  46840	   b6f8	pwm_test.elf
+'Finished building: pwm_test.elf.size'
+' '
+15:53:11 **** Auto Build of configuration Debug for project pwm_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'updatePwm':
+../src/main.c:210:2: error: 'MatchValue' undeclared (first use in this function)
+  MatchValue = (IntervalValue * CurrSetup->OutputDutyCycle) / 100;
+  ^~~~~~~~~~
+../src/main.c:210:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:210:16: error: 'IntervalValue' undeclared (first use in this function)
+  MatchValue = (IntervalValue * CurrSetup->OutputDutyCycle) / 100;
+                ^~~~~~~~~~~~~
+../src/main.c:210:32: error: 'CurrSetup' undeclared (first use in this function)
+  MatchValue = (IntervalValue * CurrSetup->OutputDutyCycle) / 100;
+                                ^~~~~~~~~
+In file included from ../src/main.c:65:0:
+../../standalone_bsp_0/ps7_cortexa9_0/include/xstatus.h:65:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:216:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^~~~~~~~~~~
+../src/main.c:187:13: note: declared here
+ static void updatePwm(int* state){
+             ^~~~~~~~~
+In file included from ../../standalone_bsp_0/ps7_cortexa9_0/include/xttcps.h:115:0,
+                 from ../src/main.c:66:
+../src/main.c:218:18: error: 'TmrCtrBaseAddress' undeclared (first use in this function)
+  XTtcPs_WriteReg(TmrCtrBaseAddress, XTTCPS_MATCH_0_OFFSET,
+                  ^
+../../standalone_bsp_0/ps7_cortexa9_0/include/xttcps_hw.h:187:17: note: in definition of macro 'XTtcPs_WriteReg'
+     (Xil_Out32((BaseAddress) + (u32)(RegOffset), (u32)(Data)))
+                 ^~~~~~~~~~~
+../src/main.c:188:6: warning: variable 'dutyCycle' set but not used [-Wunused-but-set-variable]
+  int dutyCycle = 0;
+      ^~~~~~~~~
+At top level:
+../src/main.c:187:13: warning: 'updatePwm' defined but not used [-Wunused-function]
+ static void updatePwm(int* state){
+             ^~~~~~~~~
+make: *** [src/main.o] Error 1
+15:53:30 **** Auto Build of configuration Debug for project pwm_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'updatePwm':
+../src/main.c:210:2: error: 'MatchValue' undeclared (first use in this function)
+  MatchValue = (IntervalValue * dutyCycle) / 100;
+  ^~~~~~~~~~
+../src/main.c:210:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:210:16: error: 'IntervalValue' undeclared (first use in this function)
+  MatchValue = (IntervalValue * dutyCycle) / 100;
+                ^~~~~~~~~~~~~
+In file included from ../src/main.c:65:0:
+../../standalone_bsp_0/ps7_cortexa9_0/include/xstatus.h:65:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:216:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^~~~~~~~~~~
+../src/main.c:187:13: note: declared here
+ static void updatePwm(int* state){
+             ^~~~~~~~~
+In file included from ../../standalone_bsp_0/ps7_cortexa9_0/include/xttcps.h:115:0,
+                 from ../src/main.c:66:
+../src/main.c:218:18: error: 'TmrCtrBaseAddress' undeclared (first use in this function)
+  XTtcPs_WriteReg(TmrCtrBaseAddress, XTTCPS_MATCH_0_OFFSET,
+                  ^
+../../standalone_bsp_0/ps7_cortexa9_0/include/xttcps_hw.h:187:17: note: in definition of macro 'XTtcPs_WriteReg'
+     (Xil_Out32((BaseAddress) + (u32)(RegOffset), (u32)(Data)))
+                 ^~~~~~~~~~~
+At top level:
+../src/main.c:187:13: warning: 'updatePwm' defined but not used [-Wunused-function]
+ static void updatePwm(int* state){
+             ^~~~~~~~~
+make: *** [src/main.o] Error 1
+15:54:34 **** Auto Build of configuration Debug for project pwm_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:187:13: error: conflicting types for 'updatePwm'
+ static void updatePwm(int* state, u32 interval){
+             ^~~~~~~~~
+../src/main.c:99:13: note: previous declaration of 'updatePwm' was here
+ static void updatePwm(int* state);
+             ^~~~~~~~~
+../src/main.c: In function 'updatePwm':
+../src/main.c:210:2: error: 'MatchValue' undeclared (first use in this function)
+  MatchValue = (IntervalValue * dutyCycle) / 100;
+  ^~~~~~~~~~
+../src/main.c:210:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:210:16: error: 'IntervalValue' undeclared (first use in this function)
+  MatchValue = (IntervalValue * dutyCycle) / 100;
+                ^~~~~~~~~~~~~
+In file included from ../src/main.c:65:0:
+../../standalone_bsp_0/ps7_cortexa9_0/include/xstatus.h:65:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:216:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^~~~~~~~~~~
+../src/main.c:187:13: note: declared here
+ static void updatePwm(int* state, u32 interval){
+             ^~~~~~~~~
+In file included from ../../standalone_bsp_0/ps7_cortexa9_0/include/xttcps.h:115:0,
+                 from ../src/main.c:66:
+../src/main.c:218:18: error: 'TmrCtrBaseAddress' undeclared (first use in this function)
+  XTtcPs_WriteReg(TmrCtrBaseAddress, XTTCPS_MATCH_0_OFFSET,
+                  ^
+../../standalone_bsp_0/ps7_cortexa9_0/include/xttcps_hw.h:187:17: note: in definition of macro 'XTtcPs_WriteReg'
+     (Xil_Out32((BaseAddress) + (u32)(RegOffset), (u32)(Data)))
+                 ^~~~~~~~~~~
+At top level:
+../src/main.c:187:13: warning: 'updatePwm' defined but not used [-Wunused-function]
+ static void updatePwm(int* state, u32 interval){
+             ^~~~~~~~~
+make: *** [src/main.o] Error 1
+15:54:41 **** Auto Build of configuration Debug for project pwm_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'updatePwm':
+../src/main.c:210:2: error: 'MatchValue' undeclared (first use in this function)
+  MatchValue = (IntervalValue * dutyCycle) / 100;
+  ^~~~~~~~~~
+../src/main.c:210:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:210:16: error: 'IntervalValue' undeclared (first use in this function)
+  MatchValue = (IntervalValue * dutyCycle) / 100;
+                ^~~~~~~~~~~~~
+In file included from ../src/main.c:65:0:
+../../standalone_bsp_0/ps7_cortexa9_0/include/xstatus.h:65:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:216:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^~~~~~~~~~~
+../src/main.c:187:13: note: declared here
+ static void updatePwm(int* state, u32 interval){
+             ^~~~~~~~~
+In file included from ../../standalone_bsp_0/ps7_cortexa9_0/include/xttcps.h:115:0,
+                 from ../src/main.c:66:
+../src/main.c:218:18: error: 'TmrCtrBaseAddress' undeclared (first use in this function)
+  XTtcPs_WriteReg(TmrCtrBaseAddress, XTTCPS_MATCH_0_OFFSET,
+                  ^
+../../standalone_bsp_0/ps7_cortexa9_0/include/xttcps_hw.h:187:17: note: in definition of macro 'XTtcPs_WriteReg'
+     (Xil_Out32((BaseAddress) + (u32)(RegOffset), (u32)(Data)))
+                 ^~~~~~~~~~~
+At top level:
+../src/main.c:187:13: warning: 'updatePwm' defined but not used [-Wunused-function]
+ static void updatePwm(int* state, u32 interval){
+             ^~~~~~~~~
+make: *** [src/main.o] Error 1
+15:54:53 **** Auto Build of configuration Debug for project pwm_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'updatePwm':
+../src/main.c:210:2: error: 'MatchValue' undeclared (first use in this function)
+  MatchValue = (interval * dutyCycle) / 100;
+  ^~~~~~~~~~
+../src/main.c:210:2: note: each undeclared identifier is reported only once for each function it appears in
+In file included from ../src/main.c:65:0:
+../../standalone_bsp_0/ps7_cortexa9_0/include/xstatus.h:65:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:216:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^~~~~~~~~~~
+../src/main.c:187:13: note: declared here
+ static void updatePwm(int* state, u32 interval){
+             ^~~~~~~~~
+In file included from ../../standalone_bsp_0/ps7_cortexa9_0/include/xttcps.h:115:0,
+                 from ../src/main.c:66:
+../src/main.c:218:18: error: 'TmrCtrBaseAddress' undeclared (first use in this function)
+  XTtcPs_WriteReg(TmrCtrBaseAddress, XTTCPS_MATCH_0_OFFSET,
+                  ^
+../../standalone_bsp_0/ps7_cortexa9_0/include/xttcps_hw.h:187:17: note: in definition of macro 'XTtcPs_WriteReg'
+     (Xil_Out32((BaseAddress) + (u32)(RegOffset), (u32)(Data)))
+                 ^~~~~~~~~~~
+At top level:
+../src/main.c:187:13: warning: 'updatePwm' defined but not used [-Wunused-function]
+ static void updatePwm(int* state, u32 interval){
+             ^~~~~~~~~
+make: *** [src/main.o] Error 1
+15:55:19 **** Auto Build of configuration Debug for project pwm_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'updatePwm':
+../src/main.c:210:2: error: 'MatchValue' undeclared (first use in this function)
+  MatchValue = (interval * dutyCycle) / 100;
+  ^~~~~~~~~~
+../src/main.c:210:2: note: each undeclared identifier is reported only once for each function it appears in
+In file included from ../src/main.c:65:0:
+../../standalone_bsp_0/ps7_cortexa9_0/include/xstatus.h:65:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:216:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^~~~~~~~~~~
+../src/main.c:187:13: note: declared here
+ static void updatePwm(int* state, u32 interval){
+             ^~~~~~~~~
+In file included from ../../standalone_bsp_0/ps7_cortexa9_0/include/xttcps.h:115:0,
+                 from ../src/main.c:66:
+../src/main.c:218:18: error: 'TmrCtrBaseAddress' undeclared (first use in this function)
+  XTtcPs_WriteReg(TmrCtrBaseAddress, XTTCPS_MATCH_0_OFFSET,
+                  ^
+../../standalone_bsp_0/ps7_cortexa9_0/include/xttcps_hw.h:187:17: note: in definition of macro 'XTtcPs_WriteReg'
+     (Xil_Out32((BaseAddress) + (u32)(RegOffset), (u32)(Data)))
+                 ^~~~~~~~~~~
+At top level:
+../src/main.c:187:13: warning: 'updatePwm' defined but not used [-Wunused-function]
+ static void updatePwm(int* state, u32 interval){
+             ^~~~~~~~~
+make: *** [src/main.o] Error 1
+15:55:38 **** Auto Build of configuration Debug for project pwm_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:65:0:
+../src/main.c: In function 'updatePwm':
+../../standalone_bsp_0/ps7_cortexa9_0/include/xstatus.h:65:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:216:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^~~~~~~~~~~
+../src/main.c:187:13: note: declared here
+ static void updatePwm(int* state, u32 interval){
+             ^~~~~~~~~
+In file included from ../../standalone_bsp_0/ps7_cortexa9_0/include/xttcps.h:115:0,
+                 from ../src/main.c:66:
+../src/main.c:218:18: error: 'TmrCtrBaseAddress' undeclared (first use in this function)
+  XTtcPs_WriteReg(TmrCtrBaseAddress, XTTCPS_MATCH_0_OFFSET,
+                  ^
+../../standalone_bsp_0/ps7_cortexa9_0/include/xttcps_hw.h:187:17: note: in definition of macro 'XTtcPs_WriteReg'
+     (Xil_Out32((BaseAddress) + (u32)(RegOffset), (u32)(Data)))
+                 ^~~~~~~~~~~
+../src/main.c:218:18: note: each undeclared identifier is reported only once for each function it appears in
+  XTtcPs_WriteReg(TmrCtrBaseAddress, XTTCPS_MATCH_0_OFFSET,
+                  ^
+../../standalone_bsp_0/ps7_cortexa9_0/include/xttcps_hw.h:187:17: note: in definition of macro 'XTtcPs_WriteReg'
+     (Xil_Out32((BaseAddress) + (u32)(RegOffset), (u32)(Data)))
+                 ^~~~~~~~~~~
+At top level:
+../src/main.c:187:13: warning: 'updatePwm' defined but not used [-Wunused-function]
+ static void updatePwm(int* state, u32 interval){
+             ^~~~~~~~~
+make: *** [src/main.o] Error 1
+15:56:58 **** Auto Build of configuration Debug for project pwm_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:65:0:
+../src/main.c: In function 'updatePwm':
+../../standalone_bsp_0/ps7_cortexa9_0/include/xstatus.h:65:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:216:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^~~~~~~~~~~
+../src/main.c:187:13: note: declared here
+ static void updatePwm(int* state, u32 interval){
+             ^~~~~~~~~
+At top level:
+../src/main.c:187:13: warning: 'updatePwm' defined but not used [-Wunused-function]
+'Finished building: ../src/main.c'
+' '
+'Building target: pwm_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "pwm_test.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: pwm_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size pwm_test.elf  |tee "pwm_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22988	   1348	  22568	  46904	   b738	pwm_test.elf
+'Finished building: pwm_test.elf.size'
+' '
+15:58:01 **** Auto Build of configuration Debug for project pwm_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:65:0:
+../src/main.c: In function 'updatePwm':
+../../standalone_bsp_0/ps7_cortexa9_0/include/xstatus.h:65:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:216:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^~~~~~~~~~~
+../src/main.c:187:13: note: declared here
+ static void updatePwm(int* state, u32 interval){
+             ^~~~~~~~~
+../src/main.c: In function 'TmrCtrLowLevelExample':
+../src/main.c:249:6: warning: unused variable 'state' [-Wunused-variable]
+  int state = 0;
+      ^~~~~
+At top level:
+../src/main.c:187:13: warning: 'updatePwm' defined but not used [-Wunused-function]
+ static void updatePwm(int* state, u32 interval){
+             ^~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: pwm_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "pwm_test.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: pwm_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size pwm_test.elf  |tee "pwm_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22988	   1348	  22568	  46904	   b738	pwm_test.elf
+'Finished building: pwm_test.elf.size'
+' '
+15:58:18 **** Auto Build of configuration Debug for project pwm_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:65:0:
+../src/main.c: In function 'updatePwm':
+../../standalone_bsp_0/ps7_cortexa9_0/include/xstatus.h:65:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:217:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^~~~~~~~~~~
+../src/main.c:187:13: note: declared here
+ static void updatePwm(int* state, u32 interval){
+             ^~~~~~~~~
+../src/main.c: In function 'TmrCtrLowLevelExample':
+../src/main.c:250:6: warning: unused variable 'state' [-Wunused-variable]
+  int state = 0;
+      ^~~~~
+At top level:
+../src/main.c:187:13: warning: 'updatePwm' defined but not used [-Wunused-function]
+ static void updatePwm(int* state, u32 interval){
+             ^~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: pwm_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "pwm_test.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: pwm_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size pwm_test.elf  |tee "pwm_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23052	   1348	  22568	  46968	   b778	pwm_test.elf
+'Finished building: pwm_test.elf.size'
+' '
+16:02:04 **** Auto Build of configuration Debug for project pwm_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:65:0:
+../src/main.c: In function 'updatePwm':
+../../standalone_bsp_0/ps7_cortexa9_0/include/xstatus.h:65:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:220:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^~~~~~~~~~~
+../src/main.c:187:13: note: declared here
+ static void updatePwm(int* state, u32 interval){
+             ^~~~~~~~~
+../src/main.c: In function 'TmrCtrLowLevelExample':
+../src/main.c:253:6: warning: unused variable 'state' [-Wunused-variable]
+  int state = 0;
+      ^~~~~
+At top level:
+../src/main.c:187:13: warning: 'updatePwm' defined but not used [-Wunused-function]
+ static void updatePwm(int* state, u32 interval){
+             ^~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: pwm_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "pwm_test.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: pwm_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size pwm_test.elf  |tee "pwm_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23052	   1348	  22568	  46968	   b778	pwm_test.elf
+'Finished building: pwm_test.elf.size'
+' '
+16:06:09 **** Auto Build of configuration Debug for project pwm_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:65:0:
+../src/main.c: In function 'updatePwm':
+../../standalone_bsp_0/ps7_cortexa9_0/include/xstatus.h:65:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:220:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^~~~~~~~~~~
+../src/main.c:187:13: note: declared here
+ static void updatePwm(int* state, u32 interval){
+             ^~~~~~~~~
+../src/main.c: In function 'TmrCtrLowLevelExample':
+../src/main.c:253:6: warning: unused variable 'state' [-Wunused-variable]
+  int state = 0;
+      ^~~~~
+At top level:
+../src/main.c:187:13: warning: 'updatePwm' defined but not used [-Wunused-function]
+ static void updatePwm(int* state, u32 interval){
+             ^~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: pwm_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "pwm_test.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: pwm_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size pwm_test.elf  |tee "pwm_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23052	   1348	  22568	  46968	   b778	pwm_test.elf
+'Finished building: pwm_test.elf.size'
+' '
+16:06:19 **** Auto Build of configuration Debug for project pwm_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:65:0:
+../src/main.c: In function 'updatePwm':
+../../standalone_bsp_0/ps7_cortexa9_0/include/xstatus.h:65:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:220:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^~~~~~~~~~~
+../src/main.c:187:13: note: declared here
+ static void updatePwm(int* state, u32 interval){
+             ^~~~~~~~~
+../src/main.c: In function 'TmrCtrLowLevelExample':
+../src/main.c:253:6: warning: unused variable 'state' [-Wunused-variable]
+  int state = 0;
+      ^~~~~
+At top level:
+../src/main.c:187:13: warning: 'updatePwm' defined but not used [-Wunused-function]
+ static void updatePwm(int* state, u32 interval){
+             ^~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: pwm_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "pwm_test.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: pwm_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size pwm_test.elf  |tee "pwm_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23052	   1348	  22568	  46968	   b778	pwm_test.elf
+'Finished building: pwm_test.elf.size'
+' '
+16:06:27 **** Auto Build of configuration Debug for project pwm_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:65:0:
+../src/main.c: In function 'updatePwm':
+../../standalone_bsp_0/ps7_cortexa9_0/include/xstatus.h:65:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:220:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^~~~~~~~~~~
+../src/main.c:187:13: note: declared here
+ static void updatePwm(int* state, u32 interval){
+             ^~~~~~~~~
+../src/main.c: In function 'TmrCtrLowLevelExample':
+../src/main.c:253:6: warning: unused variable 'state' [-Wunused-variable]
+  int state = 0;
+      ^~~~~
+At top level:
+../src/main.c:187:13: warning: 'updatePwm' defined but not used [-Wunused-function]
+ static void updatePwm(int* state, u32 interval){
+             ^~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: pwm_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "pwm_test.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: pwm_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size pwm_test.elf  |tee "pwm_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23052	   1348	  22568	  46968	   b778	pwm_test.elf
+'Finished building: pwm_test.elf.size'
+' '
+16:07:01 **** Auto Build of configuration Debug for project pwm_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:65:0:
+../src/main.c: In function 'updatePwm':
+../../standalone_bsp_0/ps7_cortexa9_0/include/xstatus.h:65:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:220:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^~~~~~~~~~~
+../src/main.c:187:13: note: declared here
+ static void updatePwm(int* state, u32 interval){
+             ^~~~~~~~~
+../src/main.c: In function 'TmrCtrLowLevelExample':
+../src/main.c:369:5: error: expected ';' before 'LoopCount'
+     LoopCount = 0;
+     ^~~~~~~~~
+make: *** [src/main.o] Error 1
+16:07:03 **** Auto Build of configuration Debug for project pwm_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:65:0:
+../src/main.c: In function 'updatePwm':
+../../standalone_bsp_0/ps7_cortexa9_0/include/xstatus.h:65:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:220:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^~~~~~~~~~~
+../src/main.c:187:13: note: declared here
+ static void updatePwm(int* state, u32 interval){
+             ^~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: pwm_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "pwm_test.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: pwm_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size pwm_test.elf  |tee "pwm_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23116	   1348	  22568	  47032	   b7b8	pwm_test.elf
+'Finished building: pwm_test.elf.size'
+' '
+16:07:18 **** Incremental Build of configuration Debug for project pwm_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+16:08:58 **** Auto Build of configuration Debug for project pwm_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:65:0:
+../src/main.c: In function 'updatePwm':
+../../standalone_bsp_0/ps7_cortexa9_0/include/xstatus.h:65:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:224:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^~~~~~~~~~~
+../src/main.c:187:13: note: declared here
+ static void updatePwm(int* state, u32 interval){
+             ^~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: pwm_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "pwm_test.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: pwm_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size pwm_test.elf  |tee "pwm_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23116	   1348	  22568	  47032	   b7b8	pwm_test.elf
+'Finished building: pwm_test.elf.size'
+' '
+16:09:10 **** Auto Build of configuration Debug for project pwm_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:65:0:
+../src/main.c: In function 'updatePwm':
+../../standalone_bsp_0/ps7_cortexa9_0/include/xstatus.h:65:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:227:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^~~~~~~~~~~
+../src/main.c:187:13: note: declared here
+ static void updatePwm(int* state, u32 interval){
+             ^~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: pwm_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "pwm_test.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: pwm_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size pwm_test.elf  |tee "pwm_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23116	   1348	  22568	  47032	   b7b8	pwm_test.elf
+'Finished building: pwm_test.elf.size'
+' '
+16:09:17 **** Incremental Build of configuration Debug for project pwm_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+16:14:43 **** Auto Build of configuration Debug for project pwm_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:65:0:
+../src/main.c: In function 'updatePwm':
+../../standalone_bsp_0/ps7_cortexa9_0/include/xstatus.h:65:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:227:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^~~~~~~~~~~
+../src/main.c:187:13: note: declared here
+ static void updatePwm(int* state, u32 interval){
+             ^~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: pwm_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "pwm_test.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: pwm_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size pwm_test.elf  |tee "pwm_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23116	   1348	  22568	  47032	   b7b8	pwm_test.elf
+'Finished building: pwm_test.elf.size'
+' '
+16:15:09 **** Incremental Build of configuration Debug for project pwm_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+16:17:04 **** Auto Build of configuration Debug for project pwm_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:65:0:
+../src/main.c: In function 'updatePwm':
+../../standalone_bsp_0/ps7_cortexa9_0/include/xstatus.h:65:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:234:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^~~~~~~~~~~
+../src/main.c:187:13: note: declared here
+ static void updatePwm(int* state, u32 interval){
+             ^~~~~~~~~
+../src/main.c:188:6: warning: variable 'dutyCycle' set but not used [-Wunused-but-set-variable]
+  u32 dutyCycle = 0, MatchValue = 0;
+      ^~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: pwm_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "pwm_test.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: pwm_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size pwm_test.elf  |tee "pwm_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23116	   1348	  22568	  47032	   b7b8	pwm_test.elf
+'Finished building: pwm_test.elf.size'
+' '
+16:17:11 **** Auto Build of configuration Debug for project pwm_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:65:0:
+../src/main.c: In function 'updatePwm':
+../../standalone_bsp_0/ps7_cortexa9_0/include/xstatus.h:65:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:234:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^~~~~~~~~~~
+../src/main.c:187:13: note: declared here
+ static void updatePwm(int* state, u32 interval){
+             ^~~~~~~~~
+../src/main.c:188:6: warning: variable 'dutyCycle' set but not used [-Wunused-but-set-variable]
+  u32 dutyCycle = 0, MatchValue = 0;
+      ^~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: pwm_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "pwm_test.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: pwm_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size pwm_test.elf  |tee "pwm_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23116	   1348	  22568	  47032	   b7b8	pwm_test.elf
+'Finished building: pwm_test.elf.size'
+' '
+16:17:23 **** Auto Build of configuration Debug for project pwm_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:65:0:
+../src/main.c: In function 'updatePwm':
+../../standalone_bsp_0/ps7_cortexa9_0/include/xstatus.h:65:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:234:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^~~~~~~~~~~
+../src/main.c:187:13: note: declared here
+ static void updatePwm(int* state, u32 interval){
+             ^~~~~~~~~
+../src/main.c:188:6: warning: variable 'dutyCycle' set but not used [-Wunused-but-set-variable]
+  u32 dutyCycle = 0, MatchValue = 0;
+      ^~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: pwm_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "pwm_test.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: pwm_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size pwm_test.elf  |tee "pwm_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23116	   1348	  22568	  47032	   b7b8	pwm_test.elf
+'Finished building: pwm_test.elf.size'
+' '
+16:17:42 **** Auto Build of configuration Debug for project pwm_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:65:0:
+../src/main.c: In function 'updatePwm':
+../../standalone_bsp_0/ps7_cortexa9_0/include/xstatus.h:65:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:234:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^~~~~~~~~~~
+../src/main.c:187:13: note: declared here
+ static void updatePwm(int* state, u32 interval){
+             ^~~~~~~~~
+../src/main.c:188:6: warning: variable 'dutyCycle' set but not used [-Wunused-but-set-variable]
+  u32 dutyCycle = 0, MatchValue = 0;
+      ^~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: pwm_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "pwm_test.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: pwm_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size pwm_test.elf  |tee "pwm_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23116	   1348	  22568	  47032	   b7b8	pwm_test.elf
+'Finished building: pwm_test.elf.size'
+' '
+16:17:52 **** Auto Build of configuration Debug for project pwm_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:65:0:
+../src/main.c: In function 'updatePwm':
+../../standalone_bsp_0/ps7_cortexa9_0/include/xstatus.h:65:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:234:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^~~~~~~~~~~
+../src/main.c:187:13: note: declared here
+ static void updatePwm(int* state, u32 interval){
+             ^~~~~~~~~
+../src/main.c:188:6: warning: variable 'dutyCycle' set but not used [-Wunused-but-set-variable]
+  u32 dutyCycle = 0, MatchValue = 0;
+      ^~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: pwm_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "pwm_test.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: pwm_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size pwm_test.elf  |tee "pwm_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23116	   1348	  22568	  47032	   b7b8	pwm_test.elf
+'Finished building: pwm_test.elf.size'
+' '
+16:18:04 **** Auto Build of configuration Debug for project pwm_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:65:0:
+../src/main.c: In function 'updatePwm':
+../../standalone_bsp_0/ps7_cortexa9_0/include/xstatus.h:65:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:234:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^~~~~~~~~~~
+../src/main.c:187:13: note: declared here
+ static void updatePwm(int* state, u32 interval){
+             ^~~~~~~~~
+../src/main.c:188:6: warning: variable 'dutyCycle' set but not used [-Wunused-but-set-variable]
+  u32 dutyCycle = 0, MatchValue = 0;
+      ^~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: pwm_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "pwm_test.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: pwm_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size pwm_test.elf  |tee "pwm_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23116	   1348	  22568	  47032	   b7b8	pwm_test.elf
+'Finished building: pwm_test.elf.size'
+' '
+16:18:16 **** Auto Build of configuration Debug for project pwm_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:65:0:
+../src/main.c: In function 'updatePwm':
+../../standalone_bsp_0/ps7_cortexa9_0/include/xstatus.h:65:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:234:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^~~~~~~~~~~
+../src/main.c:187:13: note: declared here
+ static void updatePwm(int* state, u32 interval){
+             ^~~~~~~~~
+../src/main.c:188:6: warning: variable 'dutyCycle' set but not used [-Wunused-but-set-variable]
+  u32 dutyCycle = 0, MatchValue = 0;
+      ^~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: pwm_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "pwm_test.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: pwm_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size pwm_test.elf  |tee "pwm_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23116	   1348	  22568	  47032	   b7b8	pwm_test.elf
+'Finished building: pwm_test.elf.size'
+' '
+16:18:36 **** Auto Build of configuration Debug for project pwm_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'updatePwm':
+../src/main.c:188:6: warning: variable 'dutyCycle' set but not used [-Wunused-but-set-variable]
+  u32 dutyCycle = 0, MatchValue = 0;
+      ^~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: pwm_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "pwm_test.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: pwm_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size pwm_test.elf  |tee "pwm_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23116	   1348	  22568	  47032	   b7b8	pwm_test.elf
+'Finished building: pwm_test.elf.size'
+' '
+16:18:47 **** Incremental Build of configuration Debug for project pwm_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+16:22:44 **** Auto Build of configuration Debug for project pwm_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'updatePwm':
+../src/main.c:188:6: warning: variable 'dutyCycle' set but not used [-Wunused-but-set-variable]
+  u32 dutyCycle = 0, MatchValue = 0;
+      ^~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: pwm_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "pwm_test.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: pwm_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size pwm_test.elf  |tee "pwm_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23116	   1348	  22568	  47032	   b7b8	pwm_test.elf
+'Finished building: pwm_test.elf.size'
+' '
+16:22:58 **** Auto Build of configuration Debug for project pwm_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'updatePwm':
+../src/main.c:188:6: warning: variable 'dutyCycle' set but not used [-Wunused-but-set-variable]
+  u32 dutyCycle = 0, MatchValue = 0;
+      ^~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: pwm_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "pwm_test.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: pwm_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size pwm_test.elf  |tee "pwm_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23116	   1348	  22568	  47032	   b7b8	pwm_test.elf
+'Finished building: pwm_test.elf.size'
+' '
+16:23:30 **** Auto Build of configuration Debug for project pwm_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'updatePwm':
+../src/main.c:188:6: warning: variable 'dutyCycle' set but not used [-Wunused-but-set-variable]
+  u32 dutyCycle = 0, MatchValue = 0;
+      ^~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: pwm_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "pwm_test.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: pwm_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size pwm_test.elf  |tee "pwm_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23180	   1348	  22568	  47096	   b7f8	pwm_test.elf
+'Finished building: pwm_test.elf.size'
+' '
+16:23:38 **** Incremental Build of configuration Debug for project pwm_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+16:28:37 **** Auto Build of configuration Debug for project pwm_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: pwm_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "pwm_test.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: pwm_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size pwm_test.elf  |tee "pwm_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23180	   1348	  22568	  47096	   b7f8	pwm_test.elf
+'Finished building: pwm_test.elf.size'
+' '
+16:28:46 **** Auto Build of configuration Debug for project pwm_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: pwm_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "pwm_test.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: pwm_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size pwm_test.elf  |tee "pwm_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23180	   1348	  22568	  47096	   b7f8	pwm_test.elf
+'Finished building: pwm_test.elf.size'
+' '
+16:28:51 **** Incremental Build of configuration Debug for project pwm_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+16:33:18 **** Auto Build of configuration Debug for project pwm_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: pwm_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "pwm_test.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: pwm_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size pwm_test.elf  |tee "pwm_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23180	   1348	  22568	  47096	   b7f8	pwm_test.elf
+'Finished building: pwm_test.elf.size'
+' '
+16:33:22 **** Incremental Build of configuration Debug for project pwm_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+01:05:23 **** Auto Build of configuration Debug for project pwm_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'TmrCtrLowLevelExample':
+../src/main.c:319:3: error: 'IntervalValue' undeclared (first use in this function)
+   IntervalValue = PCLK_FREQ_HZ /
+   ^~~~~~~~~~~~~
+../src/main.c:319:3: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:271:3: warning: unused variable 'IntrvlVal_Ttc1' [-Wunused-variable]
+   IntrvlVal_Ttc1,
+   ^~~~~~~~~~~~~~
+../src/main.c:270:6: warning: unused variable 'IntrvlVal_Ttc0' [-Wunused-variable]
+  u32 IntrvlVal_Ttc0,
+      ^~~~~~~~~~~~~~
+make: *** [src/main.o] Error 1
+01:05:43 **** Auto Build of configuration Debug for project pwm_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'TmrCtrLowLevelExample':
+../src/main.c:270:3: error: 'MatchValue' undeclared (first use in this function)
+   MatchValue;
+   ^~~~~~~~~~
+../src/main.c:270:3: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:317:3: error: 'IntervalValue' undeclared (first use in this function)
+   IntervalValue = PCLK_FREQ_HZ /
+   ^~~~~~~~~~~~~
+make: *** [src/main.o] Error 1
+01:05:49 **** Auto Build of configuration Debug for project pwm_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'TmrCtrLowLevelExample':
+../src/main.c:316:3: error: 'IntervalValue' undeclared (first use in this function)
+   IntervalValue = PCLK_FREQ_HZ /
+   ^~~~~~~~~~~~~
+../src/main.c:316:3: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/main.o] Error 1
+01:06:06 **** Auto Build of configuration Debug for project pwm_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: pwm_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "pwm_test.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: pwm_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size pwm_test.elf  |tee "pwm_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23180	   1348	  22568	  47096	   b7f8	pwm_test.elf
+'Finished building: pwm_test.elf.size'
+' '

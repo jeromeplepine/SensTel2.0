@@ -1,0 +1,8 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  "../../../interrupts_hw_timer_test.ip_user_files/bd/System/hdl/System.vhd"
+vhdl xil_defaultlib  "../../../interrupts_hw_timer_test.ip_user_files/bd/System/ip/System_axi_timer_0_1/sim/System_axi_timer_0_1.vhd"
+vhdl xil_defaultlib  "../../../interrupts_hw_timer_test.ip_user_files/bd/System/ip/System_rst_ps7_0_5M_0/sim/System_rst_ps7_0_5M_0.vhd"
+vhdl xil_defaultlib  "../../../interrupts_hw_timer_test.srcs/sources_1/bd/System/hdl/System_wrapper.vhd"
+
+# Do not sort compile order
+nosort

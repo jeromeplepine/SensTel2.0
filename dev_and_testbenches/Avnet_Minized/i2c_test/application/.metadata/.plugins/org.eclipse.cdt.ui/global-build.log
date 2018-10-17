@@ -1,0 +1,3064 @@
+12:14:53 **** Incremental Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ads1015.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ads1015.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ads1015.d" -MT"src/ads1015.o" -o "src/ads1015.o" "../src/ads1015.c"
+../src/ads1015.c: In function 'readADCSingleEnded':
+../src/ads1015.c:59:9: warning: implicit declaration of function 'readRegister' [-Wimplicit-function-declaration]
+  return readRegister(m_i2cAddress, ADS1015_REG_POINTER_CONVERT) >> m_bitShift;
+         ^~~~~~~~~~~~
+../src/ads1015.c:59:22: error: 'm_i2cAddress' undeclared (first use in this function)
+  return readRegister(m_i2cAddress, ADS1015_REG_POINTER_CONVERT) >> m_bitShift;
+                      ^~~~~~~~~~~~
+../src/ads1015.c:59:22: note: each undeclared identifier is reported only once for each function it appears in
+../src/ads1015.c:59:68: error: 'm_bitShift' undeclared (first use in this function)
+  return readRegister(m_i2cAddress, ADS1015_REG_POINTER_CONVERT) >> m_bitShift;
+                                                                    ^~~~~~~~~~
+../src/ads1015.c:60:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/ads1015.o] Error 1
+12:15:57 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ads1015.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ads1015.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ads1015.d" -MT"src/ads1015.o" -o "src/ads1015.o" "../src/ads1015.c"
+../src/ads1015.c: In function 'readADCSingleEnded':
+../src/ads1015.c:59:9: warning: implicit declaration of function 'readRegister' [-Wimplicit-function-declaration]
+  return readRegister(m_i2cAddress, ADS1015_REG_POINTER_CONVERT) >> m_bitShift;
+         ^~~~~~~~~~~~
+../src/ads1015.c:59:22: error: 'm_i2cAddress' undeclared (first use in this function)
+  return readRegister(m_i2cAddress, ADS1015_REG_POINTER_CONVERT) >> m_bitShift;
+                      ^~~~~~~~~~~~
+../src/ads1015.c:59:22: note: each undeclared identifier is reported only once for each function it appears in
+../src/ads1015.c:59:68: error: 'm_bitShift' undeclared (first use in this function)
+  return readRegister(m_i2cAddress, ADS1015_REG_POINTER_CONVERT) >> m_bitShift;
+                                                                    ^~~~~~~~~~
+../src/ads1015.c:60:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/ads1015.o] Error 1
+12:16:01 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ads1015.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ads1015.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ads1015.d" -MT"src/ads1015.o" -o "src/ads1015.o" "../src/ads1015.c"
+../src/ads1015.c: In function 'readADCSingleEnded':
+../src/ads1015.c:59:9: warning: implicit declaration of function 'readRegister' [-Wimplicit-function-declaration]
+  return readRegister(m_i2cAddress, ADS1015_REG_POINTER_CONVERT) >> m_bitShift;
+         ^~~~~~~~~~~~
+../src/ads1015.c:59:22: error: 'm_i2cAddress' undeclared (first use in this function)
+  return readRegister(m_i2cAddress, ADS1015_REG_POINTER_CONVERT) >> m_bitShift;
+                      ^~~~~~~~~~~~
+../src/ads1015.c:59:22: note: each undeclared identifier is reported only once for each function it appears in
+../src/ads1015.c:59:68: error: 'm_bitShift' undeclared (first use in this function)
+  return readRegister(m_i2cAddress, ADS1015_REG_POINTER_CONVERT) >> m_bitShift;
+                                                                    ^~~~~~~~~~
+../src/ads1015.c:60:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/ads1015.o] Error 1
+12:23:34 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ads1015.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ads1015.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ads1015.d" -MT"src/ads1015.o" -o "src/ads1015.o" "../src/ads1015.c"
+../src/ads1015.c: In function 'readADCSingleEnded':
+../src/ads1015.c:59:9: warning: implicit declaration of function 'readRegister' [-Wimplicit-function-declaration]
+  return readRegister(m_i2cAddress, ADS1015_REG_POINTER_CONVERT) >> m_bitShift;
+         ^~~~~~~~~~~~
+../src/ads1015.c:59:22: error: 'm_i2cAddress' undeclared (first use in this function)
+  return readRegister(m_i2cAddress, ADS1015_REG_POINTER_CONVERT) >> m_bitShift;
+                      ^~~~~~~~~~~~
+../src/ads1015.c:59:22: note: each undeclared identifier is reported only once for each function it appears in
+../src/ads1015.c:59:68: error: 'm_bitShift' undeclared (first use in this function)
+  return readRegister(m_i2cAddress, ADS1015_REG_POINTER_CONVERT) >> m_bitShift;
+                                                                    ^~~~~~~~~~
+../src/ads1015.c:60:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/ads1015.o] Error 1
+12:24:34 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ads1015.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ads1015.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ads1015.d" -MT"src/ads1015.o" -o "src/ads1015.o" "../src/ads1015.c"
+../src/ads1015.c: In function 'readADCSingleEnded':
+../src/ads1015.c:59:9: warning: implicit declaration of function 'readRegister' [-Wimplicit-function-declaration]
+  return readRegister(m_i2cAddress, ADS1015_REG_POINTER_CONVERT) >> m_bitShift;
+         ^~~~~~~~~~~~
+../src/ads1015.c:59:22: error: 'm_i2cAddress' undeclared (first use in this function)
+  return readRegister(m_i2cAddress, ADS1015_REG_POINTER_CONVERT) >> m_bitShift;
+                      ^~~~~~~~~~~~
+../src/ads1015.c:59:22: note: each undeclared identifier is reported only once for each function it appears in
+../src/ads1015.c:59:68: error: 'm_bitShift' undeclared (first use in this function)
+  return readRegister(m_i2cAddress, ADS1015_REG_POINTER_CONVERT) >> m_bitShift;
+                                                                    ^~~~~~~~~~
+../src/ads1015.c:60:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/ads1015.o] Error 1
+12:24:47 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ads1015.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ads1015.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ads1015.d" -MT"src/ads1015.o" -o "src/ads1015.o" "../src/ads1015.c"
+../src/ads1015.c: In function 'readADCSingleEnded':
+../src/ads1015.c:59:9: warning: implicit declaration of function 'readRegister' [-Wimplicit-function-declaration]
+  return readRegister(m_i2cAddress, ADS1015_REG_POINTER_CONVERT) >> m_bitShift;
+         ^~~~~~~~~~~~
+../src/ads1015.c:59:22: error: 'm_i2cAddress' undeclared (first use in this function)
+  return readRegister(m_i2cAddress, ADS1015_REG_POINTER_CONVERT) >> m_bitShift;
+                      ^~~~~~~~~~~~
+../src/ads1015.c:59:22: note: each undeclared identifier is reported only once for each function it appears in
+../src/ads1015.c:59:68: error: 'm_bitShift' undeclared (first use in this function)
+  return readRegister(m_i2cAddress, ADS1015_REG_POINTER_CONVERT) >> m_bitShift;
+                                                                    ^~~~~~~~~~
+../src/ads1015.c:60:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/ads1015.o] Error 1
+12:52:20 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ads1015.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ads1015.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ads1015.d" -MT"src/ads1015.o" -o "src/ads1015.o" "../src/ads1015.c"
+../src/ads1015.c: In function 'readADCSingleEnded':
+../src/ads1015.c:59:9: warning: implicit declaration of function 'readRegister' [-Wimplicit-function-declaration]
+  return readRegister(m_i2cAddress, ADS1015_REG_POINTER_CONVERT) >> m_bitShift;
+         ^~~~~~~~~~~~
+../src/ads1015.c:59:22: error: 'm_i2cAddress' undeclared (first use in this function)
+  return readRegister(m_i2cAddress, ADS1015_REG_POINTER_CONVERT) >> m_bitShift;
+                      ^~~~~~~~~~~~
+../src/ads1015.c:59:22: note: each undeclared identifier is reported only once for each function it appears in
+../src/ads1015.c:59:68: error: 'm_bitShift' undeclared (first use in this function)
+  return readRegister(m_i2cAddress, ADS1015_REG_POINTER_CONVERT) >> m_bitShift;
+                                                                    ^~~~~~~~~~
+../src/ads1015.c:60:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/ads1015.o] Error 1
+12:52:28 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ads1015.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ads1015.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ads1015.d" -MT"src/ads1015.o" -o "src/ads1015.o" "../src/ads1015.c"
+../src/ads1015.c: In function 'readADCSingleEnded':
+../src/ads1015.c:59:9: warning: implicit declaration of function 'readRegister' [-Wimplicit-function-declaration]
+  return readRegister(m_i2cAddress, ADS1015_REG_POINTER_CONVERT) >> m_bitShift;
+         ^~~~~~~~~~~~
+../src/ads1015.c:59:22: error: 'm_i2cAddress' undeclared (first use in this function)
+  return readRegister(m_i2cAddress, ADS1015_REG_POINTER_CONVERT) >> m_bitShift;
+                      ^~~~~~~~~~~~
+../src/ads1015.c:59:22: note: each undeclared identifier is reported only once for each function it appears in
+../src/ads1015.c:59:68: error: 'm_bitShift' undeclared (first use in this function)
+  return readRegister(m_i2cAddress, ADS1015_REG_POINTER_CONVERT) >> m_bitShift;
+                                                                    ^~~~~~~~~~
+../src/ads1015.c:60:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/ads1015.o] Error 1
+12:52:33 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ads1015.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ads1015.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ads1015.d" -MT"src/ads1015.o" -o "src/ads1015.o" "../src/ads1015.c"
+../src/ads1015.c: In function 'readADCSingleEnded':
+../src/ads1015.c:59:9: warning: implicit declaration of function 'readRegister' [-Wimplicit-function-declaration]
+  return readRegister(m_i2cAddress, ADS1015_REG_POINTER_CONVERT) >> m_bitShift;
+         ^~~~~~~~~~~~
+../src/ads1015.c:59:22: error: 'm_i2cAddress' undeclared (first use in this function)
+  return readRegister(m_i2cAddress, ADS1015_REG_POINTER_CONVERT) >> m_bitShift;
+                      ^~~~~~~~~~~~
+../src/ads1015.c:59:22: note: each undeclared identifier is reported only once for each function it appears in
+../src/ads1015.c:59:68: error: 'm_bitShift' undeclared (first use in this function)
+  return readRegister(m_i2cAddress, ADS1015_REG_POINTER_CONVERT) >> m_bitShift;
+                                                                    ^~~~~~~~~~
+../src/ads1015.c:60:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/ads1015.o] Error 1
+12:54:02 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ads1015.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ads1015.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ads1015.d" -MT"src/ads1015.o" -o "src/ads1015.o" "../src/ads1015.c"
+../src/ads1015.c: In function 'readADCSingleEnded':
+../src/ads1015.c:59:9: warning: implicit declaration of function 'readRegister' [-Wimplicit-function-declaration]
+  return readRegister(m_i2cAddress, ADS1015_REG_POINTER_CONVERT) >> m_bitShift;
+         ^~~~~~~~~~~~
+../src/ads1015.c:59:22: error: 'm_i2cAddress' undeclared (first use in this function)
+  return readRegister(m_i2cAddress, ADS1015_REG_POINTER_CONVERT) >> m_bitShift;
+                      ^~~~~~~~~~~~
+../src/ads1015.c:59:22: note: each undeclared identifier is reported only once for each function it appears in
+../src/ads1015.c:59:68: error: 'm_bitShift' undeclared (first use in this function)
+  return readRegister(m_i2cAddress, ADS1015_REG_POINTER_CONVERT) >> m_bitShift;
+                                                                    ^~~~~~~~~~
+../src/ads1015.c:60:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/ads1015.o] Error 1
+12:54:10 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ads1015.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ads1015.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ads1015.d" -MT"src/ads1015.o" -o "src/ads1015.o" "../src/ads1015.c"
+../src/ads1015.c: In function 'readADCSingleEnded':
+../src/ads1015.c:59:9: warning: implicit declaration of function 'readRegister' [-Wimplicit-function-declaration]
+  return readRegister(m_i2cAddress, ADS1015_REG_POINTER_CONVERT) >> m_bitShift;
+         ^~~~~~~~~~~~
+../src/ads1015.c:59:22: error: 'm_i2cAddress' undeclared (first use in this function)
+  return readRegister(m_i2cAddress, ADS1015_REG_POINTER_CONVERT) >> m_bitShift;
+                      ^~~~~~~~~~~~
+../src/ads1015.c:59:22: note: each undeclared identifier is reported only once for each function it appears in
+../src/ads1015.c:59:68: error: 'm_bitShift' undeclared (first use in this function)
+  return readRegister(m_i2cAddress, ADS1015_REG_POINTER_CONVERT) >> m_bitShift;
+                                                                    ^~~~~~~~~~
+../src/ads1015.c:60:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/ads1015.o] Error 1
+12:56:14 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ads1015.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ads1015.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ads1015.d" -MT"src/ads1015.o" -o "src/ads1015.o" "../src/ads1015.c"
+../src/ads1015.c: In function 'readADCSingleEnded':
+../src/ads1015.c:59:9: warning: implicit declaration of function 'readRegister' [-Wimplicit-function-declaration]
+  return readRegister(m_i2cAddress, ADS1015_REG_POINTER_CONVERT) >> m_bitShift;
+         ^~~~~~~~~~~~
+../src/ads1015.c:59:22: error: 'm_i2cAddress' undeclared (first use in this function)
+  return readRegister(m_i2cAddress, ADS1015_REG_POINTER_CONVERT) >> m_bitShift;
+                      ^~~~~~~~~~~~
+../src/ads1015.c:59:22: note: each undeclared identifier is reported only once for each function it appears in
+../src/ads1015.c:59:68: error: 'm_bitShift' undeclared (first use in this function)
+  return readRegister(m_i2cAddress, ADS1015_REG_POINTER_CONVERT) >> m_bitShift;
+                                                                    ^~~~~~~~~~
+../src/ads1015.c:60:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/ads1015.o] Error 1
+13:25:40 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ads1015.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ads1015.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ads1015.d" -MT"src/ads1015.o" -o "src/ads1015.o" "../src/ads1015.c"
+../src/ads1015.c: In function 'readADCSingleEnded':
+../src/ads1015.c:62:9: warning: implicit declaration of function 'readRegister' [-Wimplicit-function-declaration]
+  return readRegister(m_i2cAddress, ADS1015_REG_POINTER_CONVERT) >> m_bitShift;
+         ^~~~~~~~~~~~
+../src/ads1015.c:62:22: error: 'm_i2cAddress' undeclared (first use in this function)
+  return readRegister(m_i2cAddress, ADS1015_REG_POINTER_CONVERT) >> m_bitShift;
+                      ^~~~~~~~~~~~
+../src/ads1015.c:62:22: note: each undeclared identifier is reported only once for each function it appears in
+../src/ads1015.c:62:68: error: 'm_bitShift' undeclared (first use in this function)
+  return readRegister(m_i2cAddress, ADS1015_REG_POINTER_CONVERT) >> m_bitShift;
+                                                                    ^~~~~~~~~~
+../src/ads1015.c:21:5: warning: unused variable 'value' [-Wunused-variable]
+  u8 value[2];
+     ^~~~~
+../src/ads1015.c:63:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/ads1015.o] Error 1
+13:28:13 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ads1015.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ads1015.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ads1015.d" -MT"src/ads1015.o" -o "src/ads1015.o" "../src/ads1015.c"
+../src/ads1015.c: In function 'readADCSingleEnded':
+../src/ads1015.c:63:9: warning: implicit declaration of function 'readRegister' [-Wimplicit-function-declaration]
+  return readRegister(m_i2cAddress, ADS1015_REG_POINTER_CONVERT) >> m_bitShift;
+         ^~~~~~~~~~~~
+../src/ads1015.c:63:22: error: 'm_i2cAddress' undeclared (first use in this function)
+  return readRegister(m_i2cAddress, ADS1015_REG_POINTER_CONVERT) >> m_bitShift;
+                      ^~~~~~~~~~~~
+../src/ads1015.c:63:22: note: each undeclared identifier is reported only once for each function it appears in
+../src/ads1015.c:63:68: error: 'm_bitShift' undeclared (first use in this function)
+  return readRegister(m_i2cAddress, ADS1015_REG_POINTER_CONVERT) >> m_bitShift;
+                                                                    ^~~~~~~~~~
+../src/ads1015.c:21:5: warning: unused variable 'value' [-Wunused-variable]
+  u8 value[2];
+     ^~~~~
+../src/ads1015.c:64:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/ads1015.o] Error 1
+13:28:54 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ads1015.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ads1015.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ads1015.d" -MT"src/ads1015.o" -o "src/ads1015.o" "../src/ads1015.c"
+../src/ads1015.c: In function 'readADCSingleEnded':
+../src/ads1015.c:62:9: warning: implicit declaration of function 'readRegister' [-Wimplicit-function-declaration]
+  return readRegister(m_i2cAddress, ADS1015_REG_POINTER_CONVERT) >> m_bitShift;
+         ^~~~~~~~~~~~
+../src/ads1015.c:62:22: error: 'm_i2cAddress' undeclared (first use in this function)
+  return readRegister(m_i2cAddress, ADS1015_REG_POINTER_CONVERT) >> m_bitShift;
+                      ^~~~~~~~~~~~
+../src/ads1015.c:62:22: note: each undeclared identifier is reported only once for each function it appears in
+../src/ads1015.c:62:68: error: 'm_bitShift' undeclared (first use in this function)
+  return readRegister(m_i2cAddress, ADS1015_REG_POINTER_CONVERT) >> m_bitShift;
+                                                                    ^~~~~~~~~~
+../src/ads1015.c:21:5: warning: unused variable 'value' [-Wunused-variable]
+  u8 value[2];
+     ^~~~~
+../src/ads1015.c:63:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/ads1015.o] Error 1
+13:28:56 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ads1015.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ads1015.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ads1015.d" -MT"src/ads1015.o" -o "src/ads1015.o" "../src/ads1015.c"
+../src/ads1015.c: In function 'readADCSingleEnded':
+../src/ads1015.c:61:9: warning: implicit declaration of function 'readRegister' [-Wimplicit-function-declaration]
+  return readRegister(m_i2cAddress, ADS1015_REG_POINTER_CONVERT) >> m_bitShift;
+         ^~~~~~~~~~~~
+../src/ads1015.c:61:22: error: 'm_i2cAddress' undeclared (first use in this function)
+  return readRegister(m_i2cAddress, ADS1015_REG_POINTER_CONVERT) >> m_bitShift;
+                      ^~~~~~~~~~~~
+../src/ads1015.c:61:22: note: each undeclared identifier is reported only once for each function it appears in
+../src/ads1015.c:61:68: error: 'm_bitShift' undeclared (first use in this function)
+  return readRegister(m_i2cAddress, ADS1015_REG_POINTER_CONVERT) >> m_bitShift;
+                                                                    ^~~~~~~~~~
+../src/ads1015.c:21:5: warning: unused variable 'value' [-Wunused-variable]
+  u8 value[2];
+     ^~~~~
+../src/ads1015.c:62:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/ads1015.o] Error 1
+13:29:23 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ads1015.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ads1015.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ads1015.d" -MT"src/ads1015.o" -o "src/ads1015.o" "../src/ads1015.c"
+../src/ads1015.c: In function 'readADCSingleEnded':
+../src/ads1015.c:63:9: warning: implicit declaration of function 'readRegister' [-Wimplicit-function-declaration]
+  return readRegister(m_i2cAddress, ADS1015_REG_POINTER_CONVERT) >> m_bitShift;
+         ^~~~~~~~~~~~
+../src/ads1015.c:63:22: error: 'm_i2cAddress' undeclared (first use in this function)
+  return readRegister(m_i2cAddress, ADS1015_REG_POINTER_CONVERT) >> m_bitShift;
+                      ^~~~~~~~~~~~
+../src/ads1015.c:63:22: note: each undeclared identifier is reported only once for each function it appears in
+../src/ads1015.c:63:68: error: 'm_bitShift' undeclared (first use in this function)
+  return readRegister(m_i2cAddress, ADS1015_REG_POINTER_CONVERT) >> m_bitShift;
+                                                                    ^~~~~~~~~~
+../src/ads1015.c:21:5: warning: variable 'value' set but not used [-Wunused-but-set-variable]
+  u8 value[2];
+     ^~~~~
+../src/ads1015.c:64:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/ads1015.o] Error 1
+13:29:30 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ads1015.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ads1015.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ads1015.d" -MT"src/ads1015.o" -o "src/ads1015.o" "../src/ads1015.c"
+../src/ads1015.c: In function 'readADCSingleEnded':
+../src/ads1015.c:53:13: error: expected expression before ';' token
+  value[0] = ;
+             ^
+../src/ads1015.c:63:9: warning: implicit declaration of function 'readRegister' [-Wimplicit-function-declaration]
+  return readRegister(m_i2cAddress, ADS1015_REG_POINTER_CONVERT) >> m_bitShift;
+         ^~~~~~~~~~~~
+../src/ads1015.c:63:22: error: 'm_i2cAddress' undeclared (first use in this function)
+  return readRegister(m_i2cAddress, ADS1015_REG_POINTER_CONVERT) >> m_bitShift;
+                      ^~~~~~~~~~~~
+../src/ads1015.c:63:22: note: each undeclared identifier is reported only once for each function it appears in
+../src/ads1015.c:63:68: error: 'm_bitShift' undeclared (first use in this function)
+  return readRegister(m_i2cAddress, ADS1015_REG_POINTER_CONVERT) >> m_bitShift;
+                                                                    ^~~~~~~~~~
+../src/ads1015.c:21:5: warning: variable 'value' set but not used [-Wunused-but-set-variable]
+  u8 value[2];
+     ^~~~~
+../src/ads1015.c:64:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/ads1015.o] Error 1
+13:30:02 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ads1015.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ads1015.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ads1015.d" -MT"src/ads1015.o" -o "src/ads1015.o" "../src/ads1015.c"
+../src/ads1015.c: In function 'readADCSingleEnded':
+../src/ads1015.c:63:9: warning: implicit declaration of function 'readRegister' [-Wimplicit-function-declaration]
+  return readRegister(m_i2cAddress, ADS1015_REG_POINTER_CONVERT) >> m_bitShift;
+         ^~~~~~~~~~~~
+../src/ads1015.c:63:22: error: 'm_i2cAddress' undeclared (first use in this function)
+  return readRegister(m_i2cAddress, ADS1015_REG_POINTER_CONVERT) >> m_bitShift;
+                      ^~~~~~~~~~~~
+../src/ads1015.c:63:22: note: each undeclared identifier is reported only once for each function it appears in
+../src/ads1015.c:63:68: error: 'm_bitShift' undeclared (first use in this function)
+  return readRegister(m_i2cAddress, ADS1015_REG_POINTER_CONVERT) >> m_bitShift;
+                                                                    ^~~~~~~~~~
+../src/ads1015.c:21:5: warning: variable 'value' set but not used [-Wunused-but-set-variable]
+  u8 value[2];
+     ^~~~~
+../src/ads1015.c:64:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/ads1015.o] Error 1
+13:30:19 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ads1015.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ads1015.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ads1015.d" -MT"src/ads1015.o" -o "src/ads1015.o" "../src/ads1015.c"
+../src/ads1015.c: In function 'readADCSingleEnded':
+../src/ads1015.c:64:9: warning: implicit declaration of function 'readRegister' [-Wimplicit-function-declaration]
+  return readRegister(m_i2cAddress, ADS1015_REG_POINTER_CONVERT) >> m_bitShift;
+         ^~~~~~~~~~~~
+../src/ads1015.c:64:22: error: 'm_i2cAddress' undeclared (first use in this function)
+  return readRegister(m_i2cAddress, ADS1015_REG_POINTER_CONVERT) >> m_bitShift;
+                      ^~~~~~~~~~~~
+../src/ads1015.c:64:22: note: each undeclared identifier is reported only once for each function it appears in
+../src/ads1015.c:64:68: error: 'm_bitShift' undeclared (first use in this function)
+  return readRegister(m_i2cAddress, ADS1015_REG_POINTER_CONVERT) >> m_bitShift;
+                                                                    ^~~~~~~~~~
+../src/ads1015.c:21:5: warning: variable 'value' set but not used [-Wunused-but-set-variable]
+  u8 value[2];
+     ^~~~~
+../src/ads1015.c:65:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/ads1015.o] Error 1
+13:30:47 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ads1015.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ads1015.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ads1015.d" -MT"src/ads1015.o" -o "src/ads1015.o" "../src/ads1015.c"
+../src/ads1015.c: In function 'readADCSingleEnded':
+../src/ads1015.c:56:2: error: expected ';' before 'I2C_write'
+  I2C_write(XPAR_XIICPS_0_DEVICE_ID, ADS1015_ADDRESS, ADS1015_REG_POINTER_CONFIG, config);
+  ^~~~~~~~~
+../src/ads1015.c:64:9: warning: implicit declaration of function 'readRegister' [-Wimplicit-function-declaration]
+  return readRegister(m_i2cAddress, ADS1015_REG_POINTER_CONVERT) >> m_bitShift;
+         ^~~~~~~~~~~~
+../src/ads1015.c:64:22: error: 'm_i2cAddress' undeclared (first use in this function)
+  return readRegister(m_i2cAddress, ADS1015_REG_POINTER_CONVERT) >> m_bitShift;
+                      ^~~~~~~~~~~~
+../src/ads1015.c:64:22: note: each undeclared identifier is reported only once for each function it appears in
+../src/ads1015.c:64:68: error: 'm_bitShift' undeclared (first use in this function)
+  return readRegister(m_i2cAddress, ADS1015_REG_POINTER_CONVERT) >> m_bitShift;
+                                                                    ^~~~~~~~~~
+../src/ads1015.c:21:5: warning: variable 'value' set but not used [-Wunused-but-set-variable]
+  u8 value[2];
+     ^~~~~
+../src/ads1015.c:65:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/ads1015.o] Error 1
+13:30:49 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ads1015.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ads1015.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ads1015.d" -MT"src/ads1015.o" -o "src/ads1015.o" "../src/ads1015.c"
+../src/ads1015.c: In function 'readADCSingleEnded':
+../src/ads1015.c:64:9: warning: implicit declaration of function 'readRegister' [-Wimplicit-function-declaration]
+  return readRegister(m_i2cAddress, ADS1015_REG_POINTER_CONVERT) >> m_bitShift;
+         ^~~~~~~~~~~~
+../src/ads1015.c:64:22: error: 'm_i2cAddress' undeclared (first use in this function)
+  return readRegister(m_i2cAddress, ADS1015_REG_POINTER_CONVERT) >> m_bitShift;
+                      ^~~~~~~~~~~~
+../src/ads1015.c:64:22: note: each undeclared identifier is reported only once for each function it appears in
+../src/ads1015.c:64:68: error: 'm_bitShift' undeclared (first use in this function)
+  return readRegister(m_i2cAddress, ADS1015_REG_POINTER_CONVERT) >> m_bitShift;
+                                                                    ^~~~~~~~~~
+../src/ads1015.c:21:5: warning: variable 'value' set but not used [-Wunused-but-set-variable]
+  u8 value[2];
+     ^~~~~
+../src/ads1015.c:65:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/ads1015.o] Error 1
+13:30:52 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ads1015.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ads1015.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ads1015.d" -MT"src/ads1015.o" -o "src/ads1015.o" "../src/ads1015.c"
+../src/ads1015.c: In function 'readADCSingleEnded':
+../src/ads1015.c:64:9: warning: implicit declaration of function 'readRegister' [-Wimplicit-function-declaration]
+  return readRegister(m_i2cAddress, ADS1015_REG_POINTER_CONVERT) >> m_bitShift;
+         ^~~~~~~~~~~~
+../src/ads1015.c:64:22: error: 'm_i2cAddress' undeclared (first use in this function)
+  return readRegister(m_i2cAddress, ADS1015_REG_POINTER_CONVERT) >> m_bitShift;
+                      ^~~~~~~~~~~~
+../src/ads1015.c:64:22: note: each undeclared identifier is reported only once for each function it appears in
+../src/ads1015.c:64:68: error: 'm_bitShift' undeclared (first use in this function)
+  return readRegister(m_i2cAddress, ADS1015_REG_POINTER_CONVERT) >> m_bitShift;
+                                                                    ^~~~~~~~~~
+../src/ads1015.c:21:5: warning: variable 'value' set but not used [-Wunused-but-set-variable]
+  u8 value[2];
+     ^~~~~
+../src/ads1015.c:65:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/ads1015.o] Error 1
+13:32:17 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ads1015.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ads1015.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ads1015.d" -MT"src/ads1015.o" -o "src/ads1015.o" "../src/ads1015.c"
+../src/ads1015.c: In function 'readADCSingleEnded':
+../src/ads1015.c:64:9: warning: implicit declaration of function 'readRegister' [-Wimplicit-function-declaration]
+  return readRegister(m_i2cAddress, ADS1015_REG_POINTER_CONVERT) >> m_bitShift;
+         ^~~~~~~~~~~~
+../src/ads1015.c:64:22: error: 'm_i2cAddress' undeclared (first use in this function)
+  return readRegister(m_i2cAddress, ADS1015_REG_POINTER_CONVERT) >> m_bitShift;
+                      ^~~~~~~~~~~~
+../src/ads1015.c:64:22: note: each undeclared identifier is reported only once for each function it appears in
+../src/ads1015.c:64:68: error: 'm_bitShift' undeclared (first use in this function)
+  return readRegister(m_i2cAddress, ADS1015_REG_POINTER_CONVERT) >> m_bitShift;
+                                                                    ^~~~~~~~~~
+../src/ads1015.c:21:5: warning: variable 'value' set but not used [-Wunused-but-set-variable]
+  u8 value[2];
+     ^~~~~
+../src/ads1015.c:65:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/ads1015.o] Error 1
+13:42:38 **** Incremental Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ads1015.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ads1015.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ads1015.d" -MT"src/ads1015.o" -o "src/ads1015.o" "../src/ads1015.c"
+../src/ads1015.c: In function 'readADCSingleEnded':
+../src/ads1015.c:64:9: warning: implicit declaration of function 'readRegister' [-Wimplicit-function-declaration]
+  return readRegister(m_i2cAddress, ADS1015_REG_POINTER_CONVERT) >> m_bitShift;
+         ^~~~~~~~~~~~
+../src/ads1015.c:64:22: error: 'm_i2cAddress' undeclared (first use in this function)
+  return readRegister(m_i2cAddress, ADS1015_REG_POINTER_CONVERT) >> m_bitShift;
+                      ^~~~~~~~~~~~
+../src/ads1015.c:64:22: note: each undeclared identifier is reported only once for each function it appears in
+../src/ads1015.c:64:68: error: 'm_bitShift' undeclared (first use in this function)
+  return readRegister(m_i2cAddress, ADS1015_REG_POINTER_CONVERT) >> m_bitShift;
+                                                                    ^~~~~~~~~~
+../src/ads1015.c:21:5: warning: variable 'value' set but not used [-Wunused-but-set-variable]
+  u8 value[2];
+     ^~~~~
+../src/ads1015.c:65:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/ads1015.o] Error 1
+13:43:14 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ads1015.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ads1015.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ads1015.d" -MT"src/ads1015.o" -o "src/ads1015.o" "../src/ads1015.c"
+../src/ads1015.c: In function 'readADCSingleEnded':
+../src/ads1015.c:21:5: warning: variable 'value' set but not used [-Wunused-but-set-variable]
+  u8 value[2];
+     ^~~~~
+../src/ads1015.c:66:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/ads1015.c'
+' '
+'Building file: ../src/i2c.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/i2c.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/i2c.d" -MT"src/i2c.o" -o "src/i2c.o" "../src/i2c.c"
+../src/i2c.c:11:5: error: conflicting types for 'I2C_write'
+ int I2C_write(u32 ZynqIicAddress, u8 slave_address, u8 register_offset, u8 byte_count, u8* write_values)
+     ^~~~~~~~~
+In file included from ../src/i2c.c:9:0:
+../src/i2c.h:19:5: note: previous declaration of 'I2C_write' was here
+ int I2C_write(u32 ZynqIicAddress, u8 slave_address, u8 register_offset, u8 write_value);
+     ^~~~~~~~~
+../src/i2c.c: In function 'I2C_write':
+../src/i2c.c:51:36: error: 'Iic' undeclared (first use in this function)
+  Status = XIicPs_MasterSendPolled(&Iic, TxBuffer, 2, slave_address);
+                                    ^~~
+../src/i2c.c:51:36: note: each undeclared identifier is reported only once for each function it appears in
+../src/i2c.c: In function 'I2C_read':
+../src/i2c.c:85:36: error: 'Iic' undeclared (first use in this function)
+  Status = XIicPs_MasterSendPolled(&Iic, TxBuffer, 1, slave_address);
+                                    ^~~
+make: *** [src/i2c.o] Error 1
+13:44:24 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/i2c.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/i2c.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/i2c.d" -MT"src/i2c.o" -o "src/i2c.o" "../src/i2c.c"
+../src/i2c.c:11:27: error: expected ';', ',' or ')' before 'ZynqIicAddress'
+ int I2C_write(XIicPs *u32 ZynqIicAddress, u8 slave_address, u8 register_offset, u8 byte_count, u8 *write_values)
+                           ^~~~~~~~~~~~~~
+../src/i2c.c: In function 'I2C_read':
+../src/i2c.c:85:36: error: 'Iic' undeclared (first use in this function)
+  Status = XIicPs_MasterSendPolled(&Iic, TxBuffer, 1, slave_address);
+                                    ^~~
+../src/i2c.c:85:36: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/i2c.o] Error 1
+13:44:38 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/i2c.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/i2c.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/i2c.d" -MT"src/i2c.o" -o "src/i2c.o" "../src/i2c.c"
+../src/i2c.c:11:5: error: conflicting types for 'I2C_write'
+ int I2C_write(XIicPs *i2cinst, u32 ZynqIicAddress, u8 slave_address, u8 register_offset, u8 byte_count, u8 *write_values)
+     ^~~~~~~~~
+In file included from ../src/i2c.c:9:0:
+../src/i2c.h:19:5: note: previous declaration of 'I2C_write' was here
+ int I2C_write(u32 ZynqIicAddress, u8 slave_address, u8 register_offset, u8 write_value);
+     ^~~~~~~~~
+../src/i2c.c: In function 'I2C_write':
+../src/i2c.c:51:36: error: 'Iic' undeclared (first use in this function)
+  Status = XIicPs_MasterSendPolled(&Iic, TxBuffer, 2, slave_address);
+                                    ^~~
+../src/i2c.c:51:36: note: each undeclared identifier is reported only once for each function it appears in
+../src/i2c.c: In function 'I2C_read':
+../src/i2c.c:85:36: error: 'Iic' undeclared (first use in this function)
+  Status = XIicPs_MasterSendPolled(&Iic, TxBuffer, 1, slave_address);
+                                    ^~~
+make: *** [src/i2c.o] Error 1
+13:44:49 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/i2c.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/i2c.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/i2c.d" -MT"src/i2c.o" -o "src/i2c.o" "../src/i2c.c"
+../src/i2c.c:11:5: error: conflicting types for 'I2C_write'
+ int I2C_write(XIicPs *i2cinst, u32 ZynqIicAddress, u8 slave_address, u8 register_offset, u8 byte_count, u8 *write_values)
+     ^~~~~~~~~
+In file included from ../src/i2c.c:9:0:
+../src/i2c.h:19:5: note: previous declaration of 'I2C_write' was here
+ int I2C_write(u32 ZynqIicAddress, u8 slave_address, u8 register_offset, u8 write_value);
+     ^~~~~~~~~
+../src/i2c.c: In function 'I2C_write':
+../src/i2c.c:54:27: error: 'Iic' undeclared (first use in this function)
+  while (XIicPs_BusIsBusy(&Iic)) {/* NOP */}
+                           ^~~
+../src/i2c.c:54:27: note: each undeclared identifier is reported only once for each function it appears in
+../src/i2c.c: In function 'I2C_read':
+../src/i2c.c:85:36: error: 'Iic' undeclared (first use in this function)
+  Status = XIicPs_MasterSendPolled(&Iic, TxBuffer, 1, slave_address);
+                                    ^~~
+make: *** [src/i2c.o] Error 1
+13:44:57 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/i2c.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/i2c.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/i2c.d" -MT"src/i2c.o" -o "src/i2c.o" "../src/i2c.c"
+../src/i2c.c:11:5: error: conflicting types for 'I2C_write'
+ int I2C_write(XIicPs *i2cinst, u32 ZynqIicAddress, u8 slave_address, u8 register_offset, u8 byte_count, u8 *write_values)
+     ^~~~~~~~~
+In file included from ../src/i2c.c:9:0:
+../src/i2c.h:19:5: note: previous declaration of 'I2C_write' was here
+ int I2C_write(u32 ZynqIicAddress, u8 slave_address, u8 register_offset, u8 write_value);
+     ^~~~~~~~~
+../src/i2c.c: In function 'I2C_read':
+../src/i2c.c:85:36: error: 'Iic' undeclared (first use in this function)
+  Status = XIicPs_MasterSendPolled(&Iic, TxBuffer, 1, slave_address);
+                                    ^~~
+../src/i2c.c:85:36: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/i2c.o] Error 1
+13:45:12 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ads1015.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ads1015.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ads1015.d" -MT"src/ads1015.o" -o "src/ads1015.o" "../src/ads1015.c"
+../src/ads1015.c: In function 'readADCSingleEnded':
+../src/ads1015.c:56:2: error: too few arguments to function 'I2C_write'
+  I2C_write(XPAR_XIICPS_0_DEVICE_ID, ADS1015_ADDRESS, ADS1015_REG_POINTER_CONFIG, config);
+  ^~~~~~~~~
+In file included from ../src/ads1015.h:11:0,
+                 from ../src/ads1015.c:9:
+../src/i2c.h:19:5: note: declared here
+ int I2C_write(XIicPs *i2cinst, u32 ZynqIicAddress, u8 slave_address, u8 register_offset, u8 write_value);
+     ^~~~~~~~~
+../src/ads1015.c:21:5: warning: variable 'value' set but not used [-Wunused-but-set-variable]
+  u8 value[2];
+     ^~~~~
+../src/ads1015.c:66:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/ads1015.o] Error 1
+13:45:31 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ads1015.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ads1015.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ads1015.d" -MT"src/ads1015.o" -o "src/ads1015.o" "../src/ads1015.c"
+../src/ads1015.c: In function 'readADCSingleEnded':
+../src/ads1015.c:56:13: error: 'Iic' undeclared (first use in this function)
+  I2C_write(&Iic, XPAR_XIICPS_0_DEVICE_ID, ADS1015_ADDRESS, ADS1015_REG_POINTER_CONFIG, config);
+             ^~~
+../src/ads1015.c:56:13: note: each undeclared identifier is reported only once for each function it appears in
+../src/ads1015.c:21:5: warning: variable 'value' set but not used [-Wunused-but-set-variable]
+  u8 value[2];
+     ^~~~~
+../src/ads1015.c:66:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/ads1015.o] Error 1
+13:45:52 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ads1015.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ads1015.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ads1015.d" -MT"src/ads1015.o" -o "src/ads1015.o" "../src/ads1015.c"
+../src/ads1015.c: In function 'readADCSingleEnded':
+../src/ads1015.c:56:13: error: 'Iic' undeclared (first use in this function)
+  I2C_write(&Iic, XPAR_XIICPS_0_DEVICE_ID, ADS1015_ADDRESS, ADS1015_REG_POINTER_CONFIG, config);
+             ^~~
+../src/ads1015.c:56:13: note: each undeclared identifier is reported only once for each function it appears in
+../src/ads1015.c:21:5: warning: variable 'value' set but not used [-Wunused-but-set-variable]
+  u8 value[2];
+     ^~~~~
+../src/ads1015.c:66:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/ads1015.o] Error 1
+13:46:00 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ads1015.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ads1015.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ads1015.d" -MT"src/ads1015.o" -o "src/ads1015.o" "../src/ads1015.c"
+../src/ads1015.c: In function 'readADCSingleEnded':
+../src/ads1015.c:21:5: warning: variable 'value' set but not used [-Wunused-but-set-variable]
+  u8 value[2];
+     ^~~~~
+../src/ads1015.c:66:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/ads1015.c'
+' '
+'Building file: ../src/i2c.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/i2c.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/i2c.d" -MT"src/i2c.o" -o "src/i2c.o" "../src/i2c.c"
+../src/i2c.c:11:5: error: conflicting types for 'I2C_write'
+ int I2C_write(XIicPs *i2cinst, u32 ZynqIicAddress, u8 slave_address, u8 register_offset, u8 byte_count, u8 *write_values)
+     ^~~~~~~~~
+In file included from ../src/i2c.c:9:0:
+../src/i2c.h:19:5: note: previous declaration of 'I2C_write' was here
+ int I2C_write(XIicPs *i2cinst, u32 ZynqIicAddress, u8 slave_address, u8 register_offset, u8 write_value);
+     ^~~~~~~~~
+../src/i2c.c: In function 'I2C_read':
+../src/i2c.c:85:36: error: 'Iic' undeclared (first use in this function)
+  Status = XIicPs_MasterSendPolled(&Iic, TxBuffer, 1, slave_address);
+                                    ^~~
+../src/i2c.c:85:36: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/i2c.o] Error 1
+13:46:25 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ads1015.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ads1015.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ads1015.d" -MT"src/ads1015.o" -o "src/ads1015.o" "../src/ads1015.c"
+../src/ads1015.c: In function 'readADCSingleEnded':
+../src/ads1015.c:56:2: error: too few arguments to function 'I2C_write'
+  I2C_write(inst, XPAR_XIICPS_0_DEVICE_ID, ADS1015_ADDRESS, ADS1015_REG_POINTER_CONFIG, config);
+  ^~~~~~~~~
+In file included from ../src/ads1015.h:11:0,
+                 from ../src/ads1015.c:9:
+../src/i2c.h:19:5: note: declared here
+ int I2C_write(XIicPs *i2cinst, u32 ZynqIicAddress, u8 slave_address, u8 register_offset, u8 byte_count, u8 *write_values);
+     ^~~~~~~~~
+../src/ads1015.c:21:5: warning: variable 'value' set but not used [-Wunused-but-set-variable]
+  u8 value[2];
+     ^~~~~
+../src/ads1015.c:66:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/ads1015.o] Error 1
+13:47:04 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ads1015.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ads1015.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ads1015.d" -MT"src/ads1015.o" -o "src/ads1015.o" "../src/ads1015.c"
+../src/ads1015.c: In function 'readADCSingleEnded':
+../src/ads1015.c:56:91: warning: passing argument 6 of 'I2C_write' from incompatible pointer type [-Wincompatible-pointer-types]
+  I2C_write(inst, XPAR_XIICPS_0_DEVICE_ID, ADS1015_ADDRESS, ADS1015_REG_POINTER_CONFIG, 2, &value);
+                                                                                           ^
+In file included from ../src/ads1015.h:11:0,
+                 from ../src/ads1015.c:9:
+../src/i2c.h:19:5: note: expected 'u8 * {aka unsigned char *}' but argument is of type 'u8 (*)[2] {aka unsigned char (*)[2]}'
+ int I2C_write(XIicPs *i2cinst, u32 ZynqIicAddress, u8 slave_address, u8 register_offset, u8 byte_count, u8 *write_values);
+     ^~~~~~~~~
+../src/ads1015.c:66:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/ads1015.c'
+' '
+'Building file: ../src/i2c.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/i2c.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/i2c.d" -MT"src/i2c.o" -o "src/i2c.o" "../src/i2c.c"
+../src/i2c.c: In function 'I2C_read':
+../src/i2c.c:85:36: error: 'Iic' undeclared (first use in this function)
+  Status = XIicPs_MasterSendPolled(&Iic, TxBuffer, 1, slave_address);
+                                    ^~~
+../src/i2c.c:85:36: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/i2c.o] Error 1
+13:47:12 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ads1015.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ads1015.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ads1015.d" -MT"src/ads1015.o" -o "src/ads1015.o" "../src/ads1015.c"
+../src/ads1015.c: In function 'readADCSingleEnded':
+../src/ads1015.c:66:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/ads1015.c'
+' '
+'Building file: ../src/i2c.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/i2c.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/i2c.d" -MT"src/i2c.o" -o "src/i2c.o" "../src/i2c.c"
+../src/i2c.c: In function 'I2C_read':
+../src/i2c.c:85:36: error: 'Iic' undeclared (first use in this function)
+  Status = XIicPs_MasterSendPolled(&Iic, TxBuffer, 1, slave_address);
+                                    ^~~
+../src/i2c.c:85:36: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/i2c.o] Error 1
+13:47:36 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/i2c.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/i2c.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/i2c.d" -MT"src/i2c.o" -o "src/i2c.o" "../src/i2c.c"
+../src/i2c.c:59:5: error: conflicting types for 'I2C_read'
+ int I2C_read(XIicPs *i2cinst, u32 ZynqIicAddress, u8 slave_address, u8 register_offset, u8 *read_value)
+     ^~~~~~~~
+In file included from ../src/i2c.c:9:0:
+../src/i2c.h:20:5: note: previous declaration of 'I2C_read' was here
+ int I2C_read(u32 ZynqIicAddress, u8 slave_address, u8 register_offset, u8 *read_value);
+     ^~~~~~~~
+../src/i2c.c: In function 'I2C_read':
+../src/i2c.c:85:36: error: 'Iic' undeclared (first use in this function)
+  Status = XIicPs_MasterSendPolled(&Iic, TxBuffer, 1, slave_address);
+                                    ^~~
+../src/i2c.c:85:36: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/i2c.o] Error 1
+13:47:41 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ads1015.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ads1015.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ads1015.d" -MT"src/ads1015.o" -o "src/ads1015.o" "../src/ads1015.c"
+../src/ads1015.c: In function 'readADCSingleEnded':
+../src/ads1015.c:66:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/ads1015.c'
+' '
+'Building file: ../src/i2c.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/i2c.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/i2c.d" -MT"src/i2c.o" -o "src/i2c.o" "../src/i2c.c"
+../src/i2c.c: In function 'I2C_read':
+../src/i2c.c:85:36: error: 'Iic' undeclared (first use in this function)
+  Status = XIicPs_MasterSendPolled(&Iic, TxBuffer, 1, slave_address);
+                                    ^~~
+../src/i2c.c:85:36: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/i2c.o] Error 1
+13:47:58 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/i2c.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/i2c.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/i2c.d" -MT"src/i2c.o" -o "src/i2c.o" "../src/i2c.c"
+../src/i2c.c: In function 'I2C_read':
+../src/i2c.c:88:27: error: 'Iic' undeclared (first use in this function)
+  while (XIicPs_BusIsBusy(&Iic)) {/* NOP */}
+                           ^~~
+../src/i2c.c:88:27: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/i2c.o] Error 1
+13:48:05 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/i2c.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/i2c.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/i2c.d" -MT"src/i2c.o" -o "src/i2c.o" "../src/i2c.c"
+'Finished building: ../src/i2c.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:45:36: warning: passing argument 4 of 'I2C_read' makes integer from pointer without a cast [-Wint-conversion]
+        ADS1015_REG_POINTER_CONFIG, &value);
+                                    ^
+In file included from ../src/ads1015.h:11:0,
+                 from ../src/main.c:13:
+../src/i2c.h:20:5: note: expected 'u8 {aka unsigned char}' but argument is of type 'u8 * {aka unsigned char *}'
+ int I2C_read(XIicPs *i2cinst, u32 ZynqIicAddress, u8 slave_address, u8 register_offset, u8 *read_value);
+     ^~~~~~~~
+../src/main.c:44:15: error: too few arguments to function 'I2C_read'
+      Status = I2C_read(XPAR_XIICPS_0_DEVICE_ID, ADS1015_ADDRESS,
+               ^~~~~~~~
+In file included from ../src/ads1015.h:11:0,
+                 from ../src/main.c:13:
+../src/i2c.h:20:5: note: declared here
+ int I2C_read(XIicPs *i2cinst, u32 ZynqIicAddress, u8 slave_address, u8 register_offset, u8 *read_value);
+     ^~~~~~~~
+make: *** [src/main.o] Error 1
+13:48:15 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/test_ads1015.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/test_ads1015.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/test_ads1015.d" -MT"src/test_ads1015.o" -o "src/test_ads1015.o" "../src/test_ads1015.c"
+../src/test_ads1015.c:1:19: fatal error: unity.h: No such file or directory
+ #include "unity.h"
+                   ^
+compilation terminated.
+make: *** [src/test_ads1015.o] Error 1
+13:48:37 **** Clean-only build of configuration Debug for project i2c_test_app ****
+make clean 
+rm -rf  ./src/ads1015.o ./src/i2c.o ./src/main.o ./src/test_ads1015.o  ./src/ads1015.d ./src/i2c.d ./src/main.d ./src/test_ads1015.d  i2c_test_app.elf.size  i2c_test_app.elf
+' '
+13:48:37 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ads1015.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ads1015.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ads1015.d" -MT"src/ads1015.o" -o "src/ads1015.o" "../src/ads1015.c"
+../src/ads1015.c: In function 'readADCSingleEnded':
+../src/ads1015.c:66:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/ads1015.c'
+' '
+'Building file: ../src/i2c.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/i2c.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/i2c.d" -MT"src/i2c.o" -o "src/i2c.o" "../src/i2c.c"
+'Finished building: ../src/i2c.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: i2c_test_app.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "i2c_test_app.elf"  ./src/ads1015.o ./src/i2c.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: i2c_test_app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size i2c_test_app.elf  |tee "i2c_test_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  31660	   1196	   8312	  41168	   a0d0	i2c_test_app.elf
+'Finished building: i2c_test_app.elf.size'
+' '
+13:49:21 **** Incremental Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+13:50:31 **** Incremental Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+13:54:55 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:46:6: error: 'readADCSingleEnded' undeclared (first use in this function)
+      readADCSingleEnded
+      ^~~~~~~~~~~~~~~~~~
+../src/main.c:46:6: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:47:6: error: expected ';' before 'for'
+      for(i = 0; i < 100000; i++){};
+      ^~~
+../src/main.c:24:5: warning: unused variable 'value' [-Wunused-variable]
+  u8 value = 0;
+     ^~~~~
+../src/main.c:23:14: warning: unused variable 'i' [-Wunused-variable]
+  int Status, i;
+              ^
+make: *** [src/main.o] Error 1
+13:54:59 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:46:6: warning: implicit declaration of function 'readADCSingleEnded' [-Wimplicit-function-declaration]
+      readADCSingleEnded();
+      ^~~~~~~~~~~~~~~~~~
+../src/main.c:24:5: warning: unused variable 'value' [-Wunused-variable]
+  u8 value = 0;
+     ^~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: i2c_test_app.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "i2c_test_app.elf"  ./src/ads1015.o ./src/i2c.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: i2c_test_app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size i2c_test_app.elf  |tee "i2c_test_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  31628	   1196	   8312	  41136	   a0b0	i2c_test_app.elf
+'Finished building: i2c_test_app.elf.size'
+' '
+13:55:10 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:46:6: warning: implicit declaration of function 'readADCSingleEnded' [-Wimplicit-function-declaration]
+      readADCSingleEnded(&Iic, );
+      ^~~~~~~~~~~~~~~~~~
+../src/main.c:46:31: error: expected expression before ')' token
+      readADCSingleEnded(&Iic, );
+                               ^
+../src/main.c:24:5: warning: unused variable 'value' [-Wunused-variable]
+  u8 value = 0;
+     ^~~~~
+make: *** [src/main.o] Error 1
+13:55:57 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:46:6: warning: implicit declaration of function 'readADCSingleEnded' [-Wimplicit-function-declaration]
+      readADCSingleEnded(&Iic, XPAR_XIICPS_0_BASEADDR, 1);
+      ^~~~~~~~~~~~~~~~~~
+../src/main.c:24:5: warning: unused variable 'value' [-Wunused-variable]
+  u8 value = 0;
+     ^~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: i2c_test_app.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "i2c_test_app.elf"  ./src/ads1015.o ./src/i2c.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: i2c_test_app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size i2c_test_app.elf  |tee "i2c_test_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  31648	   1196	   8312	  41156	   a0c4	i2c_test_app.elf
+'Finished building: i2c_test_app.elf.size'
+' '
+13:57:00 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ads1015.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ads1015.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ads1015.d" -MT"src/ads1015.o" -o "src/ads1015.o" "../src/ads1015.c"
+../src/ads1015.c:18:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'u16'
+ u16 readADCSingleEnded(XIicPs *inst, u32 ZynqIicAddress, u8 channel){
+ ^~~
+make: *** [src/ads1015.o] Error 1
+13:57:11 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ads1015.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ads1015.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ads1015.d" -MT"src/ads1015.o" -o "src/ads1015.o" "../src/ads1015.c"
+../src/ads1015.c: In function 'readADCSingleEnded':
+../src/ads1015.c:18:69: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+ u16 readADCSingleEnded(XIicPs *inst, u32 ZynqIicAddress, u8 channel){
+                                                                     ^
+../src/ads1015.c:66:1: error: expected '{' at end of input
+ }
+ ^
+../src/ads1015.c:66:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/ads1015.o] Error 1
+13:57:14 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ads1015.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ads1015.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ads1015.d" -MT"src/ads1015.o" -o "src/ads1015.o" "../src/ads1015.c"
+../src/ads1015.c: In function 'readADCSingleEnded':
+../src/ads1015.c:66:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/ads1015.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:24:5: warning: unused variable 'value' [-Wunused-variable]
+  u8 value = 0;
+     ^~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: i2c_test_app.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "i2c_test_app.elf"  ./src/ads1015.o ./src/i2c.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: i2c_test_app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size i2c_test_app.elf  |tee "i2c_test_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  31648	   1196	   8312	  41156	   a0c4	i2c_test_app.elf
+'Finished building: i2c_test_app.elf.size'
+' '
+13:58:22 **** Incremental Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+14:13:17 **** Incremental Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ads1015.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ads1015.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ads1015.d" -MT"src/ads1015.o" -o "src/ads1015.o" "../src/ads1015.c"
+../src/ads1015.c: In function 'readADCSingleEnded':
+../src/ads1015.c:66:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/ads1015.c'
+' '
+'Building target: i2c_test_app.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "i2c_test_app.elf"  ./src/ads1015.o ./src/i2c.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: i2c_test_app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size i2c_test_app.elf  |tee "i2c_test_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  31660	   1196	   8312	  41168	   a0d0	i2c_test_app.elf
+'Finished building: i2c_test_app.elf.size'
+' '
+14:18:12 **** Incremental Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+14:18:35 **** Incremental Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+14:19:02 **** Incremental Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+14:19:15 **** Incremental Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+14:24:45 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/i2c.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/i2c.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/i2c.d" -MT"src/i2c.o" -o "src/i2c.o" "../src/i2c.c"
+'Finished building: ../src/i2c.c'
+' '
+'Building target: i2c_test_app.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "i2c_test_app.elf"  ./src/ads1015.o ./src/i2c.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: i2c_test_app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size i2c_test_app.elf  |tee "i2c_test_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  31660	   1196	   8312	  41168	   a0d0	i2c_test_app.elf
+'Finished building: i2c_test_app.elf.size'
+' '
+14:25:00 **** Incremental Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+14:25:20 **** Incremental Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+14:26:05 **** Incremental Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+14:29:42 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:24:5: warning: unused variable 'value' [-Wunused-variable]
+  u8 value = 0;
+     ^~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: i2c_test_app.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "i2c_test_app.elf"  ./src/ads1015.o ./src/i2c.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: i2c_test_app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size i2c_test_app.elf  |tee "i2c_test_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  31660	   1196	   8312	  41168	   a0d0	i2c_test_app.elf
+'Finished building: i2c_test_app.elf.size'
+' '
+14:29:53 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:21:5: warning: unused variable 'value' [-Wunused-variable]
+  u8 value = 0;
+     ^~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: i2c_test_app.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "i2c_test_app.elf"  ./src/ads1015.o ./src/i2c.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: i2c_test_app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size i2c_test_app.elf  |tee "i2c_test_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  31660	   1196	   8312	  41168	   a0d0	i2c_test_app.elf
+'Finished building: i2c_test_app.elf.size'
+' '
+14:29:57 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:19:5: warning: unused variable 'value' [-Wunused-variable]
+  u8 value = 0;
+     ^~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: i2c_test_app.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "i2c_test_app.elf"  ./src/ads1015.o ./src/i2c.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: i2c_test_app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size i2c_test_app.elf  |tee "i2c_test_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  31660	   1196	   8312	  41168	   a0d0	i2c_test_app.elf
+'Finished building: i2c_test_app.elf.size'
+' '
+14:34:13 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ads1015.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ads1015.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ads1015.d" -MT"src/ads1015.o" -o "src/ads1015.o" "../src/ads1015.c"
+../src/ads1015.c: In function 'readADCSingleEnded':
+../src/ads1015.c:65:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/ads1015.c'
+' '
+'Building target: i2c_test_app.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "i2c_test_app.elf"  ./src/ads1015.o ./src/i2c.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: i2c_test_app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size i2c_test_app.elf  |tee "i2c_test_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  31660	   1196	   8312	  41168	   a0d0	i2c_test_app.elf
+'Finished building: i2c_test_app.elf.size'
+' '
+14:34:40 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ads1015.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ads1015.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ads1015.d" -MT"src/ads1015.o" -o "src/ads1015.o" "../src/ads1015.c"
+../src/ads1015.c: In function 'readADCSingleEnded':
+../src/ads1015.c:66:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/ads1015.c'
+' '
+'Building target: i2c_test_app.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "i2c_test_app.elf"  ./src/ads1015.o ./src/i2c.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: i2c_test_app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size i2c_test_app.elf  |tee "i2c_test_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  31700	   1196	   8312	  41208	   a0f8	i2c_test_app.elf
+'Finished building: i2c_test_app.elf.size'
+' '
+14:34:45 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ads1015.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ads1015.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ads1015.d" -MT"src/ads1015.o" -o "src/ads1015.o" "../src/ads1015.c"
+../src/ads1015.c: In function 'readADCSingleEnded':
+../src/ads1015.c:66:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/ads1015.c'
+' '
+'Building target: i2c_test_app.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "i2c_test_app.elf"  ./src/ads1015.o ./src/i2c.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: i2c_test_app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size i2c_test_app.elf  |tee "i2c_test_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  31700	   1196	   8312	  41208	   a0f8	i2c_test_app.elf
+'Finished building: i2c_test_app.elf.size'
+' '
+14:34:51 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ads1015.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ads1015.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ads1015.d" -MT"src/ads1015.o" -o "src/ads1015.o" "../src/ads1015.c"
+../src/ads1015.c: In function 'readADCSingleEnded':
+../src/ads1015.c:66:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/ads1015.c'
+' '
+'Building target: i2c_test_app.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "i2c_test_app.elf"  ./src/ads1015.o ./src/i2c.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: i2c_test_app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size i2c_test_app.elf  |tee "i2c_test_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  31700	   1196	   8312	  41208	   a0f8	i2c_test_app.elf
+'Finished building: i2c_test_app.elf.size'
+' '
+14:34:59 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ads1015.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ads1015.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ads1015.d" -MT"src/ads1015.o" -o "src/ads1015.o" "../src/ads1015.c"
+../src/ads1015.c: In function 'readADCSingleEnded':
+../src/ads1015.c:66:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/ads1015.c'
+' '
+'Building target: i2c_test_app.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "i2c_test_app.elf"  ./src/ads1015.o ./src/i2c.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: i2c_test_app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size i2c_test_app.elf  |tee "i2c_test_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  31700	   1196	   8312	  41208	   a0f8	i2c_test_app.elf
+'Finished building: i2c_test_app.elf.size'
+' '
+14:37:24 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ads1015.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ads1015.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ads1015.d" -MT"src/ads1015.o" -o "src/ads1015.o" "../src/ads1015.c"
+../src/ads1015.c: In function 'readADCSingleEnded':
+../src/ads1015.c:66:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/ads1015.c'
+' '
+'Building target: i2c_test_app.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "i2c_test_app.elf"  ./src/ads1015.o ./src/i2c.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: i2c_test_app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size i2c_test_app.elf  |tee "i2c_test_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  31700	   1196	   8312	  41208	   a0f8	i2c_test_app.elf
+'Finished building: i2c_test_app.elf.size'
+' '
+14:37:28 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ads1015.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ads1015.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ads1015.d" -MT"src/ads1015.o" -o "src/ads1015.o" "../src/ads1015.c"
+../src/ads1015.c: In function 'readADCSingleEnded':
+../src/ads1015.c:65:9: warning: implicit declaration of function 'readRegister' [-Wimplicit-function-declaration]
+  return readRegister(m_i2cAddress, ADS1015_REG_POINTER_CONVERT) >> m_bitShift;
+         ^~~~~~~~~~~~
+../src/ads1015.c:65:22: error: 'm_i2cAddress' undeclared (first use in this function)
+  return readRegister(m_i2cAddress, ADS1015_REG_POINTER_CONVERT) >> m_bitShift;
+                      ^~~~~~~~~~~~
+../src/ads1015.c:65:22: note: each undeclared identifier is reported only once for each function it appears in
+../src/ads1015.c:65:68: error: 'm_bitShift' undeclared (first use in this function)
+  return readRegister(m_i2cAddress, ADS1015_REG_POINTER_CONVERT) >> m_bitShift;
+                                                                    ^~~~~~~~~~
+../src/ads1015.c:66:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/ads1015.o] Error 1
+14:37:41 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ads1015.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ads1015.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ads1015.d" -MT"src/ads1015.o" -o "src/ads1015.o" "../src/ads1015.c"
+../src/ads1015.c: In function 'readADCSingleEnded':
+../src/ads1015.c:65:9: error: too few arguments to function 'I2C_read'
+  return I2C_read();
+         ^~~~~~~~
+In file included from ../src/ads1015.h:11:0,
+                 from ../src/ads1015.c:9:
+../src/i2c.h:20:5: note: declared here
+ int I2C_read(XIicPs *i2cinst, u32 ZynqIicAddress, u8 slave_address, u8 register_offset, u8 *read_value);
+     ^~~~~~~~
+../src/ads1015.c:67:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/ads1015.o] Error 1
+14:41:07 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ads1015.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ads1015.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ads1015.d" -MT"src/ads1015.o" -o "src/ads1015.o" "../src/ads1015.c"
+../src/ads1015.c: In function 'readADCSingleEnded':
+../src/ads1015.c:65:9: error: too few arguments to function 'I2C_read'
+  return I2C_read();
+         ^~~~~~~~
+In file included from ../src/ads1015.h:11:0,
+                 from ../src/ads1015.c:9:
+../src/i2c.h:20:5: note: declared here
+ int I2C_read(XIicPs *i2cinst, u32 ZynqIicAddress, u8 slave_address, u8 register_offset, u8 *read_value);
+     ^~~~~~~~
+../src/ads1015.c:67:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/ads1015.o] Error 1
+14:41:29 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ads1015.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ads1015.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ads1015.d" -MT"src/ads1015.o" -o "src/ads1015.o" "../src/ads1015.c"
+../src/ads1015.c: In function 'readADCSingleEnded':
+../src/ads1015.c:65:9: error: too few arguments to function 'I2C_read'
+  return I2C_read();
+         ^~~~~~~~
+In file included from ../src/ads1015.h:11:0,
+                 from ../src/ads1015.c:9:
+../src/i2c.h:20:5: note: declared here
+ int I2C_read(XIicPs *i2cinst, u32 ZynqIicAddress, u8 slave_address, u8 register_offset, u8 *read_value);
+     ^~~~~~~~
+../src/ads1015.c:67:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/ads1015.o] Error 1
+14:42:00 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ads1015.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ads1015.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ads1015.d" -MT"src/ads1015.o" -o "src/ads1015.o" "../src/ads1015.c"
+../src/ads1015.c: In function 'readADCSingleEnded':
+../src/ads1015.c:65:9: error: too few arguments to function 'I2C_read'
+  return I2C_read(inst);
+         ^~~~~~~~
+In file included from ../src/ads1015.h:11:0,
+                 from ../src/ads1015.c:9:
+../src/i2c.h:20:5: note: declared here
+ int I2C_read(XIicPs *i2cinst, u32 ZynqIicAddress, u8 slave_address, u8 register_offset, u8 *read_value);
+     ^~~~~~~~
+../src/ads1015.c:67:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/ads1015.o] Error 1
+14:42:22 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ads1015.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ads1015.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ads1015.d" -MT"src/ads1015.o" -o "src/ads1015.o" "../src/ads1015.c"
+../src/ads1015.c: In function 'readADCSingleEnded':
+../src/ads1015.c:65:9: error: too few arguments to function 'I2C_read'
+  return I2C_read(inst, XPAR_XIICPS_0_DEVICE_ID);
+         ^~~~~~~~
+In file included from ../src/ads1015.h:11:0,
+                 from ../src/ads1015.c:9:
+../src/i2c.h:20:5: note: declared here
+ int I2C_read(XIicPs *i2cinst, u32 ZynqIicAddress, u8 slave_address, u8 register_offset, u8 *read_value);
+     ^~~~~~~~
+../src/ads1015.c:67:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/ads1015.o] Error 1
+14:42:35 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ads1015.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ads1015.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ads1015.d" -MT"src/ads1015.o" -o "src/ads1015.o" "../src/ads1015.c"
+../src/ads1015.c: In function 'readADCSingleEnded':
+../src/ads1015.c:65:9: error: too few arguments to function 'I2C_read'
+  return I2C_read(inst, XPAR_XIICPS_0_DEVICE_ID, ADS1015_ADDRESS);
+         ^~~~~~~~
+In file included from ../src/ads1015.h:11:0,
+                 from ../src/ads1015.c:9:
+../src/i2c.h:20:5: note: declared here
+ int I2C_read(XIicPs *i2cinst, u32 ZynqIicAddress, u8 slave_address, u8 register_offset, u8 *read_value);
+     ^~~~~~~~
+../src/ads1015.c:67:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/ads1015.o] Error 1
+14:42:43 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ads1015.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ads1015.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ads1015.d" -MT"src/ads1015.o" -o "src/ads1015.o" "../src/ads1015.c"
+../src/ads1015.c: In function 'readADCSingleEnded':
+../src/ads1015.c:65:9: error: too few arguments to function 'I2C_read'
+  return I2C_read(inst, XPAR_XIICPS_0_DEVICE_ID, ADS1015_ADDRESS, ADS1015_REG_POINTER_CONVERT);
+         ^~~~~~~~
+In file included from ../src/ads1015.h:11:0,
+                 from ../src/ads1015.c:9:
+../src/i2c.h:20:5: note: declared here
+ int I2C_read(XIicPs *i2cinst, u32 ZynqIicAddress, u8 slave_address, u8 register_offset, u8 *read_value);
+     ^~~~~~~~
+../src/ads1015.c:67:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/ads1015.o] Error 1
+14:43:24 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ads1015.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ads1015.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ads1015.d" -MT"src/ads1015.o" -o "src/ads1015.o" "../src/ads1015.c"
+../src/ads1015.c: In function 'readADCSingleEnded':
+../src/ads1015.c:65:9: error: too few arguments to function 'I2C_read'
+  return I2C_read(inst, XPAR_XIICPS_0_DEVICE_ID, ADS1015_ADDRESS, ADS1015_REG_POINTER_CONVERT);
+         ^~~~~~~~
+In file included from ../src/ads1015.h:11:0,
+                 from ../src/ads1015.c:9:
+../src/i2c.h:20:5: note: declared here
+ int I2C_read(XIicPs *i2cinst, u32 ZynqIicAddress, u8 slave_address, u8 register_offset, u8 *read_value);
+     ^~~~~~~~
+../src/ads1015.c:67:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/ads1015.o] Error 1
+14:43:30 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ads1015.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ads1015.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ads1015.d" -MT"src/ads1015.o" -o "src/ads1015.o" "../src/ads1015.c"
+../src/ads1015.c: In function 'readADCSingleEnded':
+../src/ads1015.c:65:9: error: too few arguments to function 'I2C_read'
+  return I2C_read(inst, XPAR_XIICPS_0_DEVICE_ID, ADS1015_ADDRESS, ADS1015_REG_POINTER_CONVERT);
+         ^~~~~~~~
+In file included from ../src/ads1015.h:11:0,
+                 from ../src/ads1015.c:9:
+../src/i2c.h:20:5: note: declared here
+ int I2C_read(XIicPs *i2cinst, u32 ZynqIicAddress, u8 slave_address, u8 register_offset, u8 *read_value);
+     ^~~~~~~~
+../src/ads1015.c:67:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/ads1015.o] Error 1
+14:43:55 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ads1015.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ads1015.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ads1015.d" -MT"src/ads1015.o" -o "src/ads1015.o" "../src/ads1015.c"
+../src/ads1015.c: In function 'readADCSingleEnded':
+../src/ads1015.c:55:2: error: 'value' undeclared (first use in this function)
+  value[0] = (u8) config & 0x00FF;
+  ^~~~~
+../src/ads1015.c:55:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/ads1015.c:67:95: error: expected expression before ')' token
+  return I2C_read(inst, XPAR_XIICPS_0_DEVICE_ID, ADS1015_ADDRESS, ADS1015_REG_POINTER_CONVERT, );
+                                                                                               ^
+../src/ads1015.c:21:5: warning: unused variable 'w_value' [-Wunused-variable]
+  u8 w_value[2];
+     ^~~~~~~
+../src/ads1015.c:69:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/ads1015.o] Error 1
+14:44:07 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ads1015.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ads1015.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ads1015.d" -MT"src/ads1015.o" -o "src/ads1015.o" "../src/ads1015.c"
+../src/ads1015.c: In function 'readADCSingleEnded':
+../src/ads1015.c:55:2: error: 'value' undeclared (first use in this function)
+  value[0] = (u8) config & 0x00FF;
+  ^~~~~
+../src/ads1015.c:55:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/ads1015.c:67:95: error: expected expression before ')' token
+  return I2C_read(inst, XPAR_XIICPS_0_DEVICE_ID, ADS1015_ADDRESS, ADS1015_REG_POINTER_CONVERT, );
+                                                                                               ^
+../src/ads1015.c:22:6: warning: unused variable 'r_value' [-Wunused-variable]
+  u16 r_value = 0;
+      ^~~~~~~
+../src/ads1015.c:21:5: warning: unused variable 'w_value' [-Wunused-variable]
+  u8 w_value[2];
+     ^~~~~~~
+../src/ads1015.c:69:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/ads1015.o] Error 1
+14:44:17 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ads1015.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ads1015.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ads1015.d" -MT"src/ads1015.o" -o "src/ads1015.o" "../src/ads1015.c"
+../src/ads1015.c: In function 'readADCSingleEnded':
+../src/ads1015.c:55:2: error: 'value' undeclared (first use in this function)
+  value[0] = (u8) config & 0x00FF;
+  ^~~~~
+../src/ads1015.c:55:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/ads1015.c:67:95: warning: passing argument 5 of 'I2C_read' from incompatible pointer type [-Wincompatible-pointer-types]
+  return I2C_read(inst, XPAR_XIICPS_0_DEVICE_ID, ADS1015_ADDRESS, ADS1015_REG_POINTER_CONVERT, &r_value);
+                                                                                               ^
+In file included from ../src/ads1015.h:11:0,
+                 from ../src/ads1015.c:9:
+../src/i2c.h:20:5: note: expected 'u8 * {aka unsigned char *}' but argument is of type 'u16 * {aka short unsigned int *}'
+ int I2C_read(XIicPs *i2cinst, u32 ZynqIicAddress, u8 slave_address, u8 register_offset, u8 *read_value);
+     ^~~~~~~~
+../src/ads1015.c:21:5: warning: unused variable 'w_value' [-Wunused-variable]
+  u8 w_value[2];
+     ^~~~~~~
+make: *** [src/ads1015.o] Error 1
+14:49:58 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ads1015.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ads1015.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ads1015.d" -MT"src/ads1015.o" -o "src/ads1015.o" "../src/ads1015.c"
+../src/ads1015.c: In function 'readADCSingleEnded':
+../src/ads1015.c:55:2: error: 'value' undeclared (first use in this function)
+  value[0] = (u8) config & 0x00FF;
+  ^~~~~
+../src/ads1015.c:55:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/ads1015.c:67:95: error: expected expression before ')' token
+  return I2C_read(inst, XPAR_XIICPS_0_DEVICE_ID, ADS1015_ADDRESS, ADS1015_REG_POINTER_CONVERT, );
+                                                                                               ^
+../src/ads1015.c:22:6: warning: unused variable 'r_value' [-Wunused-variable]
+  u16 r_value = 0;
+      ^~~~~~~
+../src/ads1015.c:21:5: warning: unused variable 'w_value' [-Wunused-variable]
+  u8 w_value[2];
+     ^~~~~~~
+../src/ads1015.c:69:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/ads1015.o] Error 1
+14:52:26 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ads1015.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ads1015.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ads1015.d" -MT"src/ads1015.o" -o "src/ads1015.o" "../src/ads1015.c"
+../src/ads1015.c: In function 'readADCSingleEnded':
+../src/ads1015.c:55:2: error: 'value' undeclared (first use in this function)
+  value[0] = (u8) config & 0x00FF;
+  ^~~~~
+../src/ads1015.c:55:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/ads1015.c:67:95: error: expected expression before ')' token
+  return I2C_read(inst, XPAR_XIICPS_0_DEVICE_ID, ADS1015_ADDRESS, ADS1015_REG_POINTER_CONVERT, );
+                                                                                               ^
+../src/ads1015.c:22:6: warning: unused variable 'r_value' [-Wunused-variable]
+  u16 r_value = 0;
+      ^~~~~~~
+../src/ads1015.c:21:5: warning: unused variable 'w_value' [-Wunused-variable]
+  u8 w_value[2];
+     ^~~~~~~
+../src/ads1015.c:69:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/ads1015.o] Error 1
+14:54:11 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ads1015.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ads1015.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ads1015.d" -MT"src/ads1015.o" -o "src/ads1015.o" "../src/ads1015.c"
+../src/ads1015.c: In function 'readADCSingleEnded':
+../src/ads1015.c:55:2: error: 'value' undeclared (first use in this function)
+  value[0] = (u8) config & 0x00FF;
+  ^~~~~
+../src/ads1015.c:55:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/ads1015.c:67:95: error: expected expression before ')' token
+  return I2C_read(inst, XPAR_XIICPS_0_DEVICE_ID, ADS1015_ADDRESS, ADS1015_REG_POINTER_CONVERT, );
+                                                                                               ^
+../src/ads1015.c:22:6: warning: unused variable 'r_value' [-Wunused-variable]
+  u16 r_value = 0;
+      ^~~~~~~
+../src/ads1015.c:21:5: warning: unused variable 'w_value' [-Wunused-variable]
+  u8 w_value[2];
+     ^~~~~~~
+../src/ads1015.c:69:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/ads1015.o] Error 1
+14:54:26 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ads1015.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ads1015.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ads1015.d" -MT"src/ads1015.o" -o "src/ads1015.o" "../src/ads1015.c"
+../src/ads1015.c: In function 'readADCSingleEnded':
+../src/ads1015.c:55:2: error: 'value' undeclared (first use in this function)
+  value[0] = (u8) config & 0x00FF;
+  ^~~~~
+../src/ads1015.c:55:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/ads1015.c:67:95: error: expected expression before ')' token
+  return I2C_read(inst, XPAR_XIICPS_0_DEVICE_ID, ADS1015_ADDRESS, ADS1015_REG_POINTER_CONVERT, );
+                                                                                               ^
+../src/ads1015.c:22:6: warning: unused variable 'r_value' [-Wunused-variable]
+  u16 r_value = 0;
+      ^~~~~~~
+../src/ads1015.c:69:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/ads1015.o] Error 1
+15:02:05 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ads1015.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ads1015.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ads1015.d" -MT"src/ads1015.o" -o "src/ads1015.o" "../src/ads1015.c"
+../src/ads1015.c: In function 'readADCSingleEnded':
+../src/ads1015.c:55:2: error: 'value' undeclared (first use in this function)
+  value[0] = (u8) config & 0x00FF;
+  ^~~~~
+../src/ads1015.c:55:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/ads1015.c:67:95: warning: passing argument 5 of 'I2C_read' from incompatible pointer type [-Wincompatible-pointer-types]
+  return I2C_read(inst, XPAR_XIICPS_0_DEVICE_ID, ADS1015_ADDRESS, ADS1015_REG_POINTER_CONVERT, &r_value);
+                                                                                               ^
+In file included from ../src/ads1015.h:11:0,
+                 from ../src/ads1015.c:9:
+../src/i2c.h:20:5: note: expected 'u8 * {aka unsigned char *}' but argument is of type 'u16 * {aka short unsigned int *}'
+ int I2C_read(XIicPs *i2cinst, u32 ZynqIicAddress, u8 slave_address, u8 register_offset, u8 *read_value);
+     ^~~~~~~~
+make: *** [src/ads1015.o] Error 1
+15:02:28 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ads1015.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ads1015.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ads1015.d" -MT"src/ads1015.o" -o "src/ads1015.o" "../src/ads1015.c"
+../src/ads1015.c: In function 'readADCSingleEnded':
+../src/ads1015.c:22:19: error: invalid initializer
+  u16 r_value[2] = 0;
+                   ^
+../src/ads1015.c:55:2: error: 'value' undeclared (first use in this function)
+  value[0] = (u8) config & 0x00FF;
+  ^~~~~
+../src/ads1015.c:55:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/ads1015.c:67:95: error: expected expression before ')' token
+  return I2C_read(inst, XPAR_XIICPS_0_DEVICE_ID, ADS1015_ADDRESS, ADS1015_REG_POINTER_CONVERT, );
+                                                                                               ^
+../src/ads1015.c:22:6: warning: unused variable 'r_value' [-Wunused-variable]
+  u16 r_value[2] = 0;
+      ^~~~~~~
+../src/ads1015.c:69:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/ads1015.o] Error 1
+15:03:09 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ads1015.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ads1015.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ads1015.d" -MT"src/ads1015.o" -o "src/ads1015.o" "../src/ads1015.c"
+../src/ads1015.c: In function 'readADCSingleEnded':
+../src/ads1015.c:22:19: error: invalid initializer
+  u16 r_value[2] = 0;
+                   ^
+../src/ads1015.c:55:2: error: 'value' undeclared (first use in this function)
+  value[0] = (u8) config & 0x00FF;
+  ^~~~~
+../src/ads1015.c:55:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/ads1015.c:67:95: error: expected expression before ')' token
+  return I2C_read(inst, XPAR_XIICPS_0_DEVICE_ID, ADS1015_ADDRESS, ADS1015_REG_POINTER_CONVERT, );
+                                                                                               ^
+../src/ads1015.c:22:6: warning: unused variable 'r_value' [-Wunused-variable]
+  u16 r_value[2] = 0;
+      ^~~~~~~
+../src/ads1015.c:69:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/ads1015.o] Error 1
+15:03:16 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ads1015.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ads1015.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ads1015.d" -MT"src/ads1015.o" -o "src/ads1015.o" "../src/ads1015.c"
+../src/ads1015.c: In function 'readADCSingleEnded':
+../src/ads1015.c:22:19: error: invalid initializer
+  u16 r_value[2] = 0;
+                   ^
+../src/ads1015.c:55:2: error: 'value' undeclared (first use in this function)
+  value[0] = (u8) config & 0x00FF;
+  ^~~~~
+../src/ads1015.c:55:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/ads1015.c:67:95: error: expected expression before ')' token
+  return I2C_read(inst, XPAR_XIICPS_0_DEVICE_ID, ADS1015_ADDRESS, ADS1015_REG_POINTER_CONVERT, );
+                                                                                               ^
+../src/ads1015.c:22:6: warning: unused variable 'r_value' [-Wunused-variable]
+  u16 r_value[2] = 0;
+      ^~~~~~~
+../src/ads1015.c:69:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/ads1015.o] Error 1
+15:03:27 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ads1015.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ads1015.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ads1015.d" -MT"src/ads1015.o" -o "src/ads1015.o" "../src/ads1015.c"
+../src/ads1015.c: In function 'readADCSingleEnded':
+../src/ads1015.c:22:19: error: invalid initializer
+  u16 r_value[2] = 0;
+                   ^
+../src/ads1015.c:55:2: error: 'value' undeclared (first use in this function)
+  value[0] = (u8) config & 0x00FF;
+  ^~~~~
+../src/ads1015.c:55:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/ads1015.c:67:95: error: expected expression before ')' token
+  return I2C_read(inst, XPAR_XIICPS_0_DEVICE_ID, ADS1015_ADDRESS, ADS1015_REG_POINTER_CONVERT, );
+                                                                                               ^
+../src/ads1015.c:22:6: warning: unused variable 'r_value' [-Wunused-variable]
+  u16 r_value[2] = 0;
+      ^~~~~~~
+../src/ads1015.c:69:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/ads1015.o] Error 1
+15:03:33 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ads1015.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ads1015.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ads1015.d" -MT"src/ads1015.o" -o "src/ads1015.o" "../src/ads1015.c"
+In file included from ../src/ads1015.h:11:0,
+                 from ../src/ads1015.c:9:
+../src/i2c.h:20:89: error: unknown type name 'u18'
+ int I2C_read(XIicPs *i2cinst, u32 ZynqIicAddress, u8 slave_address, u8 register_offset, u18 *read_value);
+                                                                                         ^~~
+../src/ads1015.c: In function 'readADCSingleEnded':
+../src/ads1015.c:22:19: error: invalid initializer
+  u16 r_value[2] = 0;
+                   ^
+../src/ads1015.c:55:2: error: 'value' undeclared (first use in this function)
+  value[0] = (u8) config & 0x00FF;
+  ^~~~~
+../src/ads1015.c:55:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/ads1015.c:67:9: warning: implicit declaration of function 'I2C_read' [-Wimplicit-function-declaration]
+  return I2C_read(inst, XPAR_XIICPS_0_DEVICE_ID, ADS1015_ADDRESS, ADS1015_REG_POINTER_CONVERT, );
+         ^~~~~~~~
+../src/ads1015.c:67:95: error: expected expression before ')' token
+  return I2C_read(inst, XPAR_XIICPS_0_DEVICE_ID, ADS1015_ADDRESS, ADS1015_REG_POINTER_CONVERT, );
+                                                                                               ^
+../src/ads1015.c:22:6: warning: unused variable 'r_value' [-Wunused-variable]
+  u16 r_value[2] = 0;
+      ^~~~~~~
+../src/ads1015.c:69:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/ads1015.o] Error 1
+15:03:35 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ads1015.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ads1015.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ads1015.d" -MT"src/ads1015.o" -o "src/ads1015.o" "../src/ads1015.c"
+../src/ads1015.c: In function 'readADCSingleEnded':
+../src/ads1015.c:22:19: error: invalid initializer
+  u16 r_value[2] = 0;
+                   ^
+../src/ads1015.c:55:2: error: 'value' undeclared (first use in this function)
+  value[0] = (u8) config & 0x00FF;
+  ^~~~~
+../src/ads1015.c:55:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/ads1015.c:67:95: error: expected expression before ')' token
+  return I2C_read(inst, XPAR_XIICPS_0_DEVICE_ID, ADS1015_ADDRESS, ADS1015_REG_POINTER_CONVERT, );
+                                                                                               ^
+../src/ads1015.c:22:6: warning: unused variable 'r_value' [-Wunused-variable]
+  u16 r_value[2] = 0;
+      ^~~~~~~
+../src/ads1015.c:69:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/ads1015.o] Error 1
+15:03:38 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ads1015.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ads1015.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ads1015.d" -MT"src/ads1015.o" -o "src/ads1015.o" "../src/ads1015.c"
+../src/ads1015.c: In function 'readADCSingleEnded':
+../src/ads1015.c:22:19: error: invalid initializer
+  u16 r_value[2] = 0;
+                   ^
+../src/ads1015.c:55:2: error: 'value' undeclared (first use in this function)
+  value[0] = (u8) config & 0x00FF;
+  ^~~~~
+../src/ads1015.c:55:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/ads1015.c:67:95: error: expected expression before ')' token
+  return I2C_read(inst, XPAR_XIICPS_0_DEVICE_ID, ADS1015_ADDRESS, ADS1015_REG_POINTER_CONVERT, );
+                                                                                               ^
+../src/ads1015.c:22:6: warning: unused variable 'r_value' [-Wunused-variable]
+  u16 r_value[2] = 0;
+      ^~~~~~~
+../src/ads1015.c:69:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/ads1015.o] Error 1
+15:04:11 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ads1015.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ads1015.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ads1015.d" -MT"src/ads1015.o" -o "src/ads1015.o" "../src/ads1015.c"
+../src/ads1015.c: In function 'readADCSingleEnded':
+../src/ads1015.c:22:19: error: invalid initializer
+  u16 r_value[2] = 0;
+                   ^
+../src/ads1015.c:55:2: error: 'value' undeclared (first use in this function)
+  value[0] = (u8) config & 0x00FF;
+  ^~~~~
+../src/ads1015.c:55:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/ads1015.c:67:95: error: expected expression before ')' token
+  return I2C_read(inst, XPAR_XIICPS_0_DEVICE_ID, ADS1015_ADDRESS, ADS1015_REG_POINTER_CONVERT, );
+                                                                                               ^
+../src/ads1015.c:22:6: warning: unused variable 'r_value' [-Wunused-variable]
+  u16 r_value[2] = 0;
+      ^~~~~~~
+../src/ads1015.c:69:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/ads1015.o] Error 1
+15:05:11 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ads1015.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ads1015.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ads1015.d" -MT"src/ads1015.o" -o "src/ads1015.o" "../src/ads1015.c"
+../src/ads1015.c: In function 'readADCSingleEnded':
+../src/ads1015.c:22:19: error: invalid initializer
+  u16 r_value[2] = 0;
+                   ^
+../src/ads1015.c:55:2: error: 'value' undeclared (first use in this function)
+  value[0] = (u8) config & 0x00FF;
+  ^~~~~
+../src/ads1015.c:55:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/ads1015.c:67:95: error: expected expression before ')' token
+  return I2C_read(inst, XPAR_XIICPS_0_DEVICE_ID, ADS1015_ADDRESS, ADS1015_REG_POINTER_CONVERT, );
+                                                                                               ^
+../src/ads1015.c:22:6: warning: unused variable 'r_value' [-Wunused-variable]
+  u16 r_value[2] = 0;
+      ^~~~~~~
+../src/ads1015.c:69:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/ads1015.o] Error 1
+15:05:19 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ads1015.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ads1015.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ads1015.d" -MT"src/ads1015.o" -o "src/ads1015.o" "../src/ads1015.c"
+../src/ads1015.c: In function 'readADCSingleEnded':
+../src/ads1015.c:22:19: error: invalid initializer
+  u16 r_value[2] = 0;
+                   ^
+../src/ads1015.c:55:2: error: 'value' undeclared (first use in this function)
+  value[0] = (u8) config & 0x00FF;
+  ^~~~~
+../src/ads1015.c:55:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/ads1015.c:67:95: error: expected expression before ')' token
+  return I2C_read(inst, XPAR_XIICPS_0_DEVICE_ID, ADS1015_ADDRESS, ADS1015_REG_POINTER_CONVERT, );
+                                                                                               ^
+../src/ads1015.c:22:6: warning: unused variable 'r_value' [-Wunused-variable]
+  u16 r_value[2] = 0;
+      ^~~~~~~
+../src/ads1015.c:69:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/ads1015.o] Error 1
+15:06:32 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ads1015.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ads1015.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ads1015.d" -MT"src/ads1015.o" -o "src/ads1015.o" "../src/ads1015.c"
+../src/ads1015.c: In function 'readADCSingleEnded':
+../src/ads1015.c:55:2: error: 'value' undeclared (first use in this function)
+  value[0] = (u8) config & 0x00FF;
+  ^~~~~
+../src/ads1015.c:55:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/ads1015.c:67:88: error: expected expression before ')' token
+  I2C_read(inst, XPAR_XIICPS_0_DEVICE_ID, ADS1015_ADDRESS, ADS1015_REG_POINTER_CONVERT, )
+                                                                                        ^
+../src/ads1015.c:69:2: warning: 'return' with no value, in function returning non-void
+  return ;
+  ^~~~~~
+../src/ads1015.c:18:5: note: declared here
+ u16 readADCSingleEnded(XIicPs *inst, u32 ZynqIicAddress, u8 channel){
+     ^~~~~~~~~~~~~~~~~~
+../src/ads1015.c:22:6: warning: unused variable 'r_value' [-Wunused-variable]
+  u16 r_value = 0;
+      ^~~~~~~
+make: *** [src/ads1015.o] Error 1
+15:06:46 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ads1015.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ads1015.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ads1015.d" -MT"src/ads1015.o" -o "src/ads1015.o" "../src/ads1015.c"
+../src/ads1015.c: In function 'readADCSingleEnded':
+../src/ads1015.c:22:19: error: invalid initializer
+  u16 r_value[2] = 0;
+                   ^
+../src/ads1015.c:55:2: error: 'value' undeclared (first use in this function)
+  value[0] = (u8) config & 0x00FF;
+  ^~~~~
+../src/ads1015.c:55:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/ads1015.c:67:88: error: expected expression before ')' token
+  I2C_read(inst, XPAR_XIICPS_0_DEVICE_ID, ADS1015_ADDRESS, ADS1015_REG_POINTER_CONVERT, )
+                                                                                        ^
+../src/ads1015.c:69:2: warning: 'return' with no value, in function returning non-void
+  return ;
+  ^~~~~~
+../src/ads1015.c:18:5: note: declared here
+ u16 readADCSingleEnded(XIicPs *inst, u32 ZynqIicAddress, u8 channel){
+     ^~~~~~~~~~~~~~~~~~
+../src/ads1015.c:22:6: warning: unused variable 'r_value' [-Wunused-variable]
+  u16 r_value[2] = 0;
+      ^~~~~~~
+make: *** [src/ads1015.o] Error 1
+15:06:49 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ads1015.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ads1015.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ads1015.d" -MT"src/ads1015.o" -o "src/ads1015.o" "../src/ads1015.c"
+../src/ads1015.c: In function 'readADCSingleEnded':
+../src/ads1015.c:55:2: error: 'value' undeclared (first use in this function)
+  value[0] = (u8) config & 0x00FF;
+  ^~~~~
+../src/ads1015.c:55:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/ads1015.c:67:88: error: expected expression before ')' token
+  I2C_read(inst, XPAR_XIICPS_0_DEVICE_ID, ADS1015_ADDRESS, ADS1015_REG_POINTER_CONVERT, )
+                                                                                        ^
+../src/ads1015.c:69:2: warning: 'return' with no value, in function returning non-void
+  return ;
+  ^~~~~~
+../src/ads1015.c:18:5: note: declared here
+ u16 readADCSingleEnded(XIicPs *inst, u32 ZynqIicAddress, u8 channel){
+     ^~~~~~~~~~~~~~~~~~
+../src/ads1015.c:22:6: warning: unused variable 'r_value' [-Wunused-variable]
+  u16 r_value[2];
+      ^~~~~~~
+make: *** [src/ads1015.o] Error 1
+15:06:54 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ads1015.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ads1015.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ads1015.d" -MT"src/ads1015.o" -o "src/ads1015.o" "../src/ads1015.c"
+../src/ads1015.c: In function 'readADCSingleEnded':
+../src/ads1015.c:55:2: error: 'value' undeclared (first use in this function)
+  value[0] = (u8) config & 0x00FF;
+  ^~~~~
+../src/ads1015.c:55:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/ads1015.c:67:88: error: expected expression before ')' token
+  I2C_read(inst, XPAR_XIICPS_0_DEVICE_ID, ADS1015_ADDRESS, ADS1015_REG_POINTER_CONVERT, )
+                                                                                        ^
+../src/ads1015.c:69:2: warning: 'return' with no value, in function returning non-void
+  return ;
+  ^~~~~~
+../src/ads1015.c:18:5: note: declared here
+ u16 readADCSingleEnded(XIicPs *inst, u32 ZynqIicAddress, u8 channel){
+     ^~~~~~~~~~~~~~~~~~
+../src/ads1015.c:22:5: warning: unused variable 'r_value' [-Wunused-variable]
+  u8 r_value[2];
+     ^~~~~~~
+make: *** [src/ads1015.o] Error 1
+15:07:01 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ads1015.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ads1015.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ads1015.d" -MT"src/ads1015.o" -o "src/ads1015.o" "../src/ads1015.c"
+../src/ads1015.c: In function 'readADCSingleEnded':
+../src/ads1015.c:55:2: error: 'value' undeclared (first use in this function)
+  value[0] = (u8) config & 0x00FF;
+  ^~~~~
+../src/ads1015.c:55:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/ads1015.c:68:3: error: 'read_value' undeclared (first use in this function)
+  *read_value = RxBuffer[0] | (RxBuffer[1] << 8);
+   ^~~~~~~~~~
+../src/ads1015.c:68:16: error: 'RxBuffer' undeclared (first use in this function)
+  *read_value = RxBuffer[0] | (RxBuffer[1] << 8);
+                ^~~~~~~~
+../src/ads1015.c:69:2: warning: 'return' with no value, in function returning non-void
+  return ;
+  ^~~~~~
+../src/ads1015.c:18:5: note: declared here
+ u16 readADCSingleEnded(XIicPs *inst, u32 ZynqIicAddress, u8 channel){
+     ^~~~~~~~~~~~~~~~~~
+make: *** [src/ads1015.o] Error 1
+15:07:27 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ads1015.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ads1015.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ads1015.d" -MT"src/ads1015.o" -o "src/ads1015.o" "../src/ads1015.c"
+../src/ads1015.c: In function 'readADCSingleEnded':
+../src/ads1015.c:55:2: error: 'value' undeclared (first use in this function)
+  value[0] = (u8) config & 0x00FF;
+  ^~~~~
+../src/ads1015.c:55:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/ads1015.c:69:2: error: expected ';' before 'return'
+  return (RxBuffer[0] | (RxBuffer[1] << 8));
+  ^~~~~~
+../src/ads1015.c:71:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/ads1015.o] Error 1
+15:07:32 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ads1015.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ads1015.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ads1015.d" -MT"src/ads1015.o" -o "src/ads1015.o" "../src/ads1015.c"
+../src/ads1015.c: In function 'readADCSingleEnded':
+../src/ads1015.c:55:2: error: 'value' undeclared (first use in this function)
+  value[0] = (u8) config & 0x00FF;
+  ^~~~~
+../src/ads1015.c:55:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/ads1015.c:69:2: error: expected ';' before 'return'
+  return ( RxBuffer[0] | (RxBuffer[1] << 8) );
+  ^~~~~~
+../src/ads1015.c:71:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/ads1015.o] Error 1
+15:07:44 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ads1015.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ads1015.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ads1015.d" -MT"src/ads1015.o" -o "src/ads1015.o" "../src/ads1015.c"
+../src/ads1015.c: In function 'readADCSingleEnded':
+../src/ads1015.c:55:2: error: 'value' undeclared (first use in this function)
+  value[0] = (u8) config & 0x00FF;
+  ^~~~~
+../src/ads1015.c:55:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/ads1015.c:69:2: error: expected ';' before 'return'
+  return ( r_value[0] | (r_value[1] << 8) );
+  ^~~~~~
+../src/ads1015.c:71:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/ads1015.o] Error 1
+15:07:56 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ads1015.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ads1015.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ads1015.d" -MT"src/ads1015.o" -o "src/ads1015.o" "../src/ads1015.c"
+../src/ads1015.c: In function 'readADCSingleEnded':
+../src/ads1015.c:55:2: error: 'value' undeclared (first use in this function)
+  value[0] = (u8) config & 0x00FF;
+  ^~~~~
+../src/ads1015.c:55:2: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/ads1015.o] Error 1
+15:08:15 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ads1015.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ads1015.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ads1015.d" -MT"src/ads1015.o" -o "src/ads1015.o" "../src/ads1015.c"
+'Finished building: ../src/ads1015.c'
+' '
+'Building file: ../src/i2c.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/i2c.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/i2c.d" -MT"src/i2c.o" -o "src/i2c.o" "../src/i2c.c"
+../src/i2c.c: In function 'I2C_read':
+../src/i2c.c:104:15: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+   *read_value = RxBuffer;
+               ^
+'Finished building: ../src/i2c.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:19:5: warning: unused variable 'value' [-Wunused-variable]
+  u8 value = 0;
+     ^~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: i2c_test_app.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "i2c_test_app.elf"  ./src/ads1015.o ./src/i2c.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: i2c_test_app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size i2c_test_app.elf  |tee "i2c_test_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  31760	   1196	   8312	  41268	   a134	i2c_test_app.elf
+'Finished building: i2c_test_app.elf.size'
+' '
+15:08:37 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ads1015.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ads1015.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ads1015.d" -MT"src/ads1015.o" -o "src/ads1015.o" "../src/ads1015.c"
+'Finished building: ../src/ads1015.c'
+' '
+'Building target: i2c_test_app.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "i2c_test_app.elf"  ./src/ads1015.o ./src/i2c.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: i2c_test_app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size i2c_test_app.elf  |tee "i2c_test_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  31760	   1196	   8312	  41268	   a134	i2c_test_app.elf
+'Finished building: i2c_test_app.elf.size'
+' '
+15:08:48 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ads1015.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ads1015.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ads1015.d" -MT"src/ads1015.o" -o "src/ads1015.o" "../src/ads1015.c"
+'Finished building: ../src/ads1015.c'
+' '
+'Building target: i2c_test_app.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "i2c_test_app.elf"  ./src/ads1015.o ./src/i2c.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: i2c_test_app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size i2c_test_app.elf  |tee "i2c_test_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  31760	   1196	   8312	  41268	   a134	i2c_test_app.elf
+'Finished building: i2c_test_app.elf.size'
+' '
+15:12:37 **** Incremental Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+15:13:30 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ads1015.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ads1015.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ads1015.d" -MT"src/ads1015.o" -o "src/ads1015.o" "../src/ads1015.c"
+'Finished building: ../src/ads1015.c'
+' '
+'Building target: i2c_test_app.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "i2c_test_app.elf"  ./src/ads1015.o ./src/i2c.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: i2c_test_app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size i2c_test_app.elf  |tee "i2c_test_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  31760	   1196	   8312	  41268	   a134	i2c_test_app.elf
+'Finished building: i2c_test_app.elf.size'
+' '
+15:13:40 **** Incremental Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+15:17:40 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ads1015.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ads1015.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ads1015.d" -MT"src/ads1015.o" -o "src/ads1015.o" "../src/ads1015.c"
+'Finished building: ../src/ads1015.c'
+' '
+'Building target: i2c_test_app.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "i2c_test_app.elf"  ./src/ads1015.o ./src/i2c.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: i2c_test_app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size i2c_test_app.elf  |tee "i2c_test_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  31776	   1196	   8312	  41284	   a144	i2c_test_app.elf
+'Finished building: i2c_test_app.elf.size'
+' '
+15:17:43 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ads1015.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ads1015.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ads1015.d" -MT"src/ads1015.o" -o "src/ads1015.o" "../src/ads1015.c"
+'Finished building: ../src/ads1015.c'
+' '
+'Building target: i2c_test_app.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "i2c_test_app.elf"  ./src/ads1015.o ./src/i2c.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: i2c_test_app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size i2c_test_app.elf  |tee "i2c_test_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  31776	   1196	   8312	  41284	   a144	i2c_test_app.elf
+'Finished building: i2c_test_app.elf.size'
+' '
+15:17:47 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ads1015.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ads1015.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ads1015.d" -MT"src/ads1015.o" -o "src/ads1015.o" "../src/ads1015.c"
+../src/ads1015.c: In function 'readADCSingleEnded':
+../src/ads1015.c:22:18: error: invalid initializer
+  u8 r_value[2] = 0;
+                  ^
+make: *** [src/ads1015.o] Error 1
+15:17:55 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ads1015.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ads1015.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ads1015.d" -MT"src/ads1015.o" -o "src/ads1015.o" "../src/ads1015.c"
+'Finished building: ../src/ads1015.c'
+' '
+'Building target: i2c_test_app.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "i2c_test_app.elf"  ./src/ads1015.o ./src/i2c.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: i2c_test_app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size i2c_test_app.elf  |tee "i2c_test_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  31776	   1196	   8312	  41284	   a144	i2c_test_app.elf
+'Finished building: i2c_test_app.elf.size'
+' '
+15:18:01 **** Incremental Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+15:22:31 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ads1015.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ads1015.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ads1015.d" -MT"src/ads1015.o" -o "src/ads1015.o" "../src/ads1015.c"
+'Finished building: ../src/ads1015.c'
+' '
+'Building target: i2c_test_app.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "i2c_test_app.elf"  ./src/ads1015.o ./src/i2c.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: i2c_test_app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size i2c_test_app.elf  |tee "i2c_test_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  31772	   1196	   8312	  41280	   a140	i2c_test_app.elf
+'Finished building: i2c_test_app.elf.size'
+' '
+15:22:34 **** Incremental Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+15:22:40 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ads1015.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ads1015.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ads1015.d" -MT"src/ads1015.o" -o "src/ads1015.o" "../src/ads1015.c"
+'Finished building: ../src/ads1015.c'
+' '
+'Building target: i2c_test_app.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "i2c_test_app.elf"  ./src/ads1015.o ./src/i2c.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: i2c_test_app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size i2c_test_app.elf  |tee "i2c_test_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  31776	   1196	   8312	  41284	   a144	i2c_test_app.elf
+'Finished building: i2c_test_app.elf.size'
+' '
+15:22:47 **** Incremental Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+15:35:29 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ads1015.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ads1015.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ads1015.d" -MT"src/ads1015.o" -o "src/ads1015.o" "../src/ads1015.c"
+'Finished building: ../src/ads1015.c'
+' '
+'Building target: i2c_test_app.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "i2c_test_app.elf"  ./src/ads1015.o ./src/i2c.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: i2c_test_app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size i2c_test_app.elf  |tee "i2c_test_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  31776	   1196	   8312	  41284	   a144	i2c_test_app.elf
+'Finished building: i2c_test_app.elf.size'
+' '
+15:35:34 **** Incremental Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+15:37:00 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:19:6: warning: variable 'value' set but not used [-Wunused-but-set-variable]
+  u16 value = 0;
+      ^~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: i2c_test_app.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "i2c_test_app.elf"  ./src/ads1015.o ./src/i2c.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: i2c_test_app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size i2c_test_app.elf  |tee "i2c_test_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  31784	   1196	   8312	  41292	   a14c	i2c_test_app.elf
+'Finished building: i2c_test_app.elf.size'
+' '
+15:37:02 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:19:6: warning: variable 'value' set but not used [-Wunused-but-set-variable]
+  u16 value = 0;
+      ^~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: i2c_test_app.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "i2c_test_app.elf"  ./src/ads1015.o ./src/i2c.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: i2c_test_app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size i2c_test_app.elf  |tee "i2c_test_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  31784	   1196	   8312	  41292	   a14c	i2c_test_app.elf
+'Finished building: i2c_test_app.elf.size'
+' '
+15:37:13 **** Incremental Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+15:41:42 **** Incremental Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+15:44:43 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/i2c.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/i2c.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/i2c.d" -MT"src/i2c.o" -o "src/i2c.o" "../src/i2c.c"
+'Finished building: ../src/i2c.c'
+' '
+'Building target: i2c_test_app.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "i2c_test_app.elf"  ./src/ads1015.o ./src/i2c.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: i2c_test_app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size i2c_test_app.elf  |tee "i2c_test_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  31776	   1196	   8312	  41284	   a144	i2c_test_app.elf
+'Finished building: i2c_test_app.elf.size'
+' '
+15:44:48 **** Incremental Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+15:46:43 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/i2c.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/i2c.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/i2c.d" -MT"src/i2c.o" -o "src/i2c.o" "../src/i2c.c"
+'Finished building: ../src/i2c.c'
+' '
+'Building target: i2c_test_app.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "i2c_test_app.elf"  ./src/ads1015.o ./src/i2c.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: i2c_test_app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size i2c_test_app.elf  |tee "i2c_test_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  31776	   1196	   8312	  41284	   a144	i2c_test_app.elf
+'Finished building: i2c_test_app.elf.size'
+' '
+15:46:46 **** Incremental Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+15:49:02 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/i2c.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/i2c.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/i2c.d" -MT"src/i2c.o" -o "src/i2c.o" "../src/i2c.c"
+'Finished building: ../src/i2c.c'
+' '
+'Building target: i2c_test_app.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "i2c_test_app.elf"  ./src/ads1015.o ./src/i2c.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: i2c_test_app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size i2c_test_app.elf  |tee "i2c_test_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  31776	   1196	   8312	  41284	   a144	i2c_test_app.elf
+'Finished building: i2c_test_app.elf.size'
+' '
+15:49:07 **** Incremental Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+15:50:06 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ads1015.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ads1015.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ads1015.d" -MT"src/ads1015.o" -o "src/ads1015.o" "../src/ads1015.c"
+'Finished building: ../src/ads1015.c'
+' '
+'Building target: i2c_test_app.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "i2c_test_app.elf"  ./src/ads1015.o ./src/i2c.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: i2c_test_app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size i2c_test_app.elf  |tee "i2c_test_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  31760	   1196	   8312	  41268	   a134	i2c_test_app.elf
+'Finished building: i2c_test_app.elf.size'
+' '
+15:50:11 **** Incremental Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+15:51:08 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/i2c.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/i2c.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/i2c.d" -MT"src/i2c.o" -o "src/i2c.o" "../src/i2c.c"
+../src/i2c.c: In function 'I2C_read':
+../src/i2c.c:104:14: warning: assignment from incompatible pointer type [-Wincompatible-pointer-types]
+   read_value = &RxBuffer;
+              ^
+'Finished building: ../src/i2c.c'
+' '
+'Building target: i2c_test_app.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "i2c_test_app.elf"  ./src/ads1015.o ./src/i2c.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: i2c_test_app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size i2c_test_app.elf  |tee "i2c_test_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  31760	   1196	   8312	  41268	   a134	i2c_test_app.elf
+'Finished building: i2c_test_app.elf.size'
+' '
+15:52:20 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ads1015.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ads1015.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ads1015.d" -MT"src/ads1015.o" -o "src/ads1015.o" "../src/ads1015.c"
+../src/ads1015.c: In function 'readADCSingleEnded':
+../src/ads1015.c:68:88: warning: passing argument 5 of 'I2C_read' from incompatible pointer type [-Wincompatible-pointer-types]
+  I2C_read(inst, XPAR_XIICPS_0_DEVICE_ID, ADS1015_ADDRESS, ADS1015_REG_POINTER_CONVERT, &r_value);
+                                                                                        ^
+In file included from ../src/ads1015.h:11:0,
+                 from ../src/ads1015.c:9:
+../src/i2c.h:20:5: note: expected 'u8 * {aka unsigned char *}' but argument is of type 'u8 (*)[2] {aka unsigned char (*)[2]}'
+ int I2C_read(XIicPs *i2cinst, u32 ZynqIicAddress, u8 slave_address, u8 register_offset, u8 *read_value);
+     ^~~~~~~~
+'Finished building: ../src/ads1015.c'
+' '
+'Building target: i2c_test_app.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "i2c_test_app.elf"  ./src/ads1015.o ./src/i2c.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: i2c_test_app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size i2c_test_app.elf  |tee "i2c_test_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  31760	   1196	   8312	  41268	   a134	i2c_test_app.elf
+'Finished building: i2c_test_app.elf.size'
+' '
+15:52:56 **** Incremental Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/i2c.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/i2c.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/i2c.d" -MT"src/i2c.o" -o "src/i2c.o" "../src/i2c.c"
+'Finished building: ../src/i2c.c'
+' '
+'Building target: i2c_test_app.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "i2c_test_app.elf"  ./src/ads1015.o ./src/i2c.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: i2c_test_app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size i2c_test_app.elf  |tee "i2c_test_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  31760	   1196	   8312	  41268	   a134	i2c_test_app.elf
+'Finished building: i2c_test_app.elf.size'
+' '
+15:54:03 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ads1015.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ads1015.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ads1015.d" -MT"src/ads1015.o" -o "src/ads1015.o" "../src/ads1015.c"
+'Finished building: ../src/ads1015.c'
+' '
+'Building target: i2c_test_app.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "i2c_test_app.elf"  ./src/ads1015.o ./src/i2c.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: i2c_test_app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size i2c_test_app.elf  |tee "i2c_test_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  31760	   1196	   8312	  41268	   a134	i2c_test_app.elf
+'Finished building: i2c_test_app.elf.size'
+' '
+17:40:12 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ads1015.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ads1015.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ads1015.d" -MT"src/ads1015.o" -o "src/ads1015.o" "../src/ads1015.c"
+../src/ads1015.c:18:5: error: conflicting types for 'readADCSingleEnded'
+ s16 readADCSingleEnded(XIicPs *inst, u32 ZynqIicAddress, u8 channel){
+     ^~~~~~~~~~~~~~~~~~
+In file included from ../src/ads1015.c:9:0:
+../src/ads1015.h:120:5: note: previous declaration of 'readADCSingleEnded' was here
+ u16 readADCSingleEnded(XIicPs *inst, u32 ZynqIicAddress, u8 channel);
+     ^~~~~~~~~~~~~~~~~~
+make: *** [src/ads1015.o] Error 1
+17:40:17 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ads1015.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ads1015.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ads1015.d" -MT"src/ads1015.o" -o "src/ads1015.o" "../src/ads1015.c"
+'Finished building: ../src/ads1015.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:19:6: warning: variable 'value' set but not used [-Wunused-but-set-variable]
+  u16 value = 0;
+      ^~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: i2c_test_app.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "i2c_test_app.elf"  ./src/ads1015.o ./src/i2c.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: i2c_test_app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size i2c_test_app.elf  |tee "i2c_test_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  31760	   1196	   8312	  41268	   a134	i2c_test_app.elf
+'Finished building: i2c_test_app.elf.size'
+' '
+17:41:33 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:19:6: warning: variable 'value' set but not used [-Wunused-but-set-variable]
+  s16 value = 0;
+      ^~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: i2c_test_app.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "i2c_test_app.elf"  ./src/ads1015.o ./src/i2c.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: i2c_test_app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size i2c_test_app.elf  |tee "i2c_test_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  31760	   1196	   8312	  41268	   a134	i2c_test_app.elf
+'Finished building: i2c_test_app.elf.size'
+' '
+17:42:23 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ads1015.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ads1015.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ads1015.d" -MT"src/ads1015.o" -o "src/ads1015.o" "../src/ads1015.c"
+'Finished building: ../src/ads1015.c'
+' '
+'Building target: i2c_test_app.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "i2c_test_app.elf"  ./src/ads1015.o ./src/i2c.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: i2c_test_app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size i2c_test_app.elf  |tee "i2c_test_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  31760	   1196	   8312	  41268	   a134	i2c_test_app.elf
+'Finished building: i2c_test_app.elf.size'
+' '
+17:42:57 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ads1015.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ads1015.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ads1015.d" -MT"src/ads1015.o" -o "src/ads1015.o" "../src/ads1015.c"
+'Finished building: ../src/ads1015.c'
+' '
+'Building target: i2c_test_app.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "i2c_test_app.elf"  ./src/ads1015.o ./src/i2c.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: i2c_test_app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size i2c_test_app.elf  |tee "i2c_test_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  31760	   1196	   8312	  41268	   a134	i2c_test_app.elf
+'Finished building: i2c_test_app.elf.size'
+' '
+17:44:34 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/i2c.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/i2c.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/i2c.d" -MT"src/i2c.o" -o "src/i2c.o" "../src/i2c.c"
+'Finished building: ../src/i2c.c'
+' '
+'Building target: i2c_test_app.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "i2c_test_app.elf"  ./src/ads1015.o ./src/i2c.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: i2c_test_app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size i2c_test_app.elf  |tee "i2c_test_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  31760	   1196	   8312	  41268	   a134	i2c_test_app.elf
+'Finished building: i2c_test_app.elf.size'
+' '
+17:49:56 **** Incremental Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+17:59:37 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/i2c.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/i2c.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/i2c.d" -MT"src/i2c.o" -o "src/i2c.o" "../src/i2c.c"
+'Finished building: ../src/i2c.c'
+' '
+'Building target: i2c_test_app.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "i2c_test_app.elf"  ./src/ads1015.o ./src/i2c.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: i2c_test_app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size i2c_test_app.elf  |tee "i2c_test_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  31760	   1196	   8312	  41268	   a134	i2c_test_app.elf
+'Finished building: i2c_test_app.elf.size'
+' '
+17:59:53 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/i2c.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/i2c.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/i2c.d" -MT"src/i2c.o" -o "src/i2c.o" "../src/i2c.c"
+../src/i2c.c: In function 'I2C_read':
+../src/i2c.c:74:5: warning: unused variable 'RxBuffer' [-Wunused-variable]
+  u8 RxBuffer[2]; // Only need this to be size 1, but making larger for future use
+     ^~~~~~~~
+'Finished building: ../src/i2c.c'
+' '
+'Building target: i2c_test_app.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "i2c_test_app.elf"  ./src/ads1015.o ./src/i2c.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: i2c_test_app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size i2c_test_app.elf  |tee "i2c_test_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  31752	   1196	   8312	  41260	   a12c	i2c_test_app.elf
+'Finished building: i2c_test_app.elf.size'
+' '
+17:59:58 **** Incremental Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+18:08:27 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ads1015.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ads1015.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ads1015.d" -MT"src/ads1015.o" -o "src/ads1015.o" "../src/ads1015.c"
+../src/ads1015.c: In function 'removeOffset':
+../src/ads1015.c:74:1: error: parameter name omitted
+ u32 removeOffset(s16){
+ ^~~
+../src/ads1015.c:76:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/ads1015.o] Error 1
+18:09:04 **** Auto Build of configuration Debug for project i2c_test_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ads1015.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ads1015.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ads1015.d" -MT"src/ads1015.o" -o "src/ads1015.o" "../src/ads1015.c"
+'Finished building: ../src/ads1015.c'
+' '
+'Building target: i2c_test_app.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "i2c_test_app.elf"  ./src/ads1015.o ./src/i2c.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: i2c_test_app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size i2c_test_app.elf  |tee "i2c_test_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  31752	   1196	   8312	  41260	   a12c	i2c_test_app.elf
+'Finished building: i2c_test_app.elf.size'
+' '

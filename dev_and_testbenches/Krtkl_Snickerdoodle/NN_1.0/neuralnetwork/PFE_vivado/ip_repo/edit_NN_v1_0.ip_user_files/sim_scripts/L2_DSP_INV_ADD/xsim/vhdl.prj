@@ -1,0 +1,4 @@
+vhdl xil_defaultlib  \
+"../../../../NN_1.0/src/L2_DSP_INV_ADD/sim/L2_DSP_INV_ADD.vhd" \
+
+nosort

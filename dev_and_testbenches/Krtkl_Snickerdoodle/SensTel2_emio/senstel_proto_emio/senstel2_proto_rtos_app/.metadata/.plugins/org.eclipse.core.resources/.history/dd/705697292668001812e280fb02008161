@@ -1,0 +1,426 @@
+/*
+ *  Created on: May 7, 2018
+ *   Author: Jerome Pare-Lepine
+ *
+    FreeRTOS V8.2.1 - Copyright (C) 2015 Real Time Engineers Ltd.
+    All rights reserved
+
+
+
+    http://www.SafeRTOS.com - High Integrity Systems also provide a safety
+    engineered and independently SIL3 certified version for use in safety and
+    mission critical applications that require provable dependability.
+
+    1 tab == 4 spaces!
+*/
+
+/* FreeRTOS includes */
+#include "FreeRTOS.h"
+#include "task.h"
+#include "queue.h"
+#include "timers.h"
+#include "semphr.h"
+/* Xilinx includes */
+#include "xil_printf.h"
+#include "xparameters.h"
+/* SensTel Application includes */
+#include "senstel_sd.h"
+#include "setup.h"
+#include "senstel_acq_config.h"
+#include "ChinookCanUtils.h"
+#include "inputcapture.h"
+#include <stdio.h>
+#include "ads1015.h"
+
+//#define TIMER_ID	1
+#define ACQ_TIMER_ID	1
+#define DELAY_10_SECONDS	10000UL
+#define DELAY_2_SECONDS		2000UL
+#define DELAY_1_SECOND		1000UL
+#define DELAY_500_MSECONDS	500UL
+#define DELAY_125_MSECONDS	125UL
+#define DELAY_63_MSECONDS	63UL
+#define DELAY_30_MSECONDS	30UL
+#define TIMER_CHECK_THRESHOLD	9
+
+/* Data Acquisition definitions */
+#define ACQ_SEM_MAX_COUNT	8
+#define ACQ_TASKS_NUM	2
+
+
+/*-----------------------------------------------------------*/
+static void prvSsiTask( void *pvParameters );
+static void prvAdcTask( void *pvParameters );
+static void prvICTask( void *pvParameters );
+static void prvAcqManTask( void *pvParameters );
+static void prvSdWriteTask( void *pvParameters );
+static void prvStartAcqTask( void *pvParameters );
+static void vTimerCallback( TimerHandle_t pxTimer );
+
+/*-----------------------------------------------------------*/
+static TaskHandle_t xSsiTask;
+static TaskHandle_t xAdcTask;
+static TaskHandle_t xIcTask;
+static TaskHandle_t xAcqManTask;
+static TaskHandle_t xSdWriteTask;
+static TaskHandle_t xStartAcqTask;
+static QueueHandle_t xQueueTimeStampSsi = NULL;
+static QueueHandle_t xQueueTimeStampAdc = NULL;
+static QueueHandle_t xQueueTimeStampIC = NULL;
+static QueueHandle_t xQueueAcqMan = NULL;
+static QueueHandle_t xQueueSdWrite = NULL;
+static TimerHandle_t xTimer = NULL;
+static SemaphoreHandle_t xAcqSem = NULL;
+SemaphoreHandle_t xIcAcqSem = NULL;
+char HWstring[15] = "Hello World";
+long SsitaskCntr = 0;
+long AdctaskCntr = 0;
+long AcqMantaskCntr = 0;
+sPeriphInstances_t PInst;
+sAcqFlags_t sDFlags;
+static xSdDb_t SensTelFs;
+
+int main( void )
+{
+//	const TickType_t xAcqRate = pdMS_TO_TICKS( DELAY_10_SECONDS );
+//	const TickType_t xAcqRate = pdMS_TO_TICKS( DELAY_2_SECONDS );
+	const TickType_t xAcqRate = pdMS_TO_TICKS( DELAY_1_SECOND );
+//	const TickType_t xAcqRate = pdMS_TO_TICKS( DELAY_500_MSECONDS );
+//	const TickType_t xAcqRate = pdMS_TO_TICKS( DELAY_125_MSECONDS );
+//	const TickType_t xAcqRate = pdMS_TO_TICKS( DELAY_63_MSECONDS );
+//	const TickType_t xAcqRate = pdMS_TO_TICKS( DELAY_30_MSECONDS );
+
+
+	/*
+	 * 	SD card filesystem test
+	 */
+
+//	static xSdDb_t SensTelFs;
+
+//TODO: Put back the SD card functions
+	vGetDbConfig(&SensTelFs);
+	ulMountFs(&SensTelFs);
+//	ulOpenFiles(&SensTelFs);
+//	ulDumpToFile(SensTelFs.xFsFiles->ptrAcqFile);
+//	ulCloseFiles(&SensTelFs);
+
+	xil_printf( "App Test SensTel2\r\n" );
+
+	/* Create the two tasks.  The Tx task is given a lower priority than the
+	Rx task, so the Rx task will leave the Blocked state and pre-empt the Tx
+	task as soon as the Tx task places an item in the queue. */
+	xTaskCreate( 	prvSsiTask, 					/* The function that implements the task. */
+					( const char * ) "Ssi", 		/* Text name for the task, provided to assist debugging only. */
+					configMINIMAL_STACK_SIZE, 	/* The stack allocated to the task. */
+					NULL, 						/* The task parameter is not used, so set to NULL. */
+					tskIDLE_PRIORITY + 3,			/* The task runs at the idle priority. */
+					&xSsiTask );
+
+	xTaskCreate( prvAdcTask,
+				 ( const char * ) "Adc",
+				 configMINIMAL_STACK_SIZE,
+				 NULL,
+				 tskIDLE_PRIORITY + 3,
+				 &xAdcTask );
+
+	xTaskCreate( prvICTask,
+				 ( const char * ) "InpCap",
+//				 configMINIMAL_STACK_SIZE,
+				 500,
+				 NULL,
+				 tskIDLE_PRIORITY + 4,
+				 &xIcTask );
+
+	xTaskCreate( prvAcqManTask,
+				 ( const char * ) "AcqMan",
+				 configMINIMAL_STACK_SIZE,
+				 NULL,
+				 tskIDLE_PRIORITY,
+				 &xAcqManTask );
+
+	xTaskCreate( prvSdWriteTask,
+				 ( const char * ) "SdW",
+				 configMINIMAL_STACK_SIZE,
+				 NULL,
+				 tskIDLE_PRIORITY,
+				 &xSdWriteTask );
+
+	xTaskCreate( prvStartAcqTask,
+				 ( const char * ) "StartAcq",
+				 configMINIMAL_STACK_SIZE,
+				 NULL,
+				 tskIDLE_PRIORITY + 2,
+				 &xStartAcqTask );
+
+	/* Create the queue used by the tasks.  The Rx task has a higher priority
+	than the Tx task, so will preempt the Tx task and remove values from the
+	queue as soon as the Tx task writes to the queue - therefore the queue can
+	never have more than one item in it. */
+	xQueueAcqMan = xQueueCreate( 	3,						/* There is only one space in the queue. */
+							sizeof( sSensorData_t ) );	/* Each space in the queue is large enough to hold a uint32_t. */
+	xQueueTimeStampSsi = xQueueCreate( 	1,						/* There is only one space in the queue. */
+								sizeof( HWstring ) );	/* Each space in the queue is large enough to hold a uint32_t. */
+	xQueueTimeStampAdc = xQueueCreate( 	1,						/* There is only one space in the queue. */
+								sizeof( HWstring ) );	/* Each space in the queue is large enough to hold a uint32_t. */
+	xQueueTimeStampIC = xQueueCreate( 	1,						/* There is only one space in the queue. */
+									sizeof( HWstring ) );	/* Each space in the queue is large enough to hold a uint32_t. */
+	xQueueSdWrite = xQueueCreate( 	32,						/* There is only one space in the queue. */
+										sizeof( sSensorData_t ) );	/* Each space in the queue is large enough to hold a uint32_t. */
+
+	/* Check the queue was created. */
+	configASSERT( xQueueAcqMan );
+	configASSERT( xQueueTimeStampAdc );
+	configASSERT( xQueueTimeStampSsi );
+	configASSERT( xQueueTimeStampIC );
+	configASSERT( xQueueSdWrite );
+
+	/* Create a timer with a timer expiry of 10 seconds. The timer would expire
+	 after 10 seconds and the timer call back would get called. In the timer call back
+	 checks are done to ensure that the tasks have been running properly till then.
+	 The tasks are deleted in the timer call back and a message is printed to convey that
+	 the example has run successfully.
+	 The timer expiry is set to 10 seconds and the timer set to not auto reload. */
+	xTimer = xTimerCreate( (const char *) "Timer",
+							xAcqRate,
+							pdTRUE,
+							(void *) ACQ_TIMER_ID,
+							vTimerCallback);
+	/* Check the timer was created. */
+	configASSERT( xTimer );
+
+	/* Create the counting semaphore used for triggering the sensor tasks. */
+	xAcqSem = xSemaphoreCreateCounting(ACQ_SEM_MAX_COUNT, 0);
+
+	/* Create the binary semaphore used for deferring IC interrupt
+	 * processing to the ICTask. */
+	xIcAcqSem = xSemaphoreCreateBinary();
+
+	/* start the timer with a block time of 0 ticks. This means as soon
+	   as the schedule starts the timer will start running and will expire after
+	   10 seconds */
+	xTimerStart( xTimer, 0 );
+
+	InitPeripherals(&PInst);
+
+	/* Start the tasks and timer running. */
+	vTaskStartScheduler();
+
+	/* If all is well, the scheduler will now be running, and the following line
+	will never be reached.  If the following line does execute, then there was
+	insufficient FreeRTOS heap memory available for the idle and/or timer tasks
+	to be created.  See the memory management section on the FreeRTOS web site
+	for more details. */
+	for( ;; );
+}
+
+
+/*-----------------------------------------------------------*/
+static void prvSsiTask( void *pvParameters )
+{
+char Timestamp[15] = "";
+char AcqTaskLabel[15] = "SsiTask";
+BaseType_t xRes = pdFALSE;
+//const TickType_t x1second = pdMS_TO_TICKS( DELAY_1_SECOND );
+StartPeripheralInterrupts(&PInst);
+float testFloat = 74.3;
+int value = 0;
+static sSensorData_t SensDat = { 0, PitchAbsEnc, PublicLow, ID_PITCH_VALUE, 0};
+
+
+	for( ;; )
+	{
+		xQueueReceive( 	xQueueTimeStampSsi,
+									Timestamp,
+									portMAX_DELAY );
+		value = readPos(PInst.EmioBankPins);
+		SensDat.Data = (u32) value;
+
+		SsitaskCntr++;
+		xil_printf( "prvSsiTask: %s\n\r", Timestamp );
+//		SendFrame(PInst.CanInst, TURBINE_RPM_ID, (CanMsgData_t*)&testFloat); //Dummy SSI print, disp wo decimal at steering
+		xRes = xQueueSend(xQueueAcqMan, &SensDat, 0);
+		xRes = xQueueSend(xQueueSdWrite, &SensDat, 0);
+	}
+}
+
+/*-----------------------------------------------------------*/
+static void prvAdcTask( void *pvParameters )
+{
+char Timestamp[15] = "";
+char AcqTaskLabel[15] = "AdcTask";
+BaseType_t xRes = pdFALSE;
+s16 value[4] = {0};
+static sSensorData_t SensDat = { 0, TurbineTorque, Private, 0, 0};
+
+	for( ;; )
+	{
+		/* Block to wait for data arriving on the queue. */
+		xQueueReceive( 	xQueueTimeStampAdc,				/* The queue being read. */
+				Timestamp,	/* Data is read into this address. */
+						portMAX_DELAY );	/* Wait without a timeout for data. */
+
+		/* Print the received data. */
+//		xil_printf( "Rx task received string from Tx task: %s\r\n", Recdstring );
+		xil_printf( "prvAdcTask: %s\n\r", Timestamp );
+		SensDat.Data = (u32) readADCSingleEnded(PInst.Iic1Inst, XPAR_PS7_I2C_1_BASEADDR, 0);
+//		value[1] = readADCSingleEnded(PInst.Iic1Inst, XPAR_PS7_I2C_1_BASEADDR, 1);
+//		value[2] = readADCSingleEnded(PInst.Iic1Inst, XPAR_PS7_I2C_1_BASEADDR, 2);
+//		value[3] = readADCSingleEnded(PInst.Iic1Inst, XPAR_PS7_I2C_1_BASEADDR, 3);
+		xRes = xQueueSend(xQueueAcqMan, &SensDat, 0);
+		xRes = xQueueSend(xQueueSdWrite, &SensDat, 0);
+
+
+		AdctaskCntr++;
+	}
+}
+
+/*-----------------------------------------------------------*/
+static void prvICTask( void *pvParameters )
+{
+	char Timestamp[15] = "";
+	char AcqTaskLabel[15] = "ICTask";
+	static char p[16];
+	static u32 Samples[IC_SAMPLES_NUM];
+	static u8 SamplesAcqd = 0;
+	static u32 sum = 0, end=0, start=0, dif=0;
+	static float avg=0, freq=0;
+	static sSensorData_t SensDat = { 0, TurbineIncEnc, Private, 0, 0};
+
+//	old = XTmrCtr_GetCaptureValue(PInst.TmrCtr0Inst, DEVICE_TMR_0);	/* Read the initial timer value */
+	start = XTmrCtr_GetValue(PInst.TmrCtr0Inst, DEVICE_TMR_0);	/* Read the initial timer value */
+
+	for( ;; )
+	{
+		/* Block to wait for data arriving on the queue. */
+		xQueueReceive( 	xQueueTimeStampIC,				/* The queue being read. */
+				Timestamp,	/* Data is read into this address. */
+						portMAX_DELAY );	/* Wait without a timeout for data. */
+//		old = XTmrCtr_GetCaptureValue(PInst.TmrCtr0Inst, DEVICE_TMR_0);	/* Read the initial timer value */
+		//Experimenting with IC averaging and processing deferance from ISR
+		while(SamplesAcqd < IC_SAMPLES_NUM){ //Acq all samples
+			XTmrCtr_Reset(PInst.TmrCtr0Inst, DEVICE_TMR_0);
+			XTmrCtr_EnableIntr(PInst.TmrCtr0Inst->BaseAddress, DEVICE_TMR_0);
+			xSemaphoreTake(xIcAcqSem, portMAX_DELAY);	/* Wait for input capture ISR signal */
+			start = XTmrCtr_GetCaptureValue(PInst.TmrCtr0Inst, DEVICE_TMR_0);
+			XTmrCtr_EnableIntr(PInst.TmrCtr0Inst->BaseAddress, DEVICE_TMR_0);
+			xSemaphoreTake(xIcAcqSem, portMAX_DELAY);	/* Wait for input capture ISR signal */
+			end = XTmrCtr_GetCaptureValue(PInst.TmrCtr0Inst, DEVICE_TMR_0);
+			dif = end - start;
+			Samples[SamplesAcqd] = dif;
+			SamplesAcqd++;
+		}
+		//TODO: Find out why is the first sample corrupted
+		for(int i=1; i < IC_SAMPLES_NUM; i++){	/*The first entry is for some reasons always wrong	*/
+			sum += Samples[i];
+		}
+//		avg = (float) sum/(IC_SAMPLES_NUM-1);
+		SensDat.Data = sum/(IC_SAMPLES_NUM-1);
+
+		freq = (float)XPAR_AXI_TIMER_0_CLOCK_FREQ_HZ / avg;
+		SamplesAcqd = 0;
+		sum = 0;
+//		sprintf(&p[0], "%f", freq);
+//		xil_printf( "prvICTask: %s\n\r", &p[0] );
+//		xil_printf( "prvICTask: %d\n\r", &freq );
+//		xRes = xQueueSend(xQueueSetAcqMan, AcqTaskLabel, 1);
+		xQueueSend(xQueueAcqMan, &SensDat, 0);
+		xQueueSend(xQueueSdWrite, &SensDat, 0);
+		AdctaskCntr++;
+	}
+}
+
+/*-----------------------------------------------------------*/
+static void prvStartAcqTask( void *pvParameters )
+{
+	static portTickType xStartTick1, xStartTick2;
+
+	xSemaphoreTake(xAcqSem, portMAX_DELAY);	//Should block here until there's one
+	for(;;)
+	{
+//		xStartTick = ;
+		xil_printf("*** ACQ_TIMER: Start Acq ***\n\r");
+//		xSemaphoreTake(xAcqSem, portMAX_DELAY);	//Should block here until there's one
+		xStartTick1 = xTaskGetTickCount();
+
+		xil_printf("*** Start Ssi Acq ***\n\r");
+		xQueueSend( xQueueTimeStampSsi,			/* The queue being written to. */
+							HWstring, /* The address of the data being sent. */
+							0UL );			/* The block time. */
+		xil_printf("*** Start Adc Acq ***\n\r");
+		xQueueSend( xQueueTimeStampAdc,			/* The queue being written to. */
+							HWstring, /* The address of the data being sent. */
+							0UL );			/* The block time. */
+		xil_printf("*** Start IC Acq ***\n\r");
+		xQueueSend( xQueueTimeStampIC,			/* The queue being written to. */
+							HWstring, /* The address of the data being sent. */
+							0UL );			/* The block time. */
+		xStartTick2 = xTaskGetTickCount();
+		xil_printf("\n    !!!! Acq Tasks Duratn: %d Ticks\n\r", portTICK_RATE_MS*( xStartTick2 - xStartTick1 ));
+		xSemaphoreTake(xAcqSem, portMAX_DELAY);	//Should block here until there's one
+	}
+}
+
+/*-----------------------------------------------------------*/
+static void prvAcqManTask( void *pvParameters )
+{
+//char Recdstring[15] = "";
+	char Timestamp[15] = "";
+	static sSensorData_t Dat = {0};
+//	QueueSetMemberHandle_t xAcqTaskQueue = NULL;
+
+	for( ;; )
+	{
+		/* Block to wait for data arriving on the queue. */
+//		xQueueReceive( 	xQueueAcqMan,				/* The queue being read. */
+//						Timestamp,	/* Data is read into this address. */
+//						portMAX_DELAY );	/* Wait without a timeout for data. */
+		xQueueReceive( 	xQueueAcqMan,				/* The queue being read. */
+								&Dat,	/* Data is read into this address. */
+								portMAX_DELAY );	/* Wait without a timeout for data. */
+
+
+
+		/* Print the received data. */
+		xil_printf( "    ! prvAcqManager: %d, %d\n\r", Dat.Sensor, Dat.Data );
+		AcqMantaskCntr++;
+	}
+}
+
+
+/*-----------------------------------------------------------*/
+static void prvSdWriteTask( void *pvParameters )
+{
+	static sSensorData_t Dat = {0};
+	for( ;; ){
+		xQueueReceive( 	xQueueAcqMan,				/* The queue being read. */
+						&Dat,	/* Data is read into this address. */
+						portMAX_DELAY );	/* Wait without a timeout for data. */
+
+		ulOpenFiles(&SensTelFs);
+		ulDumpToFile(SensTelFs.xFsFiles->ptrAcqFile, &Dat.Data);
+		ulCloseFiles(&SensTelFs);
+	}
+
+
+
+
+
+}
+
+/*-----------------------------------------------------------*/
+static void vTimerCallback( TimerHandle_t pxTimer )
+{
+	long lTimerId;
+	configASSERT( pxTimer );
+
+	lTimerId = ( long ) pvTimerGetTimerID( pxTimer );
+
+	if (lTimerId != ACQ_TIMER_ID) {
+		xil_printf("Not Timer1\n\r");
+	}
+
+	xSemaphoreGive(xAcqSem);
+
+}
+
+

@@ -1,0 +1,105 @@
+/*
+ * main.c
+ *
+ *  Created on: Feb 25, 2018
+ *      Author: Chinook-ELE
+ */
+#include "xparameters.h"
+#include "xgpiops.h"
+
+#define EMIO_GPIO_BaseAddress	XPAR_PS7_GPIO_0_BASEADDR
+#define SSI_RES 13
+
+// Non-ultrascale Zynq SoCs have 4 I/O banks; 0&1 are MIO and 2&3 are EMIO.
+// In the case of the z7007s, the MIO bank pin numbers range from [53:0] while the
+// EMIO pins range from [MAX:54]. Knowing this, the developer can access its EMIO
+// pins declared in Vivado using the xgpiops driver by calling pin 54, for atomical functions
+// ie: XGpioPs_SetDirectionPin, or the whole EMIO bank starting with bank 2, for the bank
+// functions ie: XGpioPs_SetDirection.
+
+
+int main(void)
+{
+	char str[40];
+	s32 status;
+	XGpioPs bankPins;
+	XGpioPs_Config bankConfig;
+	u32 bankDir, bankOpStatus;
+	u32 bit_count = 0;
+	u32 u32result = 0;
+	u32 readPin = 0;
+	u32 dly = 0;
+	u8 criss = 0;
+
+	status = XGpioPs_CfgInitialize(&bankPins, &bankConfig, EMIO_GPIO_BaseAddress);
+	if (status != XST_SUCCESS) {
+		xil_printf("Gpio Initialization Failed\r\n");
+		return XST_FAILURE;
+	}
+
+	// Pins 0 and 2 of the 4 bits EMIO vector are the SSI clock outputs.
+	bankDir = XGpioPs_GetDirection(&bankPins, 0x2U);
+	XGpioPs_SetDirection(&bankPins, 0x2U, 0x00000005U);
+	bankDir = XGpioPs_GetDirection(&bankPins, 0x2U);
+
+	// Pins 0 and 2 of the 4 bits EMIO vector are to be the enabled SSI clock outputs.
+	bankOpStatus = XGpioPs_GetOutputEnable(&bankPins, 0x2U);
+	XGpioPs_SetOutputEnable(&bankPins, 0x2U, 0x00000005U);
+	bankOpStatus = XGpioPs_GetOutputEnable(&bankPins, 0x2U);
+
+	// Mimic a idle high SSI clock pin
+	XGpioPs_WritePin(&bankPins, 54, 1);
+//	while(1){
+//		readPin = XGpioPs_ReadPin(&bankPins, 55);
+//		readPin = XGpioPs_ReadPin(&bankPins, 55);
+//		readPin = XGpioPs_ReadPin(&bankPins, 55);
+//		readPin = XGpioPs_ReadPin(&bankPins, 55);
+//		readPin = XGpioPs_ReadPin(&bankPins, 55);
+//	}
+
+//	This loop is supposed to read all 12bits of the Hengstler AD36
+//	absolute position encoder. So far, only 11 bits can be read...
+//	Since little to no documentation is found on the product's
+//	communication protocol, the next step would be to experiment
+//	with other protocol configs like Idle Low clock etc.
+	while(1)
+	{
+		for (bit_count=0; bit_count<SSI_RES; bit_count++)
+		{
+			// falling edge on clock port
+	//		SSI_CLK_PORT &= ~(1 << SSI_CLK_BIT);
+			XGpioPs_WritePin(&bankPins, 54, 0);
+
+			// left-shift the current result
+			u32result = (u32result << 1);
+
+			// read the port data
+	//		u8portdata = SSI_DTA_PORT;
+			readPin = XGpioPs_ReadPin(&bankPins, 55);
+
+			// rising edge on clock port, data changes
+	//		SSI_CLK_PORT |= (1 << SSI_CLK_BIT);
+			XGpioPs_WritePin(&bankPins, 54, 1);
+
+			for(dly = 0; dly<200; dly++){
+				criss ^= 1;
+			}
+
+			// evaluate the port data (port set or clear)
+	//		if ( (u8portdata & (1 << SSI_DTA_BIT)) != 0)
+			if ( readPin != 0)
+			{
+				// bit is set, set LSB of result
+				u32result = u32result | 0x01;
+			}  // if
+		} // for
+//		xil_printf(str, "Received SSI word = %x\r\n", u32result);
+		u32result = 0;
+	}
+	xil_printf("Successfully ran Gpio Example\r\n");
+	return XST_SUCCESS;
+}
+
+
+
+

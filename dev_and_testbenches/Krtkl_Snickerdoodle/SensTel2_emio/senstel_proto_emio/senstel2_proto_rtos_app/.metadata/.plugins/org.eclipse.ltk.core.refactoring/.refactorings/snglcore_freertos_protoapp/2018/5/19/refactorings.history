@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;snglcore_freertos_protoapp/src/senstel_sd_filesys_config&apos; to &apos;senstel_sd_filesys_config.h&apos;" description="Rename resource &apos;senstel_sd_filesys_config&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/senstel_sd_filesys_config" name="senstel_sd_filesys_config.h" stamp="1525752468772" updateReferences="true"/>
+</session>

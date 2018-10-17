@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Chinook-ELE/ZynqWorkspace/interrupts_hw_timer_test/interrupts_hw_timer_test.ip_user_files/bd/System/ip/System_processing_system7_0_0/sim/System_processing_system7_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module System_processing_system7_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Chinook-ELE/ZynqWorkspace/interrupts_hw_timer_test/interrupts_hw_timer_test.ip_user_files/bd/System/ip/System_auto_pc_0/sim/System_auto_pc_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module System_auto_pc_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Chinook-ELE/ZynqWorkspace/interrupts_hw_timer_test/interrupts_hw_timer_test.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

@@ -1,0 +1,612 @@
+19:45:42 **** Incremental Build of configuration Debug for project ad36_bitbang_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building target: ad36_bitbang_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ad36_bitbang_test.elf"  ./src/encoder_ad36.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+../../standalone_bsp_0/ps7_cortexa9_0/lib\libxil.a(xil-crt0.o): In function `_start':
+C:\Users\Chinook-ELE\ZynqWorkspace\SensTel2_emio\senstel_proto_emio\ad36_test\standalone_bsp_0\ps7_cortexa9_0\libsrc\standalone_v6_3\src/xil-crt0.S:133: undefined reference to `main'
+collect2.exe: error: ld returned 1 exit status
+make: *** [ad36_bitbang_test.elf] Error 1
+19:46:25 **** Auto Build of configuration Debug for project ad36_bitbang_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:10:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: ad36_bitbang_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ad36_bitbang_test.elf"  ./src/encoder_ad36.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ad36_bitbang_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ad36_bitbang_test.elf  |tee "ad36_bitbang_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  32628	   1148	  22584	  56360	   dc28	ad36_bitbang_test.elf
+'Finished building: ad36_bitbang_test.elf.size'
+' '
+19:46:38 **** Auto Build of configuration Debug for project ad36_bitbang_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: ad36_bitbang_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ad36_bitbang_test.elf"  ./src/encoder_ad36.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ad36_bitbang_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ad36_bitbang_test.elf  |tee "ad36_bitbang_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  32632	   1148	  22584	  56364	   dc2c	ad36_bitbang_test.elf
+'Finished building: ad36_bitbang_test.elf.size'
+' '
+19:48:20 **** Auto Build of configuration Debug for project ad36_bitbang_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/encoder_ad36.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/encoder_ad36.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/encoder_ad36.d" -MT"src/encoder_ad36.o" -o "src/encoder_ad36.o" "../src/encoder_ad36.c"
+../src/encoder_ad36.c: In function 'initSSIpins':
+../src/encoder_ad36.c:31:3: warning: variable 'bankOpStatus' set but not used [-Wunused-but-set-variable]
+   bankOpStatus;
+   ^~~~~~~~~~~~
+../src/encoder_ad36.c:30:6: warning: variable 'bankDir' set but not used [-Wunused-but-set-variable]
+  u32 bankDir,
+      ^~~~~~~
+../src/encoder_ad36.c:27:6: warning: unused variable 'status' [-Wunused-variable]
+  s32 status = 0;
+      ^~~~~~
+'Finished building: ../src/encoder_ad36.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: ad36_bitbang_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ad36_bitbang_test.elf"  ./src/encoder_ad36.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ad36_bitbang_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ad36_bitbang_test.elf  |tee "ad36_bitbang_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  32632	   1148	  22584	  56364	   dc2c	ad36_bitbang_test.elf
+'Finished building: ad36_bitbang_test.elf.size'
+' '
+19:49:05 **** Auto Build of configuration Debug for project ad36_bitbang_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/encoder_ad36.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/encoder_ad36.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/encoder_ad36.d" -MT"src/encoder_ad36.o" -o "src/encoder_ad36.o" "../src/encoder_ad36.c"
+../src/encoder_ad36.c: In function 'initSSIpins':
+../src/encoder_ad36.c:31:3: warning: variable 'bankOpStatus' set but not used [-Wunused-but-set-variable]
+   bankOpStatus;
+   ^~~~~~~~~~~~
+../src/encoder_ad36.c:30:6: warning: variable 'bankDir' set but not used [-Wunused-but-set-variable]
+  u32 bankDir,
+      ^~~~~~~
+../src/encoder_ad36.c:27:6: warning: unused variable 'status' [-Wunused-variable]
+  s32 status = 0;
+      ^~~~~~
+'Finished building: ../src/encoder_ad36.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: ad36_bitbang_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ad36_bitbang_test.elf"  ./src/encoder_ad36.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ad36_bitbang_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ad36_bitbang_test.elf  |tee "ad36_bitbang_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  32632	   1148	  22584	  56364	   dc2c	ad36_bitbang_test.elf
+'Finished building: ad36_bitbang_test.elf.size'
+' '
+19:49:29 **** Auto Build of configuration Debug for project ad36_bitbang_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/encoder_ad36.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/encoder_ad36.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/encoder_ad36.d" -MT"src/encoder_ad36.o" -o "src/encoder_ad36.o" "../src/encoder_ad36.c"
+../src/encoder_ad36.c: In function 'initSSIpins':
+../src/encoder_ad36.c:31:3: warning: variable 'bankOpStatus' set but not used [-Wunused-but-set-variable]
+   bankOpStatus;
+   ^~~~~~~~~~~~
+../src/encoder_ad36.c:30:6: warning: variable 'bankDir' set but not used [-Wunused-but-set-variable]
+  u32 bankDir,
+      ^~~~~~~
+../src/encoder_ad36.c:27:6: warning: unused variable 'status' [-Wunused-variable]
+  s32 status = 0;
+      ^~~~~~
+'Finished building: ../src/encoder_ad36.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: ad36_bitbang_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ad36_bitbang_test.elf"  ./src/encoder_ad36.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ad36_bitbang_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ad36_bitbang_test.elf  |tee "ad36_bitbang_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  32632	   1148	  22584	  56364	   dc2c	ad36_bitbang_test.elf
+'Finished building: ad36_bitbang_test.elf.size'
+' '
+19:51:29 **** Auto Build of configuration Debug for project ad36_bitbang_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/encoder_ad36.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/encoder_ad36.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/encoder_ad36.d" -MT"src/encoder_ad36.o" -o "src/encoder_ad36.o" "../src/encoder_ad36.c"
+../src/encoder_ad36.c: In function 'initSSIpins':
+../src/encoder_ad36.c:31:3: warning: variable 'bankOpStatus' set but not used [-Wunused-but-set-variable]
+   bankOpStatus;
+   ^~~~~~~~~~~~
+../src/encoder_ad36.c:30:6: warning: variable 'bankDir' set but not used [-Wunused-but-set-variable]
+  u32 bankDir,
+      ^~~~~~~
+../src/encoder_ad36.c:27:6: warning: unused variable 'status' [-Wunused-variable]
+  s32 status = 0;
+      ^~~~~~
+'Finished building: ../src/encoder_ad36.c'
+' '
+'Building target: ad36_bitbang_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ad36_bitbang_test.elf"  ./src/encoder_ad36.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ad36_bitbang_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ad36_bitbang_test.elf  |tee "ad36_bitbang_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  32632	   1148	  22584	  56364	   dc2c	ad36_bitbang_test.elf
+'Finished building: ad36_bitbang_test.elf.size'
+' '
+19:51:56 **** Auto Build of configuration Debug for project ad36_bitbang_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/encoder_ad36.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/encoder_ad36.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/encoder_ad36.d" -MT"src/encoder_ad36.o" -o "src/encoder_ad36.o" "../src/encoder_ad36.c"
+../src/encoder_ad36.c: In function 'initSSIpins':
+../src/encoder_ad36.c:31:3: warning: variable 'bankOpStatus' set but not used [-Wunused-but-set-variable]
+   bankOpStatus;
+   ^~~~~~~~~~~~
+../src/encoder_ad36.c:30:6: warning: variable 'bankDir' set but not used [-Wunused-but-set-variable]
+  u32 bankDir,
+      ^~~~~~~
+../src/encoder_ad36.c:27:6: warning: unused variable 'status' [-Wunused-variable]
+  s32 status = 0;
+      ^~~~~~
+'Finished building: ../src/encoder_ad36.c'
+' '
+'Building target: ad36_bitbang_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ad36_bitbang_test.elf"  ./src/encoder_ad36.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ad36_bitbang_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ad36_bitbang_test.elf  |tee "ad36_bitbang_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  32632	   1148	  22584	  56364	   dc2c	ad36_bitbang_test.elf
+'Finished building: ad36_bitbang_test.elf.size'
+' '
+19:52:00 **** Auto Build of configuration Debug for project ad36_bitbang_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/encoder_ad36.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/encoder_ad36.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/encoder_ad36.d" -MT"src/encoder_ad36.o" -o "src/encoder_ad36.o" "../src/encoder_ad36.c"
+../src/encoder_ad36.c: In function 'initSSIpins':
+../src/encoder_ad36.c:31:3: warning: variable 'bankOpStatus' set but not used [-Wunused-but-set-variable]
+   bankOpStatus;
+   ^~~~~~~~~~~~
+../src/encoder_ad36.c:30:6: warning: variable 'bankDir' set but not used [-Wunused-but-set-variable]
+  u32 bankDir,
+      ^~~~~~~
+../src/encoder_ad36.c:27:6: warning: unused variable 'status' [-Wunused-variable]
+  s32 status = 0;
+      ^~~~~~
+'Finished building: ../src/encoder_ad36.c'
+' '
+'Building target: ad36_bitbang_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ad36_bitbang_test.elf"  ./src/encoder_ad36.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ad36_bitbang_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ad36_bitbang_test.elf  |tee "ad36_bitbang_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  32632	   1148	  22584	  56364	   dc2c	ad36_bitbang_test.elf
+'Finished building: ad36_bitbang_test.elf.size'
+' '
+19:52:12 **** Auto Build of configuration Debug for project ad36_bitbang_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/encoder_ad36.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/encoder_ad36.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/encoder_ad36.d" -MT"src/encoder_ad36.o" -o "src/encoder_ad36.o" "../src/encoder_ad36.c"
+../src/encoder_ad36.c: In function 'initSSIpins':
+../src/encoder_ad36.c:31:3: warning: variable 'bankOpStatus' set but not used [-Wunused-but-set-variable]
+   bankOpStatus;
+   ^~~~~~~~~~~~
+../src/encoder_ad36.c:30:6: warning: variable 'bankDir' set but not used [-Wunused-but-set-variable]
+  u32 bankDir,
+      ^~~~~~~
+../src/encoder_ad36.c:27:6: warning: unused variable 'status' [-Wunused-variable]
+  s32 status = 0;
+      ^~~~~~
+'Finished building: ../src/encoder_ad36.c'
+' '
+'Building target: ad36_bitbang_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ad36_bitbang_test.elf"  ./src/encoder_ad36.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ad36_bitbang_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ad36_bitbang_test.elf  |tee "ad36_bitbang_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  32632	   1148	  22584	  56364	   dc2c	ad36_bitbang_test.elf
+'Finished building: ad36_bitbang_test.elf.size'
+' '
+19:52:21 **** Auto Build of configuration Debug for project ad36_bitbang_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/encoder_ad36.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/encoder_ad36.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/encoder_ad36.d" -MT"src/encoder_ad36.o" -o "src/encoder_ad36.o" "../src/encoder_ad36.c"
+../src/encoder_ad36.c: In function 'initSSIpins':
+../src/encoder_ad36.c:29:3: warning: variable 'bankOpStatus' set but not used [-Wunused-but-set-variable]
+   bankOpStatus;
+   ^~~~~~~~~~~~
+../src/encoder_ad36.c:28:6: warning: variable 'bankDir' set but not used [-Wunused-but-set-variable]
+  u32 bankDir,
+      ^~~~~~~
+../src/encoder_ad36.c:27:6: warning: unused variable 'status' [-Wunused-variable]
+  s32 status = 0;
+      ^~~~~~
+'Finished building: ../src/encoder_ad36.c'
+' '
+'Building target: ad36_bitbang_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ad36_bitbang_test.elf"  ./src/encoder_ad36.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ad36_bitbang_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ad36_bitbang_test.elf  |tee "ad36_bitbang_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  32632	   1148	  22584	  56364	   dc2c	ad36_bitbang_test.elf
+'Finished building: ad36_bitbang_test.elf.size'
+' '
+20:25:18 **** Auto Build of configuration Debug for project ad36_bitbang_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:12:2: error: unknown type name 'XGpio_Ps'
+  XGpio_Ps bankPins;
+  ^~~~~~~~
+../src/main.c:13:2: error: too few arguments to function 'initSSIpins'
+  initSSIpins()
+  ^~~~~~~~~~~
+In file included from ../src/main.c:8:0:
+../src/encoder_ad36.h:19:5: note: declared here
+ u32 initSSIpins(XGpioPs* bankPins);
+     ^~~~~~~~~~~
+../src/main.c:14:1: error: expected ';' before '}' token
+ }
+ ^
+../src/main.c:12:11: warning: unused variable 'bankPins' [-Wunused-variable]
+  XGpio_Ps bankPins;
+           ^~~~~~~~
+make: *** [src/main.o] Error 1
+20:25:36 **** Auto Build of configuration Debug for project ad36_bitbang_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:13:2: error: too few arguments to function 'initSSIpins'
+  initSSIpins()
+  ^~~~~~~~~~~
+In file included from ../src/main.c:8:0:
+../src/encoder_ad36.h:19:5: note: declared here
+ u32 initSSIpins(XGpioPs* bankPins);
+     ^~~~~~~~~~~
+../src/main.c:14:1: error: expected ';' before '}' token
+ }
+ ^
+../src/main.c:12:10: warning: unused variable 'bankPins' [-Wunused-variable]
+  XGpioPs bankPins;
+          ^~~~~~~~
+make: *** [src/main.o] Error 1
+20:25:47 **** Auto Build of configuration Debug for project ad36_bitbang_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: ad36_bitbang_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ad36_bitbang_test.elf"  ./src/encoder_ad36.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ad36_bitbang_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ad36_bitbang_test.elf  |tee "ad36_bitbang_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  32644	   1148	  22584	  56376	   dc38	ad36_bitbang_test.elf
+'Finished building: ad36_bitbang_test.elf.size'
+' '
+20:26:27 **** Auto Build of configuration Debug for project ad36_bitbang_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:13:6: warning: unused variable 'pos' [-Wunused-variable]
+  int pos = 0;
+      ^~~
+'Finished building: ../src/main.c'
+' '
+'Building target: ad36_bitbang_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ad36_bitbang_test.elf"  ./src/encoder_ad36.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ad36_bitbang_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ad36_bitbang_test.elf  |tee "ad36_bitbang_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  32652	   1148	  22584	  56384	   dc40	ad36_bitbang_test.elf
+'Finished building: ad36_bitbang_test.elf.size'
+' '
+20:26:43 **** Auto Build of configuration Debug for project ad36_bitbang_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:13:6: warning: unused variable 'pos' [-Wunused-variable]
+  int pos = 0;
+      ^~~
+'Finished building: ../src/main.c'
+' '
+'Building target: ad36_bitbang_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ad36_bitbang_test.elf"  ./src/encoder_ad36.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ad36_bitbang_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ad36_bitbang_test.elf  |tee "ad36_bitbang_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  32652	   1148	  22584	  56384	   dc40	ad36_bitbang_test.elf
+'Finished building: ad36_bitbang_test.elf.size'
+' '
+20:26:48 **** Auto Build of configuration Debug for project ad36_bitbang_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:13:6: warning: variable 'pos' set but not used [-Wunused-but-set-variable]
+  int pos = 0;
+      ^~~
+'Finished building: ../src/main.c'
+' '
+'Building target: ad36_bitbang_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ad36_bitbang_test.elf"  ./src/encoder_ad36.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ad36_bitbang_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ad36_bitbang_test.elf  |tee "ad36_bitbang_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  32656	   1148	  22584	  56388	   dc44	ad36_bitbang_test.elf
+'Finished building: ad36_bitbang_test.elf.size'
+' '
+20:27:50 **** Incremental Build of configuration Debug for project ad36_bitbang_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+20:32:01 **** Incremental Build of configuration Debug for project ad36_bitbang_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+20:34:18 **** Incremental Build of configuration Debug for project ad36_bitbang_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+20:34:43 **** Incremental Build of configuration Debug for project ad36_bitbang_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+20:35:32 **** Incremental Build of configuration Debug for project ad36_bitbang_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+20:41:08 **** Auto Build of configuration Debug for project ad36_bitbang_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/encoder_ad36.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/encoder_ad36.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/encoder_ad36.d" -MT"src/encoder_ad36.o" -o "src/encoder_ad36.o" "../src/encoder_ad36.c"
+../src/encoder_ad36.c: In function 'initSSIpins':
+../src/encoder_ad36.c:31:45: error: 'bankConfig' undeclared (first use in this function)
+  status = XGpioPs_CfgInitialize(&bankPins, &bankConfig, EMIO_GPIO_BaseAddress);
+                                             ^~~~~~~~~~
+../src/encoder_ad36.c:31:45: note: each undeclared identifier is reported only once for each function it appears in
+../src/encoder_ad36.c:31:33: warning: passing argument 1 of 'XGpioPs_CfgInitialize' from incompatible pointer type [-Wincompatible-pointer-types]
+  status = XGpioPs_CfgInitialize(&bankPins, &bankConfig, EMIO_GPIO_BaseAddress);
+                                 ^
+In file included from ../src/encoder_ad36.h:8:0,
+                 from ../src/encoder_ad36.c:8:
+../../standalone_bsp_0/ps7_cortexa9_0/include/xgpiops.h:220:5: note: expected 'XGpioPs * {aka struct <anonymous> *}' but argument is of type 'XGpioPs ** {aka struct <anonymous> **}'
+ s32 XGpioPs_CfgInitialize(XGpioPs *InstancePtr, XGpioPs_Config *ConfigPtr,
+     ^~~~~~~~~~~~~~~~~~~~~
+../src/encoder_ad36.c:29:3: warning: variable 'bankOpStatus' set but not used [-Wunused-but-set-variable]
+   bankOpStatus;
+   ^~~~~~~~~~~~
+../src/encoder_ad36.c:28:6: warning: variable 'bankDir' set but not used [-Wunused-but-set-variable]
+  u32 bankDir,
+      ^~~~~~~
+make: *** [src/encoder_ad36.o] Error 1
+20:42:08 **** Auto Build of configuration Debug for project ad36_bitbang_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/encoder_ad36.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/encoder_ad36.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/encoder_ad36.d" -MT"src/encoder_ad36.o" -o "src/encoder_ad36.o" "../src/encoder_ad36.c"
+../src/encoder_ad36.c: In function 'initSSIpins':
+../src/encoder_ad36.c:32:45: error: 'bankConfig' undeclared (first use in this function)
+  status = XGpioPs_CfgInitialize(&bankPins, &bankConfig, EMIO_GPIO_BaseAddress);
+                                             ^~~~~~~~~~
+../src/encoder_ad36.c:32:45: note: each undeclared identifier is reported only once for each function it appears in
+../src/encoder_ad36.c:32:33: warning: passing argument 1 of 'XGpioPs_CfgInitialize' from incompatible pointer type [-Wincompatible-pointer-types]
+  status = XGpioPs_CfgInitialize(&bankPins, &bankConfig, EMIO_GPIO_BaseAddress);
+                                 ^
+In file included from ../src/encoder_ad36.h:8:0,
+                 from ../src/encoder_ad36.c:8:
+../../standalone_bsp_0/ps7_cortexa9_0/include/xgpiops.h:220:5: note: expected 'XGpioPs * {aka struct <anonymous> *}' but argument is of type 'XGpioPs ** {aka struct <anonymous> **}'
+ s32 XGpioPs_CfgInitialize(XGpioPs *InstancePtr, XGpioPs_Config *ConfigPtr,
+     ^~~~~~~~~~~~~~~~~~~~~
+../src/encoder_ad36.c:30:17: warning: unused variable 'bankConf' [-Wunused-variable]
+  XGpioPs_Config bankConf;
+                 ^~~~~~~~
+../src/encoder_ad36.c:29:3: warning: variable 'bankOpStatus' set but not used [-Wunused-but-set-variable]
+   bankOpStatus;
+   ^~~~~~~~~~~~
+../src/encoder_ad36.c:28:6: warning: variable 'bankDir' set but not used [-Wunused-but-set-variable]
+  u32 bankDir,
+      ^~~~~~~
+make: *** [src/encoder_ad36.o] Error 1
+20:42:16 **** Auto Build of configuration Debug for project ad36_bitbang_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/encoder_ad36.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/encoder_ad36.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/encoder_ad36.d" -MT"src/encoder_ad36.o" -o "src/encoder_ad36.o" "../src/encoder_ad36.c"
+../src/encoder_ad36.c: In function 'initSSIpins':
+../src/encoder_ad36.c:32:33: warning: passing argument 1 of 'XGpioPs_CfgInitialize' from incompatible pointer type [-Wincompatible-pointer-types]
+  status = XGpioPs_CfgInitialize(&bankPins, &bankConf, EMIO_GPIO_BaseAddress);
+                                 ^
+In file included from ../src/encoder_ad36.h:8:0,
+                 from ../src/encoder_ad36.c:8:
+../../standalone_bsp_0/ps7_cortexa9_0/include/xgpiops.h:220:5: note: expected 'XGpioPs * {aka struct <anonymous> *}' but argument is of type 'XGpioPs ** {aka struct <anonymous> **}'
+ s32 XGpioPs_CfgInitialize(XGpioPs *InstancePtr, XGpioPs_Config *ConfigPtr,
+     ^~~~~~~~~~~~~~~~~~~~~
+../src/encoder_ad36.c:29:3: warning: variable 'bankOpStatus' set but not used [-Wunused-but-set-variable]
+   bankOpStatus;
+   ^~~~~~~~~~~~
+../src/encoder_ad36.c:28:6: warning: variable 'bankDir' set but not used [-Wunused-but-set-variable]
+  u32 bankDir,
+      ^~~~~~~
+'Finished building: ../src/encoder_ad36.c'
+' '
+'Building target: ad36_bitbang_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ad36_bitbang_test.elf"  ./src/encoder_ad36.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ad36_bitbang_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ad36_bitbang_test.elf  |tee "ad36_bitbang_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  36452	   1156	  22584	  60192	   eb20	ad36_bitbang_test.elf
+'Finished building: ad36_bitbang_test.elf.size'
+' '
+20:42:25 **** Auto Build of configuration Debug for project ad36_bitbang_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/encoder_ad36.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/encoder_ad36.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/encoder_ad36.d" -MT"src/encoder_ad36.o" -o "src/encoder_ad36.o" "../src/encoder_ad36.c"
+../src/encoder_ad36.c: In function 'initSSIpins':
+../src/encoder_ad36.c:29:3: warning: variable 'bankOpStatus' set but not used [-Wunused-but-set-variable]
+   bankOpStatus;
+   ^~~~~~~~~~~~
+../src/encoder_ad36.c:28:6: warning: variable 'bankDir' set but not used [-Wunused-but-set-variable]
+  u32 bankDir,
+      ^~~~~~~
+'Finished building: ../src/encoder_ad36.c'
+' '
+'Building target: ad36_bitbang_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ad36_bitbang_test.elf"  ./src/encoder_ad36.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ad36_bitbang_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ad36_bitbang_test.elf  |tee "ad36_bitbang_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  36388	   1156	  22584	  60128	   eae0	ad36_bitbang_test.elf
+'Finished building: ad36_bitbang_test.elf.size'
+' '
+20:42:34 **** Incremental Build of configuration Debug for project ad36_bitbang_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+20:57:04 **** Incremental Build of configuration Debug for project ad36_bitbang_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+18:36:43 **** Incremental Build of configuration Debug for project ad36_bitbang_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+18:41:12 **** Incremental Build of configuration Debug for project ad36_bitbang_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.

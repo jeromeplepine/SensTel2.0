@@ -1,0 +1,1198 @@
+18:34:38 **** Incremental Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+22:26:33 **** Incremental Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+22:31:10 **** Incremental Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+22:32:11 **** Incremental Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+22:33:20 **** Incremental Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+22:34:27 **** Incremental Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+22:35:13 **** Auto Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/xcanps_intr_example.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xcanps_intr_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xcanps_intr_example.d" -MT"src/xcanps_intr_example.o" -o "src/xcanps_intr_example.o" "../src/xcanps_intr_example.c"
+'Finished building: ../src/xcanps_intr_example.c'
+' '
+'Building target: senstel_proto_can_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "senstel_proto_can_test.elf"  ./src/xcanps_intr_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: senstel_proto_can_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size senstel_proto_can_test.elf  |tee "senstel_proto_can_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  44136	   2732	  22904	  69772	  1108c	senstel_proto_can_test.elf
+'Finished building: senstel_proto_can_test.elf.size'
+' '
+22:35:27 **** Incremental Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+22:36:31 **** Incremental Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+22:38:26 **** Incremental Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+23:11:43 **** Auto Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/xcanps_intr_example.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xcanps_intr_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xcanps_intr_example.d" -MT"src/xcanps_intr_example.o" -o "src/xcanps_intr_example.o" "../src/xcanps_intr_example.c"
+'Finished building: ../src/xcanps_intr_example.c'
+' '
+'Building target: senstel_proto_can_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "senstel_proto_can_test.elf"  ./src/xcanps_intr_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: senstel_proto_can_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size senstel_proto_can_test.elf  |tee "senstel_proto_can_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  44136	   2732	  22904	  69772	  1108c	senstel_proto_can_test.elf
+'Finished building: senstel_proto_can_test.elf.size'
+' '
+23:11:49 **** Incremental Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+23:13:03 **** Auto Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/xcanps_intr_example.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xcanps_intr_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xcanps_intr_example.d" -MT"src/xcanps_intr_example.o" -o "src/xcanps_intr_example.o" "../src/xcanps_intr_example.c"
+'Finished building: ../src/xcanps_intr_example.c'
+' '
+'Building target: senstel_proto_can_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "senstel_proto_can_test.elf"  ./src/xcanps_intr_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: senstel_proto_can_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size senstel_proto_can_test.elf  |tee "senstel_proto_can_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  44136	   2732	  22904	  69772	  1108c	senstel_proto_can_test.elf
+'Finished building: senstel_proto_can_test.elf.size'
+' '
+23:13:13 **** Incremental Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+23:14:18 **** Incremental Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+23:14:30 **** Incremental Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+23:17:41 **** Auto Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/xcanps_intr_example.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xcanps_intr_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xcanps_intr_example.d" -MT"src/xcanps_intr_example.o" -o "src/xcanps_intr_example.o" "../src/xcanps_intr_example.c"
+'Finished building: ../src/xcanps_intr_example.c'
+' '
+'Building target: senstel_proto_can_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "senstel_proto_can_test.elf"  ./src/xcanps_intr_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: senstel_proto_can_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size senstel_proto_can_test.elf  |tee "senstel_proto_can_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  44136	   2732	  22904	  69772	  1108c	senstel_proto_can_test.elf
+'Finished building: senstel_proto_can_test.elf.size'
+' '
+23:18:05 **** Incremental Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+23:18:27 **** Incremental Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+23:45:14 **** Auto Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/xcanps_intr_example.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xcanps_intr_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xcanps_intr_example.d" -MT"src/xcanps_intr_example.o" -o "src/xcanps_intr_example.o" "../src/xcanps_intr_example.c"
+'Finished building: ../src/xcanps_intr_example.c'
+' '
+'Building target: senstel_proto_can_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "senstel_proto_can_test.elf"  ./src/xcanps_intr_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: senstel_proto_can_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size senstel_proto_can_test.elf  |tee "senstel_proto_can_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  44136	   2732	  22904	  69772	  1108c	senstel_proto_can_test.elf
+'Finished building: senstel_proto_can_test.elf.size'
+' '
+23:45:19 **** Incremental Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+23:45:30 **** Incremental Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+23:45:50 **** Incremental Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+00:20:54 **** Auto Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/xcanps_intr_example.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xcanps_intr_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xcanps_intr_example.d" -MT"src/xcanps_intr_example.o" -o "src/xcanps_intr_example.o" "../src/xcanps_intr_example.c"
+'Finished building: ../src/xcanps_intr_example.c'
+' '
+'Building target: senstel_proto_can_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "senstel_proto_can_test.elf"  ./src/xcanps_intr_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: senstel_proto_can_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size senstel_proto_can_test.elf  |tee "senstel_proto_can_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  44136	   2732	  22904	  69772	  1108c	senstel_proto_can_test.elf
+'Finished building: senstel_proto_can_test.elf.size'
+' '
+00:21:03 **** Incremental Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+01:17:02 **** Incremental Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+01:19:14 **** Incremental Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+01:26:09 **** Incremental Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+01:27:24 **** Auto Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/xcanps_intr_example.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xcanps_intr_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xcanps_intr_example.d" -MT"src/xcanps_intr_example.o" -o "src/xcanps_intr_example.o" "../src/xcanps_intr_example.c"
+'Finished building: ../src/xcanps_intr_example.c'
+' '
+'Building target: senstel_proto_can_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "senstel_proto_can_test.elf"  ./src/xcanps_intr_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: senstel_proto_can_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size senstel_proto_can_test.elf  |tee "senstel_proto_can_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  44136	   2732	  22904	  69772	  1108c	senstel_proto_can_test.elf
+'Finished building: senstel_proto_can_test.elf.size'
+' '
+01:27:34 **** Auto Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/xcanps_intr_example.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xcanps_intr_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xcanps_intr_example.d" -MT"src/xcanps_intr_example.o" -o "src/xcanps_intr_example.o" "../src/xcanps_intr_example.c"
+'Finished building: ../src/xcanps_intr_example.c'
+' '
+'Building target: senstel_proto_can_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "senstel_proto_can_test.elf"  ./src/xcanps_intr_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: senstel_proto_can_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size senstel_proto_can_test.elf  |tee "senstel_proto_can_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  44136	   2732	  22904	  69772	  1108c	senstel_proto_can_test.elf
+'Finished building: senstel_proto_can_test.elf.size'
+' '
+01:27:57 **** Incremental Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+01:28:12 **** Incremental Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+01:29:48 **** Incremental Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+01:30:24 **** Incremental Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+01:30:42 **** Incremental Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+12:11:11 **** Incremental Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+12:28:29 **** Incremental Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+12:29:37 **** Incremental Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+12:32:33 **** Incremental Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+12:36:52 **** Incremental Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+12:40:19 **** Incremental Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+10:41:21 **** Auto Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/xcanps_intr_example.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xcanps_intr_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xcanps_intr_example.d" -MT"src/xcanps_intr_example.o" -o "src/xcanps_intr_example.o" "../src/xcanps_intr_example.c"
+'Finished building: ../src/xcanps_intr_example.c'
+' '
+'Building target: senstel_proto_can_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "senstel_proto_can_test.elf"  ./src/xcanps_intr_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: senstel_proto_can_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size senstel_proto_can_test.elf  |tee "senstel_proto_can_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  44136	   2732	  22904	  69772	  1108c	senstel_proto_can_test.elf
+'Finished building: senstel_proto_can_test.elf.size'
+' '
+10:41:56 **** Auto Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/xcanps_intr_example.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xcanps_intr_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xcanps_intr_example.d" -MT"src/xcanps_intr_example.o" -o "src/xcanps_intr_example.o" "../src/xcanps_intr_example.c"
+'Finished building: ../src/xcanps_intr_example.c'
+' '
+'Building target: senstel_proto_can_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "senstel_proto_can_test.elf"  ./src/xcanps_intr_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: senstel_proto_can_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size senstel_proto_can_test.elf  |tee "senstel_proto_can_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  44136	   2732	  22904	  69772	  1108c	senstel_proto_can_test.elf
+'Finished building: senstel_proto_can_test.elf.size'
+' '
+11:40:10 **** Auto Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/xcanps_intr_example.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xcanps_intr_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xcanps_intr_example.d" -MT"src/xcanps_intr_example.o" -o "src/xcanps_intr_example.o" "../src/xcanps_intr_example.c"
+'Finished building: ../src/xcanps_intr_example.c'
+' '
+'Building target: senstel_proto_can_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "senstel_proto_can_test.elf"  ./src/xcanps_intr_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: senstel_proto_can_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size senstel_proto_can_test.elf  |tee "senstel_proto_can_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  44136	   2732	  22904	  69772	  1108c	senstel_proto_can_test.elf
+'Finished building: senstel_proto_can_test.elf.size'
+' '
+12:12:23 **** Incremental Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+12:18:08 **** Incremental Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+12:31:04 **** Incremental Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+12:31:56 **** Incremental Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+13:11:50 **** Incremental Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+13:12:35 **** Incremental Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+13:13:48 **** Incremental Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+13:14:51 **** Incremental Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+13:15:50 **** Incremental Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+13:16:04 **** Incremental Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+13:17:56 **** Incremental Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+14:02:08 **** Incremental Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+14:03:35 **** Incremental Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+14:03:48 **** Incremental Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+14:14:28 **** Incremental Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+14:25:46 **** Incremental Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+14:26:53 **** Incremental Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+15:08:34 **** Incremental Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+15:08:46 **** Incremental Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+15:09:46 **** Incremental Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+15:10:14 **** Incremental Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+15:13:54 **** Incremental Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+15:33:20 **** Incremental Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+15:55:26 **** Incremental Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+15:56:49 **** Incremental Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+15:59:39 **** Incremental Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/xcanps_intr_example.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xcanps_intr_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xcanps_intr_example.d" -MT"src/xcanps_intr_example.o" -o "src/xcanps_intr_example.o" "../src/xcanps_intr_example.c"
+'Finished building: ../src/xcanps_intr_example.c'
+' '
+'Building target: senstel_proto_can_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "senstel_proto_can_test.elf"  ./src/xcanps_intr_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: senstel_proto_can_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size senstel_proto_can_test.elf  |tee "senstel_proto_can_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  44136	   2732	  22904	  69772	  1108c	senstel_proto_can_test.elf
+'Finished building: senstel_proto_can_test.elf.size'
+' '
+16:12:48 **** Incremental Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/xcanps_intr_example.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xcanps_intr_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xcanps_intr_example.d" -MT"src/xcanps_intr_example.o" -o "src/xcanps_intr_example.o" "../src/xcanps_intr_example.c"
+'Finished building: ../src/xcanps_intr_example.c'
+' '
+'Building target: senstel_proto_can_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "senstel_proto_can_test.elf"  ./src/xcanps_intr_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: senstel_proto_can_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size senstel_proto_can_test.elf  |tee "senstel_proto_can_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  44136	   2732	  22904	  69772	  1108c	senstel_proto_can_test.elf
+'Finished building: senstel_proto_can_test.elf.size'
+' '
+16:13:53 **** Incremental Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+16:14:41 **** Incremental Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+16:16:14 **** Incremental Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+16:16:54 **** Incremental Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:33:20 **** Incremental Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:36:26 **** Incremental Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:39:42 **** Incremental Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:40:29 **** Auto Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/xcanps_intr_example.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xcanps_intr_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xcanps_intr_example.d" -MT"src/xcanps_intr_example.o" -o "src/xcanps_intr_example.o" "../src/xcanps_intr_example.c"
+'Finished building: ../src/xcanps_intr_example.c'
+' '
+'Building target: senstel_proto_can_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "senstel_proto_can_test.elf"  ./src/xcanps_intr_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: senstel_proto_can_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size senstel_proto_can_test.elf  |tee "senstel_proto_can_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  44136	   2732	  22904	  69772	  1108c	senstel_proto_can_test.elf
+'Finished building: senstel_proto_can_test.elf.size'
+' '
+21:40:46 **** Incremental Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:50:18 **** Auto Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/xcanps_intr_example.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xcanps_intr_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xcanps_intr_example.d" -MT"src/xcanps_intr_example.o" -o "src/xcanps_intr_example.o" "../src/xcanps_intr_example.c"
+'Finished building: ../src/xcanps_intr_example.c'
+' '
+'Building target: senstel_proto_can_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "senstel_proto_can_test.elf"  ./src/xcanps_intr_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: senstel_proto_can_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size senstel_proto_can_test.elf  |tee "senstel_proto_can_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  44136	   2732	  22904	  69772	  1108c	senstel_proto_can_test.elf
+'Finished building: senstel_proto_can_test.elf.size'
+' '
+21:52:55 **** Auto Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/xcanps_intr_example.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xcanps_intr_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xcanps_intr_example.d" -MT"src/xcanps_intr_example.o" -o "src/xcanps_intr_example.o" "../src/xcanps_intr_example.c"
+'Finished building: ../src/xcanps_intr_example.c'
+' '
+'Building target: senstel_proto_can_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "senstel_proto_can_test.elf"  ./src/xcanps_intr_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: senstel_proto_can_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size senstel_proto_can_test.elf  |tee "senstel_proto_can_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  44136	   2732	  22904	  69772	  1108c	senstel_proto_can_test.elf
+'Finished building: senstel_proto_can_test.elf.size'
+' '
+21:54:39 **** Auto Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/xcanps_intr_example.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xcanps_intr_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xcanps_intr_example.d" -MT"src/xcanps_intr_example.o" -o "src/xcanps_intr_example.o" "../src/xcanps_intr_example.c"
+'Finished building: ../src/xcanps_intr_example.c'
+' '
+'Building target: senstel_proto_can_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "senstel_proto_can_test.elf"  ./src/xcanps_intr_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: senstel_proto_can_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size senstel_proto_can_test.elf  |tee "senstel_proto_can_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  44136	   2732	  22904	  69772	  1108c	senstel_proto_can_test.elf
+'Finished building: senstel_proto_can_test.elf.size'
+' '
+21:54:42 **** Incremental Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:56:12 **** Incremental Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:57:04 **** Incremental Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+22:01:19 **** Incremental Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+22:01:49 **** Incremental Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+22:04:02 **** Incremental Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+22:06:38 **** Incremental Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+22:07:19 **** Incremental Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+22:48:08 **** Auto Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/xcanps_intr_example.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xcanps_intr_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xcanps_intr_example.d" -MT"src/xcanps_intr_example.o" -o "src/xcanps_intr_example.o" "../src/xcanps_intr_example.c"
+'Finished building: ../src/xcanps_intr_example.c'
+' '
+'Building target: senstel_proto_can_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "senstel_proto_can_test.elf"  ./src/xcanps_intr_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: senstel_proto_can_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size senstel_proto_can_test.elf  |tee "senstel_proto_can_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  44136	   2732	  22904	  69772	  1108c	senstel_proto_can_test.elf
+'Finished building: senstel_proto_can_test.elf.size'
+' '
+22:48:59 **** Auto Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/xcanps_intr_example.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xcanps_intr_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xcanps_intr_example.d" -MT"src/xcanps_intr_example.o" -o "src/xcanps_intr_example.o" "../src/xcanps_intr_example.c"
+'Finished building: ../src/xcanps_intr_example.c'
+' '
+'Building target: senstel_proto_can_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "senstel_proto_can_test.elf"  ./src/xcanps_intr_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: senstel_proto_can_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size senstel_proto_can_test.elf  |tee "senstel_proto_can_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  44164	   2732	  22904	  69800	  110a8	senstel_proto_can_test.elf
+'Finished building: senstel_proto_can_test.elf.size'
+' '
+22:49:44 **** Incremental Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+22:50:04 **** Auto Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/xcanps_intr_example.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xcanps_intr_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xcanps_intr_example.d" -MT"src/xcanps_intr_example.o" -o "src/xcanps_intr_example.o" "../src/xcanps_intr_example.c"
+'Finished building: ../src/xcanps_intr_example.c'
+' '
+'Building target: senstel_proto_can_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "senstel_proto_can_test.elf"  ./src/xcanps_intr_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: senstel_proto_can_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size senstel_proto_can_test.elf  |tee "senstel_proto_can_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  44164	   2732	  22904	  69800	  110a8	senstel_proto_can_test.elf
+'Finished building: senstel_proto_can_test.elf.size'
+' '
+22:50:07 **** Incremental Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+22:50:56 **** Auto Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/xcanps_intr_example.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xcanps_intr_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xcanps_intr_example.d" -MT"src/xcanps_intr_example.o" -o "src/xcanps_intr_example.o" "../src/xcanps_intr_example.c"
+'Finished building: ../src/xcanps_intr_example.c'
+' '
+'Building target: senstel_proto_can_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "senstel_proto_can_test.elf"  ./src/xcanps_intr_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: senstel_proto_can_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size senstel_proto_can_test.elf  |tee "senstel_proto_can_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  44164	   2732	  22904	  69800	  110a8	senstel_proto_can_test.elf
+'Finished building: senstel_proto_can_test.elf.size'
+' '
+22:51:02 **** Incremental Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+22:52:30 **** Incremental Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/xcanps_intr_example.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xcanps_intr_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xcanps_intr_example.d" -MT"src/xcanps_intr_example.o" -o "src/xcanps_intr_example.o" "../src/xcanps_intr_example.c"
+../src/xcanps_intr_example.c: In function 'RecvHandler':
+../src/xcanps_intr_example.c:474:46: error: invalid type argument of unary '*' (have 'u32 {aka long unsigned int}')
+  xil_printf("Message received from %ul\n\r", *RxFrame[0]);
+                                              ^~~~~~~~~~~
+make: *** [src/xcanps_intr_example.o] Error 1
+22:52:54 **** Auto Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/xcanps_intr_example.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xcanps_intr_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xcanps_intr_example.d" -MT"src/xcanps_intr_example.o" -o "src/xcanps_intr_example.o" "../src/xcanps_intr_example.c"
+'Finished building: ../src/xcanps_intr_example.c'
+' '
+'Building target: senstel_proto_can_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "senstel_proto_can_test.elf"  ./src/xcanps_intr_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: senstel_proto_can_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size senstel_proto_can_test.elf  |tee "senstel_proto_can_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  44164	   2732	  22904	  69800	  110a8	senstel_proto_can_test.elf
+'Finished building: senstel_proto_can_test.elf.size'
+' '
+22:53:08 **** Auto Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/xcanps_intr_example.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xcanps_intr_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xcanps_intr_example.d" -MT"src/xcanps_intr_example.o" -o "src/xcanps_intr_example.o" "../src/xcanps_intr_example.c"
+'Finished building: ../src/xcanps_intr_example.c'
+' '
+'Building target: senstel_proto_can_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "senstel_proto_can_test.elf"  ./src/xcanps_intr_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: senstel_proto_can_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size senstel_proto_can_test.elf  |tee "senstel_proto_can_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  44164	   2732	  22904	  69800	  110a8	senstel_proto_can_test.elf
+'Finished building: senstel_proto_can_test.elf.size'
+' '
+22:53:14 **** Incremental Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+22:54:08 **** Auto Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/xcanps_intr_example.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xcanps_intr_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xcanps_intr_example.d" -MT"src/xcanps_intr_example.o" -o "src/xcanps_intr_example.o" "../src/xcanps_intr_example.c"
+'Finished building: ../src/xcanps_intr_example.c'
+' '
+'Building target: senstel_proto_can_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "senstel_proto_can_test.elf"  ./src/xcanps_intr_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: senstel_proto_can_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size senstel_proto_can_test.elf  |tee "senstel_proto_can_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  44164	   2732	  22904	  69800	  110a8	senstel_proto_can_test.elf
+'Finished building: senstel_proto_can_test.elf.size'
+' '
+22:54:11 **** Incremental Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+22:54:37 **** Incremental Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+23:14:22 **** Auto Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/xcanps_intr_example.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xcanps_intr_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xcanps_intr_example.d" -MT"src/xcanps_intr_example.o" -o "src/xcanps_intr_example.o" "../src/xcanps_intr_example.c"
+'Finished building: ../src/xcanps_intr_example.c'
+' '
+'Building target: senstel_proto_can_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "senstel_proto_can_test.elf"  ./src/xcanps_intr_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: senstel_proto_can_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size senstel_proto_can_test.elf  |tee "senstel_proto_can_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  44164	   2732	  22904	  69800	  110a8	senstel_proto_can_test.elf
+'Finished building: senstel_proto_can_test.elf.size'
+' '
+23:14:29 **** Incremental Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+23:15:50 **** Incremental Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+23:16:19 **** Incremental Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+00:30:15 **** Incremental Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+00:32:19 **** Incremental Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+00:34:16 **** Auto Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/xcanps_intr_example.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xcanps_intr_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xcanps_intr_example.d" -MT"src/xcanps_intr_example.o" -o "src/xcanps_intr_example.o" "../src/xcanps_intr_example.c"
+../src/xcanps_intr_example.c:100:0: warning: "TEST_MESSAGE_ID" redefined
+ #define TEST_MESSAGE_ID  0x23
+ 
+../src/xcanps_intr_example.c:99:0: note: this is the location of the previous definition
+ #define TEST_MESSAGE_ID  0x555
+ 
+'Finished building: ../src/xcanps_intr_example.c'
+' '
+'Building target: senstel_proto_can_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "senstel_proto_can_test.elf"  ./src/xcanps_intr_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: senstel_proto_can_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size senstel_proto_can_test.elf  |tee "senstel_proto_can_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  44164	   2732	  22904	  69800	  110a8	senstel_proto_can_test.elf
+'Finished building: senstel_proto_can_test.elf.size'
+' '
+00:34:50 **** Auto Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/xcanps_intr_example.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xcanps_intr_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xcanps_intr_example.d" -MT"src/xcanps_intr_example.o" -o "src/xcanps_intr_example.o" "../src/xcanps_intr_example.c"
+'Finished building: ../src/xcanps_intr_example.c'
+' '
+'Building target: senstel_proto_can_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "senstel_proto_can_test.elf"  ./src/xcanps_intr_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: senstel_proto_can_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size senstel_proto_can_test.elf  |tee "senstel_proto_can_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  44164	   2732	  22904	  69800	  110a8	senstel_proto_can_test.elf
+'Finished building: senstel_proto_can_test.elf.size'
+' '
+00:35:54 **** Auto Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/xcanps_intr_example.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xcanps_intr_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xcanps_intr_example.d" -MT"src/xcanps_intr_example.o" -o "src/xcanps_intr_example.o" "../src/xcanps_intr_example.c"
+'Finished building: ../src/xcanps_intr_example.c'
+' '
+'Building target: senstel_proto_can_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "senstel_proto_can_test.elf"  ./src/xcanps_intr_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: senstel_proto_can_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size senstel_proto_can_test.elf  |tee "senstel_proto_can_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  44164	   2732	  22904	  69800	  110a8	senstel_proto_can_test.elf
+'Finished building: senstel_proto_can_test.elf.size'
+' '
+00:36:10 **** Auto Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/xcanps_intr_example.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xcanps_intr_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xcanps_intr_example.d" -MT"src/xcanps_intr_example.o" -o "src/xcanps_intr_example.o" "../src/xcanps_intr_example.c"
+'Finished building: ../src/xcanps_intr_example.c'
+' '
+'Building target: senstel_proto_can_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "senstel_proto_can_test.elf"  ./src/xcanps_intr_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: senstel_proto_can_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size senstel_proto_can_test.elf  |tee "senstel_proto_can_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  44164	   2732	  22904	  69800	  110a8	senstel_proto_can_test.elf
+'Finished building: senstel_proto_can_test.elf.size'
+' '
+00:37:25 **** Auto Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/xcanps_intr_example.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xcanps_intr_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xcanps_intr_example.d" -MT"src/xcanps_intr_example.o" -o "src/xcanps_intr_example.o" "../src/xcanps_intr_example.c"
+'Finished building: ../src/xcanps_intr_example.c'
+' '
+'Building target: senstel_proto_can_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "senstel_proto_can_test.elf"  ./src/xcanps_intr_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: senstel_proto_can_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size senstel_proto_can_test.elf  |tee "senstel_proto_can_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  44164	   2732	  22904	  69800	  110a8	senstel_proto_can_test.elf
+'Finished building: senstel_proto_can_test.elf.size'
+' '
+00:38:14 **** Incremental Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+00:39:38 **** Incremental Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+00:40:02 **** Incremental Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+13:23:56 **** Build of project standalone_bsp_0 ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/canps_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/canps_v3_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra -O0 -g3"
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra -O0 -g3"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra -O0 -g3"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra -O0 -g3"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra -O0 -g3"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra -O0 -g3"
+"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra -O0 -g3"
+"Running Make include in ps7_cortexa9_0/libsrc/iicps_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/iicps_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra -O0 -g3"
+"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra -O0 -g3"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra -O0 -g3"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra -O0 -g3"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra -O0 -g3"
+"Running Make include in ps7_cortexa9_0/libsrc/sdps_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v3_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra -O0 -g3"
+"Running Make include in ps7_cortexa9_0/libsrc/spips_v3_0/src"
+make -C ps7_cortexa9_0/libsrc/spips_v3_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra -O0 -g3"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_3/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra -O0 -g3"
+"Running Make include in ps7_cortexa9_0/libsrc/tmrctr_v4_3/src"
+make -C ps7_cortexa9_0/libsrc/tmrctr_v4_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra -O0 -g3"
+"Running Make include in ps7_cortexa9_0/libsrc/ttcps_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra -O0 -g3"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra -O0 -g3"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra -O0 -g3"
+"Running Make libs in ps7_cortexa9_0/libsrc/canps_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/canps_v3_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra -O0 -g3"
+"Compiling canps"
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra -O0 -g3"
+"Compiling coresightps_dcc"
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra -O0 -g3"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra -O0 -g3"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra -O0 -g3"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra -O0 -g3"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra -O0 -g3"
+"Compiling gpiops"
+"Running Make libs in ps7_cortexa9_0/libsrc/iicps_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/iicps_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra -O0 -g3"
+"Compiling iicps"
+"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra -O0 -g3"
+"Compiling qspips"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra -O0 -g3"
+"Compiling scugic"
+xscugic_g.c:53:2: warning: missing initializer for field 'HandlerTable' of 'XScuGic_Config {aka struct <anonymous>}' [-Wmissing-field-initializers]
+  }
+  ^
+In file included from xscugic_g.c:41:0:
+xscugic.h:218:27: note: 'HandlerTable' declared here
+  XScuGic_VectorTableEntry HandlerTable[XSCUGIC_MAX_NUM_INTR_INPUTS];/**<
+                           ^~~~~~~~~~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra -O0 -g3"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra -O0 -g3"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/sdps_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v3_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra -O0 -g3"
+"Compiling sdps"
+"Running Make libs in ps7_cortexa9_0/libsrc/spips_v3_0/src"
+make -C ps7_cortexa9_0/libsrc/spips_v3_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra -O0 -g3"
+"Compiling spips"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_3/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra -O0 -g3"
+"Compiling standalone"
+"Running Make libs in ps7_cortexa9_0/libsrc/tmrctr_v4_3/src"
+make -C ps7_cortexa9_0/libsrc/tmrctr_v4_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra -O0 -g3"
+"Compiling tmrctr"
+"Running Make libs in ps7_cortexa9_0/libsrc/ttcps_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra -O0 -g3"
+"Compiling ttcps"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra -O0 -g3"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra -O0 -g3"
+"Compiling xadcps"
+'Finished building libraries'
+13:24:25 **** Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/xcanps_intr_example.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xcanps_intr_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xcanps_intr_example.d" -MT"src/xcanps_intr_example.o" -o "src/xcanps_intr_example.o" "../src/xcanps_intr_example.c"
+'Finished building: ../src/xcanps_intr_example.c'
+' '
+'Building target: senstel_proto_can_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "senstel_proto_can_test.elf"  ./src/xcanps_intr_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: senstel_proto_can_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size senstel_proto_can_test.elf  |tee "senstel_proto_can_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  44164	   2732	  22904	  69800	  110a8	senstel_proto_can_test.elf
+'Finished building: senstel_proto_can_test.elf.size'
+' '
+13:25:24 **** Incremental Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+13:25:58 **** Incremental Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+13:27:38 **** Incremental Build of configuration Debug for project senstel_proto_can_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.

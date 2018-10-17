@@ -1,0 +1,377 @@
+/*
+ * interrupts.c
+ *
+ *  Created on: May 25, 2018
+ *      Author: Jerome Pare-Lepine
+ */
+
+#include "xscugic.h"
+#include "xparameters.h"
+#include "interrupts.h"
+#include "xuartps.h"
+#include "xcanps.h"
+#include "can.h"
+#include "setup.h"
+#include <stdio.h>
+#include "ChinookCanUtils.h"
+
+
+
+//==============================================================================
+// PUBLIC VARIABLES
+//==============================================================================
+volatile int RxTimeout, RxFifoTrigFlag;	// UART Interrupt flags
+//extern xSemaphoreHandle xIcAcqSem;
+
+
+//==============================================================================
+// FUNCTION DEFINITIONS
+//==============================================================================
+void InitHandlersArray(sInstExcptnHandlers_t *DevExcHndlrs)
+{
+	DevExcHndlrs->index = 0;
+}
+
+void AddHandler2InitTable(void *DevInstPtr, int DevIntId,
+		Xil_ExceptionHandler DevHandler,
+		sInstExcptnHandlers_t *DevExcHndlrs)
+{
+	sInstExcptnHandler_t *DevInst = &DevExcHndlrs->InstHandlers[DevExcHndlrs->index];
+	DevInst->DeviceExceptionHandler = DevHandler;
+	DevInst->DeviceIntId = DevIntId;
+	DevInst->DeviceInstancePtr = DevInstPtr;
+
+	DevExcHndlrs->index++;
+}
+
+void TmrCtrHandler(void *CallBackRef, u8 TmrCtrNumber)
+{
+	XTmrCtr *InstancePtr = (XTmrCtr *)CallBackRef;
+//	static u32 val = 0, old = 0;
+//	static float tmp = 0;
+//	static char p[64] = {0};
+	BaseType_t xHigherPriorityTaskWoken = pdFALSE;
+
+
+	if(XTmrCtr_HasEventOccurred(InstancePtr->BaseAddress, TmrCtrNumber)){
+		xSemaphoreGiveFromISR(xIcAcqSem, &xHigherPriorityTaskWoken);
+		portYIELD_FROM_ISR(xHigherPriorityTaskWoken);
+/* Initial IC data processing test */
+//		val = XTmrCtr_GetCaptureValue(InstancePtr, TmrCtrNumber);
+		/*
+		 * Find out the signal's frquency (used while testing the funcitonality with a funct gen.)
+		 */
+//		tmp = (float)XPAR_AXI_TIMER_0_CLOCK_FREQ_HZ / (val - old);
+//		sprintf(&p[0], "tmrCtr exc %f\n\r", tmp);
+//		xil_printf("%s", &p[0]);
+//		XTmrCtr_EnableIntr(InstancePtr->BaseAddress, DEVICE_TMR_0);
+//		old = val;
+
+	}
+
+}
+
+void UartHandler(void *CallBackRef, u32 Event, unsigned int EventData)
+{
+	/* All of the data has been received */
+	if (Event == XUARTPS_IXR_RXOVR) {
+		RxFifoTrigFlag = 1;
+	}
+
+	/*
+	 * Data was received, but not the expected number of bytes, a
+	 * timeout just indicates the data stopped for 8 character times
+	 */
+	if (Event == XUARTPS_EVENT_RECV_TOUT) {
+		RxTimeout = 1;
+	}
+}
+
+/*****************************************************************************/
+/**
+*
+* Callback function (called from interrupt handler) to handle confirmation of
+* transmit events when in interrupt mode.
+*
+* @param	CallBackRef is the callback reference passed from the interrupt
+*		handler, which in our case is a pointer to the driver instance.
+*
+* @return	None.
+*
+* @note		This function is called by the driver within interrupt context.
+*
+******************************************************************************/
+void CANSendHandler(void *CallBackRef)
+{
+
+	/*
+	 * The frame was sent successfully. Notify the task context.
+	 */
+	SendDone = TRUE;
+}
+
+/*****************************************************************************/
+/**
+*
+* Callback function (called from interrupt handler) to handle frames received in
+* interrupt mode.  This function is called once per frame received.
+* The driver's receive function is called to read the frame from RX FIFO.
+*
+* @param	CallBackRef is the callback reference passed from the interrupt
+*		handler, which in our case is a pointer to the device instance.
+*
+* @return	None.
+*
+* @note		This function is called by the driver within interrupt context.
+*
+******************************************************************************/
+void CANRecvHandler(void *CallBackRef)
+{
+	XCanPs *CanPtr = (XCanPs *)CallBackRef;
+	int Status;
+	int Index, Temp;
+	u8 *FramePtr;
+
+	Status = XCanPs_Recv(CanPtr, RxFrame);
+	if (Status != XST_SUCCESS) {
+		LoopbackError = TRUE;
+		RecvDone = TRUE;
+		return;
+	}
+
+	/*
+	 * Verify Identifier and Data Length Code.
+	 */
+//	if (RxFrame[0] != (u32)XCanPs_CreateIdValue((u32)TEST_MESSAGE_ID, 0, 0, 0, 0)) {
+//		LoopbackError = TRUE;
+//		RecvDone = TRUE;
+//		return;
+//	}
+
+	if (RxFrame[0] != (u32)XCanPs_CreateIdValue((u32)VOLANT_SW_MSG, 0, 0, 0, 0)) {
+			xil_printf("@@@@@@@@@@@@@@@");
+	}
+
+
+	Temp = (21 << (int)RxFrame[0]);
+
+	xil_printf("Message received from %x\n\r", Temp);
+//	xil_printf("Message received from %x\n\r", &RxFrame[0]);
+
+	if ((RxFrame[1] & ~XCANPS_DLCR_TIMESTAMP_MASK) != TxFrame[1]) {
+		LoopbackError = TRUE;
+		RecvDone = TRUE;
+		return;
+	}
+
+	/*
+	 * Verify the Data field contents.
+	 */
+	FramePtr = (u8 *)(&RxFrame[2]);
+	for (Index = 0; Index < FRAME_DATA_LENGTH; Index++) {
+		if (*FramePtr++ != (u8)Index) {
+			LoopbackError = TRUE;
+			break;
+		}
+	}
+
+	RecvDone = TRUE;
+}
+
+/*****************************************************************************/
+/**
+*
+* Callback function (called from interrupt handler) to handle error interrupt.
+* Error code read from Error Status register is passed into this function.
+*
+* @param	CallBackRef is the callback reference passed from the interrupt
+*		handler, which in our case is a pointer to the driver instance.
+* @param	ErrorMask is a bit mask indicating the cause of the error.
+*		Its value equals 'OR'ing one or more XCANPS_ESR_* defined in
+*		xcanps_hw.h.
+*
+* @return	None.
+*
+* @note		This function is called by the driver within interrupt context.
+*
+******************************************************************************/
+void CANErrorHandler(void *CallBackRef, u32 ErrorMask)
+{
+
+	if(ErrorMask & XCANPS_ESR_ACKER_MASK) {
+		/*
+		 * ACK Error handling code should be put here.
+		 */
+	}
+
+	if(ErrorMask & XCANPS_ESR_BERR_MASK) {
+		/*
+		 * Bit Error handling code should be put here.
+		 */
+	}
+
+	if(ErrorMask & XCANPS_ESR_STER_MASK) {
+		/*
+		 * Stuff Error handling code should be put here.
+		 */
+	}
+
+	if(ErrorMask & XCANPS_ESR_FMER_MASK) {
+		/*
+		 * Form Error handling code should be put here.
+		 */
+	}
+
+	if(ErrorMask & XCANPS_ESR_CRCER_MASK) {
+		/*
+		 * CRC Error handling code should be put here.
+		 */
+	}
+
+	/*
+	 * Set the shared variables.
+	 */
+	LoopbackError = TRUE;
+	RecvDone = TRUE;
+	SendDone = TRUE;
+}
+
+/*****************************************************************************/
+/**
+*
+* Callback function (called from interrupt handler) to handle the following
+* interrupts:
+*   - XCANPS_IXR_BSOFF_MASK:	Bus Off Interrupt
+*   - XCANPS_IXR_RXOFLW_MASK:	RX FIFO Overflow Interrupt
+*   - XCANPS_IXR_RXUFLW_MASK:	RX FIFO Underflow Interrupt
+*   - XCANPS_IXR_TXBFLL_MASK:	TX High Priority Buffer Full Interrupt
+*   - XCANPS_IXR_TXFLL_MASK:	TX FIFO Full Interrupt
+*   - XCANPS_IXR_WKUP_MASK:	Wake up Interrupt
+*   - XCANPS_IXR_SLP_MASK:	Sleep Interrupt
+*   - XCANPS_IXR_ARBLST_MASK:	Arbitration Lost Interrupt
+*
+*
+* @param	CallBackRef is the callback reference passed from the
+*		interrupt Handler, which in our case is a pointer to the
+*		driver instance.
+* @param	IntrMask is a bit mask indicating pending interrupts.
+*		Its value equals 'OR'ing one or more of the XCANPS_IXR_*_MASK
+*		value(s) mentioned above.
+*
+* @return	None.
+*
+* @note		This function is called by the driver within interrupt context.
+* 		This function should be changed to meet specific application
+*		needs.
+*
+******************************************************************************/
+void CANEventHandler(void *CallBackRef, u32 IntrMask)
+{
+	XCanPs *CanPtr = (XCanPs *)CallBackRef;
+
+	if (IntrMask & XCANPS_IXR_BSOFF_MASK) {
+		/*
+		 * Entering Bus off status interrupt requires
+		 * the CAN device be reset and reconfigured.
+		 */
+		XCanPs_Reset(CanPtr);
+		// TODO: Reconfiguration might only need a subset of what's
+		//		actually included in the function call
+//		InitCan(CanPtr, CanPtr->CanConfig.DeviceId);
+		return;
+	}
+
+	if(IntrMask & XCANPS_IXR_RXOFLW_MASK) {
+		/*
+		 * Code to handle RX FIFO Overflow Interrupt should be put here.
+		 */
+	}
+
+	if(IntrMask & XCANPS_IXR_RXUFLW_MASK) {
+		/*
+		 * Code to handle RX FIFO Underflow Interrupt
+		 * should be put here.
+		 */
+	}
+
+	if(IntrMask & XCANPS_IXR_TXBFLL_MASK) {
+		/*
+		 * Code to handle TX High Priority Buffer Full
+		 * Interrupt should be put here.
+		 */
+	}
+
+	if(IntrMask & XCANPS_IXR_TXFLL_MASK) {
+		/*
+		 * Code to handle TX FIFO Full Interrupt should be put here.
+		 */
+	}
+
+	if (IntrMask & XCANPS_IXR_WKUP_MASK) {
+		/*
+		 * Code to handle Wake up from sleep mode Interrupt
+		 * should be put here.
+		 */
+	}
+
+	if (IntrMask & XCANPS_IXR_SLP_MASK) {
+		/*
+		 * Code to handle Enter sleep mode Interrupt should be put here.
+		 */
+	}
+
+	if (IntrMask & XCANPS_IXR_ARBLST_MASK) {
+		/*
+		 * Code to handle Lost bus arbitration Interrupt
+		 * should be put here.
+		 */
+	}
+}
+
+int SetupInterruptSystem(XScuGic *IntcInstancePtr, sInstExcptnHandlers_t *DevExcHndlrs)
+{
+	int Status;
+//	XScuGic_Config *IntcConfig; /* Config for interrupt controller */
+
+	Xil_ExceptionInit();
+
+	Xil_ExceptionRegisterHandler(XIL_EXCEPTION_ID_INT,
+				(Xil_ExceptionHandler) XScuGic_InterruptHandler,
+				IntcInstancePtr);
+
+	/*
+	 * If not enough device exception handlers have been registered
+	 */
+	if (DevExcHndlrs->index != DRIVER_INST_HANDLER_NUM) {
+			return XST_FAILURE;
+		}
+
+	/*
+	 * Connect device driver handlers
+	 */
+	for(int i = 0; i < DRIVER_INST_HANDLER_NUM; i++){
+		sInstExcptnHandler_t inst = DevExcHndlrs->InstHandlers[i];
+		Status = XScuGic_Connect(IntcInstancePtr, inst.DeviceIntId,
+					  inst.DeviceExceptionHandler,
+					  inst.DeviceInstancePtr);
+
+		if (Status != XST_SUCCESS) {
+			return XST_FAILURE;
+		}
+
+		/* Enable the interrupt for the device */
+		XScuGic_Enable(IntcInstancePtr, inst.DeviceIntId);
+	}
+
+	return XST_SUCCESS;
+}
+
+/*
+ *  @brief	Enables the global interrupt controller's interrupts,
+ *  		which allows all configured interrupts to start.
+ */
+void StartScuGicInterrupts()
+{
+	/* Enable interrupts */
+	 Xil_ExceptionEnable();
+}

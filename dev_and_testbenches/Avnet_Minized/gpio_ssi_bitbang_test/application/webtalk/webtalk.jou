@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# 
+# Start of session at: Sat Feb 24 22:49:07 2018
+# Process ID: 4876
+# Current directory: C:/Users/Chinook-ELE/ZynqWorkspace/gpio_ssi_bitbang_test/application/webtalk
+# Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
+# Log file: C:/Users/Chinook-ELE/ZynqWorkspace/gpio_ssi_bitbang_test/application/webtalk/webtalk.log
+# Journal file: C:/Users/Chinook-ELE/ZynqWorkspace/gpio_ssi_bitbang_test/application/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl

@@ -1,0 +1,102 @@
+/*
+ * encoder_ad36.c
+ *
+ *  Created on: Mar 24, 2018
+ *      Author: Jerome Pare-Lepine
+ */
+//==============================================================================
+// INCLUDEs
+//==============================================================================
+#include "encoder_ad36.h"
+
+
+//==============================================================================
+// DEFINITIONS
+//==============================================================================
+#define EMIO_GPIO_BaseAddress	XPAR_PS7_GPIO_0_BASEADDR
+#define SSI_RES 				12
+#define IDLE_CLK_POL			1
+
+/*
+ *  NOTE: Non-ultrascale Zynq SoCs have 4 I/O banks; 0&1 are MIO and 2&3 are EMIO.
+ *  In the case of the z7007s, the MIO bank pin numbers range from [53:0] while the
+ *  EMIO pins range from [MAX:54]. Knowing this, the developer can access its EMIO
+ *  pins declared in Vivado using the xgpiops driver by calling pin 54, for atomical functions
+ *  ie: XGpioPs_SetDirectionPin, or the whole EMIO bank starting with bank 2, for the bank
+ *  functions ie: XGpioPs_SetDirection.
+ *
+ */
+
+
+//==============================================================================
+// FUNCTION DEFINITIONS
+//==============================================================================
+u32 initSSIpins(XGpioPs* bankPins){
+	s32 status = 0;
+	u32 bankDir,
+		bankOpStatus;
+	XGpioPs_Config bankConf;
+
+	status = XGpioPs_CfgInitialize(bankPins, &bankConf, EMIO_GPIO_BaseAddress);
+	if (status != XST_SUCCESS) {
+		xil_printf("Gpio Initialization Failed\r\n");
+		return XST_FAILURE;
+	}
+
+	// Pins 0 and 2 of the 4 bits EMIO vector are the SSI clock outputs.
+	bankDir = XGpioPs_GetDirection(bankPins, 0x2U);
+	XGpioPs_SetDirection(bankPins, 0x2U, 0x00000005U);
+	bankDir = XGpioPs_GetDirection(bankPins, 0x2U);
+
+	// Pins 0 and 2 of the 4 bits EMIO vector are to be the enabled SSI clock outputs.
+	bankOpStatus = XGpioPs_GetOutputEnable(bankPins, 0x2U);
+	XGpioPs_SetOutputEnable(bankPins, 0x2U, 0x00000005U);
+	bankOpStatus = XGpioPs_GetOutputEnable(bankPins, 0x2U);
+
+	// Mimic a idle high SSI clock pin, for Pitch
+	XGpioPs_WritePin(bankPins, SSI_BB_PITCH_CLK, IDLE_CLK_POL);
+
+	return XST_SUCCESS;
+}
+
+
+u32 readPos(XGpioPs* bankPins){
+	static u32 bit_count = 0;
+	static u32 result = 0;
+	static u32 readPin = 0;
+	static u32 dly = 0;
+	u8 criss = 0;
+//		for(int i = 0; i < 200; i++){ /* "delay" */}
+		result = 0;
+
+		for (bit_count=0; bit_count<SSI_RES; bit_count++)
+		{
+			// falling edge on clock port
+			XGpioPs_WritePin(bankPins, SSI_BB_PITCH_CLK, !IDLE_CLK_POL);
+
+			// left-shift the current result
+			result = (result << 1);
+
+			for(dly = 0; dly<READ_DLY; dly++){
+				criss ^= 1;
+			}
+
+			// read the port data
+			readPin = XGpioPs_ReadPin(bankPins, SSI_BB_PITCH_DAT);
+
+			// rising edge on clock port, data changes
+			XGpioPs_WritePin(bankPins, SSI_BB_PITCH_CLK, IDLE_CLK_POL);
+
+			for(dly = 0; dly<READ_DLY; dly++){
+				criss ^= 1;
+			}
+
+			// evaluate the port data (port set or clear)
+			if ( readPin != 0)
+			{
+				// bit is set, set LSB of result
+				result = result | 1;
+			}  // if
+		} // for
+	return result;
+}

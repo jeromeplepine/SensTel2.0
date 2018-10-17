@@ -1,0 +1,246 @@
+/*
+ * main.c
+ *
+ *  Created on: Feb 25, 2018
+ *      Author: Chinook-ELE
+ */
+#include "xparameters.h"
+#include "xgpiops.h"
+#include "encoder_ad36.h"
+#include "dual_driver_vnh5019.h"
+#include "pwm.h"
+#include "uart.h"
+#include "xuartps_hw.h"
+#include "xuartps.h"
+
+#define EMIO_GPIO_BaseAddress	XPAR_PS7_GPIO_0_BASEADDR
+#define SSI_RES 12
+#define IDLE_CLK_POL	1
+
+#define CENTER			0x400
+#define LEFT_LIM		0x7D0
+#define RIGHT_LIM		0x30
+
+#define MODE_FREE		0
+#define	MODE_MAPPED		1
+
+/* ***Chinook 8 pitch command notes; the following are for a pitch
+ * angle mapping test***
+ *
+ * Rotor mech specs, according to Raph/Sam:
+ * - For the turbine blades to travel from pos zero to pos max,
+ * 	 it takes a 7deg rotation at the Gearbox output (Gbox ratio = 300)
+ * - the ratio between the center gear of the rotor gear spider and each
+ *   of the blade gears is 1.5; one turn of the main gear is 1.5 turn at
+ *   the blades
+ * So, 7degs at the main gear = (7degs/1.5) = 4.666...degs at gearbox
+ * output for full blade travel.
+ *
+ * Rotor sensor specs:
+ * The absolute encoder's resolution is 12bits -> 2^12 = 4096 LSBs.
+ * Then, theoretical angular resolution per LSB is:
+ * 360degs/4096LSBs = 0.088 degs/LSBs
+ *
+ * Bottom line:
+ * To obtain something close to 0.5degrees per pitch increment, the software
+ * should drive the stepper until it reaches the following angles, starting from
+ * zero:...
+ */
+#define PITCH_NUM_SETPOINTS	11
+#define PITCH_ZERO		0
+#define PITCH_1			6
+#define PITCH_1_DEG		0.527
+#define	PITCH_2			11
+#define PITCH_2_DEG		0.967
+#define PITCH_3			17
+#define PITCH_3_DEG		1.494
+#define PITCH_4			23
+#define PITCH_4_DEG		2.021
+#define PITCH_5			28
+#define PITCH_5_DEG		2.461
+#define PITCH_6			34
+#define PITCH_6_DEG		2.988
+#define PITCH_7			40
+#define PITCH_7_DEG		3.516
+#define PITCH_8			46
+#define PITCH_8_DEG		4.043
+#define PITCH_9			51
+#define PITCH_9_DEG		4.482
+#define PITCH_10		53
+#define PITCH_10_DEG	4.658
+#define IS_SET_CMD		( (RecvChar == '1')||(RecvChar == '2')||(RecvChar == '3')||(RecvChar == '4')||	\
+						(RecvChar == '5')||(RecvChar == '6')||(RecvChar == '7')||(RecvChar == '8')||	\
+						(RecvChar == '9')||(RecvChar == 'e')||(RecvChar == '0')							\
+						)
+#define IS_CHAR_NUM		( (RecvChar == '1')||(RecvChar == '2')||(RecvChar == '3')||(RecvChar == '4')||	\
+						(RecvChar == '5')||(RecvChar == '6')||(RecvChar == '7')||(RecvChar == '8')||	\
+						(RecvChar == '9')||(RecvChar == '0')							\
+						)
+
+#define NOCMD			2
+#define	LEFT_CMD		1
+#define	RIGHT_CMD		0
+
+// Non-ultrascale Zynq SoCs have 4 I/O banks; 0&1 are MIO and 2&3 are EMIO.
+// In the case of the z7007s, the MIO bank pin numbers range from [53:0] while the
+// EMIO pins range from [MAX:54]. Knowing this, the developer can access its EMIO
+// pins declared in Vivado using the xgpiops driver by calling pin 54, for atomical functions
+// ie: XGpioPs_SetDirectionPin, or the whole EMIO bank starting with bank 2, for the bank
+// functions ie: XGpioPs_SetDirection.
+
+void goToPitch(XGpioPs *bankPins, u32 lsbSetPoint, u32 lsbZero);
+u32 deg2Lsb(u32 Angle);
+u32 char2Int(char RecvChar);
+
+
+int main(void)
+{
+	XTtcPs timerInst;
+	TmrCntrSetup timerSetup;
+	XGpioPs bankPins;
+	XGpioPs_Config bankConfig;
+	int i, dir = NOCMD, pos = 0, status = 0;
+	u8 RecvChar;
+	char SendBuffer[BUF_LEN] = {0};
+	u32 setPoint = 0, mode = 0, zero = 0, regval = 0;
+	float angValues[PITCH_NUM_SETPOINTS] = {PITCH_ZERO, PITCH_1_DEG, PITCH_2_DEG, PITCH_3_DEG, PITCH_4_DEG,	\
+			PITCH_5_DEG, PITCH_6_DEG, PITCH_7_DEG, PITCH_8_DEG, PITCH_9_DEG, PITCH_10_DEG};
+	u32 angSetPoints[PITCH_NUM_SETPOINTS] = {PITCH_ZERO, PITCH_1, PITCH_2, PITCH_3, PITCH_4,	\
+			PITCH_5, PITCH_6, PITCH_7, PITCH_8, PITCH_9, PITCH_10};
+
+	status = XGpioPs_CfgInitialize(&bankPins, &bankConfig, EMIO_GPIO_BaseAddress);
+	if (status != XST_SUCCESS) {
+		xil_printf("Gpio Initialization Failed\r\n");
+		return XST_FAILURE;
+	}
+	initSSIpins(&bankPins);
+	initShieldPins(&bankPins);
+	initUartModule(UART1_BASEADDR);
+	configTtc(&timerInst, 9, &timerSetup);
+
+	XUartPs_ReadReg(UART1_BASEADDR, XUARTPS_MR_OFFSET);
+
+	while(1){
+		if(XUartPs_IsReceiveData(UART1_BASEADDR)){
+			RecvChar = XUartPs_ReadReg(UART1_BASEADDR,
+						    XUARTPS_FIFO_OFFSET);
+			if(RecvChar != '\r')
+			{
+				if(RecvChar == 'l'){
+					sprintf(SendBuffer, "Left\n\r");
+					sendBuffer(UART1_BASEADDR, SendBuffer, sizeof(SendBuffer));
+					dir = LEFT_CMD;
+				}
+				else if(RecvChar == 'r'){
+					sprintf(SendBuffer, "Right\n\r");
+					sendBuffer(UART1_BASEADDR, SendBuffer, sizeof(SendBuffer));
+					dir = RIGHT_CMD;
+				}
+				else if(RecvChar == 's'){
+					sprintf(SendBuffer, "Stop\n\r");
+					sendBuffer(UART1_BASEADDR, SendBuffer, sizeof(SendBuffer));
+					dir = NOCMD;
+				}
+				else if(RecvChar == 'g'){
+					sprintf(SendBuffer, "Current Pos Read: %d LSBs\n\r", (readPos(&bankPins)-zero));
+					sendBuffer(UART1_BASEADDR, SendBuffer, sizeof(SendBuffer));
+					dir = NOCMD;
+				}
+				else if(RecvChar == 'z'){
+					zero = readPos(&bankPins);
+					sprintf(SendBuffer, "New zero set at: %lu LSBs\n\r", zero);
+					sendBuffer(UART1_BASEADDR, SendBuffer, sizeof(SendBuffer));
+					dir = NOCMD;
+				}
+				else if(RecvChar == 'c'){
+					sprintf(SendBuffer, "Zero calibd at: %lu LSBs\n\r", zero);
+					sendBuffer(UART1_BASEADDR, SendBuffer, sizeof(SendBuffer));
+					dir = NOCMD;
+				}
+				else if(RecvChar == 't'){
+					mode ^= 1;
+					if(mode == MODE_FREE) sprintf(SendBuffer, "Free-rotating mode\n\r");
+					else if(mode == MODE_MAPPED) sprintf(SendBuffer, "Mapped-angle mode\n\r");
+					sendBuffer(UART1_BASEADDR, SendBuffer, sizeof(SendBuffer));
+				}
+				else if(mode == MODE_MAPPED && IS_SET_CMD){
+					if(IS_SET_CMD){
+						sprintf(SendBuffer, "Angle Set to %f\n\r", angValues[char2Int(RecvChar)]);
+						sendBuffer(UART1_BASEADDR, SendBuffer, sizeof(SendBuffer));
+						setPoint = angSetPoints[char2Int(RecvChar)];
+					}
+				}
+				else{
+					sprintf(SendBuffer, "Unknown Command\n\r");
+					sendBuffer(UART1_BASEADDR, SendBuffer, sizeof(SendBuffer));
+				}
+			}
+		}
+//		pos = readPos(&bankPins);
+//		if( (LEFT_LIM <= pos) && (pos <= RIGHT_LIM) ){
+//			dir = NOCMD;
+//		}
+//		else if( (RIGHT_LIM < pos) && (pos < CENTER) ){
+//			dir = RIGHT_CMD;
+//		}
+//		else if( (LEFT_LIM > pos) && ( pos >= CENTER) ){
+//			dir = LEFT_CMD;
+//		}
+//		else{
+//			dir = NOCMD;
+//		}
+
+		for(i = 0; i < 27000; i++){ /* "delay" */}
+		if(mode == MODE_FREE && dir != NOCMD) oneStep(&bankPins, dir, FULSTEP);
+		else if(mode == MODE_MAPPED) goToPitch(&bankPins, setPoint, zero);
+	}
+}
+
+void goToPitch(XGpioPs *bankPins, u32 lsbSetPoint, u32 lsbZero)
+{
+	char txBuf[BUF_LEN] = {0};
+	int pos;
+	static u8 dir;
+	static u8 at_sp = 0;
+	pos = readPos(bankPins);
+	static int d;
+	d = pos - lsbSetPoint - lsbZero;
+	if(d < 0)
+	{
+		dir = RIGHT_CMD;
+		at_sp = 0;
+	}
+	else if(d > 0 )
+	{
+		dir = LEFT_CMD;
+		at_sp = 0;
+	}
+	else if(d == 0)
+	{
+		if(at_sp < 1)
+		{
+//			sprintf(txBuf, "SetPoint Reached; at %d\n", readPos(bankPins));
+			sprintf(txBuf, "SetPoint Reached; at %d LSBs\n", pos);
+			sendBuffer(UART1_BASEADDR, txBuf, sizeof(txBuf));
+			at_sp = 1;
+			return;
+		}
+	}
+	oneStep(bankPins, dir, QRTRSTEP);
+}
+
+u32 char2Int(char RecvChar)
+{
+	int i = 0;
+	if(RecvChar == 'e') return 10;
+	else if(IS_CHAR_NUM)
+	{
+		i = RecvChar - '0';
+		return i;
+	}
+	else return ERROR;
+}
+
+
+
+

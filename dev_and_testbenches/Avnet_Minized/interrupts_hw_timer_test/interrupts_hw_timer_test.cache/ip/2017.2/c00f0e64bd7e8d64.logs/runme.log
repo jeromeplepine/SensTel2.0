@@ -1,0 +1,43 @@
+
+*** Running vivado
+    with args -log System_util_ds_buf_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source System_util_ds_buf_0_0.tcl
+
+
+****** Vivado v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source System_util_ds_buf_0_0.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 307.625 ; gain = 83.809
+INFO: [Synth 8-638] synthesizing module 'System_util_ds_buf_0_0' [c:/Users/Chinook-ELE/ZynqWorkspace/interrupts_hw_timer_test/interrupts_hw_timer_test.srcs/sources_1/bd/System/ip/System_util_ds_buf_0_0/synth/System_util_ds_buf_0_0.vhd:66]
+INFO: [Synth 8-638] synthesizing module 'util_ds_buf' [c:/Users/Chinook-ELE/ZynqWorkspace/interrupts_hw_timer_test/interrupts_hw_timer_test.srcs/sources_1/bd/System/ipshared/1e84/hdl/vhdl/util_ds_buf.vhd:125]
+INFO: [Synth 8-256] done synthesizing module 'util_ds_buf' (1#1) [c:/Users/Chinook-ELE/ZynqWorkspace/interrupts_hw_timer_test/interrupts_hw_timer_test.srcs/sources_1/bd/System/ipshared/1e84/hdl/vhdl/util_ds_buf.vhd:125]
+INFO: [Synth 8-256] done synthesizing module 'System_util_ds_buf_0_0' (2#1) [c:/Users/Chinook-ELE/ZynqWorkspace/interrupts_hw_timer_test/interrupts_hw_timer_test.srcs/sources_1/bd/System/ip/System_util_ds_buf_0_0/synth/System_util_ds_buf_0_0.vhd:66]
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 357.914 ; gain = 134.098
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 357.914 ; gain = 134.098
+INFO: [Device 21-403] Loading part xc7z007sclg225-1
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.415 . Memory (MB): peak = 586.789 ; gain = 0.941
+Finished Constraint Validation : Time (s): cpu = 00:00:25 ; elapsed = 00:00:32 . Memory (MB): peak = 586.789 ; gain = 362.973
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:25 ; elapsed = 00:00:32 . Memory (MB): peak = 586.789 ; gain = 362.973
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:32 . Memory (MB): peak = 586.789 ; gain = 362.973
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:25 ; elapsed = 00:00:32 . Memory (MB): peak = 586.789 ; gain = 362.973
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:33 . Memory (MB): peak = 586.789 ; gain = 362.973
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:48 ; elapsed = 00:00:56 . Memory (MB): peak = 654.301 ; gain = 430.484
+Finished Timing Optimization : Time (s): cpu = 00:00:48 ; elapsed = 00:00:56 . Memory (MB): peak = 654.301 ; gain = 430.484
+Finished Technology Mapping : Time (s): cpu = 00:00:48 ; elapsed = 00:00:56 . Memory (MB): peak = 663.824 ; gain = 440.008
+Finished IO Insertion : Time (s): cpu = 00:00:49 ; elapsed = 00:00:58 . Memory (MB): peak = 663.824 ; gain = 440.008
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:49 ; elapsed = 00:00:58 . Memory (MB): peak = 663.824 ; gain = 440.008
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:49 ; elapsed = 00:00:58 . Memory (MB): peak = 663.824 ; gain = 440.008
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:49 ; elapsed = 00:00:58 . Memory (MB): peak = 663.824 ; gain = 440.008
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:49 ; elapsed = 00:00:58 . Memory (MB): peak = 663.824 ; gain = 440.008
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:49 ; elapsed = 00:00:58 . Memory (MB): peak = 663.824 ; gain = 440.008
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |BUFH |     1|
++------+-----+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:49 ; elapsed = 00:00:58 . Memory (MB): peak = 663.824 ; gain = 440.008
+synth_design: Time (s): cpu = 00:00:52 ; elapsed = 00:01:02 . Memory (MB): peak = 674.898 ; gain = 451.801

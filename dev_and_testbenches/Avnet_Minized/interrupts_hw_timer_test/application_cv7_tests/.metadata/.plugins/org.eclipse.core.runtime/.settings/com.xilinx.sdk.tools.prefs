@@ -1,0 +1,16 @@
+com.xilinx.sdk.linkgen.prefs.cv7_dualuart_test\:.bss=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.cv7_dualuart_test\:.data=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.cv7_dualuart_test\:.data1=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.cv7_dualuart_test\:.fixup=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.cv7_dualuart_test\:.rodata=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.cv7_dualuart_test\:.rodata1=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.cv7_dualuart_test\:.sbss=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.cv7_dualuart_test\:.sbss2=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.cv7_dualuart_test\:.sdata=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.cv7_dualuart_test\:.sdata2=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.cv7_dualuart_test\:.text=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.cv7_dualuart_test\:heap=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.cv7_dualuart_test\:heap-size=1024
+com.xilinx.sdk.linkgen.prefs.cv7_dualuart_test\:stack=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.cv7_dualuart_test\:stack-size=1024
+eclipse.preferences.version=1
